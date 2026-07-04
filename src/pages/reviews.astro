@@ -7,27 +7,19 @@ import { buildPageTitle } from '../lib/seo';
 
 const REVIEWS_TITLE = 'All Amazon Reviews & Top 10 Guides (2026)';
 const REVIEWS_DESCRIPTION =
-  'Browse every VettedPick comparison and Top 10 Amazon guide — tech alternatives, dog gadgets, kitchen picks, WFH desk upgrades, and more.';
+  'Browse every VettedPick comparison and Top 10 Amazon guide: tech alternatives, dog gadgets, kitchen picks, WFH desk upgrades, and more.';
 
 const articles = (await getCollection('articles')).sort(
   (a, b) => b.data.publishedAt.valueOf() - a.data.publishedAt.valueOf(),
 );
 
-const activeCategory = Astro.url.searchParams.get('cat') as CategoryKey | null;
-const activeType = Astro.url.searchParams.get('type') as 'comparison' | 'listicle' | null;
-
-let filtered = articles;
-
-if (activeCategory && getCategoryKeys().includes(activeCategory)) {
-  filtered = filtered.filter((a) => a.data.category === activeCategory);
-}
-
-if (activeType === 'comparison' || activeType === 'listicle') {
-  filtered = filtered.filter((a) => a.data.articleType === activeType);
-}
-
 const comparisonCount = articles.filter((a) => a.data.articleType === 'comparison').length;
 const listicleCount = articles.filter((a) => a.data.articleType === 'listicle').length;
+
+const typeActive = 'bg-brand-600 text-white';
+const typeInactive = 'bg-gray-100 text-gray-700 hover:bg-gray-200';
+const catActive = 'bg-gray-800 text-white';
+const catInactive = 'bg-gray-100 text-gray-700 hover:bg-gray-200';
 ---
 
 <BaseLayout
@@ -37,79 +29,182 @@ const listicleCount = articles.filter((a) => a.data.articleType === 'listicle').
   <div class="mx-auto max-w-6xl px-4 py-12 sm:px-6">
     <header class="mb-10">
       <h1 class="text-4xl font-extrabold text-gray-900">All Reviews & Guides</h1>
-      <p class="mt-3 text-lg text-gray-600">
-        {filtered.length} vetted Amazon picks — comparisons and Top 10 listicles.
+      <p id="reviews-count" class="mt-3 text-lg text-gray-600">
+        {articles.length} vetted Amazon picks: comparisons and Top 10 listicles.
       </p>
     </header>
 
-    <div class="mb-6 flex flex-wrap gap-2">
+    <nav class="mb-6 flex flex-wrap gap-2" aria-label="Filter by article type">
       <a
         href="/reviews"
-        class:list={[
-          'rounded-full px-4 py-2 text-sm font-semibold transition-colors',
-          !activeType && !activeCategory ? 'bg-brand-600 text-white' : 'bg-gray-100 text-gray-700 hover:bg-gray-200',
-        ]}
+        data-reviews-type=""
+        data-reviews-cat=""
+        class:list={['reviews-type-pill rounded-full px-4 py-2 text-sm font-semibold transition-colors', typeInactive]}
       >
         All ({articles.length})
       </a>
       <a
         href="/reviews?type=comparison"
-        class:list={[
-          'rounded-full px-4 py-2 text-sm font-semibold transition-colors',
-          activeType === 'comparison' ? 'bg-brand-600 text-white' : 'bg-gray-100 text-gray-700 hover:bg-gray-200',
-        ]}
+        data-reviews-type="comparison"
+        data-reviews-cat=""
+        class:list={['reviews-type-pill rounded-full px-4 py-2 text-sm font-semibold transition-colors', typeInactive]}
       >
         Comparisons ({comparisonCount})
       </a>
       <a
         href="/reviews?type=listicle"
-        class:list={[
-          'rounded-full px-4 py-2 text-sm font-semibold transition-colors',
-          activeType === 'listicle' ? 'bg-brand-600 text-white' : 'bg-gray-100 text-gray-700 hover:bg-gray-200',
-        ]}
+        data-reviews-type="listicle"
+        data-reviews-cat=""
+        class:list={['reviews-type-pill rounded-full px-4 py-2 text-sm font-semibold transition-colors', typeInactive]}
       >
         Top 10 Guides ({listicleCount})
       </a>
-    </div>
+    </nav>
 
-    <div class="mb-10 flex flex-wrap gap-2">
+    <nav class="mb-10 flex flex-wrap gap-2" aria-label="Filter by category">
       {
         getCategoryKeys().map((key) => {
           const count = articles.filter((a) => a.data.category === key).length;
           if (count === 0) return null;
-          const params = new URLSearchParams();
-          if (activeType) params.set('type', activeType);
-          params.set('cat', key);
           return (
             <a
-              href={`/reviews?${params.toString()}`}
-              class:list={[
-                'rounded-full px-4 py-2 text-sm font-semibold transition-colors',
-                activeCategory === key
-                  ? 'bg-gray-800 text-white'
-                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200',
-              ]}
+              href={`/reviews?cat=${key}`}
+              data-reviews-cat={key}
+              class:list={['reviews-cat-pill rounded-full px-4 py-2 text-sm font-semibold transition-colors', catInactive]}
             >
               {CATEGORIES[key].label} ({count})
             </a>
           );
         })
       }
-    </div>
+    </nav>
 
-    <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+    <div id="reviews-grid" class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
       {
-        filtered.map((article) => (
-          <ArticleCard
-            title={article.data.cardTitle}
-            excerpt={article.data.cardExcerpt}
-            href={`/articles/${article.id}`}
-            category={article.data.categoryLabel}
-            categoryColor={CATEGORIES[article.data.category as CategoryKey]?.color ?? 'bg-gray-100 text-gray-700'}
-            articleType={article.data.articleType}
-          />
+        articles.map((article) => (
+          <div
+            data-review-card
+            data-type={article.data.articleType}
+            data-category={article.data.category}
+          >
+            <ArticleCard
+              title={article.data.cardTitle}
+              excerpt={article.data.cardExcerpt}
+              href={`/articles/${article.id}`}
+              category={article.data.categoryLabel}
+              categoryColor={CATEGORIES[article.data.category as CategoryKey]?.color ?? 'bg-gray-100 text-gray-700'}
+              articleType={article.data.articleType}
+            />
+          </div>
         ))
       }
     </div>
   </div>
 </BaseLayout>
+
+<script>
+  const TYPE_ACTIVE = 'bg-brand-600 text-white';
+  const TYPE_INACTIVE = 'bg-gray-100 text-gray-700 hover:bg-gray-200';
+  const CAT_ACTIVE = 'bg-gray-800 text-white';
+  const CAT_INACTIVE = 'bg-gray-100 text-gray-700 hover:bg-gray-200';
+
+  type Filters = { type: string | null; cat: string | null };
+
+  function readFilters(): Filters {
+    const params = new URLSearchParams(window.location.search);
+    const type = params.get('type');
+    const cat = params.get('cat');
+    return {
+      type: type === 'comparison' || type === 'listicle' ? type : null,
+      cat: cat || null,
+    };
+  }
+
+  function buildUrl({ type, cat }: Filters): string {
+    const params = new URLSearchParams();
+    if (type) params.set('type', type);
+    if (cat) params.set('cat', cat);
+    const query = params.toString();
+    return query ? `/reviews?${query}` : '/reviews';
+  }
+
+  function setPillActive(pill: HTMLElement, active: boolean, kind: 'type' | 'cat') {
+    const activeClass = kind === 'type' ? TYPE_ACTIVE : CAT_ACTIVE;
+    const inactiveClass = kind === 'type' ? TYPE_INACTIVE : CAT_INACTIVE;
+    pill.classList.remove(...activeClass.split(' '), ...inactiveClass.split(' '));
+    pill.classList.add(...(active ? activeClass : inactiveClass).split(' '));
+  }
+
+  function applyFilters(filters: Filters) {
+    const cards = document.querySelectorAll<HTMLElement>('[data-review-card]');
+    let visible = 0;
+
+    cards.forEach((card) => {
+      const cardType = card.dataset.type;
+      const cardCat = card.dataset.category;
+      const typeMatch = !filters.type || cardType === filters.type;
+      const catMatch = !filters.cat || cardCat === filters.cat;
+      const show = typeMatch && catMatch;
+      card.hidden = !show;
+      if (show) visible++;
+    });
+
+    const countEl = document.getElementById('reviews-count');
+    if (countEl) {
+      countEl.textContent = `${visible} vetted Amazon picks: comparisons and Top 10 listicles.`;
+    }
+
+    document.querySelectorAll<HTMLElement>('.reviews-type-pill').forEach((pill) => {
+      const pillType = pill.dataset.reviewsType ?? '';
+      const isAll = pillType === '';
+      const active = isAll
+        ? !filters.type && !filters.cat
+        : filters.type === pillType;
+      setPillActive(pill, active, 'type');
+    });
+
+    document.querySelectorAll<HTMLElement>('.reviews-cat-pill').forEach((pill) => {
+      const pillCat = pill.dataset.reviewsCat ?? '';
+      setPillActive(pill, filters.cat === pillCat, 'cat');
+      pill.href = buildUrl({ type: filters.type, cat: pillCat });
+    });
+  }
+
+  function navigate(filters: Filters, push: boolean) {
+    const url = buildUrl(filters);
+    if (push) {
+      history.pushState(filters, '', url);
+    } else {
+      history.replaceState(filters, '', url);
+    }
+    applyFilters(filters);
+  }
+
+  function onTypeClick(event: Event, pill: HTMLElement) {
+    event.preventDefault();
+    const type = pill.dataset.reviewsType || null;
+    navigate({ type, cat: null }, true);
+  }
+
+  function onCatClick(event: Event, pill: HTMLElement) {
+    event.preventDefault();
+    const cat = pill.dataset.reviewsCat || null;
+    const { type } = readFilters();
+    navigate({ type, cat }, true);
+  }
+
+  document.querySelectorAll<HTMLElement>('.reviews-type-pill').forEach((pill) => {
+    pill.addEventListener('click', (event) => onTypeClick(event, pill));
+  });
+
+  document.querySelectorAll<HTMLElement>('.reviews-cat-pill').forEach((pill) => {
+    pill.addEventListener('click', (event) => onCatClick(event, pill));
+  });
+
+  window.addEventListener('popstate', (event) => {
+    const filters = (event.state as Filters | null) ?? readFilters();
+    applyFilters(filters);
+  });
+
+  navigate(readFilters(), false);
+</script>

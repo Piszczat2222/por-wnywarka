@@ -1,6 +1,6 @@
 export const SITE = {
   name: 'VettedPick',
-  title: 'VettedPick — Smart Budget Alternatives to Viral & Luxury Products',
+  title: 'VettedPick: Smart Budget Alternatives to Viral & Luxury Products',
   description:
     'We review and find the absolute best budget-friendly alternatives to viral and luxury products. Tested by experts, loved by smart shoppers.',
   url: 'https://vettedpick.com',

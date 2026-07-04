@@ -1,16 +1,16 @@
 ---
 articleType: listicle
 title: "Top 10 Amazon Car Detailing Gadgets"
-description: "Portable vacuums, foam cannons, microfiber kits, and interior brushes — pro-level car cleaning gear from Amazon without the detail shop price."
+description: "Portable vacuums, foam cannons, microfiber kits, and interior brushes: pro-level car cleaning gear from Amazon without the detail shop price."
 category: automotive
 categoryLabel: "Car & Travel"
 cardTitle: "Top 10 Amazon Car Detailing Gadgets"
-cardExcerpt: "Vacuums, foam cannons, clay bars, and microfiber — DIY detail shop results from Amazon."
+cardExcerpt: "Vacuums, foam cannons, clay bars, and microfiber: DIY detail shop results from Amazon."
 featured: false
 publishedAt: 2026-07-06
 updatedAt: 2026-07-06
 seoTitle: "Top 10 Amazon Car Detailing Gadgets (2026)"
-seoDescription: "Best Amazon car detailing gadgets — portable vacuums, foam cannons, microfiber kits, clay bars, and interior brushes for DIY auto detailing."
+seoDescription: "Best Amazon car detailing gadgets: portable vacuums, foam cannons, microfiber kits, clay bars, and interior brushes for DIY auto detailing."
 keywords: ["car detailing gadgets amazon", "amazon car cleaning tools", "foam cannon amazon", "car vacuum amazon"]
 ogImage: "/og-default.png"
 listItems:
@@ -35,12 +35,12 @@ listItems:
     name: "Foam Cannon for Pressure Washer"
     searchQuery: "Foam Cannon Pressure Washer Snow Foam"
     priceApprox: "~$25–70"
-    blurb: "Thick snow foam pre-wash lifts dirt before contact wash. Pairs with any pressure washer — cuts wash time and swirl risk."
+    blurb: "Thick snow foam pre-wash lifts dirt before contact wash. Pairs with any pressure washer: cuts wash time and swirl risk."
   - rank: 5
     name: "Tire Shine Applicator Mitt"
     searchQuery: "Tire Shine Applicator Mitt Microfiber"
     priceApprox: "~$8–14"
-    blurb: "Microfiber mitt applies tire dressing evenly without sling on your paint. Reusable — no more aerosol overspray."
+    blurb: "Microfiber mitt applies tire dressing evenly without sling on your paint. Reusable: no more aerosol overspray."
   - rank: 6
     name: "Interior Quick Detailer Spray"
     searchQuery: "Car Interior Quick Detailer Spray"
@@ -50,7 +50,7 @@ listItems:
     name: "Clay Bar Kit"
     searchQuery: "Car Clay Bar Kit Detailing"
     priceApprox: "~$18–28"
-    blurb: "Removes embedded brake dust and tree sap after washing. Run your hand over paint — clay bar catches what wash missed."
+    blurb: "Removes embedded brake dust and tree sap after washing. Run your hand over paint: clay bar catches what wash missed."
   - rank: 8
     name: "Car Windshield Sun Shade"
     searchQuery: "Car Windshield Sun Shade Foldable"
@@ -65,14 +65,15 @@ listItems:
     name: "Car Trash Can with Lid"
     searchQuery: "Car Trash Can Lid Weighted Console"
     priceApprox: "~$10–18"
-    blurb: "Weighted floor console bin with lid. Stops the cup-holder trash pile — detail jobs start with less mess."
+    blurb: "Weighted floor console bin with lid. Stops the cup-holder trash pile: detail jobs start with less mess."
 ---
+
 
 ## DIY Detailing Beats a $150 Car Wash Subscription
 
 Professional detail shops charge $200+ for what you can maintain weekly with the right **Amazon tools**. A portable vacuum, quality microfiber, and foam cannon transform weekend car care from chore to satisfying ritual.
 
-We picked products the auto-detailing community recommends repeatedly — quality microfiber, clay bars, and vacuums with proven suction on pet hair.
+We picked products the auto-detailing community recommends repeatedly, quality microfiber, clay bars, and vacuums with proven suction on pet hair.
 
 ### Weekend detail workflow
 

@@ -1,0 +1,23 @@
+---
+interface Props {
+  premiumProduct: string;
+  premiumPrice?: string;
+  pickProduct: string;
+  pickPrice?: string;
+}
+
+const { premiumProduct, premiumPrice, pickProduct, pickPrice } = Astro.props;
+---
+
+<div class="mb-8 grid gap-4 sm:grid-cols-2">
+  <div class="rounded-2xl border border-gray-200 bg-gray-50 p-5">
+    <p class="text-xs font-semibold uppercase tracking-wide text-gray-500">Premium pick</p>
+    <p class="mt-1 text-lg font-bold text-gray-900">{premiumProduct}</p>
+    {premiumPrice && <p class="mt-1 text-sm font-medium text-gray-600">{premiumPrice}</p>}
+  </div>
+  <div class="rounded-2xl border-2 border-brand-200 bg-brand-50 p-5">
+    <p class="text-xs font-semibold uppercase tracking-wide text-brand-700">Our Amazon pick</p>
+    <p class="mt-1 text-lg font-bold text-gray-900">{pickProduct}</p>
+    {pickPrice && <p class="mt-1 text-sm font-medium text-brand-700">{pickPrice}</p>}
+  </div>
+</div>

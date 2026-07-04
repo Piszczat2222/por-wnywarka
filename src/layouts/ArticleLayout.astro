@@ -6,9 +6,13 @@ import DisclosureBox from '../components/DisclosureBox.astro';
 import RelatedArticles from '../components/RelatedArticles.astro';
 import ListicleItem from '../components/ListicleItem.astro';
 import ArticleTypeBadge from '../components/ArticleTypeBadge.astro';
+import ProductSummaryBar from '../components/ProductSummaryBar.astro';
+import AudienceCards from '../components/AudienceCards.astro';
+import ProsConsGrid from '../components/ProsConsGrid.astro';
+import ArticleSection from '../components/ArticleSection.astro';
+import VerdictBox from '../components/VerdictBox.astro';
 import { getCollection, render, type CollectionEntry } from 'astro:content';
 import { CATEGORIES, type CategoryKey } from '../lib/categories';
-import { SITE } from '../lib/site';
 import { buildPageTitle, absoluteUrl } from '../lib/seo';
 import {
   articleSchema,
@@ -33,6 +37,12 @@ const modifiedAt = data.updatedAt ?? data.publishedAt;
 
 const allArticles = await getCollection('articles');
 const categoryMeta = CATEGORIES[data.category as CategoryKey];
+
+const hasAudience =
+  (data.whoItsFor && data.whoItsFor.length > 0) ||
+  (data.whoShouldSkip && data.whoShouldSkip.length > 0);
+const hasProsCons =
+  (data.pros && data.pros.length > 0) || (data.cons && data.cons.length > 0);
 
 const breadcrumbs = breadcrumbSchema([
   { name: 'Home', path: '/' },
@@ -93,7 +103,7 @@ const jsonLd = mergeJsonLd(
       <h1 class="text-3xl font-extrabold leading-tight text-gray-900 sm:text-4xl">
         {data.title}
       </h1>
-      <p class="mt-4 text-lg text-gray-600">{pageDescription}</p>
+      <p class="mt-4 text-lg leading-relaxed text-gray-600">{pageDescription}</p>
       <p class="mt-3 text-sm text-gray-500">
         Published {data.publishedAt.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
         {
@@ -112,23 +122,36 @@ const jsonLd = mergeJsonLd(
     {
       isListicle ? (
         <>
-          <div class="prose prose-gray mb-10 max-w-none prose-headings:font-bold prose-a:text-brand-600">
-            <Content />
-          </div>
+          <ArticleSection variant="muted">
+            <div class="article-prose">
+              <Content />
+            </div>
+          </ArticleSection>
 
           {data.listItems && data.listItems.length > 0 && (
-            <div class="space-y-6">
-              <h2 class="text-2xl font-bold text-gray-900">
+            <section class="mt-12 border-t border-gray-200 pt-10">
+              <h2 class="mb-8 text-2xl font-bold text-gray-900">
                 Our Top {data.listItems.length} Picks
               </h2>
-              {data.listItems.map((item, index) => (
-                <ListicleItem item={item} index={index} />
-              ))}
-            </div>
+              <div class="space-y-6">
+                {data.listItems.map((item, index) => (
+                  <ListicleItem item={item} index={index} />
+                ))}
+              </div>
+            </section>
           )}
         </>
       ) : (
         <>
+          {data.premiumProduct && data.pickProduct && (
+            <ProductSummaryBar
+              premiumProduct={data.premiumProduct}
+              premiumPrice={data.premiumPrice}
+              pickProduct={data.pickProduct}
+              pickPrice={data.pickPrice}
+            />
+          )}
+
           {data.comparisonTable && data.premiumProduct && data.pickProduct && (
             <ComparisonTable
               premiumLabel={data.premiumProduct}
@@ -137,12 +160,26 @@ const jsonLd = mergeJsonLd(
             />
           )}
 
-          <div class="prose prose-gray mt-10 max-w-none prose-headings:font-bold prose-a:text-brand-600">
+          {data.verdict && <VerdictBox text={data.verdict} />}
+
+          <div class="article-prose mt-10">
             <Content />
           </div>
 
+          {hasAudience && data.whoItsFor && data.whoShouldSkip && (
+            <AudienceCards whoItsFor={data.whoItsFor} whoShouldSkip={data.whoShouldSkip} />
+          )}
+
+          {hasProsCons && data.pros && data.cons && (
+            <ProsConsGrid pros={data.pros} cons={data.cons} />
+          )}
+
           {data.amazonAsin && data.pickProduct && (
-            <div class="my-10">
+            <div class="my-10 rounded-2xl border border-brand-200 bg-brand-50 p-6 sm:p-8">
+              <h2 class="mb-2 text-xl font-bold text-gray-900">Ready to buy?</h2>
+              <p class="mb-5 text-sm text-gray-600">
+                Check current price and availability for <strong>{data.pickProduct}</strong> on Amazon.
+              </p>
               <AmazonCTA asin={data.amazonAsin} productName={data.pickProduct} />
             </div>
           )}
@@ -151,7 +188,7 @@ const jsonLd = mergeJsonLd(
             <div class="mb-10 rounded-xl border border-gray-200 bg-gray-50 p-6">
               <h2 class="text-lg font-bold text-gray-900">Runner-up pick</h2>
               <p class="mt-2 text-gray-600">
-                Also worth a look: <strong>{data.runnerUpProduct}</strong> — a solid alternative if you
+                Also worth a look: <strong>{data.runnerUpProduct}</strong>, a solid alternative if you
                 want different features or sizing.
               </p>
               <div class="mt-4">

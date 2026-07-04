@@ -58,6 +58,11 @@ const articles = defineCollection({
     runnerUpAsin: z.string().optional(),
     runnerUpProduct: z.string().optional(),
     comparisonTable: z.array(comparisonRowSchema).optional(),
+    whoItsFor: z.array(z.string()).optional(),
+    whoShouldSkip: z.array(z.string()).optional(),
+    pros: z.array(z.string()).optional(),
+    cons: z.array(z.string()).optional(),
+    verdict: z.string().optional(),
     // listicle-only
     listItems: z.array(listItemSchema).optional(),
   }),

@@ -2,10 +2,10 @@ export const CATEGORIES = {
   tech: {
     slug: 'tech',
     label: 'Tech & Gadgets',
-    description: 'Headphones, wearables, and viral tech — vetted Amazon alternatives.',
+    description: 'Headphones, wearables, and viral tech: vetted Amazon alternatives.',
     seoTitle: 'Best Amazon Tech Alternatives & Reviews (2026)',
     seoDescription:
-      'Vetted Amazon tech alternatives and Top 10 phone accessory guides. Budget picks vs premium brands — headphones, earbuds, and gadgets.',
+      'Vetted Amazon tech alternatives and Top 10 phone accessory guides. Budget picks vs premium brands: headphones, earbuds, and gadgets.',
     color: 'bg-blue-100 text-blue-700',
     accent: 'from-blue-600 to-blue-800',
     icon: '💻',

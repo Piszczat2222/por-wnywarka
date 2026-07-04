@@ -1,16 +1,16 @@
 ---
 articleType: listicle
 title: "Top 10 Amazon Camping Gear Under $50"
-description: "Lanterns, sleeping pads, camp stoves, and organizers — budget Amazon camping essentials that don't sacrifice quality on the trail."
+description: "Lanterns, sleeping pads, camp stoves, and organizers: budget Amazon camping essentials that don't sacrifice quality on the trail."
 category: travel
 categoryLabel: "Travel & Outdoors"
 cardTitle: "Top 10 Amazon Camping Gear Under $50"
-cardExcerpt: "Budget camping essentials from Amazon — lanterns, pads, stoves, and more under $50."
+cardExcerpt: "Budget camping essentials from Amazon: lanterns, pads, stoves, and more under $50."
 featured: false
 publishedAt: 2026-07-05
 updatedAt: 2026-07-06
 seoTitle: "Top 10 Amazon Camping Gear Under $50 (2026)"
-seoDescription: "Best budget camping gear on Amazon under $50 — LED lanterns, sleeping pads, camp stoves, hammocks, and first-aid kits for weekend trips."
+seoDescription: "Best budget camping gear on Amazon under $50: LED lanterns, sleeping pads, camp stoves, hammocks, and first-aid kits for weekend trips."
 keywords: ["camping gear amazon under 50", "budget camping amazon", "amazon camping essentials", "cheap camping gear"]
 ogImage: "/og-default.png"
 listItems:
@@ -19,12 +19,12 @@ listItems:
     searchQuery: "LED Camping Lantern 2 Pack Collapsible"
     priceApprox: "~$15–24"
     badge: "Editor's Pick"
-    blurb: "Collapsible LED lanterns with 360° light. Runs on AA batteries — bright enough for cooking and card games at camp."
+    blurb: "Collapsible LED lanterns with 360° light. Runs on AA batteries: bright enough for cooking and card games at camp."
   - rank: 2
     name: "Inflatable Sleeping Pad"
     searchQuery: "Inflatable Sleeping Pad V Chamber Camping"
     priceApprox: "~$35–50"
-    blurb: "V-chamber design insulates from cold ground. Packs smaller than a water bottle — real comfort under $50."
+    blurb: "V-chamber design insulates from cold ground. Packs smaller than a water bottle: real comfort under $50."
   - rank: 3
     name: "Portable Camp Stove System"
     searchQuery: "Portable Camp Stove System Boil Water Fast"
@@ -50,7 +50,7 @@ listItems:
     name: "Mini Water Filter (Screw-On)"
     searchQuery: "Mini Water Filter Screw On Bottle"
     priceApprox: "~$18–25"
-    blurb: "Screw onto standard water bottles for on-the-go filtration. Long-lasting filters — lasts years of weekend trips."
+    blurb: "Screw onto standard water bottles for on-the-go filtration. Long-lasting filters: lasts years of weekend trips."
   - rank: 8
     name: "Sleeping Bag with Compression Sack"
     searchQuery: "Sleeping Bag 20 Degree Compression Sack"
@@ -65,8 +65,9 @@ listItems:
     name: "Insulated Camping Blanket"
     searchQuery: "Insulated Camping Blanket Puffy Stuff Sack"
     priceApprox: "~$40–50"
-    blurb: "Insulated blanket for campfire nights and car camping. Packs into included stuff sack — warmer than a fleece."
+    blurb: "Insulated blanket for campfire nights and car camping. Packs into included stuff sack: warmer than a fleece."
 ---
+
 
 ## You Don't Need $500 of Premium Gear for a Great Weekend
 
@@ -76,4 +77,4 @@ We prioritized gear with proven track records on the trail: items that pack smal
 
 ### Weekend camping starter kit
 
-**Lantern + sleeping pad + water filter** — light, comfort, and safety covered for under $80 total.
+**Lantern + sleeping pad + water filter**, light, comfort, and safety covered for under $80 total.

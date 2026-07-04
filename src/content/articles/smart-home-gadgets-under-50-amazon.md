@@ -1,16 +1,16 @@
 ---
 articleType: listicle
 title: "Top 10 Smart Home Gadgets on Amazon Under $50"
-description: "Smart plugs, bulbs, sensors, and speakers — affordable Amazon smart home starters that work with Alexa and Google Home."
+description: "Smart plugs, bulbs, sensors, and speakers: affordable Amazon smart home starters that work with Alexa and Google Home."
 category: tech
 categoryLabel: "Tech & Gadgets"
 cardTitle: "Top 10 Smart Home Gadgets Under $50"
-cardExcerpt: "Smart plugs, bulbs, sensors, and hubs — build a smart home from Amazon for under $50 per device."
+cardExcerpt: "Smart plugs, bulbs, sensors, and hubs: build a smart home from Amazon for under $50 per device."
 featured: true
 publishedAt: 2026-07-05
 updatedAt: 2026-07-06
 seoTitle: "Top 10 Amazon Smart Home Gadgets Under $50 (2026)"
-seoDescription: "Best budget smart home gadgets on Amazon — smart plugs, LED bulbs, motion sensors, and Echo Dots under $50. Works with Alexa and Google."
+seoDescription: "Best budget smart home gadgets on Amazon: smart plugs, LED bulbs, motion sensors, and Echo Dots under $50. Works with Alexa and Google."
 keywords: ["smart home amazon under 50", "amazon smart plug", "alexa gadgets amazon", "budget smart home"]
 ogImage: "/og-default.png"
 listItems:
@@ -45,7 +45,7 @@ listItems:
     name: "Smart Light Switch (Single Pole)"
     searchQuery: "Smart Light Switch Single Pole Alexa"
     priceApprox: "~$18–40"
-    blurb: "Controls existing fixtures from app or voice. Requires neutral wire on many installs — check compatibility."
+    blurb: "Controls existing fixtures from app or voice. Requires neutral wire on many installs: check compatibility."
   - rank: 7
     name: "Door and Window Sensor (2-Pack)"
     searchQuery: "Smart Door Window Sensor 2 Pack"
@@ -68,9 +68,10 @@ listItems:
     blurb: "Tracks particulates and humidity. Some models integrate with voice assistants for alerts."
 ---
 
+
 ## Smart Home Doesn't Mean Smart Budget
 
-You don't need to wire your entire house on day one. The smartest approach: **one voice speaker, four smart plugs, and one bulb** — often under $80 total, and you've automated morning coffee, bedtime lamps, and 'turn off everything' routines.
+You don't need to wire your entire house on day one. The smartest approach: **one voice speaker, four smart plugs, and one bulb**, often under $80 total, and you've automated morning coffee, bedtime lamps, and 'turn off everything' routines.
 
 Every category here works with **Alexa or Google Assistant** on most top listings and installs without an electrician. We focused on devices that commonly list under $50 before tax.
 
@@ -83,4 +84,4 @@ Every category here works with **Alexa or Google Assistant** on most top listing
 | 1× smart bulb | Bedroom dimming |
 | Indoor camera | Peace of mind |
 
-Expand one room at a time — kitchen next, then entryway.
+Expand one room at a time, kitchen next, then entryway.

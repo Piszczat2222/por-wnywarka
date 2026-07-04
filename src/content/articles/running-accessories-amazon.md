@@ -1,16 +1,16 @@
 ---
 articleType: listicle
 title: "Top 10 Amazon Running Accessories Under $30"
-description: "Running belts, reflective gear, recovery tools, and hydration — affordable Amazon picks that make every mile more comfortable."
+description: "Running belts, reflective gear, recovery tools, and hydration: affordable Amazon picks that make every mile more comfortable."
 category: fitness
 categoryLabel: "Fitness & Gym"
 cardTitle: "Top 10 Amazon Running Accessories Under $30"
-cardExcerpt: "Belts, lights, foam rollers, and hydration — budget running gear from Amazon."
+cardExcerpt: "Belts, lights, foam rollers, and hydration: budget running gear from Amazon."
 featured: false
 publishedAt: 2026-07-05
 updatedAt: 2026-07-06
 seoTitle: "Top 10 Amazon Running Accessories Under $30 (2026)"
-seoDescription: "Best budget running accessories on Amazon — hydration belts, reflective vests, foam rollers, and recovery tools under $30."
+seoDescription: "Best budget running accessories on Amazon: hydration belts, reflective vests, foam rollers, and recovery tools under $30."
 keywords: ["running accessories amazon", "running belt amazon", "budget running gear", "amazon running essentials"]
 ogImage: "/og-default.png"
 listItems:
@@ -30,7 +30,7 @@ listItems:
     searchQuery: "Reflective Running Vest 360"
     priceApprox: "~$10–18"
     badge: "Best Value"
-    blurb: "360° reflectivity for dawn and dusk runs. Lightweight mesh — visible to drivers from 600+ feet."
+    blurb: "360° reflectivity for dawn and dusk runs. Lightweight mesh: visible to drivers from 600+ feet."
   - rank: 4
     name: "Foam Roller"
     searchQuery: "Foam Roller Multi Density Grid"
@@ -40,7 +40,7 @@ listItems:
     name: "Anti-Chafe Balm"
     searchQuery: "Anti Chafe Balm Running Marathon"
     priceApprox: "~$8–14"
-    blurb: "Prevents thigh and nipple chafing on long runs. Invisible, non-greasy — marathon essential."
+    blurb: "Prevents thigh and nipple chafing on long runs. Invisible, non-greasy: marathon essential."
   - rank: 6
     name: "LED Armband Phone Holder"
     searchQuery: "LED Armband Phone Holder Running"
@@ -68,14 +68,15 @@ listItems:
     blurb: "Support knees and ankles during injury recovery. Stays on through sweat and showers for 3–5 days."
 ---
 
-## Running Is Free — Until You Need Gear
+
+## Running Is Free, Until You Need Gear
 
 You don't need expensive shoes to start running, but a few **$10–30 accessories** eliminate the annoyances that make people quit: bouncing phones, chafing, darkness, and post-run soreness. Every pick here is Amazon-available with strong runner reviews.
 
-We kept most items truly under $30. A GPS watch is the one splurge — if you want pace tracking without your phone, entry-level models are the best starting point.
+We kept most items truly under $30. A GPS watch is the one splurge, if you want pace tracking without your phone, entry-level models are the best starting point.
 
 ### New runner essentials
 
-1. **Running belt or handheld flask** — carry phone and keys
-2. **Reflective vest** — if you run before sunrise or after sunset
-3. **Anti-chafe balm** — before your first 5-mile attempt
+1. **Running belt or handheld flask**, carry phone and keys
+2. **Reflective vest**, if you run before sunrise or after sunset
+3. **Anti-chafe balm**, before your first 5-mile attempt
