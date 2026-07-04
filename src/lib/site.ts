@@ -6,6 +6,7 @@ export const SITE = {
   url: 'https://altpik.com',
   author: 'Patryk',
   email: 'hello@altpik.com',
+  gaMeasurementId: 'G-JRB461EJXP',
 } as const;
 
 export const NAV_LINKS = [

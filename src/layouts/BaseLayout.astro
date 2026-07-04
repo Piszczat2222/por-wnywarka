@@ -35,6 +35,7 @@ const metaDescription = truncateDescription(description);
 const canonicalURL = new URL(Astro.url.pathname, SITE.url);
 const ogImageURL = new URL(ogImage, SITE.url);
 const robotsContent = noindex ? 'noindex, nofollow' : 'index, follow';
+const gaMeasurementId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID ?? SITE.gaMeasurementId;
 
 const globalJsonLd = mergeJsonLd(
   organizationSchema(),
@@ -86,6 +87,21 @@ const globalJsonLd = mergeJsonLd(
     <meta name="twitter:description" content={metaDescription} />
     <meta name="twitter:image" content={ogImageURL} />
     <StructuredData data={globalJsonLd} />
+    {
+      gaMeasurementId && (
+        <>
+          <script async src={`https://www.googletagmanager.com/gtag/js?id=${gaMeasurementId}`} />
+          <script is:inline define:vars={{ gaMeasurementId }}>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+              dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+            gtag('config', gaMeasurementId);
+          </script>
+        </>
+      )
+    }
   </head>
   <body class="flex min-h-screen flex-col">
     <Header />
