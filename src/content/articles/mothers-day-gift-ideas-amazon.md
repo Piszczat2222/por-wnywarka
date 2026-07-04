@@ -16,55 +16,65 @@ ogImage: "/og-default.png"
 listItems:
   - rank: 1
     name: "Silk Pillowcase Set (2-Pack)"
-    searchQuery: "Silk Pillowcase Set 2 Pack Mulberry"
+    searchQuery: "Silk Pillowcase Set 2 Pack Mulberry"
+
     priceApprox: "~$18–35"
     badge: "Editor's Pick"
     blurb: "Mulberry silk reduces hair frizz and sleep creases — a small luxury moms feel every single night. Two-pack so she can rotate while one washes."
   - rank: 2
     name: "Electric Pour-Over / Gooseneck Kettle"
-    searchQuery: "Electric Gooseneck Kettle Temperature Control"
+    searchQuery: "Electric Gooseneck Kettle Temperature Control"
+
     priceApprox: "~$35–55"
     blurb: "Temperature-controlled kettle for pour-over coffee and tea rituals. Looks beautiful on the counter and upgrades her morning routine permanently."
   - rank: 3
     name: "Heated Eye Mask (USB Rechargeable)"
-    searchQuery: "Heated Eye Mask USB Rechargeable Steam"
+    searchQuery: "Heated Eye Mask USB Rechargeable Steam"
+
     priceApprox: "~$20–35"
     badge: "Best Self-Care"
     blurb: "Warm steam eye mask for migraines, screen fatigue, and wind-down routines. Rechargeable — no microwave required."
   - rank: 4
     name: "Essential Oil Diffuser (Large Capacity)"
-    searchQuery: "Essential Oil Diffuser Large Capacity Wood Grain"
+    searchQuery: "Essential Oil Diffuser Large Capacity Wood Grain"
+
     priceApprox: "~$20–30"
     blurb: "Wood-grain diffuser with timer and auto-shutoff — transforms a bedroom or home office with lavender or eucalyptus. Pairs well with a small oil set."
   - rank: 5
     name: "Jade Roller & Gua Sha Gift Set"
-    searchQuery: "Jade Roller Gua Sha Set Gift Box"
+    searchQuery: "Jade Roller Gua Sha Set Gift Box"
+
     priceApprox: "~$12–22"
     blurb: "TikTok-famous facial massage tools in a gift-ready box. De-puffs morning skin and makes a skincare routine feel like a spa visit."
   - rank: 6
     name: "Weighted Heating Pad (Shoulder & Neck)"
-    searchQuery: "Weighted Heating Pad Neck Shoulder"
+    searchQuery: "Weighted Heating Pad Neck Shoulder"
+
     priceApprox: "~$30–45"
     blurb: "Contoured heating pad that drapes over shoulders — weighted fill keeps it in place while she reads or watches TV. Better than a flat rectangle pad."
   - rank: 7
     name: "Kindle or Book Light Clip (If She Reads)"
-    searchQuery: "Rechargeable Book Light Clip LED"
+    searchQuery: "Rechargeable Book Light Clip LED"
+
     priceApprox: "~$10–18"
     blurb: "Warm LED clip light for bedtime reading without disturbing a partner. Rechargeable and dimmable — pairs with any book or e-reader."
   - rank: 8
     name: "Indoor Herb Garden Kit (Countertop)"
-    searchQuery: "Indoor Herb Garden Kit Countertop LED"
+    searchQuery: "Indoor Herb Garden Kit Countertop LED"
+
     priceApprox: "~$25–40"
     badge: "Best for Plant Moms"
     blurb: "Self-watering countertop herb garden with grow light — basil, mint, and parsley on the kitchen counter. Gift that keeps giving through summer cooking."
   - rank: 9
     name: "Luxury Hand Cream Gift Set"
-    searchQuery: "Luxury Hand Cream Gift Set Shea Butter"
+    searchQuery: "Luxury Hand Cream Gift Set Shea Butter"
+
     priceApprox: "~$15–28"
     blurb: "Multi-pack hand creams in travel sizes — desk, purse, and nightstand. Practical self-care she'll actually finish, not display untouched."
   - rank: 10
     name: "Robotic Vacuum (Budget Roomba Alternative)"
-    searchQuery: "Robot Vacuum Pet Hair Hard Floor"
+    searchQuery: "Robot Vacuum Pet Hair Hard Floor"
+
     priceApprox: "~$120–180"
     blurb: "The splurge pick: a budget robot vacuum that handles daily floor crumbs and pet hair. Time back is the gift — search Amazon for today's best-rated model under $200."
 faq:

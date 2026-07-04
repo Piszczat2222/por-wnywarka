@@ -16,55 +16,65 @@ ogImage: "/og-default.png"
 listItems:
   - rank: 1
     name: "Digital Meat Thermometer (Instant-Read)"
-    searchQuery: "Digital Meat Thermometer Instant Read Wireless Probe"
+    searchQuery: "Digital Meat Thermometer Instant Read Wireless Probe"
+
     priceApprox: "~$25–45"
     badge: "Editor's Pick"
     blurb: "Wireless probe monitors steak and brisket from your phone — no more opening the lid and losing heat. The gift every grill dad didn't know he needed."
   - rank: 2
     name: "Portable Bluetooth Speaker (Waterproof)"
-    searchQuery: "Portable Bluetooth Speaker Waterproof Rugged"
+    searchQuery: "Portable Bluetooth Speaker Waterproof Rugged"
+
     priceApprox: "~$30–60"
     blurb: "Rugged waterproof speaker for the garage, campsite, or shower. Big sound without the premium brand tax — pairs in seconds with his phone."
   - rank: 3
     name: "Mini Massage Gun (Percussion)"
-    searchQuery: "Mini Massage Gun Percussion Muscle"
+    searchQuery: "Mini Massage Gun Percussion Muscle"
+
     priceApprox: "~$35–55"
     badge: "Best for Active Dads"
     blurb: "Pocket-sized percussion massager for sore backs and post-yard-work recovery. Quieter and cheaper than Theragun — same relief concept."
   - rank: 4
     name: "Insulated Travel Mug (Leak-Proof)"
-    searchQuery: "Insulated Travel Mug Leak Proof 20oz"
+    searchQuery: "Insulated Travel Mug Leak Proof 20oz"
+
     priceApprox: "~$18–28"
     blurb: "Keeps coffee hot through the commute and fits standard cup holders. Leak-proof lid survives being tossed in a work bag — daily-use gift."
   - rank: 5
     name: "Magnetic Bit Driver Set"
-    searchQuery: "Magnetic Bit Driver Set Ratchet Screwdriver"
+    searchQuery: "Magnetic Bit Driver Set Ratchet Screwdriver"
+
     priceApprox: "~$20–35"
     blurb: "Ratcheting driver with dozens of bits in a compact case. Fixes everything from eyeglasses to furniture — the dad who says he doesn't want gifts will use this."
   - rank: 6
     name: "Personalized Leather Wallet"
-    searchQuery: "Personalized Leather Wallet Engraved RFID"
+    searchQuery: "Personalized Leather Wallet Engraved RFID"
+
     priceApprox: "~$25–40"
     badge: "Best Sentimental Pick"
     blurb: "RFID-blocking leather wallet with optional engraving — initials, a date, or a short message. Classic Father's Day move that still lands."
   - rank: 7
     name: "Cast Iron Grill Press"
-    searchQuery: "Cast Iron Grill Press Bacon Weight"
+    searchQuery: "Cast Iron Grill Press Bacon Weight"
+
     priceApprox: "~$18–30"
     blurb: "Heavy cast-iron press for smash burgers, paninis, and bacon that lies flat. Works on the griddle or stovetop — instant grill-master upgrade."
   - rank: 8
     name: "Headlamp (Rechargeable, Bright)"
-    searchQuery: "Rechargeable Headlamp Bright LED USB"
+    searchQuery: "Rechargeable Headlamp Bright LED USB"
+
     priceApprox: "~$15–25"
     blurb: "Hands-free light for grilling at dusk, fixing the sink, or walking the dog. USB rechargeable — no hunting for AAA batteries in a drawer."
   - rank: 9
     name: "Whiskey Stones Gift Set"
-    searchQuery: "Whiskey Stones Gift Set Glasses"
+    searchQuery: "Whiskey Stones Gift Set Glasses"
+
     priceApprox: "~$20–35"
     blurb: "Soapstone cubes chill drinks without watering them down — usually bundled with glasses in a gift box. Easy win for the dad who enjoys a nightcap."
   - rank: 10
     name: "Car Phone Mount (MagSafe Compatible)"
-    searchQuery: "MagSafe Car Phone Mount Vent Dashboard"
+    searchQuery: "MagSafe Car Phone Mount Vent Dashboard"
+
     priceApprox: "~$12–22"
     blurb: "One-handed magnetic mount for navigation and hands-free calls. Sturdy vent or dashboard clip — small gift, big daily convenience."
 faq:
