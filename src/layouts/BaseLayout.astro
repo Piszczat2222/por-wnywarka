@@ -47,6 +47,21 @@ const globalJsonLd = mergeJsonLd(
 <!doctype html>
 <html lang="en">
   <head>
+    {
+      gaMeasurementId && (
+        <>
+          <script async src={`https://www.googletagmanager.com/gtag/js?id=${gaMeasurementId}`} />
+          <script is:inline define:vars={{ gaMeasurementId }}>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+              dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+            gtag('config', gaMeasurementId);
+          </script>
+        </>
+      )
+    }
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content={robotsContent} />
@@ -88,21 +103,6 @@ const globalJsonLd = mergeJsonLd(
     <meta name="twitter:description" content={metaDescription} />
     <meta name="twitter:image" content={ogImageURL} />
     <StructuredData data={globalJsonLd} />
-    {
-      gaMeasurementId && (
-        <>
-          <script async src={`https://www.googletagmanager.com/gtag/js?id=${gaMeasurementId}`} />
-          <script is:inline define:vars={{ gaMeasurementId }}>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-              dataLayer.push(arguments);
-            }
-            gtag('js', new Date());
-            gtag('config', gaMeasurementId);
-          </script>
-        </>
-      )
-    }
   </head>
   <body class="flex min-h-screen flex-col">
     <Header />
