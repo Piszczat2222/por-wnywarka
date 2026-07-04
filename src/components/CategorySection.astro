@@ -1,0 +1,50 @@
+---
+import ArticleCard from './ArticleCard.astro';
+import { CATEGORIES, type CategoryKey } from '../lib/categories';
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  category: CategoryKey;
+  articles: CollectionEntry<'articles'>[];
+}
+
+const { category, articles } = Astro.props;
+const meta = CATEGORIES[category];
+
+if (articles.length === 0) return null;
+---
+
+<section id={category} class="scroll-mt-20 border-t border-gray-100 py-16">
+  <div class="mx-auto max-w-6xl px-4 sm:px-6">
+    <div class="mb-8 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+      <div>
+        <span class="text-2xl" aria-hidden="true">{meta.icon}</span>
+        <h2 class="mt-2 text-2xl font-bold text-gray-900 sm:text-3xl">{meta.label}</h2>
+        <p class="mt-2 max-w-xl text-gray-600">{meta.description}</p>
+      </div>
+      <a
+        href={`/categories/${category}`}
+        class="inline-flex shrink-0 items-center gap-1 text-sm font-semibold text-brand-600 hover:text-brand-700"
+      >
+        View all in {meta.label}
+        <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </a>
+    </div>
+    <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      {
+        articles.slice(0, 3).map((article) => (
+          <ArticleCard
+            title={article.data.cardTitle}
+            excerpt={article.data.cardExcerpt}
+            href={`/articles/${article.id}`}
+            category={article.data.categoryLabel}
+            categoryColor={meta.color}
+            articleType={article.data.articleType}
+          />
+        ))
+      }
+    </div>
+  </div>
+</section>

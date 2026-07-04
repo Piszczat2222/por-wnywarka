@@ -1,0 +1,47 @@
+---
+import ArticleTypeBadge from './ArticleTypeBadge.astro';
+
+interface Props {
+  title: string;
+  excerpt: string;
+  href: string;
+  category: string;
+  categoryColor?: string;
+  articleType?: 'comparison' | 'listicle';
+}
+
+const {
+  title,
+  excerpt,
+  href,
+  category,
+  categoryColor = 'bg-brand-100 text-brand-700',
+  articleType = 'comparison',
+} = Astro.props;
+
+const linkLabel = articleType === 'listicle' ? 'Read full guide' : 'Read full review';
+---
+
+<a
+  href={href}
+  class="group flex flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition-all hover:-translate-y-1 hover:border-brand-200 hover:shadow-lg"
+>
+  <div class="flex flex-1 flex-col p-6 sm:p-8">
+    <div class="flex flex-wrap items-center gap-2">
+      <span class={`inline-flex rounded-full px-3 py-1 text-xs font-semibold ${categoryColor}`}>
+        {category}
+      </span>
+      <ArticleTypeBadge type={articleType} />
+    </div>
+    <h2 class="mt-4 text-xl font-bold leading-snug text-gray-900 group-hover:text-brand-700 sm:text-2xl">
+      {title}
+    </h2>
+    <p class="mt-3 flex-1 text-gray-600">{excerpt}</p>
+    <span class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-brand-600 group-hover:text-brand-700">
+      {linkLabel}
+      <svg class="h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+      </svg>
+    </span>
+  </div>
+</a>

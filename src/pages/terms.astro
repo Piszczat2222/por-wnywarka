@@ -1,0 +1,72 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE } from '../lib/site';
+---
+
+<BaseLayout title={`Terms of Service | ${SITE.name}`} description="Terms of Service for VettedPick.com">
+  <div class="mx-auto max-w-3xl px-4 py-16 sm:px-6 prose prose-gray max-w-none">
+    <h1>Terms of Service</h1>
+    <p><em>Last updated: July 1, 2026</em></p>
+
+    <p>
+      By accessing {SITE.url}, you agree to these Terms of Service. If you do not agree, please do
+      not use this website.
+    </p>
+
+    <h2>Use of the Site</h2>
+    <p>
+      {SITE.name} provides product reviews, comparisons, and affiliate links for informational
+      purposes. Content is provided "as is" without warranties of any kind, express or implied.
+    </p>
+
+    <h2>No Professional Advice</h2>
+    <p>
+      Our reviews and recommendations are editorial opinions based on research and publicly available
+      information. They do not constitute professional, financial, or legal advice.
+    </p>
+
+    <h2>Affiliate Relationships</h2>
+    <p>
+      We earn commissions from qualifying purchases made through Amazon affiliate links on this
+      site. This does not increase the price you pay. See our footer for full Amazon Associates and
+      FTC disclosures.
+    </p>
+
+    <h2>Accuracy of Information</h2>
+    <p>
+      Product prices, availability, and specifications change frequently. We strive for accuracy but
+      cannot guarantee that all information is current at the time you read it. Always verify details
+      on Amazon before purchasing.
+    </p>
+
+    <h2>External Links</h2>
+    <p>
+      Our site contains links to third-party websites including Amazon.com. We are not responsible for
+      the content, policies, or practices of external sites.
+    </p>
+
+    <h2>Intellectual Property</h2>
+    <p>
+      All original content on {SITE.name} is owned by us unless otherwise noted. Product names and
+      trademarks belong to their respective owners and are used for identification and comparison
+      purposes only.
+    </p>
+
+    <h2>Limitation of Liability</h2>
+    <p>
+      To the fullest extent permitted by law, {SITE.name} shall not be liable for any damages arising
+      from your use of this site or purchase of products through our affiliate links.
+    </p>
+
+    <h2>Changes</h2>
+    <p>
+      We reserve the right to modify these terms at any time. Continued use of the site after changes
+      constitutes acceptance of the updated terms.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+      Questions? Contact us at <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.
+    </p>
+  </div>
+</BaseLayout>

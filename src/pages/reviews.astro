@@ -1,0 +1,115 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ArticleCard from '../components/ArticleCard.astro';
+import { getCollection } from 'astro:content';
+import { CATEGORIES, getCategoryKeys, type CategoryKey } from '../lib/categories';
+import { buildPageTitle } from '../lib/seo';
+
+const REVIEWS_TITLE = 'All Amazon Reviews & Top 10 Guides (2026)';
+const REVIEWS_DESCRIPTION =
+  'Browse every VettedPick comparison and Top 10 Amazon guide — tech alternatives, dog gadgets, kitchen picks, WFH desk upgrades, and more.';
+
+const articles = (await getCollection('articles')).sort(
+  (a, b) => b.data.publishedAt.valueOf() - a.data.publishedAt.valueOf(),
+);
+
+const activeCategory = Astro.url.searchParams.get('cat') as CategoryKey | null;
+const activeType = Astro.url.searchParams.get('type') as 'comparison' | 'listicle' | null;
+
+let filtered = articles;
+
+if (activeCategory && getCategoryKeys().includes(activeCategory)) {
+  filtered = filtered.filter((a) => a.data.category === activeCategory);
+}
+
+if (activeType === 'comparison' || activeType === 'listicle') {
+  filtered = filtered.filter((a) => a.data.articleType === activeType);
+}
+
+const comparisonCount = articles.filter((a) => a.data.articleType === 'comparison').length;
+const listicleCount = articles.filter((a) => a.data.articleType === 'listicle').length;
+---
+
+<BaseLayout
+  title={buildPageTitle(REVIEWS_TITLE)}
+  description={REVIEWS_DESCRIPTION}
+>
+  <div class="mx-auto max-w-6xl px-4 py-12 sm:px-6">
+    <header class="mb-10">
+      <h1 class="text-4xl font-extrabold text-gray-900">All Reviews & Guides</h1>
+      <p class="mt-3 text-lg text-gray-600">
+        {filtered.length} vetted Amazon picks — comparisons and Top 10 listicles.
+      </p>
+    </header>
+
+    <div class="mb-6 flex flex-wrap gap-2">
+      <a
+        href="/reviews"
+        class:list={[
+          'rounded-full px-4 py-2 text-sm font-semibold transition-colors',
+          !activeType && !activeCategory ? 'bg-brand-600 text-white' : 'bg-gray-100 text-gray-700 hover:bg-gray-200',
+        ]}
+      >
+        All ({articles.length})
+      </a>
+      <a
+        href="/reviews?type=comparison"
+        class:list={[
+          'rounded-full px-4 py-2 text-sm font-semibold transition-colors',
+          activeType === 'comparison' ? 'bg-brand-600 text-white' : 'bg-gray-100 text-gray-700 hover:bg-gray-200',
+        ]}
+      >
+        Comparisons ({comparisonCount})
+      </a>
+      <a
+        href="/reviews?type=listicle"
+        class:list={[
+          'rounded-full px-4 py-2 text-sm font-semibold transition-colors',
+          activeType === 'listicle' ? 'bg-brand-600 text-white' : 'bg-gray-100 text-gray-700 hover:bg-gray-200',
+        ]}
+      >
+        Top 10 Guides ({listicleCount})
+      </a>
+    </div>
+
+    <div class="mb-10 flex flex-wrap gap-2">
+      {
+        getCategoryKeys().map((key) => {
+          const count = articles.filter((a) => a.data.category === key).length;
+          if (count === 0) return null;
+          const params = new URLSearchParams();
+          if (activeType) params.set('type', activeType);
+          params.set('cat', key);
+          return (
+            <a
+              href={`/reviews?${params.toString()}`}
+              class:list={[
+                'rounded-full px-4 py-2 text-sm font-semibold transition-colors',
+                activeCategory === key
+                  ? 'bg-gray-800 text-white'
+                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200',
+              ]}
+            >
+              {CATEGORIES[key].label} ({count})
+            </a>
+          );
+        })
+      }
+    </div>
+
+    <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      {
+        filtered.map((article) => (
+          <ArticleCard
+            title={article.data.cardTitle}
+            excerpt={article.data.cardExcerpt}
+            href={`/articles/${article.id}`}
+            category={article.data.categoryLabel}
+            categoryColor={CATEGORIES[article.data.category as CategoryKey]?.color ?? 'bg-gray-100 text-gray-700'}
+            articleType={article.data.articleType}
+          />
+        ))
+      }
+    </div>
+  </div>
+</BaseLayout>

@@ -1,0 +1,21 @@
+---
+const stats = [
+  { value: '50+', label: 'Reviews & guides' },
+  { value: '33', label: 'Top 10 lists' },
+  { value: '90%', label: 'Avg. savings vs premium' },
+  { value: '100%', label: 'Honest disclosures' },
+];
+---
+
+<section class="border-y border-gray-100 bg-white">
+  <div class="mx-auto grid max-w-6xl grid-cols-2 gap-6 px-4 py-10 sm:px-6 md:grid-cols-4">
+    {
+      stats.map(({ value, label }) => (
+        <div class="text-center">
+          <p class="text-3xl font-extrabold text-brand-600">{value}</p>
+          <p class="mt-1 text-sm font-medium text-gray-600">{label}</p>
+        </div>
+      ))
+    }
+  </div>
+</section>

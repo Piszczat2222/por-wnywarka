@@ -1,0 +1,97 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import StructuredData from '../components/StructuredData.astro';
+import '../styles/global.css';
+import { SITE } from '../lib/site';
+import { truncateDescription } from '../lib/seo';
+import { organizationSchema, websiteSchema, mergeJsonLd } from '../lib/structured-data';
+
+interface Props {
+  title?: string;
+  description?: string;
+  ogImage?: string;
+  ogType?: string;
+  publishedAt?: Date;
+  modifiedAt?: Date;
+  noindex?: boolean;
+  keywords?: string[];
+  jsonLd?: Record<string, unknown> | Record<string, unknown>[];
+}
+
+const {
+  title = SITE.title,
+  description = SITE.description,
+  ogImage = '/og-default.png',
+  ogType = 'website',
+  publishedAt,
+  modifiedAt,
+  noindex = false,
+  keywords,
+  jsonLd,
+} = Astro.props;
+
+const metaDescription = truncateDescription(description);
+const canonicalURL = new URL(Astro.url.pathname, SITE.url);
+const ogImageURL = new URL(ogImage, SITE.url);
+const robotsContent = noindex ? 'noindex, nofollow' : 'index, follow';
+
+const globalJsonLd = mergeJsonLd(
+  organizationSchema(),
+  websiteSchema(),
+  ...(jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : []),
+);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content={robotsContent} />
+    <meta name="author" content={SITE.author} />
+    {keywords && keywords.length > 0 && <meta name="keywords" content={keywords.join(', ')} />}
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>{title}</title>
+    <meta name="description" content={metaDescription} />
+    <link rel="canonical" href={canonicalURL} />
+    <meta property="og:type" content={ogType} />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={metaDescription} />
+    <meta property="og:image" content={ogImageURL} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content={SITE.name} />
+    {
+      ogType === 'article' && publishedAt && (
+        <meta property="article:published_time" content={publishedAt.toISOString()} />
+      )
+    }
+    {
+      ogType === 'article' && (modifiedAt ?? publishedAt) && (
+        <meta property="article:modified_time" content={(modifiedAt ?? publishedAt)!.toISOString()} />
+      )
+    }
+    {ogType === 'article' && <meta property="article:author" content={SITE.author} />}
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={metaDescription} />
+    <meta name="twitter:image" content={ogImageURL} />
+    <StructuredData data={globalJsonLd} />
+  </head>
+  <body class="flex min-h-screen flex-col">
+    <Header />
+    <main class="flex-1">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

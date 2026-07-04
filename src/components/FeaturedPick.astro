@@ -1,0 +1,59 @@
+---
+import { amazonUrl } from '../lib/amazon';
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  article: CollectionEntry<'articles'>;
+}
+
+const { article } = Astro.props;
+const { data } = article;
+const url = amazonUrl(data.amazonAsin);
+---
+
+<section class="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+  <div class="overflow-hidden rounded-3xl bg-gradient-to-br from-gray-900 via-gray-800 to-brand-900 shadow-2xl">
+    <div class="grid gap-8 p-8 md:grid-cols-2 md:items-center md:p-12">
+      <div>
+        <span class="inline-flex rounded-full bg-brand-500/20 px-3 py-1 text-xs font-bold uppercase tracking-wide text-brand-200">
+          Editor's Pick
+        </span>
+        <h2 class="mt-4 text-3xl font-extrabold text-white sm:text-4xl">{data.cardTitle}</h2>
+        <p class="mt-4 text-lg text-gray-300">{data.cardExcerpt}</p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a
+            href={`/articles/${article.id}`}
+            class="inline-flex items-center gap-2 rounded-xl bg-white px-5 py-3 text-sm font-bold text-gray-900 hover:bg-gray-100"
+          >
+            Read Full Review
+          </a>
+          <a
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer sponsored"
+            class="inline-flex items-center gap-2 rounded-xl border border-white/30 bg-white/10 px-5 py-3 text-sm font-bold text-white hover:bg-white/20"
+          >
+            Check on Amazon
+          </a>
+        </div>
+      </div>
+      <div class="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur">
+        <p class="text-sm font-semibold uppercase tracking-wide text-gray-300">Quick comparison</p>
+        <div class="mt-4 space-y-4">
+          <div class="flex justify-between gap-4 border-b border-white/10 pb-3">
+            <span class="shrink-0 text-gray-400">Premium</span>
+            <span class="text-right font-semibold text-white">{data.premiumProduct}</span>
+          </div>
+          <div class="flex justify-between gap-4 border-b border-white/10 pb-3">
+            <span class="shrink-0 text-gray-400">Our pick</span>
+            <span class="text-right font-semibold text-brand-300">{data.pickProduct}</span>
+          </div>
+          <div class="flex justify-between gap-4">
+            <span class="shrink-0 text-gray-400">You save</span>
+            <span class="text-2xl font-extrabold text-brand-400">~85%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

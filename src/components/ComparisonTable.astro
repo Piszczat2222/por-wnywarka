@@ -1,0 +1,48 @@
+---
+import type { ComparisonRow } from '../content.config';
+
+interface Props {
+  premiumLabel: string;
+  pickLabel: string;
+  rows: ComparisonRow[];
+}
+
+const { premiumLabel, pickLabel, rows } = Astro.props;
+
+function cellClass(highlight: ComparisonRow['highlight'], column: 'premium' | 'pick') {
+  if (highlight === column) return 'bg-brand-50 font-semibold text-brand-800';
+  return '';
+}
+---
+
+<div class="overflow-hidden rounded-2xl border border-gray-200 shadow-sm">
+  <div class="overflow-x-auto">
+    <table class="w-full min-w-[480px] text-left text-sm">
+      <thead>
+        <tr class="border-b border-gray-200 bg-gray-50">
+          <th class="px-4 py-4 font-semibold text-gray-900 sm:px-6">Feature</th>
+          <th class="px-4 py-4 font-semibold text-gray-700 sm:px-6">{premiumLabel}</th>
+          <th class="px-4 py-4 font-semibold text-brand-700 sm:px-6">Our Amazon Pick</th>
+        </tr>
+      </thead>
+      <tbody>
+        {
+          rows.map((row) => (
+            <tr class="border-b border-gray-100 last:border-0">
+              <td class="px-4 py-4 font-medium text-gray-900 sm:px-6">{row.feature}</td>
+              <td class:list={['px-4 py-4 text-gray-600 sm:px-6', cellClass(row.highlight, 'premium')]}>
+                {row.premium}
+              </td>
+              <td class:list={['px-4 py-4 text-gray-600 sm:px-6', cellClass(row.highlight, 'pick')]}>
+                {row.pick}
+              </td>
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  </div>
+  <p class="border-t border-gray-100 bg-gray-50 px-4 py-2 text-xs text-gray-500 sm:px-6">
+    Prices shown are approximate and may change on Amazon.
+  </p>
+</div>

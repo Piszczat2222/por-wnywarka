@@ -1,0 +1,180 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import ComparisonTable from '../components/ComparisonTable.astro';
+import AmazonCTA from '../components/AmazonCTA.astro';
+import DisclosureBox from '../components/DisclosureBox.astro';
+import RelatedArticles from '../components/RelatedArticles.astro';
+import ListicleItem from '../components/ListicleItem.astro';
+import ArticleTypeBadge from '../components/ArticleTypeBadge.astro';
+import { getCollection, render, type CollectionEntry } from 'astro:content';
+import { CATEGORIES, type CategoryKey } from '../lib/categories';
+import { SITE } from '../lib/site';
+import { buildPageTitle, absoluteUrl } from '../lib/seo';
+import {
+  articleSchema,
+  breadcrumbSchema,
+  itemListSchema,
+  mergeJsonLd,
+} from '../lib/structured-data';
+
+interface Props {
+  article: CollectionEntry<'articles'>;
+}
+
+const { article } = Astro.props;
+const { Content } = await render(article);
+const { data } = article;
+const isListicle = data.articleType === 'listicle';
+
+const pageTitle = buildPageTitle(data.seoTitle ?? data.title);
+const pageDescription = data.seoDescription ?? data.description;
+const articleUrl = absoluteUrl(`/articles/${article.id}`);
+const modifiedAt = data.updatedAt ?? data.publishedAt;
+
+const allArticles = await getCollection('articles');
+const categoryMeta = CATEGORIES[data.category as CategoryKey];
+
+const breadcrumbs = breadcrumbSchema([
+  { name: 'Home', path: '/' },
+  { name: data.categoryLabel, path: `/categories/${data.category}` },
+  { name: isListicle ? 'Guide' : 'Review', path: `/articles/${article.id}` },
+]);
+
+const articleJsonLd = articleSchema({
+  headline: data.title,
+  description: pageDescription,
+  url: articleUrl,
+  publishedAt: data.publishedAt,
+  modifiedAt,
+  image: data.ogImage ?? '/og-default.png',
+});
+
+const listJsonLd =
+  isListicle && data.listItems
+    ? itemListSchema(data.listItems, articleUrl)
+    : null;
+
+const jsonLd = mergeJsonLd(
+  breadcrumbs,
+  articleJsonLd,
+  ...(listJsonLd ? [listJsonLd] : []),
+);
+---
+
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+  ogImage={data.ogImage ?? '/og-default.png'}
+  ogType="article"
+  publishedAt={data.publishedAt}
+  modifiedAt={modifiedAt}
+  keywords={data.keywords}
+  jsonLd={jsonLd}
+>
+  <article class="mx-auto max-w-3xl px-4 py-12 sm:px-6">
+    <nav class="mb-6 text-sm text-gray-500" aria-label="Breadcrumb">
+      <a href="/" class="hover:text-brand-600">Home</a>
+      <span class="mx-2">/</span>
+      <a href={`/categories/${data.category}`} class="hover:text-brand-600">{data.categoryLabel}</a>
+      <span class="mx-2">/</span>
+      <span class="text-gray-700">{isListicle ? 'Guide' : 'Review'}</span>
+    </nav>
+
+    <header class="mb-10">
+      <div class="mb-3 flex flex-wrap items-center gap-2">
+        <a
+          href={`/categories/${data.category}`}
+          class:list={['inline-flex rounded-full px-3 py-1 text-xs font-semibold', categoryMeta?.color ?? 'bg-brand-100 text-brand-700']}
+        >
+          {data.categoryLabel}
+        </a>
+        <ArticleTypeBadge type={data.articleType} />
+      </div>
+      <h1 class="text-3xl font-extrabold leading-tight text-gray-900 sm:text-4xl">
+        {data.title}
+      </h1>
+      <p class="mt-4 text-lg text-gray-600">{pageDescription}</p>
+      <p class="mt-3 text-sm text-gray-500">
+        Published {data.publishedAt.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
+        {
+          isListicle && data.updatedAt && (
+            <>
+              {' '}
+              · Prices checked{' '}
+              {data.updatedAt.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
+            </>
+          )
+        }
+        {!isListicle && ' · Prices approx. at time of review'}
+      </p>
+    </header>
+
+    {
+      isListicle ? (
+        <>
+          <div class="prose prose-gray mb-10 max-w-none prose-headings:font-bold prose-a:text-brand-600">
+            <Content />
+          </div>
+
+          {data.listItems && data.listItems.length > 0 && (
+            <div class="space-y-6">
+              <h2 class="text-2xl font-bold text-gray-900">
+                Our Top {data.listItems.length} Picks
+              </h2>
+              {data.listItems.map((item, index) => (
+                <ListicleItem item={item} index={index} />
+              ))}
+            </div>
+          )}
+        </>
+      ) : (
+        <>
+          {data.comparisonTable && data.premiumProduct && data.pickProduct && (
+            <ComparisonTable
+              premiumLabel={data.premiumProduct}
+              pickLabel={data.pickProduct}
+              rows={data.comparisonTable}
+            />
+          )}
+
+          <div class="prose prose-gray mt-10 max-w-none prose-headings:font-bold prose-a:text-brand-600">
+            <Content />
+          </div>
+
+          {data.amazonAsin && data.pickProduct && (
+            <div class="my-10">
+              <AmazonCTA asin={data.amazonAsin} productName={data.pickProduct} />
+            </div>
+          )}
+
+          {data.runnerUpAsin && data.runnerUpProduct && (
+            <div class="mb-10 rounded-xl border border-gray-200 bg-gray-50 p-6">
+              <h2 class="text-lg font-bold text-gray-900">Runner-up pick</h2>
+              <p class="mt-2 text-gray-600">
+                Also worth a look: <strong>{data.runnerUpProduct}</strong> — a solid alternative if you
+                want different features or sizing.
+              </p>
+              <div class="mt-4">
+                <AmazonCTA
+                  asin={data.runnerUpAsin}
+                  productName={data.runnerUpProduct}
+                  variant="secondary"
+                />
+              </div>
+            </div>
+          )}
+        </>
+      )
+    }
+
+    <div class="mt-10">
+      <DisclosureBox />
+    </div>
+
+    <RelatedArticles
+      currentId={article.id}
+      articles={allArticles}
+      category={data.category as CategoryKey}
+    />
+  </article>
+</BaseLayout>

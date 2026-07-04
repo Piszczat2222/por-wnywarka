@@ -1,0 +1,43 @@
+---
+import ArticleCard from './ArticleCard.astro';
+import { CATEGORIES, type CategoryKey } from '../lib/categories';
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  currentId: string;
+  articles: CollectionEntry<'articles'>[];
+  category: CategoryKey;
+}
+
+const { currentId, articles, category } = Astro.props;
+
+const related = articles
+  .filter((a) => a.id !== currentId && a.data.category === category)
+  .slice(0, 2);
+
+const other = articles
+  .filter((a) => a.id !== currentId && a.data.category !== category)
+  .slice(0, 1);
+
+const picks = [...related, ...other].slice(0, 3);
+
+if (picks.length === 0) return null;
+---
+
+<section class="mt-16 border-t border-gray-200 pt-12">
+  <h2 class="text-2xl font-bold text-gray-900">You might also like</h2>
+  <div class="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+    {
+      picks.map((article) => (
+        <ArticleCard
+          title={article.data.cardTitle}
+          excerpt={article.data.cardExcerpt}
+          href={`/articles/${article.id}`}
+          category={article.data.categoryLabel}
+          categoryColor={CATEGORIES[article.data.category as CategoryKey]?.color ?? 'bg-gray-100 text-gray-700'}
+          articleType={article.data.articleType}
+        />
+      ))
+    }
+  </div>
+</section>

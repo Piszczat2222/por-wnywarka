@@ -1,0 +1,110 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import TrustBar from '../components/TrustBar.astro';
+import FeaturedPick from '../components/FeaturedPick.astro';
+import CategorySection from '../components/CategorySection.astro';
+import ArticleCard from '../components/ArticleCard.astro';
+import { getCollection } from 'astro:content';
+import { CATEGORIES, getCategoryKeys } from '../lib/categories';
+import { buildPageTitle } from '../lib/seo';
+
+const HOME_TITLE = 'Best Amazon Alternatives & Top 10 Guides (2026)';
+const HOME_DESCRIPTION =
+  'VettedPick finds the best budget-friendly Amazon alternatives to viral and luxury products. Top 10 guides for dog owners, WFH desk setups, kitchen gadgets, and honest premium vs budget comparisons.';
+
+const articles = (await getCollection('articles')).sort(
+  (a, b) => b.data.publishedAt.valueOf() - a.data.publishedAt.valueOf(),
+);
+
+const featured = articles.find((a) => a.data.featured && a.data.articleType === 'comparison')
+  ?? articles.find((a) => a.data.articleType === 'comparison')
+  ?? articles[0];
+
+const listicles = articles
+  .filter((a) => a.data.articleType === 'listicle')
+  .slice(0, 6);
+
+const byCategory = getCategoryKeys().reduce(
+  (acc, key) => {
+    acc[key] = articles.filter((a) => a.data.category === key);
+    return acc;
+  },
+  {} as Record<string, typeof articles>,
+);
+---
+
+<BaseLayout title={buildPageTitle(HOME_TITLE)} description={HOME_DESCRIPTION}>
+  <Hero />
+  <TrustBar />
+  {featured && featured.data.articleType === 'comparison' && <FeaturedPick article={featured} />}
+
+  {
+    listicles.length > 0 && (
+      <section class="border-t border-gray-100 bg-violet-50/50 py-16">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6">
+          <div class="mb-8 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <h2 class="text-2xl font-bold text-gray-900 sm:text-3xl">Top 10 Amazon Guides</h2>
+              <p class="mt-2 max-w-xl text-gray-600">
+                Must-have lists and roundups — every pick links to Amazon with our vetted notes.
+              </p>
+            </div>
+            <a
+              href="/reviews?type=listicle"
+              class="inline-flex shrink-0 items-center gap-1 text-sm font-semibold text-brand-600 hover:text-brand-700"
+            >
+              View all guides
+              <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+          <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            {listicles.map((article) => (
+              <ArticleCard
+                title={article.data.cardTitle}
+                excerpt={article.data.cardExcerpt}
+                href={`/articles/${article.id}`}
+                category={article.data.categoryLabel}
+                categoryColor={CATEGORIES[article.data.category]?.color ?? 'bg-gray-100 text-gray-700'}
+                articleType="listicle"
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+    )
+  }
+
+  {
+    getCategoryKeys().map((key) => (
+      <CategorySection category={key} articles={byCategory[key] ?? []} />
+    ))
+  }
+
+  <section class="border-t border-gray-100 bg-gray-50 px-4 py-16 sm:px-6">
+    <div class="mx-auto max-w-3xl text-center">
+      <h2 class="text-2xl font-bold text-gray-900">How We Review</h2>
+      <p class="mt-4 leading-relaxed text-gray-600">
+        Every product on VettedPick is selected based on real Amazon ratings, expert reviews, and
+        value for money. We compare premium options to budget alternatives — and publish Top 10
+        guides for pets, office, kitchen, and more.
+      </p>
+      <div class="mt-8 flex flex-wrap justify-center gap-4">
+        <a
+          href="/reviews?type=listicle"
+          class="inline-flex items-center gap-2 rounded-xl bg-brand-600 px-6 py-3 text-sm font-bold text-white hover:bg-brand-700"
+        >
+          Top 10 Guides
+        </a>
+        <a
+          href="/reviews"
+          class="inline-flex items-center gap-2 rounded-xl border border-gray-300 px-6 py-3 text-sm font-bold text-gray-700 hover:bg-white"
+        >
+          All Reviews
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
