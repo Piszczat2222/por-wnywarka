@@ -66,6 +66,15 @@ listItems:
     searchQuery: "Nursery Glider Ottoman Set Rocking Chair"
     priceApprox: "~$180–300"
     blurb: "Rocking chair for feeding and soothing. You'll spend hours here nightly: worth investing in comfort."
+faq:
+  - question: "How were these nursery essentials picked?"
+    answer: "We selected Amazon items with proven review histories for safe, practical nursery setup—storage, monitors, blackout solutions, and comfort items that parents actually install before baby arrives."
+  - question: "What price range does this nursery list cover?"
+    answer: "Most picks fall between $15 and $60 on Amazon. We balanced nursery aesthetics with budget-friendly options since cribs and gliders already consume most of the budget."
+  - question: "Do you earn from Amazon purchases?"
+    answer: "Yes. We participate in the Amazon Associates Program and may earn from qualifying purchases. Recommendations focus on nursery safety and parent utility, not commission."
+  - question: "Who is this nursery setup guide for?"
+    answer: "Expecting parents setting up a nursery on a timeline, grandparents helping with setup, and anyone converting a spare room will find practical picks here. We focus on finishing touches beyond the big-ticket furniture."
 ---
 
 

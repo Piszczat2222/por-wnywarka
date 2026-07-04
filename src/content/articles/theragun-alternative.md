@@ -15,7 +15,7 @@ publishedAt: 2026-07-07
 seoTitle: "Theragun Alternative on Amazon (2026): Massage Gun Review"
 seoDescription: "Theragun alternative on Amazon: Bob and Brad Q2 Mini pocket massage gun with multiple speeds and attachments for post-workout recovery under $70."
 keywords: ["theragun alternative amazon", "massage gun amazon", "theragun dupe", "bob and brad q2 mini", "percussion massager amazon 2026"]
-ogImage: "/og-default.svg"
+ogImage: "/og-default.png"
 comparisonTable:
   - feature: "Size & Portability"
     premium: "Full-size triangular grip"
@@ -58,6 +58,15 @@ cons:
   - "Less amplitude than flagship Theragun"
   - "App and smart features limited vs Therabody"
 verdict: "Bob and Brad Q2 Mini loosens post-workout soreness for about $63. Buy Theragun Pro if you're a therapist, need full-size 16mm amplitude, or want app-guided recovery routines daily."
+faq:
+  - question: "Can the Bob and Brad Q2 Mini replace a Theragun Pro?"
+    answer: "For post-workout soreness and home recovery, Bob and Brad Q2 Mini at ~$63 loosens tight muscles effectively. Theragun Pro leads on 16mm amplitude, professional-grade power, and app-guided recovery routines."
+  - question: "Who should buy the Theragun Pro?"
+    answer: "Buy Theragun Pro if you're a massage therapist, athlete training daily, or need full-size percussion depth for deep tissue work. Casual gym-goers will be satisfied with the mini gun."
+  - question: "What about warranty and build quality?"
+    answer: "Theragun offers a 2-year warranty and professional-grade motor engineering built for daily clinical use. Bob and Brad Q2 Mini is compact and capable for home use, backed by solid Amazon reviews and physical-therapist endorsements."
+  - question: "Is Bob and Brad Q2 Mini worth ~$437 less?"
+    answer: "At ~$63 vs ~$500, the Q2 Mini handles everyday recovery at roughly 12% of Theragun's price. Unless you need pro-level amplitude daily, it's exceptional value on Amazon."
 ---
 
 ## Why Theragun Pro Still Commands the Price

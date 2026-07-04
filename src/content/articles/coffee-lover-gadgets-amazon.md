@@ -66,6 +66,15 @@ listItems:
     searchQuery: "Espresso Tamper 58mm Flat"
     priceApprox: "~$12–20"
     blurb: "For espresso machine owners: flat tamper for even puck compression. Small upgrade, noticeable shot improvement."
+faq:
+  - question: "How were these coffee gadgets selected?"
+    answer: "We picked Amazon items with thousands of reviews that improve the home brewing ritual—grinders, scales, frothers, and storage that coffee enthusiasts actually use daily."
+  - question: "What price range are these coffee tools?"
+    answer: "Most picks fall between $12 and $40 on Amazon. We focused on accessories that upgrade your cup without requiring a $300 espresso machine."
+  - question: "Do you earn commission from Amazon?"
+    answer: "Yes. As Amazon Associates, we earn from qualifying purchases. Our picks are based on brew quality improvements and review volume, not commission rates."
+  - question: "Who is this coffee gadgets guide for?"
+    answer: "Home baristas, pour-over enthusiasts, and anyone tired of coffee-shop prices will find practical upgrades here. Whether you use a drip machine or French press, these tools elevate your morning routine."
 ---
 
 

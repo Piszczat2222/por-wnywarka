@@ -58,6 +58,15 @@ cons:
   - "Freezer bowl takes 24 hours to pre-chill"
   - "Texture differs from Ninja's pint-spin method"
 verdict: "For occasional homemade desserts and weekend treats, the Cuisinart ICE-21P1 saves about $130 and handles sorbet, frozen yogurt, and classic ice cream beautifully. Buy the Ninja Creami if you eat protein ice cream daily and want the pint-spin workflow."
+faq:
+  - question: "Can the Cuisinart ICE-21P1 replace a Ninja Creami?"
+    answer: "For weekend treats, sorbet, and classic ice cream, Cuisinart ICE-21P1 at ~$70 handles the job beautifully. Ninja Creami is essential if you eat protein ice cream daily and want the pint-spin workflow."
+  - question: "Who should buy the Ninja Creami?"
+    answer: "Buy Ninja Creami if you make protein ice cream, smoothie bowls, or frozen desserts daily and want the unique spin-and-creamify process. Fitness-focused dessert lovers get the most from the premium machine."
+  - question: "How does build quality compare?"
+    answer: "Ninja Creami has a more complex motor system designed for repeated pint processing. Cuisinart uses a proven freezer-bowl design that's simpler and reliable for occasional use, with standard Cuisinart warranty coverage."
+  - question: "Is Cuisinart worth saving ~$130?"
+    answer: "At ~$70 vs ~$200, Cuisinart covers occasional homemade desserts without the Ninja learning curve. Unless you're a daily protein-ice-cream maker, the savings are substantial on Amazon."
 ---
 
 ## Why the Ninja Creami Still Commands the Price

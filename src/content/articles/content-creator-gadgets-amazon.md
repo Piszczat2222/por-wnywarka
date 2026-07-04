@@ -66,6 +66,15 @@ listItems:
     searchQuery: "Stream Deck Controller Keypad"
     priceApprox: "~$50–150"
     blurb: "Programmable keys for mute, scene switch, and macros. Popular with streamers once they outgrow keyboard shortcuts."
+faq:
+  - question: "How were these content creator gadgets chosen?"
+    answer: "We picked Amazon gear with strong reviews that YouTubers, TikTokers, and podcasters actually use—lights, mics, tripods, and teleprompters that improve production quality without studio prices."
+  - question: "What price range does this list cover?"
+    answer: "Most items fall between $15 and $60 on Amazon. We focused on gear that punches above its price for solo creators building a home studio."
+  - question: "Do you make money from Amazon links?"
+    answer: "Yes. We participate in the Amazon Associates Program and earn from qualifying purchases. Picks are based on creator utility and review quality, not commission rates."
+  - question: "Who is this content creator guide for?"
+    answer: "Aspiring YouTubers, TikTok creators, and podcast hosts setting up a home studio on a budget will find practical gear here. You don't need $2,000 in equipment to look and sound professional."
 ---
 
 

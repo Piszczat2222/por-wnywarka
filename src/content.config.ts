@@ -9,6 +9,11 @@ const comparisonRowSchema = z.object({
   highlight: z.enum(['premium', 'pick', 'none']).default('none'),
 });
 
+const faqItemSchema = z.object({
+  question: z.string(),
+  answer: z.string(),
+});
+
 const listItemSchema = z.object({
   rank: z.number().optional(),
   name: z.string(),
@@ -63,6 +68,7 @@ const articles = defineCollection({
     pros: z.array(z.string()).optional(),
     cons: z.array(z.string()).optional(),
     verdict: z.string().optional(),
+    faq: z.array(faqItemSchema).optional(),
     // listicle-only
     listItems: z.array(listItemSchema).optional(),
   }),

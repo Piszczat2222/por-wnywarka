@@ -66,6 +66,15 @@ listItems:
     searchQuery: "LED Puck Lights Remote 6 Pack"
     priceApprox: "~$15–22"
     blurb: "Battery-powered under-cabinet and closet lighting without wiring. Renter-safe and dimmable."
+faq:
+  - question: "How were these small apartment gadgets selected?"
+    answer: "We chose compact, highly reviewed Amazon items that maximize limited square footage—foldable, multi-use, and wall-mounted tools that apartment dwellers actually keep after the first month."
+  - question: "What price range does this list cover?"
+    answer: "Most picks fall between $10 and $40 on Amazon. Space-saving gadgets that cost less than a storage unit but free up real closet and counter space."
+  - question: "Do you earn commission from Amazon?"
+    answer: "Yes. We participate in the Amazon Associates Program and may earn from qualifying purchases. Recommendations focus on small-space utility, not payout rates."
+  - question: "Who is this small apartment guide for?"
+    answer: "Studio renters, city apartment dwellers, and anyone sharing a kitchen with three roommates will find space-saving picks here. If your apartment is under 600 sq ft, every item respects that constraint."
 ---
 
 

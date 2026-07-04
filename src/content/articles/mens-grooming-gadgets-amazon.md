@@ -66,6 +66,15 @@ listItems:
     searchQuery: "Electric Foil Shaver Wet Dry"
     priceApprox: "~$35–55"
     blurb: "Foil shaver for clean daily face shave without razor burn. Wet/dry use: solid step up from disposable blades."
+faq:
+  - question: "How were these men's grooming gadgets selected?"
+    answer: "We chose Amazon tools with high review counts that handle trimming, shaving, skincare, and nose-hair maintenance—the grooming tasks men actually do at home between barber visits."
+  - question: "What price range are these grooming tools?"
+    answer: "Most picks fall between $12 and $40 on Amazon. We prioritized tools that deliver barbershop-adjacent results without the appointment price."
+  - question: "Do you earn commission from Amazon?"
+    answer: "Yes. We participate in the Amazon Associates Program and may earn from qualifying purchases. Recommendations are based on grooming results and reviews, not payout rates."
+  - question: "Who is this men's grooming guide for?"
+    answer: "Men building a home grooming routine, frequent travelers who need compact tools, and anyone skipping $30 barber visits for at-home maintenance will find practical picks here."
 ---
 
 

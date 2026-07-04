@@ -7,6 +7,7 @@ export const SITE = {
   author: 'Patryk',
   email: 'hello@altpik.com',
   gaMeasurementId: 'G-JRB461EJXP',
+  indexNowKey: 'a7f3c9e2b1d84f6a9e0c3b5d7f2a8e1',
 } as const;
 
 export const NAV_LINKS = [

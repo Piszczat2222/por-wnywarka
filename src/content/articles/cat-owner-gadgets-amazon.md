@@ -56,6 +56,15 @@ listItems:
     searchQuery: "Window Perch Cat Bed Suction Cup"
     priceApprox: "~$14–20"
     blurb: "Suction-cup mount gives cats their favorite sun spot without taking floor space. Holds up to 30 lbs."
+faq:
+  - question: "How did you select these cat owner gadgets?"
+    answer: "We focused on Amazon products with high review counts that solve common cat-parent problems—litter tracking, hydration, scratching, and play. Every pick earns its place in a cat household."
+  - question: "What price range are these cat gadgets?"
+    answer: "Most items fall between $10 and $35 on Amazon. We prioritized affordable upgrades that improve daily life for both you and your cat."
+  - question: "Do you earn from Amazon purchases?"
+    answer: "Yes. We participate in the Amazon Associates Program and may earn from qualifying purchases. Recommendations are based on cat-owner utility and reviews, not payout rates."
+  - question: "Who is this cat owner guide for?"
+    answer: "First-time cat parents, apartment dwellers with indoor cats, and experienced owners looking for clever Amazon finds will benefit. If litter scatter or bored-cat behavior is your problem, start here."
 ---
 
 

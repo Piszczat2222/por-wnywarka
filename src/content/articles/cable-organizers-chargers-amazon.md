@@ -56,6 +56,15 @@ listItems:
     searchQuery: "Under Desk Cable Tray"
     priceApprox: "~$18–30"
     blurb: "Mounts beneath the desktop to hide power strips and dangling runs. Cleaner sightlines on video calls."
+faq:
+  - question: "How were these cable organizers and chargers chosen?"
+    answer: "We focused on Amazon listings with high review counts, practical desk-and-bag organization, and reliable charging speeds. Every pick solves a real cable-clutter or dead-battery problem."
+  - question: "What price range are these picks?"
+    answer: "Most items fall between $10 and $25 on Amazon. We prioritized value accessories that cost less than a single Apple cable but last longer with daily use."
+  - question: "Do you earn commission from Amazon links?"
+    answer: "Yes. We participate in the Amazon Associates Program and may earn from qualifying purchases. Recommendations are based on reviews and usefulness, not payout rates."
+  - question: "Who is this cable organizer guide for?"
+    answer: "Remote workers, students, and anyone with a drawer full of tangled cables will find practical picks here. If your WFH desk or nightstand is a charging-station mess, start with this list."
 ---
 
 

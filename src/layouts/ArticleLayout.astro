@@ -11,12 +11,14 @@ import AudienceCards from '../components/AudienceCards.astro';
 import ProsConsGrid from '../components/ProsConsGrid.astro';
 import ArticleSection from '../components/ArticleSection.astro';
 import VerdictBox from '../components/VerdictBox.astro';
+import FaqSection from '../components/FaqSection.astro';
 import { getCollection, render, type CollectionEntry } from 'astro:content';
 import { CATEGORIES, type CategoryKey } from '../lib/categories';
 import { buildPageTitle, absoluteUrl } from '../lib/seo';
 import {
   articleSchema,
   breadcrumbSchema,
+  faqSchema,
   itemListSchema,
   mergeJsonLd,
 } from '../lib/structured-data';
@@ -64,10 +66,13 @@ const listJsonLd =
     ? itemListSchema(data.listItems, articleUrl)
     : null;
 
+const faqJsonLd = data.faq && data.faq.length > 0 ? faqSchema(data.faq) : null;
+
 const jsonLd = mergeJsonLd(
   breadcrumbs,
   articleJsonLd,
   ...(listJsonLd ? [listJsonLd] : []),
+  ...(faqJsonLd ? [faqJsonLd] : []),
 );
 ---
 
@@ -203,6 +208,8 @@ const jsonLd = mergeJsonLd(
         </>
       )
     }
+
+    {data.faq && data.faq.length > 0 && <FaqSection items={data.faq} />}
 
     <div class="mt-10">
       <DisclosureBox />

@@ -56,6 +56,15 @@ listItems:
     searchQuery: "Ice Roller for Face Puffiness"
     priceApprox: "~$8–15"
     blurb: "Frozen roller reduces redness, puffiness, and post-treatment swelling. Dermatologist-approved morning routine step."
+faq:
+  - question: "How were these skincare tools picked?"
+    answer: "We selected Amazon devices with high review counts that dermatologists and estheticians commonly recommend—cleansing brushes, gua sha, ice rollers, and LED tools with proven at-home utility."
+  - question: "What price range does this skincare list cover?"
+    answer: "Most picks fall between $12 and $45 on Amazon. We focused on tools that enhance your existing routine without requiring a $300 spa device."
+  - question: "Do you earn from Amazon purchases?"
+    answer: "Yes. As Amazon Associates, we earn from qualifying purchases. Recommendations are based on skincare results and review quality, not commission rates."
+  - question: "Who is this skincare tools guide for?"
+    answer: "Skincare enthusiasts upgrading their routine, gift shoppers, and anyone curious about gua sha or LED masks will find vetted picks here. These tools complement your serums—they don't replace them."
 ---
 
 

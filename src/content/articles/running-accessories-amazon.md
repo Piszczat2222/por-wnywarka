@@ -66,6 +66,15 @@ listItems:
     searchQuery: "Kinesiology Tape Sports Recovery"
     priceApprox: "~$10–18"
     blurb: "Support knees and ankles during injury recovery. Stays on through sweat and showers for 3–5 days."
+faq:
+  - question: "How were these running accessories chosen?"
+    answer: "We picked Amazon items with thousands of reviews and under-$30 pricing—hydration belts, reflective gear, recovery tools, and armbands that runners use every mile."
+  - question: "What is the price range for this list?"
+    answer: "Every item is under $30 on Amazon, with most between $10 and $22. Small accessories that make a noticeable difference in comfort and safety on the road."
+  - question: "Do you make money from Amazon links?"
+    answer: "Yes. We participate in the Amazon Associates Program and earn from qualifying purchases. Picks prioritize runner safety and comfort, not commission rates."
+  - question: "Who is this running accessories guide for?"
+    answer: "Road runners, 5K beginners, and trail joggers building a gear bag on a budget will find practical picks here. You don't need a $200 GPS watch to run comfortably."
 ---
 
 

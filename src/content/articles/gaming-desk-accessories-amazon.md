@@ -66,6 +66,15 @@ listItems:
     searchQuery: "Cable Management Sleeve Neoprene"
     priceApprox: "~$8–14"
     blurb: "Wrap bundles power strip and peripheral cables into one run. Cut to length: renter friendly."
+faq:
+  - question: "How were these gaming desk accessories picked?"
+    answer: "We selected Amazon items with strong reviews that improve comfort, cable management, and immersion—monitor arms, wrist rests, LED strips, and headset stands that gamers actually keep on their desk."
+  - question: "What price range does this list cover?"
+    answer: "Most picks are between $12 and $50 on Amazon. We focused on upgrades that improve long gaming sessions without requiring a full desk rebuild."
+  - question: "Do you earn from Amazon purchases?"
+    answer: "Yes. As Amazon Associates, we earn from qualifying purchases. Our picks prioritize gaming comfort and desk organization, not commission rates."
+  - question: "Who is this gaming desk guide for?"
+    answer: "PC and console gamers upgrading a bedroom or apartment battlestation will find practical picks here. If your setup needs cable management and ergonomic tweaks, this list is a solid starting point."
 ---
 
 

@@ -66,6 +66,15 @@ listItems:
     searchQuery: "Yoga Mat Bag Zip Pocket Shoulder Strap"
     priceApprox: "~$12–20"
     blurb: "Full-zip bag fits mat plus block and strap. Shoulder strap for studio commutes: keeps gear together."
+faq:
+  - question: "How were these yoga accessories chosen?"
+    answer: "We picked Amazon items with thousands of reviews and under-$30 pricing—blocks, straps, mats, and recovery tools that yogis and Pilates practitioners use in every session."
+  - question: "What is the price range for this list?"
+    answer: "Every item is under $30 on Amazon, with most between $10 and $22. Studio-quality accessories without the studio markup."
+  - question: "Are these Amazon affiliate links?"
+    answer: "Yes. We earn a commission on qualifying purchases through the Amazon Associates Program at no extra cost to you. Picks are chosen for yoga utility and reviews, not payouts."
+  - question: "Who is this yoga accessories guide for?"
+    answer: "Home yogis, Pilates beginners, and studio members building a personal practice kit will find practical picks here. You don't need Lululemon prices to support your downward dog."
 ---
 
 

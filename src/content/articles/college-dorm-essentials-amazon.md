@@ -66,6 +66,15 @@ listItems:
     searchQuery: "Portable Bluetooth Speaker Waterproof Compact"
     priceApprox: "~$25–40"
     blurb: "Compact, waterproof, and loud enough for dorm hangouts. The social lubricant of every floor."
+faq:
+  - question: "How did you pick these dorm essentials?"
+    answer: "We selected compact, highly reviewed Amazon items that solve real dorm problems—limited space, shared bathrooms, late-night studying, and laundry day. Every pick fits a typical freshman budget."
+  - question: "What price range are these dorm items?"
+    answer: "Most picks are between $10 and $35 on Amazon. We prioritized affordable essentials parents and students can bundle without exceeding a move-in budget."
+  - question: "Are these Amazon affiliate links?"
+    answer: "Yes. We earn from qualifying purchases through the Amazon Associates Program at no extra cost to you. Recommendations focus on dorm practicality and reviews, not payouts."
+  - question: "Who is this dorm essentials guide for?"
+    answer: "Incoming college freshmen, parents packing for move-in day, and returning students upgrading their setup will find practical picks. If your dorm room is 12×15 feet, every item here respects that reality."
 ---
 
 

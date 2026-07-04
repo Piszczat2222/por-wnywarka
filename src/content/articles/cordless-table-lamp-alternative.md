@@ -15,7 +15,7 @@ publishedAt: 2026-07-01
 seoTitle: "Cordless Table Lamp Alternative on Amazon (2026)"
 seoDescription: "Cordless table lamp alternative on Amazon: Kakanuo rechargeable 2-pack with touch dimming and 3 color temperatures for a fraction of designer lamp prices."
 keywords: ["cordless table lamp amazon", "kakanuo table lamp", "rechargeable desk lamp amazon", "pinterest lamp dupe", "budget table lamp amazon 2026"]
-ogImage: "/og-lamp.svg"
+ogImage: "/og-lamp.png"
 comparisonTable:
   - feature: "Look & Vibe"
     premium: "Designer cordless silhouette, warm glow"
@@ -58,6 +58,15 @@ cons:
   - "Plastic construction vs designer materials"
   - "Battery degrades over years like any rechargeable device"
 verdict: "Kakanuo's 2-pack cordless lamps deliver the Pinterest aesthetic, touch dimming, and cordless freedom for about $20. Buy Pottery Barn if you want verified designer provenance and premium build materials."
+faq:
+  - question: "Does the Kakanuo lamp look as good as the Pottery Barn Poldina?"
+    answer: "For the Pinterest cordless-desk-lamp aesthetic, Kakanuo's 2-pack delivers touch dimming and cordless freedom at ~$20. Pottery Barn's Poldina has verified designer provenance and more premium materials if aesthetics are everything."
+  - question: "Who should buy the Pottery Barn lamp?"
+    answer: "Buy Pottery Barn if you want authentic designer branding, premium glass and metal construction, and a piece you'll display in a styled living room. Renters creating a temporary vibe can skip the markup."
+  - question: "How does build quality compare?"
+    answer: "Pottery Barn uses higher-end materials with a luxury finish. Kakanuo is functional and attractive for the price, but the plastic and battery housing feel budget-tier compared to the $175 original."
+  - question: "Is the Kakanuo 2-pack good value on Amazon?"
+    answer: "At ~$20 for two cordless lamps vs ~$175 for one Poldina, you get the same mood-lighting use case for roughly 90% less. That's hard to beat for dorm rooms, nightstands, and WFH desks."
 ---
 
 ## Why Designer Cordless Lamps Still Command the Price

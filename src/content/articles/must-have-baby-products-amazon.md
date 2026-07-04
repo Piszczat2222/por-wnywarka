@@ -12,7 +12,7 @@ updatedAt: 2026-07-06
 seoTitle: "10 Must-Have Amazon Baby Products for New Parents (2026)"
 seoDescription: "Must-have Amazon baby products for new parents: monitors, sound machines, diaper caddies, and nursery essentials. Curated Top 10 list."
 keywords: ["must have baby products amazon", "amazon baby essentials", "new parent registry amazon", "baby gadgets amazon 2026"]
-ogImage: "/og-default.svg"
+ogImage: "/og-default.png"
 listItems:
   - rank: 1
     name: "Video Baby Monitor"
@@ -66,6 +66,15 @@ listItems:
     searchQuery: "Portable Changing Pad Waterproof Foldable"
     priceApprox: "~$10–16"
     blurb: "Foldable waterproof changing pad with built-in pillow. Toss in the diaper bag for clean changes anywhere."
+faq:
+  - question: "How did you pick these baby products?"
+    answer: "We selected Amazon items with strong review histories that new parents buy repeatedly—monitors, swaddles, bath tools, and safety gear with proven track records in real nurseries."
+  - question: "What price range are these baby items?"
+    answer: "Most picks fall between $15 and $50 on Amazon. We balanced registry-worthy essentials with budget-friendly options for parents watching every dollar."
+  - question: "Are Amazon links affiliate links?"
+    answer: "Yes. We earn from qualifying purchases through the Amazon Associates Program at no extra cost to you. Picks prioritize baby safety and parent utility, not commission."
+  - question: "Who is this baby products guide for?"
+    answer: "Expecting parents building a registry, grandparents shopping for gifts, and new moms and dads overwhelmed by product choices will find curated essentials here. We cut through the noise to what actually gets used."
 ---
 
 

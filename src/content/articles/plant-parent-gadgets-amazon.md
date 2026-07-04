@@ -66,6 +66,15 @@ listItems:
     searchQuery: "Watering Can Long Spout 2 Gallon"
     priceApprox: "~$15–25"
     blurb: "Long spout reaches hanging pots and back-row shelves. Comfortable handle for watering 20+ plants in one trip."
+faq:
+  - question: "How were these plant parent gadgets selected?"
+    answer: "We chose Amazon tools with strong reviews that solve overwatering, underwatering, low light, and repotting—the real problems indoor plant owners face across dozens of pots."
+  - question: "What price range are these plant gadgets?"
+    answer: "Most picks fall between $8 and $30 on Amazon. Affordable tools that prevent the $40 replacement plant after a watering mistake."
+  - question: "Do you earn commission from Amazon?"
+    answer: "Yes. As Amazon Associates, we earn from qualifying purchases. Recommendations are based on plant-care utility and reviews, not payout rates."
+  - question: "Who is this plant parent guide for?"
+    answer: "Indoor plant collectors, apartment gardeners, and anyone who's killed a succulent will find practical gadgets here. If your moisture meter is your most-used tool, this list has upgrades."
 ---
 
 

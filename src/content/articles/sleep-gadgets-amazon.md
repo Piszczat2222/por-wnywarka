@@ -66,6 +66,15 @@ listItems:
     searchQuery: "Wake Up Light Alarm Clock Sunrise Simulation"
     priceApprox: "~$45–110"
     blurb: "Simulated sunrise eases seasonal affective symptoms in dark winters. FM radio backup alarm included."
+faq:
+  - question: "How did you choose these sleep gadgets?"
+    answer: "We picked Amazon items with strong reviews that address common sleep disruptors—noise, light, temperature, and racing thoughts. Every item has a track record of helping real sleepers."
+  - question: "What price range are these sleep aids?"
+    answer: "Most picks fall between $15 and $50 on Amazon. We balanced budget options with a few mid-range devices worth the upgrade for chronic poor sleepers."
+  - question: "Are these Amazon affiliate links?"
+    answer: "Yes. We earn a commission on qualifying purchases through the Amazon Associates Program at no extra cost to you. Picks are chosen for sleep improvement and reviews, not payouts."
+  - question: "Who is this sleep gadgets guide for?"
+    answer: "Light sleepers, shift workers, and anyone who's tried counting sheep will find practical aids here. If your bedroom environment is the problem, these gadgets target the fix."
 ---
 
 

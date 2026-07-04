@@ -66,6 +66,15 @@ listItems:
     searchQuery: "Magnetic Knife Strip Stainless Wall Mount"
     priceApprox: "~$12–20"
     blurb: "Wall-mounted strip saves drawer space in galley kitchens. Strong magnets hold chef knives on bumpy roads."
+faq:
+  - question: "How did you select these RV and camper gadgets?"
+    answer: "We chose Amazon items with strong reviews for space-saving, power management, and campsite comfort—the unique challenges of van life and RV travel that standard home gadgets don't solve."
+  - question: "What price range are these camper gadgets?"
+    answer: "Most picks fall between $15 and $50 on Amazon. Compact, multi-use tools that respect limited storage in a camper or van."
+  - question: "Are Amazon links affiliate links?"
+    answer: "Yes. We earn from qualifying purchases through the Amazon Associates Program at no extra cost to you. Recommendations focus on camper utility and reviews, not payouts."
+  - question: "Who is this RV and camper guide for?"
+    answer: "Weekend RVers, full-time van lifers, and anyone outfitting a camper for the first time will find practical gadgets here. Every pick respects the space and power constraints of mobile living."
 ---
 
 

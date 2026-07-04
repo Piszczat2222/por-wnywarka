@@ -66,6 +66,15 @@ listItems:
     searchQuery: "Smart Air Quality Monitor Alexa"
     priceApprox: "~$45–70"
     blurb: "Tracks particulates and humidity. Some models integrate with voice assistants for alerts."
+faq:
+  - question: "How did you pick these smart home gadgets?"
+    answer: "We selected Amazon smart devices with strong reviews, under-$50 pricing, and easy setup—plugs, bulbs, sensors, and hubs that don't require an engineering degree to install."
+  - question: "What is the price range for this list?"
+    answer: "Every item is under $50 on Amazon, with most between $15 and $35. Entry-level smart home gear that lets you test automation without a big investment."
+  - question: "Are Amazon links affiliate links?"
+    answer: "Yes. We earn from qualifying purchases through the Amazon Associates Program at no extra cost to you. Picks are chosen for smart-home value and ease of use, not commissions."
+  - question: "Who is this smart home guide for?"
+    answer: "Renters dipping their toes into home automation, Alexa and Google Home owners expanding their ecosystem, and budget-conscious tech fans will find practical picks here. No electrician required."
 ---
 
 

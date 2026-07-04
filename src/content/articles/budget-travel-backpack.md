@@ -17,7 +17,7 @@ publishedAt: 2026-07-01
 seoTitle: "Away Carry-On Alternative on Amazon (2026)"
 seoDescription: "Carry-on luggage alternative on Amazon: Amazon Basics 21-inch hardside spinner compared to premium brands like Away. Budget pick under $65."
 keywords: ["carry on luggage amazon", "away carry on alternative amazon", "amazon basics luggage", "budget carry on spinner 2026"]
-ogImage: "/og-backpack.svg"
+ogImage: "/og-backpack.png"
 comparisonTable:
   - feature: "Size"
     premium: "22\" hardside, airline-friendly"
@@ -60,6 +60,15 @@ cons:
   - "Hardside only, no exterior pockets"
   - "Wheels and handle feel less refined than Away"
 verdict: "Amazon Basics 21-inch hardside carry-on delivers spinner wheels, expandable space, and flight-friendly sizing for about $61. Buy Away if you want premium polycarbonate, brand warranty, and luggage you'll roll for a decade of heavy travel."
+faq:
+  - question: "Is the Amazon Basics carry-on good enough vs Away?"
+    answer: "For 2–6 trips per year, the Amazon Basics 21-inch hardside carry-on handles overhead bins, spinner wheels, and expandable packing at ~$61. Away offers premium polycarbonate and a more refined rolling experience for heavy travelers."
+  - question: "Who should buy Away The Carry-On instead?"
+    answer: "Frequent flyers who want lifetime-warranty-grade polycarbonate, a polished aluminum handle, and luggage that survives a decade of abuse should invest in Away. One-bag backpack travelers may prefer the MATEIN runner-up instead."
+  - question: "How do warranty and durability compare?"
+    answer: "Away offers a strong warranty and premium shell construction built for heavy use. Amazon Basics has 27,000+ reviews and a scratch-resistant hardside, but wheels and handles feel less refined and the warranty is standard Amazon Basics coverage."
+  - question: "Is the Amazon Basics carry-on worth ~$214 less?"
+    answer: "At ~$61 vs ~$275, you get airline-friendly sizing, spinner wheels, and expandable space for a fraction of premium luggage prices. That's outstanding value for occasional travelers buying on Amazon."
 ---
 
 ## Why Premium Carry-Ons Still Command the Price

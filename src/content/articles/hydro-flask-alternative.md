@@ -58,6 +58,15 @@ cons:
   - "Color selection less curated than retail drops"
   - "Durability stories not as legendary as Hydro Flask lore"
 verdict: "For everyday gym, office, and trail hydration, Iron Flask delivers the same 32oz insulated experience for roughly half the price. Stick with Hydro Flask if limited colors and brand warranty matter more than function per dollar."
+faq:
+  - question: "Does the Iron Flask keep ice as long as Hydro Flask?"
+    answer: "For everyday gym, office, and trail use, Iron Flask's 32oz insulated bottle matches Hydro Flask's core job at ~$19. Hydro Flask still has a slight edge on brand durability reputation and limited-edition colors."
+  - question: "Who should buy Hydro Flask instead?"
+    answer: "Buy Hydro Flask if limited color drops, brand warranty reputation, and resale value matter to you. Collectors and outdoor enthusiasts who want the status bottle may prefer the original."
+  - question: "How does build quality compare?"
+    answer: "Both use double-wall vacuum insulation with stainless steel construction. Hydro Flask has a longer track record of powder-coat durability; Iron Flask is well-reviewed on Amazon but may show wear sooner with heavy daily abuse."
+  - question: "Is Iron Flask worth roughly half the price?"
+    answer: "At ~$19 vs ~$40, you get the same 32oz insulated hydration experience. Unless you care about brand aesthetics, Iron Flask is the smarter Amazon buy."
 ---
 
 ## Why Hydro Flask Still Commands the Price

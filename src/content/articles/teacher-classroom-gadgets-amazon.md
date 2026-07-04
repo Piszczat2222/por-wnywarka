@@ -66,6 +66,15 @@ listItems:
     searchQuery: "Voice Amplifier Wearable Microphone Teacher"
     priceApprox: "~$30–45"
     blurb: "Wearable mic and speaker saves your voice on large-class days. USB rechargeable: outdoor recess and gym duty essential."
+faq:
+  - question: "How were these teacher classroom gadgets chosen?"
+    answer: "We picked Amazon items with high review counts that teachers buy with their own money—organization, engagement, labeling, and comfort tools that survive a full school year."
+  - question: "What price range are these classroom items?"
+    answer: "Most picks fall between $10 and $35 on Amazon. We know teachers self-fund their classrooms, so every item justifies its price in daily utility."
+  - question: "Do you make money from Amazon links?"
+    answer: "Yes. As Amazon Associates, we earn from qualifying purchases. Recommendations are based on classroom utility and teacher reviews, not commission rates."
+  - question: "Who is this teacher gadgets guide for?"
+    answer: "K–12 teachers, new educators setting up their first classroom, and veteran teachers looking for fresh Amazon finds will benefit. If you're spending personal money on supplies, these picks stretch it further."
 ---
 
 

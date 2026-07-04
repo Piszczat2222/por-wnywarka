@@ -66,6 +66,15 @@ listItems:
     searchQuery: "Clear Acrylic Cookbook Stand"
     priceApprox: "~$15–20"
     blurb: "Holds recipe books or tablet at eye level while you cook. Splatter-proof angle: underrated counter accessory."
+faq:
+  - question: "How were these air fryer accessories selected?"
+    answer: "We picked items with thousands of verified Amazon reviews, compatibility across popular air fryer brands, and real kitchen utility—not gimmicky single-use tools. Each accessory solves a common air-fryer pain point like splatter, flipping, or reheating."
+  - question: "What price range do these accessories fall in?"
+    answer: "Every pick on this list is priced under $30 on Amazon, with most between $8 and $20. Prices fluctuate with coupons and Lightning Deals, so check the current listing before buying."
+  - question: "Do you earn money from Amazon links?"
+    answer: "Yes. As an Amazon Associate, we earn from qualifying purchases at no extra cost to you. Our picks are based on review volume and utility, not commission rates."
+  - question: "Who is this air fryer accessories guide for?"
+    answer: "This guide is for home cooks who already own an air fryer and want silicone liners, racks, and tools that actually get used. Beginners setting up their first air fryer will find practical add-ons without overspending."
 ---
 
 

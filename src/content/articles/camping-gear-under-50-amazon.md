@@ -66,6 +66,15 @@ listItems:
     searchQuery: "Insulated Camping Blanket Puffy Stuff Sack"
     priceApprox: "~$40–50"
     blurb: "Insulated blanket for campfire nights and car camping. Packs into included stuff sack: warmer than a fleece."
+faq:
+  - question: "How did you pick these camping items?"
+    answer: "We selected gear with strong Amazon review histories, under-$50 pricing, and genuine trail or campsite utility. No novelty gadgets—just lanterns, cookware, and comfort items weekend campers actually pack."
+  - question: "What is the price range for this list?"
+    answer: "Every item is under $50 on Amazon, with most between $15 and $40. Seasonal sales can drop prices further, especially before summer camping season."
+  - question: "Are Amazon links affiliate links?"
+    answer: "Yes. We earn a small commission through the Amazon Associates Program on qualifying purchases at no extra cost to you. Picks are chosen for camper value, not affiliate payouts."
+  - question: "Who is this camping gear guide for?"
+    answer: "Weekend campers, festival-goers, and first-time backpackers building a kit on a budget will find practical picks here. You don't need REI prices to sleep comfortably under the stars."
 ---
 
 

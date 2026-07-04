@@ -66,6 +66,15 @@ listItems:
     searchQuery: "Car Trash Can Lid Weighted Console"
     priceApprox: "~$10–18"
     blurb: "Weighted floor console bin with lid. Stops the cup-holder trash pile: detail jobs start with less mess."
+faq:
+  - question: "How were these car detailing gadgets chosen?"
+    answer: "We picked tools with strong Amazon review counts that deliver professional-adjacent results at home—foam cannons, microfiber kits, and interior brushes that DIY detailers actually use."
+  - question: "What price range are these detailing tools?"
+    answer: "Most picks fall between $15 and $50 on Amazon. We mixed budget-friendly basics with a few mid-range tools that justify the upgrade for regular washers."
+  - question: "Are these Amazon affiliate links?"
+    answer: "Yes. We earn from qualifying purchases through the Amazon Associates Program at no extra cost to you. Picks are based on detailing results and reviews, not commission."
+  - question: "Who is this car detailing guide for?"
+    answer: "DIY car enthusiasts, weekend washers, and anyone tired of $80 detail shop visits will find practical tools here. You don't need a garage full of pro equipment to keep your car looking sharp."
 ---
 
 
