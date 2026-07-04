@@ -3,7 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import { SITE } from '../lib/site';
 ---
 
-<BaseLayout title={`Contact | ${SITE.name}`} description="Get in touch with the VettedPick team.">
+<BaseLayout title={`Contact | ${SITE.name}`} description={`Get in touch with the ${SITE.name} team.`}>
   <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6">
     <h1 class="text-4xl font-extrabold text-gray-900">Contact</h1>
     <p class="mt-4 text-lg text-gray-600">
@@ -28,7 +28,7 @@ import { SITE } from '../lib/site';
 
     <div class="mt-8 rounded-xl border border-gray-100 bg-gray-50 p-6 text-sm text-gray-600">
       <p>
-        <strong>Note:</strong> VettedPick does not sell products directly. For order support, returns,
+        <strong>Note:</strong> {SITE.name} does not sell products directly. For order support, returns,
         or warranty questions, please contact Amazon or the product manufacturer.
       </p>
     </div>

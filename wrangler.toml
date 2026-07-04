@@ -1,6 +1,9 @@
-name = "vettedpick"
+name = "altpik"
 compatibility_date = "2026-07-01"
 pages_build_output_dir = "dist"
 
-# Set in Cloudflare Pages dashboard → Settings → Environment variables:
+[assets]
+directory = "./dist"
+
+# Set in Cloudflare dashboard → Settings → Environment variables:
 # AMAZON_ASSOCIATE_TAG = wattroi-20

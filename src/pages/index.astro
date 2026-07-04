@@ -11,7 +11,7 @@ import { buildPageTitle } from '../lib/seo';
 
 const HOME_TITLE = 'Best Amazon Alternatives & Top 10 Guides (2026)';
 const HOME_DESCRIPTION =
-  'VettedPick finds the best budget-friendly Amazon alternatives to viral and luxury products. Top 10 guides for dog owners, WFH desk setups, kitchen gadgets, and honest premium vs budget comparisons.';
+  'AltPik finds the best budget-friendly Amazon alternatives to viral and luxury products. Top 10 guides for dog owners, WFH desk setups, kitchen gadgets, and honest premium vs budget comparisons.';
 
 const articles = (await getCollection('articles')).sort(
   (a, b) => b.data.publishedAt.valueOf() - a.data.publishedAt.valueOf(),
@@ -47,7 +47,7 @@ const byCategory = getCategoryKeys().reduce(
             <div>
               <h2 class="text-2xl font-bold text-gray-900 sm:text-3xl">Top 10 Amazon Guides</h2>
               <p class="mt-2 max-w-xl text-gray-600">
-                Must-have lists and roundups. Every pick links to Amazon with our vetted notes.
+                Must-have lists and roundups. Every pick links to Amazon with our curated notes.
               </p>
             </div>
             <a
@@ -87,7 +87,7 @@ const byCategory = getCategoryKeys().reduce(
     <div class="mx-auto max-w-3xl text-center">
       <h2 class="text-2xl font-bold text-gray-900">How We Review</h2>
       <p class="mt-4 leading-relaxed text-gray-600">
-        Every product on VettedPick is selected based on real Amazon ratings, expert reviews, and
+        Every product on AltPik is selected based on real Amazon ratings, expert reviews, and
         value for money. We compare premium options to budget alternatives and publish Top 10
         guides for pets, office, kitchen, and more.
       </p>

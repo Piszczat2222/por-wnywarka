@@ -1,11 +1,11 @@
 export const SITE = {
-  name: 'VettedPick',
-  title: 'VettedPick: Smart Budget Alternatives to Viral & Luxury Products',
+  name: 'AltPik',
+  title: 'AltPik: Smart Budget Alternatives to Viral & Luxury Products',
   description:
     'We review and find the absolute best budget-friendly alternatives to viral and luxury products. Tested by experts, loved by smart shoppers.',
-  url: 'https://vettedpick.com',
+  url: 'https://altpik.com',
   author: 'Patryk',
-  email: 'hello@vettedpick.com',
+  email: 'hello@altpik.com',
 } as const;
 
 export const NAV_LINKS = [
@@ -18,7 +18,7 @@ export const NAV_LINKS = [
 ] as const;
 
 export const AMAZON_DISCLOSURE =
-  'VettedPick is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com. As an Amazon Associate, I earn from qualifying purchases.';
+  'AltPik is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com. As an Amazon Associate, I earn from qualifying purchases.';
 
 export const FTC_DISCLOSURE =
   'This site contains affiliate links. We may earn a commission at no extra cost to you when you purchase through our links.';

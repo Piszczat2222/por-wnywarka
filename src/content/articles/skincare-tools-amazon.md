@@ -5,7 +5,7 @@ description: "LED masks, gua sha, facial rollers, and cleansing brushes: trendin
 category: beauty
 categoryLabel: "Beauty & Skincare"
 cardTitle: "Top 8 Amazon Skincare Tools"
-cardExcerpt: "LED masks, gua sha, rollers, and cleansing tools: vetted Amazon skincare gadgets."
+cardExcerpt: "LED masks, gua sha, rollers, and cleansing tools: curated Amazon skincare gadgets."
 featured: false
 publishedAt: 2026-07-05
 updatedAt: 2026-07-06

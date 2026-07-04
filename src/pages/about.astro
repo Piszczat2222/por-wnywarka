@@ -3,9 +3,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import { SITE } from '../lib/site';
 ---
 
-<BaseLayout title={`About | ${SITE.name}`} description="Meet Patryk, the founder of VettedPick: honest budget alternatives to viral and luxury products.">
+<BaseLayout title={`About | ${SITE.name}`} description={`Meet Patryk, the founder of ${SITE.name}: honest budget alternatives to viral and luxury products.`}>
   <div class="mx-auto max-w-3xl px-4 py-16 sm:px-6">
-    <h1 class="text-4xl font-extrabold text-gray-900">About VettedPick</h1>
+    <h1 class="text-4xl font-extrabold text-gray-900">About {SITE.name}</h1>
 
     <div class="mt-10 flex flex-col gap-8 sm:flex-row sm:items-start">
       <div class="flex h-32 w-32 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-brand-100 to-brand-200 text-4xl font-bold text-brand-700">
@@ -14,19 +14,19 @@ import { SITE } from '../lib/site';
       <div>
         <h2 class="text-2xl font-bold text-gray-900">Hi, I'm Patryk.</h2>
         <p class="mt-4 text-lg leading-relaxed text-gray-600">
-          I started VettedPick because I was sick of overpaying for branded items that looked great
+          I started {SITE.name} because I was sick of overpaying for branded items that looked great
           on Instagram but didn't match the hype in real life. Like a lot of people, I kept seeing
           the same viral products everywhere: $500 headphones, $200 lamps, $300 backpacks, and
           wondering if the budget version was actually terrible or genuinely good enough.
         </p>
         <p class="mt-4 text-lg leading-relaxed text-gray-600">
           So I started testing. Reading thousands of reviews, comparing specs, and tracking down the
-          Amazon picks that real shoppers actually love. VettedPick is where I share those findings,
+          Amazon picks that real shoppers actually love. {SITE.name} is where I share those findings,
           no fluff, no fake urgency, just honest comparisons so you can get the same vibe for less.
         </p>
         <p class="mt-4 text-lg leading-relaxed text-gray-600">
           When you click through to Amazon from this site, I may earn a small commission at no extra
-          cost to you. That helps keep VettedPick running and lets me keep testing new products.
+          cost to you. That helps keep {SITE.name} running and lets me keep testing new products.
           I only recommend picks I'd genuinely consider buying myself.
         </p>
       </div>

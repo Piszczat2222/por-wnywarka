@@ -7,7 +7,7 @@ import { buildPageTitle } from '../lib/seo';
 
 const REVIEWS_TITLE = 'All Amazon Reviews & Top 10 Guides (2026)';
 const REVIEWS_DESCRIPTION =
-  'Browse every VettedPick comparison and Top 10 Amazon guide: tech alternatives, dog gadgets, kitchen picks, WFH desk upgrades, and more.';
+  'Browse every AltPik comparison and Top 10 Amazon guide: tech alternatives, dog gadgets, kitchen picks, WFH desk upgrades, and more.';
 
 const articles = (await getCollection('articles')).sort(
   (a, b) => b.data.publishedAt.valueOf() - a.data.publishedAt.valueOf(),
@@ -30,7 +30,7 @@ const catInactive = 'bg-gray-100 text-gray-700 hover:bg-gray-200';
     <header class="mb-10">
       <h1 class="text-4xl font-extrabold text-gray-900">All Reviews & Guides</h1>
       <p id="reviews-count" class="mt-3 text-lg text-gray-600">
-        {articles.length} vetted Amazon picks: comparisons and Top 10 listicles.
+        {articles.length} curated Amazon picks: comparisons and Top 10 listicles.
       </p>
     </header>
 
@@ -151,7 +151,7 @@ const catInactive = 'bg-gray-100 text-gray-700 hover:bg-gray-200';
 
     const countEl = document.getElementById('reviews-count');
     if (countEl) {
-      countEl.textContent = `${visible} vetted Amazon picks: comparisons and Top 10 listicles.`;
+      countEl.textContent = `${visible} curated Amazon picks: comparisons and Top 10 listicles.`;
     }
 
     document.querySelectorAll<HTMLElement>('.reviews-type-pill').forEach((pill) => {

@@ -10,7 +10,7 @@ featured: false
 publishedAt: 2026-07-04
 updatedAt: 2026-07-06
 seoTitle: "Top 10 Amazon Road Trip Gadgets (2026)"
-seoDescription: "Must-have Amazon road trip gadgets: jump starters, coolers, car inverters, and backseat organizers. Vetted Top 10 for your next drive."
+seoDescription: "Must-have Amazon road trip gadgets: jump starters, coolers, car inverters, and backseat organizers. Curated Top 10 for your next drive."
 keywords: ["road trip gadgets amazon", "amazon car travel essentials", "road trip accessories amazon", "car camping gadgets 2026"]
 ogImage: "/og-backpack.svg"
 listItems:

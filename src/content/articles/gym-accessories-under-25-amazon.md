@@ -10,7 +10,7 @@ featured: false
 publishedAt: 2026-07-04
 updatedAt: 2026-07-06
 seoTitle: "Top 10 Amazon Gym Accessories Under $25 (2026)"
-seoDescription: "Best budget gym accessories on Amazon under $25: resistance bands, lifting straps, shaker bottles, and more. Vetted Top 10 list."
+seoDescription: "Best budget gym accessories on Amazon under $25: resistance bands, lifting straps, shaker bottles, and more. Curated Top 10 list."
 keywords: ["gym accessories amazon under 25", "amazon workout gear", "budget gym equipment amazon", "fitness accessories amazon 2026"]
 ogImage: "/og-default.svg"
 listItems:

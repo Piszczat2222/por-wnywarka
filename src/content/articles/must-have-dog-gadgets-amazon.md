@@ -1,7 +1,7 @@
 ---
 articleType: listicle
 title: "10 Amazon Gadgets Every Dog Owner Needs in 2026"
-description: "From treat-tossing cameras to slow feeders: our vetted Amazon picks that make life with a dog easier, cleaner, and more fun."
+description: "From treat-tossing cameras to slow feeders: our curated Amazon picks that make life with a dog easier, cleaner, and more fun."
 category: pets
 categoryLabel: "Pets & Dogs"
 cardTitle: "10 Must-Have Amazon Gadgets for Dog Owners"
@@ -10,7 +10,7 @@ featured: false
 publishedAt: 2026-07-03
 updatedAt: 2026-07-06
 seoTitle: "10 Must-Have Amazon Dog Gadgets Every Owner Needs (2026)"
-seoDescription: "The best Amazon gadgets for dog owners: pet cameras, slow feeders, grooming tools, and more. Our vetted Top 10 list with affiliate links to check prices."
+seoDescription: "The best Amazon gadgets for dog owners: pet cameras, slow feeders, grooming tools, and more. Our curated Top 10 list with affiliate links to check prices."
 keywords: ["amazon dog gadgets", "must have dog products amazon", "dog owner essentials", "pet gadgets amazon 2026"]
 ogImage: "/og-default.svg"
 listItems:

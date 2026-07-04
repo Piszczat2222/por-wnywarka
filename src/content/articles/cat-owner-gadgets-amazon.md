@@ -5,12 +5,12 @@ description: "Self-cleaning litter boxes, fountains, scratchers, and interactive
 category: pets
 categoryLabel: "Pets & Dogs"
 cardTitle: "Top 8 Amazon Finds for Cat Owners"
-cardExcerpt: "Litter solutions, water fountains, scratchers, and toys: vetted Amazon picks for cat parents."
+cardExcerpt: "Litter solutions, water fountains, scratchers, and toys: curated Amazon picks for cat parents."
 featured: false
 publishedAt: 2026-07-05
 updatedAt: 2026-07-06
 seoTitle: "Top 8 Amazon Finds for Cat Owners (2026)"
-seoDescription: "Best Amazon products for cat owners: water fountains, litter mats, scratchers, interactive toys, and grooming tools. Vetted Top 8 list."
+seoDescription: "Best Amazon products for cat owners: water fountains, litter mats, scratchers, interactive toys, and grooming tools. Curated Top 8 list."
 keywords: ["amazon cat products", "cat owner essentials amazon", "cat gadgets amazon", "best cat supplies amazon"]
 ogImage: "/og-default.png"
 listItems:

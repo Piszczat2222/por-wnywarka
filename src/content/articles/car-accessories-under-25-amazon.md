@@ -10,7 +10,7 @@ featured: false
 publishedAt: 2026-07-04
 updatedAt: 2026-07-06
 seoTitle: "Top 10 Amazon Car Accessories Under $25 (2026)"
-seoDescription: "Best Amazon car accessories under $25: phone mounts, trunk organizers, dash cams, and chargers. Vetted Top 10 list for daily drivers."
+seoDescription: "Best Amazon car accessories under $25: phone mounts, trunk organizers, dash cams, and chargers. Curated Top 10 list for daily drivers."
 keywords: ["car accessories amazon under 25", "amazon car gadgets", "budget car accessories", "phone mount amazon 2026"]
 ogImage: "/og-backpack.svg"
 listItems:

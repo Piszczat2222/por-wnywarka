@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://vettedpick.com/sitemap-index.xml
+Sitemap: https://altpik.com/sitemap-index.xml

@@ -3,7 +3,7 @@ import sitemap from '@astrojs/sitemap';
 import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
-  site: 'https://vettedpick.com',
+  site: 'https://altpik.com',
   output: 'static',
   integrations: [sitemap()],
   vite: {

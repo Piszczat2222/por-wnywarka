@@ -10,7 +10,7 @@ featured: false
 publishedAt: 2026-07-04
 updatedAt: 2026-07-06
 seoTitle: "Top 8 Amazon Essentials for New Puppy Parents (2026)"
-seoDescription: "Best Amazon essentials for new puppy parents: crate pads, enzymatic cleaners, teething toys, and training gear. Vetted starter list."
+seoDescription: "Best Amazon essentials for new puppy parents: crate pads, enzymatic cleaners, teething toys, and training gear. Curated starter list."
 keywords: ["new puppy essentials amazon", "puppy starter kit amazon", "amazon dog supplies new puppy", "puppy parent checklist 2026"]
 ogImage: "/og-default.svg"
 listItems:
