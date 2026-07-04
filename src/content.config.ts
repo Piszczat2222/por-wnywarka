@@ -19,6 +19,10 @@ const listItemSchema = z.object({
   name: z.string(),
   asin: z.string().optional(),
   searchQuery: z.string().optional(),
+  /** ASIN used only for the product thumbnail (Amazon Associates image). Link still uses searchQuery when set. */
+  imageAsin: z.string().optional(),
+  /** Direct image URL override (local path or full URL). Takes priority over imageAsin. */
+  image: z.string().optional(),
   priceApprox: z.string(),
   badge: z.string().optional(),
   blurb: z.string(),

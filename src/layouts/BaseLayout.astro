@@ -51,14 +51,10 @@ const globalJsonLd = mergeJsonLd(
       gaMeasurementId && (
         <>
           <script async src={`https://www.googletagmanager.com/gtag/js?id=${gaMeasurementId}`} />
-          <script is:inline define:vars={{ gaMeasurementId }}>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-              dataLayer.push(arguments);
-            }
-            gtag('js', new Date());
-            gtag('config', gaMeasurementId);
-          </script>
+          <script is:inline set:html={`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '${gaMeasurementId}');`} />
         </>
       )
     }

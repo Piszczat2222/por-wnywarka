@@ -1,27 +1,68 @@
 ---
 import type { ListItem } from '../content.config';
+import type { CategoryKey } from '../lib/categories';
 import { listItemAmazonUrl } from '../lib/amazon';
+import { categoryFallbackImage, listItemProductImage } from '../lib/listicle-images';
 
 interface Props {
   item: ListItem;
   index: number;
+  category: CategoryKey;
 }
 
-const { item, index } = Astro.props;
+const { item, index, category } = Astro.props;
 const rank = item.rank ?? index + 1;
 const url = listItemAmazonUrl(item);
+const productImage = listItemProductImage(item);
+const fallbackImage = categoryFallbackImage(category);
 ---
 
 <article class="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-md">
-  <div class="flex flex-wrap items-start gap-4">
-    <div
-      class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-brand-100 text-lg font-extrabold text-brand-700"
-      aria-hidden="true"
+  <div class="flex flex-col gap-4 sm:flex-row sm:items-start">
+    <a
+      href={url}
+      target="_blank"
+      rel="noopener noreferrer sponsored"
+      class="relative mx-auto shrink-0 sm:mx-0"
+      aria-label={`View ${item.name} on Amazon`}
     >
-      {rank}
-    </div>
-    <div class="min-w-0 flex-1">
-      <div class="flex flex-wrap items-center gap-2">
+      {
+        productImage ? (
+          <img
+            src={productImage}
+            alt={item.name}
+            width="112"
+            height="112"
+            loading="lazy"
+            decoding="async"
+            class="h-28 w-28 rounded-xl border border-gray-100 bg-white p-2 object-contain"
+            data-fallback={fallbackImage}
+            onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.dataset.fallback;this.classList.remove('p-2','object-contain');this.classList.add('object-cover','p-0','bg-gray-50');this.alt='';}else{this.style.visibility='hidden';}"
+          />
+        ) : (
+          <div
+            class="flex h-28 w-28 items-center justify-center rounded-xl border border-dashed border-gray-200 bg-gray-50"
+            aria-hidden="true"
+          >
+            <img
+              src={fallbackImage}
+              alt=""
+              width="56"
+              height="56"
+              class="h-14 w-14 opacity-50"
+            />
+          </div>
+        )
+      }
+      <span
+        class="absolute -left-2 -top-2 flex h-8 w-8 items-center justify-center rounded-lg bg-brand-600 text-sm font-extrabold text-white shadow"
+        aria-hidden="true"
+      >
+        {rank}
+      </span>
+    </a>
+    <div class="min-w-0 flex-1 text-center sm:text-left">
+      <div class="flex flex-wrap items-center justify-center gap-2 sm:justify-start">
         <h3 class="text-xl font-bold text-gray-900">{item.name}</h3>
         {
           item.badge && (

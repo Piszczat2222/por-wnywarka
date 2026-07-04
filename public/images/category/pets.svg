@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="112" height="112" viewBox="0 0 112 112" role="img" aria-label="Pets">
+  <rect width="112" height="112" rx="16" fill="#ccfbf1"/>
+  <circle cx="44" cy="46" r="10" fill="#0d9488"/>
+  <circle cx="68" cy="46" r="10" fill="#0d9488"/>
+  <ellipse cx="56" cy="68" rx="22" ry="16" fill="#0d9488"/>
+</svg>

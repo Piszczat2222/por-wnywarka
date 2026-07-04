@@ -14,8 +14,15 @@ export function amazonSearchUrl(query: string, tag = getAmazonTag()): string {
 }
 
 export function listItemAmazonUrl(
-  item: { searchQuery?: string; name: string },
+  item: { searchQuery?: string; asin?: string; name: string },
   tag = getAmazonTag(),
 ): string {
+  if (item.asin && !item.searchQuery) {
+    return amazonUrl(item.asin, tag);
+  }
   return amazonSearchUrl(item.searchQuery ?? item.name, tag);
+}
+
+export function amazonProductImageUrl(asin: string): string {
+  return `https://m.media-amazon.com/images/P/${asin}._SL300_.jpg`;
 }

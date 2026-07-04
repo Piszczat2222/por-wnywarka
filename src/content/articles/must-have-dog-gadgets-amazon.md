@@ -16,34 +16,34 @@ ogImage: "/og-default.png"
 listItems:
   - rank: 1
     name: "360° Pet Camera with Treat Dispenser"
-    searchQuery: "360 Pet Camera Treat Dispenser Two Way Audio"
+    searchQuery: "360 Pet Camera Treat Dispenser Two Way Audio"
     priceApprox: "~$50–90"
     badge: "Editor's Pick"
     blurb: "Watch your pup in 360°, talk through two-way audio, and toss treats from your phone. One of the highest-rated pet cameras on Amazon."
   - rank: 2
     name: "Hands-Free Dog Leash"
-    searchQuery: "Hands Free Dog Leash Waist Belt Bungee"
+    searchQuery: "Hands Free Dog Leash Waist Belt Bungee"
     priceApprox: "~$15–25"
     blurb: "Waist-belt leash for jogging and hiking: keeps your hands free while maintaining control. Shock-absorbing bungee reduces pulling strain."
   - rank: 3
     name: "Pet Nail Grinder (Cordless)"
-    searchQuery: "Pet Nail Grinder Cordless Dog"
+    searchQuery: "Pet Nail Grinder Cordless Dog"
     priceApprox: "~$25–45"
     badge: "Best for Grooming"
     blurb: "Cordless nail grinder that's quieter than clippers. Smooths nails gradually: a game-changer if your dog hates traditional trimmers."
   - rank: 4
     name: "Slow Feeder Dog Bowl"
-    searchQuery: "Slow Feeder Dog Bowl Maze"
+    searchQuery: "Slow Feeder Dog Bowl Maze"
     priceApprox: "~$10–18"
     blurb: "Maze-style slow feeder prevents gulping and bloating. Dishwasher safe and comes in multiple sizes for every breed."
   - rank: 5
     name: "Portable Dog Water Bottle"
-    searchQuery: "Portable Dog Water Bottle Built In Bowl"
+    searchQuery: "Portable Dog Water Bottle Built In Bowl"
     priceApprox: "~$10–16"
     blurb: "Built-in leaf-shaped bowl dispenses water with one squeeze: perfect for walks, hikes, and road trips. Leak-proof when locked."
   - rank: 6
     name: "Reusable Pet Hair Remover Roller"
-    searchQuery: "Reusable Pet Hair Remover Roller"
+    searchQuery: "Reusable Pet Hair Remover Roller"
     priceApprox: "~$20–30"
     badge: "Best Value"
     blurb: "Reusable roller that pulls pet hair off couches, car seats, and bedding: no sticky sheets to replace. A cult favorite on Amazon."
@@ -54,17 +54,17 @@ listItems:
     blurb: "Silicone holder that attaches a Bluetooth tracker to your dog's collar for Find My tracking. Budget alternative to dedicated GPS collars."
   - rank: 8
     name: "Waterproof Car Seat Cover for Dogs"
-    searchQuery: "Waterproof Dog Car Seat Cover Hammock"
+    searchQuery: "Waterproof Dog Car Seat Cover Hammock"
     priceApprox: "~$30–45"
     blurb: "Hammock-style cover protects your back seat from fur, mud, and scratches. Side flaps, seat anchors, and machine-washable material."
   - rank: 9
     name: "Automatic Ball Launcher for Dogs"
-    searchQuery: "Automatic Ball Launcher Dog Tennis Ball"
+    searchQuery: "Automatic Ball Launcher Dog Tennis Ball"
     priceApprox: "~$70–120"
     blurb: "Launches tennis balls automatically for fetch-obsessed dogs. Adjustable distance and compatible with standard balls."
   - rank: 10
     name: "LED Dog Collar (Rechargeable)"
-    searchQuery: "LED Dog Collar Rechargeable"
+    searchQuery: "LED Dog Collar Rechargeable"
     priceApprox: "~$12–20"
     blurb: "USB-rechargeable LED collar for safe night walks. Multiple flash modes and sizes: drivers can spot your dog from a distance."
 faq:

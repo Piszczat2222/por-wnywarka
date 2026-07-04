@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="112" height="112" viewBox="0 0 112 112" role="img" aria-label="Beauty">
+  <rect width="112" height="112" rx="16" fill="#fce7f3"/>
+  <circle cx="56" cy="52" r="22" fill="#db2777"/>
+  <path d="M44 78 Q56 66 68 78" stroke="#db2777" stroke-width="4" fill="none"/>
+</svg>

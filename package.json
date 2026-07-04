@@ -4,7 +4,8 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "astro dev",
-    "build": "node scripts/generate-og.mjs && astro build && node scripts/patch-sitemap-lastmod.mjs && node scripts/indexnow.mjs",
+    "build": "node scripts/cache-product-images.mjs && node scripts/fetch-listicle-thumbnails.mjs && node scripts/generate-og.mjs && astro build && node scripts/patch-sitemap-lastmod.mjs && node scripts/indexnow.mjs",
+    "thumbnails": "node scripts/fetch-listicle-thumbnails.mjs",
     "preview": "astro preview",
     "deploy": "npm run build && wrangler pages deploy dist"
   },
