@@ -12,9 +12,10 @@ pickPrice: "~$105"
 amazonAsin: "B0CTZSN718"
 featured: false
 publishedAt: 2026-07-07
-seoTitle: "Dyson Vacuum Alternative on Amazon (2026): Shark & Budget Picks"
-seoDescription: "Dyson cordless vacuum alternative on Amazon: compare the V15 to budget cordless vacuums with strong suction and pet-hair pickup for under $200."
-keywords: ["dyson vacuum alternative amazon", "shark vacuum amazon", "budget cordless vacuum", "dyson dupe amazon 2026"]
+updatedAt: 2026-07-07
+seoTitle: "Dyson V15 Knockoff on Amazon (2026): Budget Cordless Vacuum"
+seoDescription: "Dyson V15 knockoff on Amazon: compare the V15 Detect to budget cordless vacuums with strong suction and pet-hair pickup for under $200."
+keywords: ["dyson vacuum alternative amazon", "dyson v15 knockoff", "dyson v15 dupe amazon", "shark vacuum amazon", "budget cordless vacuum", "dyson dupe amazon 2026"]
 ogImage: "/og-lamp.png"
 comparisonTable:
   - feature: "Suction Power"

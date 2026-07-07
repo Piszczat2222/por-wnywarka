@@ -12,9 +12,10 @@ pickPrice: "~$160"
 amazonAsin: "B07R295MLS"
 featured: false
 publishedAt: 2026-06-18
-seoTitle: "Roomba Alternative on Amazon (2026): Budget Robot Vacuum"
-seoDescription: "Roomba alternative on Amazon: eufy 11S MAX robot vacuum with strong suction and self-charging for hard floors and medium-pile carpets under $170."
-keywords: ["roomba alternative amazon", "eufy 11s max amazon", "budget robot vacuum amazon", "eufy vs roomba", "robot vacuum amazon 2026"]
+updatedAt: 2026-07-07
+seoTitle: "Cheap Roomba Alternative on Amazon (2026): Robot Vacuum Under $170"
+seoDescription: "Cheap Roomba alternative on Amazon: eufy 11S MAX robot vacuum with strong suction and self-charging for hard floors and medium-pile carpets under $170."
+keywords: ["roomba alternative amazon", "cheap roomba alternative", "eufy 11s max amazon", "budget robot vacuum amazon", "eufy vs roomba", "robot vacuum amazon 2026"]
 ogImage: "/og-lamp.png"
 comparisonTable:
   - feature: "Navigation"
