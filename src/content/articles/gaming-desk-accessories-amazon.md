@@ -92,3 +92,5 @@ We picked Amazon categories that PC and console gamers buy repeatedly: extended 
 4. **RGB strips**, purely for vibes (no shame)
 
 All links go to Amazon with our affiliate tag, check current price before buying.
+
+For phone gear on the same desk, see our [Amazon phone accessories best sellers](/articles/phone-accessories-amazon) roundup — mounts, chargers, and cable savers that pair well with a gaming setup.

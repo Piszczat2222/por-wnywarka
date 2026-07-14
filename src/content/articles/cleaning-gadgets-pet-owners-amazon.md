@@ -80,3 +80,5 @@ We skipped gimmicky gadgets and focused on proven performers with tens of thousa
 - **Weekly:** handheld vacuum on furniture and stairs
 - **As needed:** enzymatic spray on accident spots immediately
 - **Monthly:** wash sofa cover and mop pads
+
+When fur piles up on floors and rugs, our [Dyson V15 knockoff](/articles/dyson-vacuum-alternative) guide covers a budget cordless stick vacuum pet owners use for weekly whole-home sweeps.

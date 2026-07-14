@@ -102,3 +102,5 @@ What you keep is **30oz insulated capacity**, **car-cup-friendly sizing** (verif
 ## The Bottom Line
 
 Yeti collectors and outdoor-brand loyalists should buy Ramblers. Everyone else who wants a steel insulated tumbler that keeps coffee cold through meetings should grab Simple Modern Trek. Function beats logo on your morning commute.
+
+If Owala's FreeSip sip-and-chug lid is more your speed than a classic tumbler, see our [Owala FreeSip alternative on Amazon](/articles/owala-freesip-alternative).

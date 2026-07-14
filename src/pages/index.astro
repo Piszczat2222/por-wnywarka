@@ -23,6 +23,10 @@ const featured = articles.find((a) => a.data.featured && a.data.articleType === 
 
 const listicles = articles
   .filter((a) => a.data.articleType === 'listicle')
+  .sort((a, b) => {
+    if (a.data.featured !== b.data.featured) return a.data.featured ? -1 : 1;
+    return b.data.publishedAt.valueOf() - a.data.publishedAt.valueOf();
+  })
   .slice(0, 6);
 
 const byCategory = getCategoryKeys().reduce(
