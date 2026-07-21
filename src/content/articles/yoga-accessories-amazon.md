@@ -82,7 +82,7 @@ faq:
 
 Studio memberships add up. A **$25 mat, two blocks, and a strap** unlock 90% of YouTube yoga classes at home. This Amazon list stays under ~$30 per item (except the wheel and bolster splurges) and covers beginners through intermediate practice.
 
-We prioritized non-slip mats, supportive props, and mobility tools desk workers actually use, not fashion-forward leggings (see our [gym accessories](/articles/gym-accessories-under-25-amazon) list for those).
+We prioritized non-slip mats, supportive props, and mobility tools desk workers actually use, not fashion-forward leggings (see our [gym accessories](/articles/gym-accessories-under-25-amazon/) list for those).
 
 ### Beginner prop trio
 

@@ -103,4 +103,4 @@ What you keep is **40oz capacity**, **all-day cold drinks**, **straw convenience
 
 Collectors chasing limited Stanley drops and brand loyalists should stick with Quencher releases. Everyone else who wants the viral 40oz tumbler function and look should grab Simple Modern Trek. Your hydration goals don't require a sold-out pastel drop.
 
-For the sip-or-chug **bottle** trend (not tumbler), compare our [Owala FreeSip dupe](/articles/owala-freesip-alternative) — FreeSip searches are up +250% year-over-year.
+For the sip-or-chug **bottle** trend (not tumbler), compare our [Owala FreeSip dupe](/articles/owala-freesip-alternative/) — FreeSip searches are up +250% year-over-year.

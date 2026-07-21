@@ -93,4 +93,4 @@ We picked gadgets that share three traits: they **use unused space** (doors, wal
 
 Every product links to Amazon so you can check current price before buying, sizes and deals change weekly.
 
-For closet and pantry organization beyond gadgets, see our [TikTok viral home organizers on Amazon](/articles/tiktok-home-organizers-amazon) roundup — the same bins and racks apartment dwellers use in viral restock videos.
+For closet and pantry organization beyond gadgets, see our [TikTok viral home organizers on Amazon](/articles/tiktok-home-organizers-amazon/) roundup — the same bins and racks apartment dwellers use in viral restock videos.

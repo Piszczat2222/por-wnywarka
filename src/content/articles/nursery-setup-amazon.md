@@ -91,4 +91,4 @@ This Amazon list covers the gear you'll use daily for the first year, not the de
 3. **Monitor**, parental sanity
 4. **Diaper organization**, 8+ changes per day
 
-Pair this guide with our [must-have baby products](/articles/must-have-baby-products-amazon) list for the full new-parent Amazon toolkit.
+Pair this guide with our [must-have baby products](/articles/must-have-baby-products-amazon/) list for the full new-parent Amazon toolkit.

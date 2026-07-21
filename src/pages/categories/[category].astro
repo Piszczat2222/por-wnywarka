@@ -16,7 +16,7 @@ const { category } = Astro.params as { category: CategoryKey };
 const meta = CATEGORIES[category];
 
 if (!meta) {
-  return Astro.redirect('/reviews');
+  return Astro.redirect('/reviews/');
 }
 
 const articles = (await getCollection('articles'))
@@ -61,7 +61,7 @@ const jsonLd = mergeJsonLd(
             <ArticleCard
               title={article.data.cardTitle}
               excerpt={article.data.cardExcerpt}
-              href={`/articles/${article.id}`}
+              href={`/articles/${article.id}/`}
               category={article.data.categoryLabel}
               categoryColor={meta.color}
               articleType={article.data.articleType}
@@ -72,7 +72,7 @@ const jsonLd = mergeJsonLd(
     }
 
     <div class="mt-12 text-center">
-      <a href="/reviews" class="text-sm font-semibold text-brand-600 hover:text-brand-700">
+      <a href="/reviews/" class="text-sm font-semibold text-brand-600 hover:text-brand-700">
         ← Back to all reviews
       </a>
     </div>

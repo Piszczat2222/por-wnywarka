@@ -94,4 +94,4 @@ We included one splurge (sunrise alarm) and mostly sub-$50 picks. Start with whi
 | Groggy mornings | Sunrise alarm |
 | Dry air | Humidifier |
 
-Pair with our [college dorm essentials](/articles/college-dorm-essentials-amazon), a sound machine appears on both lists for a reason.
+Pair with our [college dorm essentials](/articles/college-dorm-essentials-amazon/), a sound machine appears on both lists for a reason.

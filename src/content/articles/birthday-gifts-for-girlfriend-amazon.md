@@ -114,4 +114,4 @@ Skip clothing unless you know her exact size and style. Avoid gag gifts unless t
 
 The best birthday gifts for your girlfriend on Amazon **show you pay attention** — to her routines, your shared memories, and how she actually spends evenings. Search the category, pick today's top review, and write one specific note about why you chose it.
 
-For more ideas, see our [Mother's Day gift guide](/articles/mothers-day-gift-ideas-amazon) (many picks work for partners too) and [skincare tools on Amazon](/articles/skincare-tools-amazon).
+For more ideas, see our [Mother's Day gift guide](/articles/mothers-day-gift-ideas-amazon/) (many picks work for partners too) and [skincare tools on Amazon](/articles/skincare-tools-amazon/).

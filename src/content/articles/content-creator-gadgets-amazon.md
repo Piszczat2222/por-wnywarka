@@ -95,4 +95,4 @@ We focused on categories creators rebuy when they upgrade, ring lights, lav mics
 
 Check Amazon for bundle deals, ring light kits often include tripod and remote together.
 
-Also see our [Amazon phone accessories best sellers](/articles/phone-accessories-amazon) guide for chargers, mounts, and screen protectors every creator needs on set.
+Also see our [Amazon phone accessories best sellers](/articles/phone-accessories-amazon/) guide for chargers, mounts, and screen protectors every creator needs on set.

@@ -36,7 +36,7 @@ const catInactive = 'bg-gray-100 text-gray-700 hover:bg-gray-200';
 
     <nav class="mb-6 flex flex-wrap gap-2" aria-label="Filter by article type">
       <a
-        href="/reviews"
+        href="/reviews/"
         data-reviews-type=""
         data-reviews-cat=""
         class:list={['reviews-type-pill rounded-full px-4 py-2 text-sm font-semibold transition-colors', typeInactive]}
@@ -44,7 +44,7 @@ const catInactive = 'bg-gray-100 text-gray-700 hover:bg-gray-200';
         All ({articles.length})
       </a>
       <a
-        href="/reviews?type=comparison"
+        href="/reviews/?type=comparison"
         data-reviews-type="comparison"
         data-reviews-cat=""
         class:list={['reviews-type-pill rounded-full px-4 py-2 text-sm font-semibold transition-colors', typeInactive]}
@@ -52,7 +52,7 @@ const catInactive = 'bg-gray-100 text-gray-700 hover:bg-gray-200';
         Comparisons ({comparisonCount})
       </a>
       <a
-        href="/reviews?type=listicle"
+        href="/reviews/?type=listicle"
         data-reviews-type="listicle"
         data-reviews-cat=""
         class:list={['reviews-type-pill rounded-full px-4 py-2 text-sm font-semibold transition-colors', typeInactive]}
@@ -68,7 +68,7 @@ const catInactive = 'bg-gray-100 text-gray-700 hover:bg-gray-200';
           if (count === 0) return null;
           return (
             <a
-              href={`/reviews?cat=${key}`}
+              href={`/reviews/?cat=${key}`}
               data-reviews-cat={key}
               class:list={['reviews-cat-pill rounded-full px-4 py-2 text-sm font-semibold transition-colors', catInactive]}
             >
@@ -90,7 +90,7 @@ const catInactive = 'bg-gray-100 text-gray-700 hover:bg-gray-200';
             <ArticleCard
               title={article.data.cardTitle}
               excerpt={article.data.cardExcerpt}
-              href={`/articles/${article.id}`}
+              href={`/articles/${article.id}/`}
               category={article.data.categoryLabel}
               categoryColor={CATEGORIES[article.data.category as CategoryKey]?.color ?? 'bg-gray-100 text-gray-700'}
               articleType={article.data.articleType}
@@ -125,7 +125,7 @@ const catInactive = 'bg-gray-100 text-gray-700 hover:bg-gray-200';
     if (type) params.set('type', type);
     if (cat) params.set('cat', cat);
     const query = params.toString();
-    return query ? `/reviews?${query}` : '/reviews';
+    return query ? `/reviews/?${query}` : '/reviews/';
   }
 
   function setPillActive(pill: HTMLElement, active: boolean, kind: 'type' | 'cat') {

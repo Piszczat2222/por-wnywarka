@@ -102,4 +102,4 @@ What you keep is the core function: **32oz capacity**, **all-day cold retention*
 
 If you want **specific limited colors**, lifetime brand warranty peace of mind, or you're building a collection, Hydro Flask still delivers. For pure function per dollar on a 32oz insulated bottle, Iron Flask is the smarter Amazon buy. Fill it with ice, throw it in your bag, and don't stress about the price tag when it takes a tumble.
 
-Want sip-and-chug instead of wide-mouth only? See our [Owala FreeSip dupe on Amazon](/articles/owala-freesip-alternative) for the viral straw-plus-chug lid at a lower price.
+Want sip-and-chug instead of wide-mouth only? See our [Owala FreeSip dupe on Amazon](/articles/owala-freesip-alternative/) for the viral straw-plus-chug lid at a lower price.

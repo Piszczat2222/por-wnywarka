@@ -4,7 +4,7 @@ import Footer from '../components/Footer.astro';
 import StructuredData from '../components/StructuredData.astro';
 import '../styles/global.css';
 import { SITE } from '../lib/site';
-import { truncateDescription } from '../lib/seo';
+import { truncateDescription, withTrailingSlash } from '../lib/seo';
 import { organizationSchema, websiteSchema, mergeJsonLd } from '../lib/structured-data';
 
 interface Props {
@@ -32,7 +32,7 @@ const {
 } = Astro.props;
 
 const metaDescription = truncateDescription(description);
-const canonicalURL = new URL(Astro.url.pathname, SITE.url);
+const canonicalURL = new URL(withTrailingSlash(Astro.url.pathname), SITE.url);
 const ogImageURL = new URL(ogImage, SITE.url);
 const robotsContent = noindex ? 'noindex, nofollow' : 'index, follow';
 const gaMeasurementId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID ?? SITE.gaMeasurementId;

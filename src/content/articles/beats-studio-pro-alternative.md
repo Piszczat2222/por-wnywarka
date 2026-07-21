@@ -77,7 +77,7 @@ For Android users or anyone who doesn't need Apple Music lossless, the value pro
 
 ## How We Compared These Two
 
-We evaluated **ANC quality**, **sound tuning**, **battery life**, **comfort for long sessions**, and **ecosystem value**. We also referenced our full [AirPods Max alternative](/articles/airpods-max-alternative) testing of the Soundcore Space One, since both comparisons point to the same Amazon pick for over-ear value.
+We evaluated **ANC quality**, **sound tuning**, **battery life**, **comfort for long sessions**, and **ecosystem value**. We also referenced our full [AirPods Max alternative](/articles/airpods-max-alternative/) testing of the Soundcore Space One, since both comparisons point to the same Amazon pick for over-ear value.
 
 Our comparison covered:
 

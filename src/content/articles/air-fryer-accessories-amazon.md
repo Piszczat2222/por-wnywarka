@@ -90,4 +90,4 @@ Works with most 5–8 quart basket models. Check your basket diameter before buy
 2. **Oil mister** (healthier crisp)
 3. **Magnetic cheat sheet** (confidence booster)
 
-See also our [Ninja Creami alternative](/articles/ninja-creami-alternative) if you're building a viral-appliance kitchen lineup.
+See also our [Ninja Creami alternative](/articles/ninja-creami-alternative/) if you're building a viral-appliance kitchen lineup.

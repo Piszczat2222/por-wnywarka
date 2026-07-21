@@ -129,4 +129,4 @@ Avoid generic "World's Best Dad" merchandise unless he genuinely collects it. Sk
 
 The best Father's Day gifts on Amazon are **boring in the best way**: things he'll use on a random Tuesday in September. Pick a category from the list, search Amazon for the top-rated option today, and pair it with a short note about why you thought of him — that's the gift.
 
-Looking for more practical picks? Browse our [car accessories under $25](/articles/car-accessories-under-25-amazon) or [men's grooming gadgets](/articles/mens-grooming-gadgets-amazon) guides for year-round dad upgrades.
+Looking for more practical picks? Browse our [car accessories under $25](/articles/car-accessories-under-25-amazon/) or [men's grooming gadgets](/articles/mens-grooming-gadgets-amazon/) guides for year-round dad upgrades.

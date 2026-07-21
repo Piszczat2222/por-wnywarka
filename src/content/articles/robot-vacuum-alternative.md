@@ -104,4 +104,4 @@ What you keep is **daily pet hair pickup**, **quiet operation**, **self-charging
 
 Cluttered multi-room homes with kids, pets, and cables everywhere should buy Roomba j7+. Apartment dwellers and budget pet owners who want set-and-forget daily cleaning on hard floors should buy eufy 11S MAX. Let the robot handle maintenance; you handle the savings.
 
-For manual deep cleans, compare our [Dyson V15 knockoff](/articles/dyson-vacuum-alternative) pick — a cordless stick vacuum under $150 for stairs and furniture the robot can't reach.
+For manual deep cleans, compare our [Dyson V15 knockoff](/articles/dyson-vacuum-alternative/) pick — a cordless stick vacuum under $150 for stairs and furniture the robot can't reach.

@@ -119,4 +119,4 @@ Skip clothing and shoes unless you're certain on size. Avoid overly personal gro
 
 The best birthday gifts for your boyfriend on Amazon **match how he actually spends time** — gaming, gym, travel, or kitchen experiments. Search the category, read today's top three reviews, and add one line about an inside joke or shared memory.
 
-For more ideas, see our [gaming desk accessories](/articles/gaming-desk-accessories-amazon) and [Father's Day gift guide](/articles/fathers-day-gift-ideas-amazon) for additional guy-friendly picks.
+For more ideas, see our [gaming desk accessories](/articles/gaming-desk-accessories-amazon/) and [Father's Day gift guide](/articles/fathers-day-gift-ideas-amazon/) for additional guy-friendly picks.

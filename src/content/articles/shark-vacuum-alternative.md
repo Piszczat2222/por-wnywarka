@@ -77,7 +77,7 @@ Shark's US customer support network and familiar retail presence also matter whe
 
 ## How We Compared These Two
 
-We evaluated **anti-hair-wrap performance**, **suction on carpet vs hard floor**, **portability**, **battery life**, and **total cost**. We use the same **Eureka RapidClean Lightweight** pick as our [Dyson vacuum alternative](/articles/dyson-vacuum-alternative) because it solves the same job for buyers who find even Shark expensive.
+We evaluated **anti-hair-wrap performance**, **suction on carpet vs hard floor**, **portability**, **battery life**, and **total cost**. We use the same **Eureka RapidClean Lightweight** pick as our [Dyson vacuum alternative](/articles/dyson-vacuum-alternative/) because it solves the same job for buyers who find even Shark expensive.
 
 Key comparison points:
 

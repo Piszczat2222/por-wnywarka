@@ -94,4 +94,4 @@ This list covers the accessories personal trainers and serious lifters actually 
 
 That's a complete accessory kit for less than one month of a boutique gym membership.
 
-Building a supplement stack too? See our [Amazon vitamins and supplements best sellers](/articles/amazon-supplements-best-sellers) guide — magnesium, creatine, D3, and the categories people reorder on Subscribe & Save.
+Building a supplement stack too? See our [Amazon vitamins and supplements best sellers](/articles/amazon-supplements-best-sellers/) guide — magnesium, creatine, D3, and the categories people reorder on Subscribe & Save.

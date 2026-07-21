@@ -77,7 +77,7 @@ For outdoor enthusiasts, tailgaters, and anyone who's owned a Yeti for five year
 
 ## How We Compared These Two
 
-We compared both tumblers on **ice retention**, **build quality**, **lid options**, **car cup fit**, and **value for daily commuters**. We linked findings to our [Stanley tumbler comparison](/articles/stanley-tumbler-alternative), since Simple Modern consistently wins drinkware comparisons on Amazon.
+We compared both tumblers on **ice retention**, **build quality**, **lid options**, **car cup fit**, and **value for daily commuters**. We linked findings to our [Stanley tumbler comparison](/articles/stanley-tumbler-alternative/), since Simple Modern consistently wins drinkware comparisons on Amazon.
 
 Key factors:
 
@@ -103,4 +103,4 @@ What you keep is **30oz insulated capacity**, **car-cup-friendly sizing** (verif
 
 Yeti collectors and outdoor-brand loyalists should buy Ramblers. Everyone else who wants a steel insulated tumbler that keeps coffee cold through meetings should grab Simple Modern Trek. Function beats logo on your morning commute.
 
-If Owala's FreeSip sip-and-chug lid is more your speed than a classic tumbler, see our [Owala FreeSip alternative on Amazon](/articles/owala-freesip-alternative).
+If Owala's FreeSip sip-and-chug lid is more your speed than a classic tumbler, see our [Owala FreeSip alternative on Amazon](/articles/owala-freesip-alternative/).

@@ -86,7 +86,7 @@ If you have thick carpets, multiple pets, and zero patience for weak suction, Dy
 
 ## How We Compared These Two
 
-We compared both vacuums on **suction**, **pet hair pickup**, **battery runtime**, **weight and maneuverability**, and **value for apartment dwellers**. We cross-referenced our [Shark vacuum alternative](/articles/shark-vacuum-alternative) pick (same Eureka model), checked Amazon pet-owner reviews, and focused on hard floors and low-pile carpet where budget cordless excels.
+We compared both vacuums on **suction**, **pet hair pickup**, **battery runtime**, **weight and maneuverability**, and **value for apartment dwellers**. We cross-referenced our [Shark vacuum alternative](/articles/shark-vacuum-alternative/) pick (same Eureka model), checked Amazon pet-owner reviews, and focused on hard floors and low-pile carpet where budget cordless excels.
 
 Comparison criteria:
 
@@ -112,4 +112,4 @@ What you keep is **cordless convenience**, **lightweight stair cleaning**, **dec
 
 Large homes with thick carpet and allergy-sensitive households should invest in Dyson or Miele. Apartment owners, pet parents on a budget, and anyone escaping a heavy plug-in upright get the job done with Eureka RapidClean Lightweight. Your floors care about suction, not logos.
 
-Also compare our [Shark vacuum alternative](/articles/shark-vacuum-alternative) (same Eureka pick) and [robot vacuum alternative](/articles/robot-vacuum-alternative) if you want hands-off daily floor cleaning instead of a stick vacuum.
+Also compare our [Shark vacuum alternative](/articles/shark-vacuum-alternative/) (same Eureka pick) and [robot vacuum alternative](/articles/robot-vacuum-alternative/) if you want hands-off daily floor cleaning instead of a stick vacuum.

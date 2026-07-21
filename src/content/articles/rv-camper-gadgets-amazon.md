@@ -82,7 +82,7 @@ faq:
 
 Every square inch in a camper van matters. **Collapsible, multi-use, and electrical-protection gear** separates smooth road trips from the campground horror stories (fried converter, unleveled fridge, bad water taste).
 
-These Amazon picks are RV forum staples, leveling blocks and inline water filters show up on every first-timer checklist. Pair with our [camping gear under $50](/articles/camping-gear-under-50-amazon) for tent-adjacent trips.
+These Amazon picks are RV forum staples, leveling blocks and inline water filters show up on every first-timer checklist. Pair with our [camping gear under $50](/articles/camping-gear-under-50-amazon/) for tent-adjacent trips.
 
 ### Pre-trip checklist
 

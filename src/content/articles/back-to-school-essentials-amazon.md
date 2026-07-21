@@ -130,4 +130,4 @@ Avoid character-themed supplies unless your kid specifically asks — they age o
 
 The best **back to school essentials on Amazon** solve real daily problems: sore shoulders, dead phones, lost gear, sad lunch, and chaotic homework tables. Shop in July or early August before Labor Day markups and stockouts hit.
 
-Heading to college instead? See our [college dorm essentials](/articles/college-dorm-essentials-amazon). For phone add-ons, browse [Amazon phone accessories](/articles/phone-accessories-amazon). Teachers should check [classroom gadgets for teachers](/articles/teacher-classroom-gadgets-amazon). Shopping for a teen birthday too? Try [cool Amazon gifts for teens](/articles/cool-amazon-gifts-for-teens).
+Heading to college instead? See our [college dorm essentials](/articles/college-dorm-essentials-amazon/). For phone add-ons, browse [Amazon phone accessories](/articles/phone-accessories-amazon/). Teachers should check [classroom gadgets for teachers](/articles/teacher-classroom-gadgets-amazon/). Shopping for a teen birthday too? Try [cool Amazon gifts for teens](/articles/cool-amazon-gifts-for-teens/).

@@ -118,4 +118,4 @@ Avoid "World's Best Dad" merch unless that's genuinely his humor. Skip clothing 
 
 The best birthday gifts for dad on Amazon are **useful on a random Tuesday** — not impressive for five minutes and forgotten. Pick a category, search Amazon for today's top-rated option, and add one sentence about why you thought of him.
 
-For more ideas, see our [Father's Day gift guide](/articles/fathers-day-gift-ideas-amazon) and [men's grooming gadgets](/articles/mens-grooming-gadgets-amazon).
+For more ideas, see our [Father's Day gift guide](/articles/fathers-day-gift-ideas-amazon/) and [men's grooming gadgets](/articles/mens-grooming-gadgets-amazon/).

@@ -48,8 +48,8 @@ const hasProsCons =
 
 const breadcrumbs = breadcrumbSchema([
   { name: 'Home', path: '/' },
-  { name: data.categoryLabel, path: `/categories/${data.category}` },
-  { name: isListicle ? 'Guide' : 'Review', path: `/articles/${article.id}` },
+  { name: data.categoryLabel, path: `/categories/${data.category}/` },
+  { name: isListicle ? 'Guide' : 'Review', path: `/articles/${article.id}/` },
 ]);
 
 const articleJsonLd = articleSchema({
@@ -90,7 +90,7 @@ const jsonLd = mergeJsonLd(
     <nav class="mb-6 text-sm text-gray-500" aria-label="Breadcrumb">
       <a href="/" class="hover:text-brand-600">Home</a>
       <span class="mx-2">/</span>
-      <a href={`/categories/${data.category}`} class="hover:text-brand-600">{data.categoryLabel}</a>
+      <a href={`/categories/${data.category}/`} class="hover:text-brand-600">{data.categoryLabel}</a>
       <span class="mx-2">/</span>
       <span class="text-gray-700">{isListicle ? 'Guide' : 'Review'}</span>
     </nav>
@@ -98,7 +98,7 @@ const jsonLd = mergeJsonLd(
     <header class="mb-10">
       <div class="mb-3 flex flex-wrap items-center gap-2">
         <a
-          href={`/categories/${data.category}`}
+          href={`/categories/${data.category}/`}
           class:list={['inline-flex rounded-full px-3 py-1 text-xs font-semibold', categoryMeta?.color ?? 'bg-brand-100 text-brand-700']}
         >
           {data.categoryLabel}

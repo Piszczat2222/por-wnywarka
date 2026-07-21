@@ -126,4 +126,4 @@ Skip clothing unless you know her size and style. Avoid "mom" novelty mugs unles
 
 The best Mother's Day Amazon gifts **respect her time**: something that makes mornings smoother, evenings cozier, or chores lighter. Search the category, read today's top three reviews, and buy — she'll know you thought past the drugstore card aisle.
 
-For more year-round picks, see our [skincare tools on Amazon](/articles/skincare-tools-amazon) and [TikTok home organizers](/articles/tiktok-home-organizers-amazon) guides.
+For more year-round picks, see our [skincare tools on Amazon](/articles/skincare-tools-amazon/) and [TikTok home organizers](/articles/tiktok-home-organizers-amazon/) guides.

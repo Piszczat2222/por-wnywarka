@@ -89,7 +89,7 @@ Comparison highlights:
 
 ## Why EarFun Air Pro 4 Is Our Pick
 
-The **EarFun Air Pro 4** has become a go-to Amazon alternative in the same price tier as our [AirPods Pro alternative](/articles/airpods-pro-alternative): hybrid ANC, LDAC hi-res audio, wireless charging, and a secure in-ear fit with multiple tip sizes. Thousands of reviews back it as a daily driver for commuting and workouts.
+The **EarFun Air Pro 4** has become a go-to Amazon alternative in the same price tier as our [AirPods Pro alternative](/articles/airpods-pro-alternative/): hybrid ANC, LDAC hi-res audio, wireless charging, and a secure in-ear fit with multiple tip sizes. Thousands of reviews back it as a daily driver for commuting and workouts.
 
 You won't get Apple's one-tap pairing or Beats branding on the gym floor. You will get longer battery life per charge, customizable bass through the app, and a price that doesn't hurt when you misplace one bud in the locker room. For Android users especially, you're not subsidizing features you can't use.
 

@@ -5,6 +5,7 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineConfig({
   site: 'https://altpik.com',
   output: 'static',
+  trailingSlash: 'always',
   integrations: [sitemap()],
   vite: {
     plugins: [tailwindcss()],

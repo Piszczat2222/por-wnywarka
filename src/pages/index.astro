@@ -55,7 +55,7 @@ const byCategory = getCategoryKeys().reduce(
               </p>
             </div>
             <a
-              href="/reviews?type=listicle"
+              href="/reviews/?type=listicle"
               class="inline-flex shrink-0 items-center gap-1 text-sm font-semibold text-brand-600 hover:text-brand-700"
             >
               View all guides
@@ -69,7 +69,7 @@ const byCategory = getCategoryKeys().reduce(
               <ArticleCard
                 title={article.data.cardTitle}
                 excerpt={article.data.cardExcerpt}
-                href={`/articles/${article.id}`}
+                href={`/articles/${article.id}/`}
                 category={article.data.categoryLabel}
                 categoryColor={CATEGORIES[article.data.category]?.color ?? 'bg-gray-100 text-gray-700'}
                 articleType="listicle"
@@ -97,13 +97,13 @@ const byCategory = getCategoryKeys().reduce(
       </p>
       <div class="mt-8 flex flex-wrap justify-center gap-4">
         <a
-          href="/reviews?type=listicle"
+          href="/reviews/?type=listicle"
           class="inline-flex items-center gap-2 rounded-xl bg-brand-600 px-6 py-3 text-sm font-bold text-white hover:bg-brand-700"
         >
           Top 10 Guides
         </a>
         <a
-          href="/reviews"
+          href="/reviews/"
           class="inline-flex items-center gap-2 rounded-xl border border-gray-300 px-6 py-3 text-sm font-bold text-gray-700 hover:bg-white"
         >
           All Reviews

@@ -118,4 +118,4 @@ Skip clothing unless you know her size and style. Avoid strong perfume — it's 
 
 The best birthday gifts for mom on Amazon **respect her time and comfort** — something that makes evenings cozier or mornings gentler. Search the category, read today's top reviews, and buy with confidence.
 
-For more ideas, see our [Mother's Day gift guide](/articles/mothers-day-gift-ideas-amazon) and [skincare tools on Amazon](/articles/skincare-tools-amazon).
+For more ideas, see our [Mother's Day gift guide](/articles/mothers-day-gift-ideas-amazon/) and [skincare tools on Amazon](/articles/skincare-tools-amazon/).

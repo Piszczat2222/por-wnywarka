@@ -91,4 +91,4 @@ We picked products the auto-detailing community recommends repeatedly, quality m
 3. **Interior vacuum + brushes** → interior detailer on dash
 4. **Tire dressing** → sun shade when parked
 
-Pair with our [car accessories under $25](/articles/car-accessories-under-25-amazon) list for daily-driver upgrades.
+Pair with our [car accessories under $25](/articles/car-accessories-under-25-amazon/) list for daily-driver upgrades.

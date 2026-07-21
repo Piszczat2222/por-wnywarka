@@ -32,7 +32,7 @@ if (picks.length === 0) return null;
         <ArticleCard
           title={article.data.cardTitle}
           excerpt={article.data.cardExcerpt}
-          href={`/articles/${article.id}`}
+          href={`/articles/${article.id}/`}
           category={article.data.categoryLabel}
           categoryColor={CATEGORIES[article.data.category as CategoryKey]?.color ?? 'bg-gray-100 text-gray-700'}
           articleType={article.data.articleType}

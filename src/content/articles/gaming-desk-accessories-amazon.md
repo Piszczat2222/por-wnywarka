@@ -93,4 +93,4 @@ We picked Amazon categories that PC and console gamers buy repeatedly: extended 
 
 All links go to Amazon with our affiliate tag, check current price before buying.
 
-For phone gear on the same desk, see our [Amazon phone accessories best sellers](/articles/phone-accessories-amazon) roundup — mounts, chargers, and cable savers that pair well with a gaming setup.
+For phone gear on the same desk, see our [Amazon phone accessories best sellers](/articles/phone-accessories-amazon/) roundup — mounts, chargers, and cable savers that pair well with a gaming setup.

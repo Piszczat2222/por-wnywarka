@@ -93,4 +93,4 @@ We skipped gimmicky "smart planters" and picked tools plant TikTok and Reddit co
 | Dark apartment | Clip-on grow light |
 | Crispy tropical leaves | Mister + humidity trays |
 
-Pair with our [TikTok home organizers](/articles/tiktok-home-organizers-amazon) for plant-corner shelf styling.
+Pair with our [TikTok home organizers](/articles/tiktok-home-organizers-amazon/) for plant-corner shelf styling.
