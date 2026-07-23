@@ -7,7 +7,7 @@ export const SITE = {
   author: 'Patryk',
   email: 'apiszczat2222@gmail.com',
   gaMeasurementId: 'G-JRB461EJXP',
-  indexNowKey: 'a7f3c9e2b1d84f6a9e0c3b5d7f2a8e1',
+  indexNowKey: '748a39219ac649ab8452996fe1d35420',
 } as const;
 
 export const NAV_LINKS = [

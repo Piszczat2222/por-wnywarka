@@ -1,7 +1,7 @@
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 
-const key = process.env.INDEXNOW_KEY ?? 'a7f3c9e2b1d84f6a9e0c3b5d7f2a8e1';
+const key = process.env.INDEXNOW_KEY ?? '748a39219ac649ab8452996fe1d35420';
 const host = 'altpik.com';
 const sitemapPath = join(process.cwd(), 'dist', 'sitemap-0.xml');
 
