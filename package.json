@@ -4,10 +4,11 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "astro dev",
-    "build": "node scripts/cache-product-images.mjs && node scripts/fetch-listicle-thumbnails.mjs && node scripts/generate-og.mjs && astro build && node scripts/patch-sitemap-lastmod.mjs && node scripts/indexnow.mjs",
+    "build": "node scripts/cache-product-images.mjs && node scripts/fetch-listicle-thumbnails.mjs && node scripts/generate-og.mjs && astro build && node scripts/patch-sitemap-lastmod.mjs",
     "thumbnails": "node scripts/fetch-listicle-thumbnails.mjs",
+    "indexnow": "node scripts/indexnow.mjs",
     "preview": "astro preview",
-    "deploy": "npm run build && wrangler pages deploy dist"
+    "deploy": "npm run build && wrangler pages deploy dist && npm run indexnow"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.3",
