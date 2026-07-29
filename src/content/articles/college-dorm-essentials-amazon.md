@@ -8,10 +8,10 @@ cardTitle: "Top 10 Amazon College Dorm Essentials"
 cardExcerpt: "Move-in day must-haves: organizers, study gear, and dorm gadgets from Amazon."
 featured: false
 publishedAt: 2026-07-05
-updatedAt: 2026-07-21
+updatedAt: 2026-07-30
 seoTitle: "Top 10 Amazon College Dorm Essentials (2026)"
-seoDescription: "Best Amazon dorm essentials and college dorm supplies: bed risers, shower caddies, desk organizers, power strips, and study gadgets for freshmen."
-keywords: ["college dorm essentials amazon", "amazon dorm essentials", "amazon college essentials", "dorm essentials amazon", "dorm room essentials amazon", "amazon dorm supplies", "amazon dorm", "dorm room amazon", "freshman dorm checklist amazon", "student dorm gadgets"]
+seoDescription: "Best Amazon dorm essentials for college: bed risers, shower caddies, desk organizers, power strips, and study gadgets for freshmen."
+keywords: ["college dorm essentials amazon", "amazon dorm essentials", "dorm room essentials amazon", "amazon dorm supplies", "freshman dorm checklist amazon"]
 ogImage: "/og-default.png"
 listItems:
   - rank: 1
@@ -82,10 +82,20 @@ faq:
 
 ## Dorm Packing Lists Lie, These Are What Students Actually Buy
 
-Looking for **amazon dorm essentials**, **dorm room essentials amazon**, or **amazon college essentials**? Every college sends a generic packing list. Then you arrive, realize your roommate brought a full-size fridge, and discover you have **one outlet and zero storage**. This Amazon-focused guide is what upperclassmen wish they'd bought before move-in day.
+Every college sends a generic packing list. Then you arrive, realize your roommate brought a full-size fridge, and discover you have **one outlet and zero storage**. This Amazon-focused guide is what upperclassmen wish they'd packed before move-in day.
 
 We skipped the gimmicks and picked dorm-proven essentials: power, storage, shower logistics, sleep, and study setup. Most items ship Prime and cost under $40.
 
+### What to buy in what order
+
+| Priority | Why |
+|---|---|
+| Surge protector | One outlet becomes six — phones, laptop, lamp |
+| Bed risers | Instant under-bed storage in a tiny room |
+| Shower caddy | Shared bathrooms without a mildew swamp |
+| Clip fan | Hot September move-in weather |
+| Laundry / laundry bag | Week-two reality check |
+
 ### Buy before move-in day
 
-**Surge protector, bed risers, shower caddy**, the unglamorous trio that prevents 80% of dorm complaints in week one.
+**Surge protector, bed risers, shower caddy** — the unglamorous trio that prevents about 80% of dorm complaints in week one. Add a clip fan and under-bed bins if your building runs warm or your closet is a joke.
