@@ -93,4 +93,4 @@ We focused on tools with cross-grade utility, elementary through high school. No
 3. **Presenter remote**, walk the room during slides
 4. **Voice amplifier**, if you teach 30+ students daily
 
-See also our [WFH desk gadgets](/articles/top-10-wfh-desk-gadgets-amazon/) for hybrid teachers building home grading setups.
+See also our [WFH desk gadgets](/articles/top-10-wfh-desk-gadgets-amazon)) for hybrid teachers building home grading setups.

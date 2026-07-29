@@ -99,7 +99,7 @@ If you want a specific collab color, the exact patented mouthfeel, or you're alr
 
 ## How We Compared These Two
 
-We compared both bottles on **sip-and-chug function**, **32oz capacity**, **cold retention**, **lid security**, **black color availability**, and **total cost**. We cross-referenced our [Hydro Flask alternative](/articles/hydro-flask-alternative/), [Stanley tumbler dupe](/articles/stanley-tumbler-alternative/), and [Yeti Rambler comparison](/articles/yeti-rambler-alternative/) — same drinkware cluster, different lid styles — and focused on the use case Owala owns: one bottle for straw sips at your desk and big chugs after a workout.
+We compared both bottles on **sip-and-chug function**, **32oz capacity**, **cold retention**, **lid security**, **black color availability**, and **total cost**. We cross-referenced our [Hydro Flask alternative](/articles/hydro-flask-alternative)), [Stanley tumbler dupe](/articles/stanley-tumbler-alternative)), and [Yeti Rambler comparison](/articles/yeti-rambler-alternative)) — same drinkware cluster, different lid styles — and focused on the use case Owala owns: one bottle for straw sips at your desk and big chugs after a workout.
 
 Key factors:
 
@@ -115,7 +115,7 @@ The **Ello Pop & Fill 32oz** in **Tonal Black** is the closest functional match 
 
 It won't have Owala's patented spout geometry or viral color drops. It will keep your water cold, fit the **black owala** aesthetic shoppers are searching for right now, and cost roughly **$25–32** on Amazon — often in stock when Owala's trending colors aren't.
 
-For buyers who also considered tumblers: **owala tumbler** searches are up **+50%** — if you want 40oz with a handle, see our [Stanley Quencher dupe](/articles/stanley-tumbler-alternative/) instead. This guide is for the **FreeSip bottle** crowd.
+For buyers who also considered tumblers: **owala tumbler** searches are up **+50%** — if you want 40oz with a handle, see our [Stanley Quencher dupe](/articles/stanley-tumbler-alternative)) instead. This guide is for the **FreeSip bottle** crowd.
 
 ## What You Give Up (and What You Keep)
 
@@ -127,4 +127,4 @@ What you keep is **32oz insulated hydration**, **straw + chug in one lid**, **le
 
 Owala loyalists and color-drop collectors should buy the real **FreeSip 32oz**. Everyone searching **owala freesip dupe**, **owala bottle dupe amazon**, or a **black owala water bottle** alternative should grab **Ello Pop & Fill** — same size, same sip-or-chug idea, less money, usually in stock.
 
-Also compare our [Hydro Flask alternative](/articles/hydro-flask-alternative/), [Yeti Rambler dupe](/articles/yeti-rambler-alternative/), and [Stanley tumbler alternative](/articles/stanley-tumbler-alternative/) if you're building a full drinkware lineup on Amazon.
+Also compare our [Hydro Flask alternative](/articles/hydro-flask-alternative)), [Yeti Rambler dupe](/articles/yeti-rambler-alternative)), and [Stanley tumbler alternative](/articles/stanley-tumbler-alternative)) if you're building a full drinkware lineup on Amazon.
