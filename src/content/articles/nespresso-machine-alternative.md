@@ -5,10 +5,10 @@ category: kitchen
 categoryLabel: "Kitchen & Cooking"
 cardTitle: "Nespresso Dupe vs. Budget Espresso on Amazon"
 cardExcerpt: "Espresso at home without the capsule tax: a Nespresso machine alternative Amazon shoppers buy for less long-term cost."
-premiumProduct: "Nespresso Vertuo or Original (~$150–200)"
-premiumPrice: "~$150–200"
-pickProduct: "CASABREWS CM5418 20-Bar Espresso Machine (~$80–120)"
-pickPrice: "~$80–120"
+premiumProduct: "Nespresso Vertuo or Original"
+premiumPrice: "~$150–220 typically"
+pickProduct: "CASABREWS CM5418 20-Bar Espresso Machine"
+pickPrice: "~$80–140 typically"
 amazonAsin: "B09X3WGJ3R"
 featured: false
 publishedAt: 2026-07-30

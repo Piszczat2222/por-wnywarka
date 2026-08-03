@@ -115,26 +115,22 @@ const jsonLd = mergeJsonLd(
           isListicle && data.updatedAt && (
             <>
               {' '}
-              · Prices checked{' '}
+              · Typical prices as of{' '}
               {data.updatedAt.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
+              {' '}
+              — always confirm on Amazon
             </>
           )
         }
-        {!isListicle && ' · Prices approx. at time of review'}
+        {!isListicle && ' · Prices are typical ranges — confirm on Amazon'}
       </p>
     </header>
 
     {
       isListicle ? (
         <>
-          <ArticleSection variant="muted">
-            <div class="article-prose">
-              <Content />
-            </div>
-          </ArticleSection>
-
           {data.listItems && data.listItems.length > 0 && (
-            <section class="mt-12 border-t border-gray-200 pt-10">
+            <section class="border-t border-gray-200 pt-2">
               <h2 class="mb-8 text-2xl font-bold text-gray-900">
                 Our Top {data.listItems.length} Picks
               </h2>
@@ -145,6 +141,12 @@ const jsonLd = mergeJsonLd(
               </div>
             </section>
           )}
+
+          <ArticleSection variant="muted">
+            <div class="article-prose">
+              <Content />
+            </div>
+          </ArticleSection>
         </>
       ) : (
         <>
@@ -183,7 +185,7 @@ const jsonLd = mergeJsonLd(
             <div class="my-10 rounded-2xl border border-brand-200 bg-brand-50 p-6 sm:p-8">
               <h2 class="mb-2 text-xl font-bold text-gray-900">Ready to buy?</h2>
               <p class="mb-5 text-sm text-gray-600">
-                Check current price and availability for <strong>{data.pickProduct}</strong> on Amazon.
+                Check current price and availability for <strong>{data.pickProduct}</strong> on Amazon — amounts on this page are typical ranges only.
               </p>
               <AmazonCTA asin={data.amazonAsin} productName={data.pickProduct} />
             </div>

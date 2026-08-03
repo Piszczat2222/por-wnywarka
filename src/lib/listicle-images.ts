@@ -12,13 +12,17 @@ export function listItemProductImage(
     return item.image;
   }
 
-  if (item.name && thumbnailMap[item.name]) {
-    return thumbnailMap[item.name];
+  const asin = item.imageAsin ?? item.asin;
+  if (asin) {
+    if (imageMap[asin]) {
+      return imageMap[asin];
+    }
+    // Live Amazon product image when an ASIN is pinned (Associates CDN).
+    return `https://m.media-amazon.com/images/P/${asin}._SL300_.jpg`;
   }
 
-  const asin = item.imageAsin ?? item.asin;
-  if (asin && imageMap[asin]) {
-    return imageMap[asin];
+  if (item.name && thumbnailMap[item.name]) {
+    return thumbnailMap[item.name];
   }
 
   return undefined;

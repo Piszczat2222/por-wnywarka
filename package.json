@@ -8,7 +8,10 @@
     "thumbnails": "node scripts/fetch-listicle-thumbnails.mjs",
     "indexnow": "node scripts/indexnow.mjs",
     "preview": "astro preview",
-    "deploy": "npm run build && wrangler pages deploy dist && npm run indexnow"
+    "deploy": "npm run build && wrangler pages deploy dist && npm run indexnow",
+    "index-priority": "node scripts/priority-index-urls.mjs",
+    "pinterest": "node scripts/print-pinterest-pins.mjs",
+    "metrics": "node scripts/weekly-metrics-checklist.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.3",

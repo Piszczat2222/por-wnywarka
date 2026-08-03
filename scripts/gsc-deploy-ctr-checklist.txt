@@ -1,0 +1,18 @@
+﻿# Deploy status (GSC CTR sprint) — 2026-07-31
+
+## Live check
+- gifts-under-20: HTTP 200 (new article may be live)
+- phone-accessories: still shows OLD price UI (Approx. Amazon price) — soft-price + CTR title changes NOT fully live yet
+
+## You must run locally (no CLOUDFLARE_API_TOKEN in agent)
+1. npm run deploy
+2. npm run index-priority
+3. GSC: request indexing for canonical URLs WITHOUT trailing slash:
+   - https://altpik.com/articles/phone-accessories-amazon
+   - https://altpik.com/articles/tiktok-home-organizers-amazon
+   - https://altpik.com/articles/amazon-supplements-best-sellers
+   - https://altpik.com/articles/ninja-creami-alternative
+   - https://altpik.com/articles/owala-freesip-alternative
+   - https://altpik.com/articles/yeti-rambler-alternative
+4. DO NOT change trailingSlash for 7+ days
+

@@ -70,7 +70,7 @@ faq:
   - question: "How did you pick these dorm essentials?"
     answer: "We selected compact, highly reviewed Amazon items that solve real dorm problems—limited space, shared bathrooms, late-night studying, and laundry day. Every pick fits a typical freshman budget."
   - question: "What price range are these dorm items?"
-    answer: "Most picks are between $10 and $35 on Amazon. We prioritized affordable essentials parents and students can bundle without exceeding a move-in budget."
+    answer: "Most picks typically sit around $10–35 on Amazon before tax. Prices move with coupons and back-to-school sales — use the search links for today's listing, not the ranges on this page as a guarantee."
   - question: "Are these Amazon affiliate links?"
     answer: "Yes. We earn from qualifying purchases through the Amazon Associates Program at no extra cost to you. Recommendations focus on dorm practicality and reviews, not payouts."
   - question: "Who is this dorm essentials guide for?"

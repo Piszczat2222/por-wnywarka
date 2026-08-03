@@ -5,17 +5,17 @@ category: kitchen
 categoryLabel: "Kitchen & Cooking"
 cardTitle: "Ninja Creami Dupe vs. Cuisinart on Amazon"
 cardExcerpt: "Protein ice cream and sorbet at home: the best ninja creami dupe amazon shoppers trust for a fraction of the price."
-premiumProduct: "Ninja Creami Ice Cream Maker (~$200)"
-premiumPrice: "~$180–220"
-pickProduct: "Cuisinart ICE-21P1 Ice Cream Maker (~$70)"
-pickPrice: "~$70"
+premiumProduct: "Ninja Creami Ice Cream Maker"
+premiumPrice: "~$180–220 typically"
+pickProduct: "Cuisinart ICE-21P1 Ice Cream Maker"
+pickPrice: "~$60–90 typically"
 amazonAsin: "B003KYSLMW"
 featured: false
 publishedAt: 2026-07-05
-updatedAt: 2026-07-30
-seoTitle: "Ninja Creami Dupe on Amazon (2026): Budget Ice Cream Maker"
-seoDescription: "Ninja Creami dupe on Amazon: Cuisinart ICE-21P1 budget ice cream maker for homemade frozen treats without the $200 Ninja price."
-keywords: ["ninja creami dupe amazon", "ninja creami alternative", "budget ninja creami", "ninja creamie dupe", "ice cream maker amazon"]
+updatedAt: 2026-07-31
+seoTitle: "Ninja Creami Dupe on Amazon: Cuisinart ~$70"
+seoDescription: "Looking for a Ninja Creami dupe? Cuisinart ICE-21P1 makes homemade ice cream and sorbet for a fraction of the Creami price — when you need the real pint-spin machine."
+keywords: ["ninja creami dupe amazon", "ninja creami dupe", "ninja creami alternative", "budget ninja creami", "ninja creamie dupe", "ice cream maker amazon"]
 ogImage: "/og-default.png"
 comparisonTable:
   - feature: "Method"

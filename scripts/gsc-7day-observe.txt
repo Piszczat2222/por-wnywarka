@@ -1,0 +1,36 @@
+# GSC 7-day observation checklist (after CTR deploy)
+
+Start date: ________  (day you run `npm run deploy` with CTR titles)
+
+## Hard rule
+- [ ] Do NOT change trailingSlash / URL format this week
+
+## Daily or every 2–3 days in GSC Performance (filter last 7 days)
+Date | Total impressions | Total clicks | Notes
+-----|-------------------|--------------|------
+     |                   |              |
+     |                   |              |
+     |                   |              |
+
+## Canonical URL check (Pages report)
+- [ ] phone-accessories-amazon — impressions on URL **without** `/` rising vs with `/`
+- [ ] tiktok-home-organizers-amazon — same
+- [ ] amazon-supplements-best-sellers — same
+
+## CTR targets (compare to pre-deploy ~0–0.1% on phone/tiktok)
+- [ ] phone-accessories: CTR _____ (goal > 0.5% once impressions return)
+- [ ] tiktok-home-organizers: CTR _____ (goal > 0.5%)
+- [ ] Average position phone / tiktok / creami / owala noted
+
+## Indexing
+- [ ] Requested indexing on 6 priority URLs (no trailing slash)
+- [ ] sitemap-index.xml still submitted
+
+## Bing (separate from AI citations CSV)
+- [ ] Bing Webmaster → Search Performance opened (not AI Performance file)
+- [ ] After deploy: `npm run index-priority`
+
+## Pass / fail after day 7
+- Impressions trending up from post-crash ~10/day? Y/N
+- Any CTR movement on phone or tiktok? Y/N
+- If N/N: thicken next GSC winners (yeti already expanded); still no URL flip

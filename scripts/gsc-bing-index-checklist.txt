@@ -1,0 +1,31 @@
+# AltPik — GSC + Bing index checklist (no trailing slash)
+Generated for traffic growth sprint. Do NOT flip trailingSlash in astro.config.
+
+## Before indexing
+1. npm run deploy  (needs CLOUDFLARE_API_TOKEN locally)
+2. Confirm live: https://altpik.com/sitemap-index.xml
+3. Re-submit sitemap in GSC and Bing Webmaster Tools
+
+## URL Inspection / Bing Submit (request indexing)
+1. https://altpik.com/articles/phone-accessories-amazon
+2. https://altpik.com/articles/amazon-supplements-best-sellers
+3. https://altpik.com/articles/ninja-creami-alternative
+4. https://altpik.com/articles/owala-freesip-alternative
+5. https://altpik.com/articles/college-dorm-essentials-amazon
+6. https://altpik.com/articles/amazon-kitchen-best-sellers
+7. https://altpik.com/articles/amazon-gifts-under-20
+8. https://altpik.com/articles/nespresso-machine-alternative
+9. https://altpik.com/articles/housewarming-gifts-amazon
+10. https://altpik.com/articles/baby-brezza-alternative
+11. https://altpik.com/articles/car-emergency-kit-amazon
+12. https://altpik.com/articles/teacher-classroom-gadgets-amazon
+13. https://altpik.com/articles/air-fryer-accessories-amazon
+14. https://altpik.com/articles/sleep-gadgets-amazon
+
+## After submit
+- Wait 7–14 days — no URL format changes
+- Weekly: GSC Performance (impressions → clicks) + Pages indexing summary
+- Bing: Search Performance + IndexNow success
+
+## Automate IndexNow for this list
+node scripts/priority-index-urls.mjs
