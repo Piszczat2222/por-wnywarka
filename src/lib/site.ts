@@ -29,7 +29,7 @@ export const POPULAR_ARTICLES = [
   { href: '/articles/phone-accessories-amazon', label: 'Phone Accessories Best Sellers' },
   { href: '/articles/ninja-creami-alternative', label: 'Ninja Creami Dupe' },
   { href: '/articles/dyson-vacuum-alternative', label: 'Dyson V15 Knockoff' },
-  { href: '/articles/owala-freesip-alternative', label: 'Owala FreeSip Dupe' },
+  { href: '/articles/robot-vacuum-alternative', label: 'Roomba Alternative' },
   { href: '/articles/gaming-desk-accessories-amazon', label: 'Gaming Desk Accessories' },
   { href: '/articles/air-fryer-accessories-amazon', label: 'Air Fryer Accessories' },
   { href: '/articles/car-detailing-gadgets-amazon', label: 'Car Detailing Gadgets' },

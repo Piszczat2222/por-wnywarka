@@ -100,4 +100,4 @@ This list covers **heat**, **prep**, and **storage**. Every pick links to an Ama
 - **Gift-ability** — appliances and pans people ask for, not gizmos
 - **Price bands** — mostly under $120, with utensils under $30
 
-Skip the unitasker that only makes spiralized zucchini. An air fryer plus a sheet pan and one good skillet covers more meals than a drawer of novelty gadgets. Pair coffee upgrades with our [Nespresso machine alternative](/articles/nespresso-machine-alternative) if you want espresso-style drinks without the brand premium.
+Skip the unitasker that only makes spiralized zucchini. An air fryer plus a sheet pan and one good skillet covers more meals than a drawer of novelty gadgets.

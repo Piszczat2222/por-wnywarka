@@ -14,18 +14,17 @@ export const PRIORITY_URLS = [
   'https://altpik.com/articles/phone-accessories-amazon',
   'https://altpik.com/articles/amazon-supplements-best-sellers',
   'https://altpik.com/articles/ninja-creami-alternative',
-  'https://altpik.com/articles/owala-freesip-alternative',
+  'https://altpik.com/articles/robot-vacuum-alternative',
   'https://altpik.com/articles/college-dorm-essentials-amazon',
   'https://altpik.com/articles/amazon-kitchen-best-sellers',
   'https://altpik.com/articles/amazon-gifts-under-20',
-  'https://altpik.com/articles/nespresso-machine-alternative',
   'https://altpik.com/articles/housewarming-gifts-amazon',
   // Traffic sprint additions
   'https://altpik.com/articles/baby-brezza-alternative',
   'https://altpik.com/articles/car-emergency-kit-amazon',
   'https://altpik.com/articles/teacher-classroom-gadgets-amazon',
   'https://altpik.com/articles/air-fryer-accessories-amazon',
-  'https://altpik.com/articles/yeti-rambler-alternative',
+  'https://altpik.com/articles/stanley-tumbler-alternative',
   'https://altpik.com/articles/tiktok-home-organizers-amazon',
 ];
 

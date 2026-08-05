@@ -5,24 +5,63 @@ interface Props {
   premiumLabel: string;
   pickLabel: string;
   rows: ComparisonRow[];
+  premiumImage?: string;
+  pickImage?: string;
 }
 
-const { premiumLabel, pickLabel, rows } = Astro.props;
+const { premiumLabel, pickLabel, rows, premiumImage, pickImage } = Astro.props;
 
 function cellClass(highlight: ComparisonRow['highlight'], column: 'premium' | 'pick') {
   if (highlight === column) return 'bg-brand-50 font-semibold text-brand-800';
   return '';
 }
+
+function shortLabel(label: string, max = 28) {
+  const clean = label.replace(/\s*\(~?\$[^)]+\)\s*$/, '').trim();
+  return clean.length > max ? clean.slice(0, max - 1) + '…' : clean;
+}
 ---
 
 <div class="overflow-hidden rounded-2xl border border-gray-200 shadow-sm">
   <div class="overflow-x-auto">
-    <table class="w-full min-w-[480px] text-left text-sm">
+    <table class="w-full min-w-[520px] text-left text-sm">
       <thead>
         <tr class="border-b border-gray-200 bg-gray-50">
           <th class="px-4 py-4 font-semibold text-gray-900 sm:px-6">Feature</th>
-          <th class="px-4 py-4 font-semibold text-gray-700 sm:px-6">{premiumLabel}</th>
-          <th class="px-4 py-4 font-semibold text-brand-700 sm:px-6">Our Amazon Pick</th>
+          <th class="px-4 py-4 font-semibold text-gray-700 sm:px-6">
+            <div class="flex items-center gap-3">
+              {
+                premiumImage && (
+                  <img
+                    src={premiumImage}
+                    alt=""
+                    width="40"
+                    height="40"
+                    class="h-10 w-10 rounded-lg bg-white object-contain p-0.5 ring-1 ring-gray-200"
+                    loading="lazy"
+                  />
+                )
+              }
+              <span class="leading-snug">{shortLabel(premiumLabel)}</span>
+            </div>
+          </th>
+          <th class="px-4 py-4 font-semibold text-brand-700 sm:px-6">
+            <div class="flex items-center gap-3">
+              {
+                pickImage && (
+                  <img
+                    src={pickImage}
+                    alt=""
+                    width="40"
+                    height="40"
+                    class="h-10 w-10 rounded-lg bg-white object-contain p-0.5 ring-2 ring-brand-200"
+                    loading="lazy"
+                  />
+                )
+              }
+              <span class="leading-snug">{shortLabel(pickLabel)}</span>
+            </div>
+          </th>
         </tr>
       </thead>
       <tbody>
@@ -43,6 +82,6 @@ function cellClass(highlight: ComparisonRow['highlight'], column: 'premium' | 'p
     </table>
   </div>
   <p class="border-t border-gray-100 bg-gray-50 px-4 py-2 text-xs text-gray-500 sm:px-6">
-    Prices shown are approximate and may change on Amazon.
+    Prices shown are pinned Amazon amounts and may change — always confirm live.
   </p>
 </div>

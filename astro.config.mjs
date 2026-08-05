@@ -6,6 +6,9 @@ export default defineConfig({
   site: 'https://altpik.com',
   output: 'static',
   trailingSlash: 'never',
+  redirects: {
+    '/articles/summer-beach-bags-straw-amazon': '/articles/beach-day-essentials-amazon',
+  },
   build: {
     format: 'file',
   },

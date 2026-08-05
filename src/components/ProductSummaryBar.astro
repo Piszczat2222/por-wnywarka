@@ -1,27 +1,202 @@
 ---
+import { productImageForAsin } from '../lib/listicle-images';
+import { amazonUrl } from '../lib/amazon';
+
 interface Props {
   premiumProduct: string;
   premiumPrice?: string;
   pickProduct: string;
   pickPrice?: string;
+  pickAsin?: string;
+  premiumAsin?: string;
+  premiumImageSrc?: string;
+  premiumUrl?: string;
 }
 
-const { premiumProduct, premiumPrice, pickProduct, pickPrice } = Astro.props;
+const {
+  premiumProduct,
+  premiumPrice,
+  pickProduct,
+  pickPrice,
+  pickAsin,
+  premiumAsin,
+  premiumImageSrc,
+  premiumUrl,
+} = Astro.props;
+const pickImage = productImageForAsin(pickAsin);
+const premiumImage = premiumImageSrc || productImageForAsin(premiumAsin);
+const premiumFromAmazon = Boolean(premiumAsin);
+const premiumLinkLabel = premiumFromAmazon ? 'View on Amazon →' : 'View product →';
+const premiumPriceNote = premiumFromAmazon
+  ? 'Pinned Amazon price — confirm live'
+  : 'Pinned price — confirm live';
+const premiumRel = premiumFromAmazon
+  ? 'noopener noreferrer sponsored'
+  : 'noopener noreferrer';
+const premiumAria = premiumFromAmazon
+  ? `View ${premiumProduct} on Amazon`
+  : `View ${premiumProduct}`;
+const premiumHref = premiumAsin
+  ? amazonUrl(premiumAsin)
+  : premiumUrl || undefined;
+const pickHref = pickAsin ? amazonUrl(pickAsin) : undefined;
+
+function parseMoney(value?: string): number | null {
+  if (!value) return null;
+  const m = value.replace(/,/g, '').match(/(\d+(?:\.\d{1,2})?)/);
+  return m ? Number(m[1]) : null;
+}
+
+const premiumNum = parseMoney(premiumPrice);
+const pickNum = parseMoney(pickPrice);
+const saveAmount =
+  premiumNum != null && pickNum != null && premiumNum > pickNum
+    ? Math.round(premiumNum - pickNum)
+    : null;
 ---
 
-<div class="mb-8 grid gap-4 sm:grid-cols-2">
-  <div class="rounded-2xl border border-gray-200 bg-gray-50 p-5">
-    <p class="text-xs font-semibold uppercase tracking-wide text-gray-500">Premium pick</p>
-    <p class="mt-1 text-lg font-bold text-gray-900">{premiumProduct}</p>
-    {premiumPrice && (
-      <p class="mt-1 text-sm font-medium text-gray-600">{premiumPrice}</p>
-    )}
-    <p class="mt-1 text-xs text-gray-400">Typical range — confirm on Amazon</p>
+<section class="mb-10 overflow-hidden rounded-3xl border border-gray-200 bg-gradient-to-b from-gray-50 to-white shadow-sm">
+  <div class="grid gap-0 sm:grid-cols-[1fr_auto_1fr] sm:items-stretch">
+    {/* Premium */}
+    <div class="flex flex-col items-center p-6 text-center sm:p-8">
+      <span class="inline-flex rounded-full bg-gray-200/80 px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-gray-600">
+        Premium
+      </span>
+      {
+        premiumImage ? (
+          premiumHref ? (
+            <a
+              href={premiumHref}
+              target="_blank"
+              rel="noopener noreferrer sponsored"
+              class="mt-5 flex h-44 w-full max-w-[220px] items-center justify-center rounded-2xl bg-white p-4 shadow-sm ring-1 ring-gray-100 transition hover:ring-gray-300 sm:h-52"
+              aria-label={premiumAria}
+            >
+              <img
+                src={premiumImage}
+                alt={premiumProduct}
+                width="200"
+                height="200"
+                class="max-h-full max-w-full object-contain"
+                loading="eager"
+              />
+            </a>
+          ) : (
+            <div class="mt-5 flex h-44 w-full max-w-[220px] items-center justify-center rounded-2xl bg-white p-4 shadow-sm ring-1 ring-gray-100 sm:h-52">
+              <img
+                src={premiumImage}
+                alt={premiumProduct}
+                width="200"
+                height="200"
+                class="max-h-full max-w-full object-contain"
+                loading="eager"
+              />
+            </div>
+          )
+        ) : (
+          <div class="mt-5 h-44 w-full max-w-[220px] rounded-2xl bg-gray-100 sm:h-52" />
+        )
+      }
+      <h3 class="mt-5 text-base font-bold leading-snug text-gray-900 sm:text-lg">{premiumProduct}</h3>
+      {
+        premiumPrice && (
+          <p class="mt-2 text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl">
+            {premiumPrice}
+          </p>
+        )
+      }
+      <p class="mt-1 text-xs text-gray-400">{premiumPriceNote}</p>
+      {
+        premiumHref && (
+          <a
+            href={premiumHref}
+            target="_blank"
+            rel={premiumRel}
+            class="mt-4 text-sm font-semibold text-gray-700 underline-offset-2 hover:text-gray-900 hover:underline"
+          >
+            {premiumLinkLabel}
+          </a>
+        )
+      }
+    </div>
+
+    {/* VS */}
+    <div class="relative flex items-center justify-center border-y border-gray-200 bg-white px-4 py-3 sm:border-x sm:border-y-0 sm:px-2 sm:py-0">
+      <div class="flex flex-col items-center gap-2">
+        <span class="flex h-12 w-12 items-center justify-center rounded-full bg-gray-900 text-sm font-extrabold tracking-wide text-white shadow-lg sm:h-14 sm:w-14 sm:text-base">
+          VS
+        </span>
+        {
+          saveAmount != null && (
+            <span class="rounded-full bg-brand-600 px-3 py-1 text-xs font-bold text-white shadow-sm">
+              Save ~${saveAmount}
+            </span>
+          )
+        }
+      </div>
+    </div>
+
+    {/* Pick */}
+    <div class="flex flex-col items-center border-t border-brand-100 bg-brand-50/50 p-6 text-center sm:border-t-0 sm:p-8">
+      <span class="inline-flex rounded-full bg-brand-600 px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-white">
+        Our Amazon pick
+      </span>
+      {
+        pickImage ? (
+          pickHref ? (
+            <a
+              href={pickHref}
+              target="_blank"
+              rel="noopener noreferrer sponsored"
+              class="mt-5 flex h-44 w-full max-w-[220px] items-center justify-center rounded-2xl bg-white p-4 shadow-sm ring-2 ring-brand-200 transition hover:ring-brand-400 sm:h-52"
+              aria-label={`View ${pickProduct} on Amazon`}
+            >
+              <img
+                src={pickImage}
+                alt={pickProduct}
+                width="200"
+                height="200"
+                class="max-h-full max-w-full object-contain"
+                loading="eager"
+              />
+            </a>
+          ) : (
+            <div class="mt-5 flex h-44 w-full max-w-[220px] items-center justify-center rounded-2xl bg-white p-4 shadow-sm ring-2 ring-brand-200 sm:h-52">
+              <img
+                src={pickImage}
+                alt={pickProduct}
+                width="200"
+                height="200"
+                class="max-h-full max-w-full object-contain"
+                loading="eager"
+              />
+            </div>
+          )
+        ) : (
+          <div class="mt-5 h-44 w-full max-w-[220px] rounded-2xl bg-white ring-2 ring-brand-200 sm:h-52" />
+        )
+      }
+      <h3 class="mt-5 text-base font-bold leading-snug text-gray-900 sm:text-lg">{pickProduct}</h3>
+      {
+        pickPrice && (
+          <p class="mt-2 text-2xl font-extrabold tracking-tight text-brand-700 sm:text-3xl">
+            {pickPrice}
+          </p>
+        )
+      }
+      <p class="mt-1 text-xs text-brand-600/80">Pinned Amazon price — confirm live</p>
+      {
+        pickHref && (
+          <a
+            href={pickHref}
+            target="_blank"
+            rel="noopener noreferrer sponsored"
+            class="mt-4 text-sm font-semibold text-brand-700 underline-offset-2 hover:underline"
+          >
+            View on Amazon →
+          </a>
+        )
+      }
+    </div>
   </div>
-  <div class="rounded-2xl border-2 border-brand-200 bg-brand-50 p-5">
-    <p class="text-xs font-semibold uppercase tracking-wide text-brand-700">Our Amazon pick</p>
-    <p class="mt-1 text-lg font-bold text-gray-900">{pickProduct}</p>
-    {pickPrice && <p class="mt-1 text-sm font-medium text-brand-700">{pickPrice}</p>}
-    <p class="mt-1 text-xs text-brand-600/80">Typical range — confirm on Amazon</p>
-  </div>
-</div>
+</section>

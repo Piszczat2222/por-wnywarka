@@ -135,37 +135,75 @@ const catInactive = 'bg-gray-100 text-gray-700 hover:bg-gray-200';
     pill.classList.add(...(active ? activeClass : inactiveClass).split(' '));
   }
 
+  function setPillCount(pill: HTMLElement, count: number) {
+    const label = (pill.textContent ?? '').replace(/\s*\(\d+\)\s*$/, '').trim();
+    pill.textContent = `${label} (${count})`;
+  }
+
   function applyFilters(filters: Filters) {
-    const cards = document.querySelectorAll<HTMLElement>('[data-review-card]');
+    const cards = [...document.querySelectorAll<HTMLElement>('[data-review-card]')];
     let visible = 0;
+    let allForCat = 0;
+    let comparisonForCat = 0;
+    let listicleForCat = 0;
+    const catCounts = new Map<string, number>();
 
     cards.forEach((card) => {
-      const cardType = card.dataset.type;
-      const cardCat = card.dataset.category;
+      const cardType = card.dataset.type ?? '';
+      const cardCat = card.dataset.category ?? '';
       const typeMatch = !filters.type || cardType === filters.type;
       const catMatch = !filters.cat || cardCat === filters.cat;
       const show = typeMatch && catMatch;
       card.hidden = !show;
       if (show) visible++;
+
+      // Type pill counts: cards matching current category (ignore type filter)
+      if (catMatch) {
+        allForCat++;
+        if (cardType === 'comparison') comparisonForCat++;
+        if (cardType === 'listicle') listicleForCat++;
+      }
+
+      // Category pill counts: cards matching current type (ignore cat filter)
+      if (typeMatch && cardCat) {
+        catCounts.set(cardCat, (catCounts.get(cardCat) ?? 0) + 1);
+      }
     });
 
     const countEl = document.getElementById('reviews-count');
     if (countEl) {
-      countEl.textContent = `${visible} curated Amazon picks: comparisons and Top 10 listicles.`;
+      if (filters.type === 'listicle') {
+        countEl.textContent = `${visible} Top 10 Amazon guides${filters.cat ? ' in this category' : ''}.`;
+      } else if (filters.type === 'comparison') {
+        countEl.textContent = `${visible} Amazon comparisons${filters.cat ? ' in this category' : ''}.`;
+      } else {
+        countEl.textContent = `${visible} curated Amazon picks: comparisons and Top 10 listicles.`;
+      }
     }
 
     document.querySelectorAll<HTMLElement>('.reviews-type-pill').forEach((pill) => {
       const pillType = pill.dataset.reviewsType ?? '';
       const isAll = pillType === '';
-      const active = isAll
-        ? !filters.type && !filters.cat
-        : filters.type === pillType;
-      setPillActive(pill, active, 'type');
+      const typeActiveState = isAll ? !filters.type : filters.type === pillType;
+      setPillActive(pill, typeActiveState, 'type');
+
+      if (isAll) setPillCount(pill, allForCat);
+      else if (pillType === 'comparison') setPillCount(pill, comparisonForCat);
+      else if (pillType === 'listicle') setPillCount(pill, listicleForCat);
+
+      // "All" clears type; keep category on comparison/listicle pills
+      pill.href = buildUrl({
+        type: isAll ? null : pillType,
+        cat: isAll ? null : filters.cat,
+      });
     });
 
     document.querySelectorAll<HTMLElement>('.reviews-cat-pill').forEach((pill) => {
       const pillCat = pill.dataset.reviewsCat ?? '';
+      const count = catCounts.get(pillCat) ?? 0;
       setPillActive(pill, filters.cat === pillCat, 'cat');
+      setPillCount(pill, count);
+      pill.hidden = count === 0;
       pill.href = buildUrl({ type: filters.type, cat: pillCat });
     });
   }

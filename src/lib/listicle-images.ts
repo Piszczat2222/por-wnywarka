@@ -5,6 +5,12 @@ import type { ListItem } from '../content.config';
 const imageMap = productImages as Record<string, string>;
 const thumbnailMap = listicleThumbnails as Record<string, string>;
 
+export function productImageForAsin(asin: string | undefined): string | undefined {
+  if (!asin) return undefined;
+  if (imageMap[asin]) return imageMap[asin];
+  return `https://m.media-amazon.com/images/P/${asin}._SL300_.jpg`;
+}
+
 export function listItemProductImage(
   item: Pick<ListItem, 'image' | 'imageAsin' | 'asin' | 'name'>,
 ): string | undefined {
@@ -14,11 +20,7 @@ export function listItemProductImage(
 
   const asin = item.imageAsin ?? item.asin;
   if (asin) {
-    if (imageMap[asin]) {
-      return imageMap[asin];
-    }
-    // Live Amazon product image when an ASIN is pinned (Associates CDN).
-    return `https://m.media-amazon.com/images/P/${asin}._SL300_.jpg`;
+    return productImageForAsin(asin);
   }
 
   if (item.name && thumbnailMap[item.name]) {

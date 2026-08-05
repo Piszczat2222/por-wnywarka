@@ -64,6 +64,11 @@ const articles = defineCollection({
     pickProduct: z.string().optional(),
     pickPrice: z.string().optional(),
     amazonAsin: z.string().optional(),
+    premiumAsin: z.string().optional(),
+    /** Local image path when premium is not an Amazon ASIN (e.g. Pottery Barn). */
+    premiumImage: z.string().optional(),
+    /** External product URL for non-Amazon premium (e.g. Pottery Barn Teen). */
+    premiumUrl: z.string().url().optional(),
     runnerUpAsin: z.string().optional(),
     runnerUpProduct: z.string().optional(),
     comparisonTable: z.array(comparisonRowSchema).optional(),

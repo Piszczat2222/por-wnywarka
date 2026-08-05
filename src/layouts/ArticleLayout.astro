@@ -22,6 +22,7 @@ import {
   itemListSchema,
   mergeJsonLd,
 } from '../lib/structured-data';
+import { productImageForAsin } from '../lib/listicle-images';
 
 interface Props {
   article: CollectionEntry<'articles'>;
@@ -31,6 +32,9 @@ const { article } = Astro.props;
 const { Content } = await render(article);
 const { data } = article;
 const isListicle = data.articleType === 'listicle';
+const pickProductImage = productImageForAsin(data.amazonAsin);
+const premiumProductImage =
+  data.premiumImage || productImageForAsin(data.premiumAsin);
 
 const pageTitle = buildPageTitle(data.seoTitle ?? data.title);
 const pageDescription = data.seoDescription ?? data.description;
@@ -156,6 +160,10 @@ const jsonLd = mergeJsonLd(
               premiumPrice={data.premiumPrice}
               pickProduct={data.pickProduct}
               pickPrice={data.pickPrice}
+              pickAsin={data.amazonAsin}
+              premiumAsin={data.premiumAsin}
+              premiumImageSrc={data.premiumImage}
+              premiumUrl={data.premiumUrl}
             />
           )}
 
@@ -164,6 +172,8 @@ const jsonLd = mergeJsonLd(
               premiumLabel={data.premiumProduct}
               pickLabel={data.pickProduct}
               rows={data.comparisonTable}
+              premiumImage={premiumProductImage}
+              pickImage={pickProductImage}
             />
           )}
 
@@ -182,12 +192,64 @@ const jsonLd = mergeJsonLd(
           )}
 
           {data.amazonAsin && data.pickProduct && (
-            <div class="my-10 rounded-2xl border border-brand-200 bg-brand-50 p-6 sm:p-8">
-              <h2 class="mb-2 text-xl font-bold text-gray-900">Ready to buy?</h2>
-              <p class="mb-5 text-sm text-gray-600">
-                Check current price and availability for <strong>{data.pickProduct}</strong> on Amazon — amounts on this page are typical ranges only.
-              </p>
-              <AmazonCTA asin={data.amazonAsin} productName={data.pickProduct} />
+            <div class="my-10 space-y-4">
+              <div class="rounded-2xl border border-brand-200 bg-brand-50 p-6 sm:p-8">
+                <div class:list={['gap-6', pickProductImage && 'sm:flex sm:items-center']}>
+                  {pickProductImage && (
+                    <img
+                      src={pickProductImage}
+                      alt={data.pickProduct}
+                      width="160"
+                      height="160"
+                      class="mx-auto mb-5 h-36 w-36 shrink-0 rounded-2xl bg-white object-contain p-3 shadow-sm sm:mx-0 sm:mb-0 sm:h-40 sm:w-40"
+                      loading="lazy"
+                    />
+                  )}
+                  <div class="min-w-0 flex-1">
+                    <p class="mb-1 text-xs font-bold uppercase tracking-wide text-brand-700">
+                      Our Amazon pick
+                    </p>
+                    <h2 class="mb-2 text-xl font-bold text-gray-900">Ready to buy?</h2>
+                    <p class="mb-5 text-sm text-gray-600">
+                      Check current price and availability for <strong>{data.pickProduct}</strong> on
+                      Amazon — amounts on this page are typical ranges only.
+                    </p>
+                    <AmazonCTA asin={data.amazonAsin} productName={data.pickProduct} />
+                  </div>
+                </div>
+              </div>
+
+              {data.premiumAsin && data.premiumProduct && (
+                <div class="rounded-2xl border border-gray-200 bg-gray-50 p-6 sm:p-8">
+                  <div class:list={['gap-6', premiumProductImage && 'sm:flex sm:items-center']}>
+                    {premiumProductImage && (
+                      <img
+                        src={premiumProductImage}
+                        alt={data.premiumProduct}
+                        width="160"
+                        height="160"
+                        class="mx-auto mb-5 h-36 w-36 shrink-0 rounded-2xl bg-white object-contain p-3 shadow-sm sm:mx-0 sm:mb-0 sm:h-40 sm:w-40"
+                        loading="lazy"
+                      />
+                    )}
+                    <div class="min-w-0 flex-1">
+                      <p class="mb-1 text-xs font-bold uppercase tracking-wide text-gray-500">
+                        Premium
+                      </p>
+                      <h2 class="mb-2 text-xl font-bold text-gray-900">{data.premiumProduct}</h2>
+                      <p class="mb-5 text-sm text-gray-600">
+                        Prefer the premium option? Check current price and availability for{' '}
+                        <strong>{data.premiumProduct}</strong> on Amazon.
+                      </p>
+                      <AmazonCTA
+                        asin={data.premiumAsin}
+                        productName={data.premiumProduct}
+                        variant="secondary"
+                      />
+                    </div>
+                  </div>
+                </div>
+              )}
             </div>
           )}
 
