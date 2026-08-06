@@ -24,25 +24,39 @@
     "image": "/pinterest/pin-beach-bags.png"
   },
   {
-    "title": "Beach Jewelry Under $15 — Stack & Go",
-    "description": "Starfish, shells, and gold stacks under $15 for vacation outfits. Fashion jewelry care tips included → altpik.com/articles/beach-jewelry-under-15-amazon",
+    "title": "Vacation Jewelry Stacks Under $20",
+    "description": "Gold bracelet stacks, flat-back earrings, and bead necklaces under $20 for vacation outfits → altpik.com/articles/beach-jewelry-under-15-amazon",
     "url": "https://altpik.com/articles/beach-jewelry-under-15-amazon",
     "board": "Summer Beach Style",
     "altText": "Gold shell and starfish beach jewelry stack"
   },
   {
-    "title": "Hair Scarves & Bandanas Under $20",
-    "description": "Satin, lace, and silk scarves that finish a summer outfit in seconds. Pack three for vacation → altpik.com/articles/summer-hair-scarves-bandanas-amazon",
-    "url": "https://altpik.com/articles/summer-hair-scarves-bandanas-amazon",
-    "board": "Summer Beach Style",
-    "altText": "Woman styling a summer satin hair scarf"
+    "title": "Men's Grooming Gadgets Worth Buying",
+    "description": "Ufree trimmer, MANSCAPED body groomer, Honest Amish oil, Mbzoey foil shaver — daily tools, not drawer junk → altpik.com/articles/mens-grooming-gadgets-amazon",
+    "url": "https://altpik.com/articles/mens-grooming-gadgets-amazon",
+    "board": "Gift Ideas Under $25",
+    "altText": "Men's grooming kit with trimmer oil and toiletry bag"
   },
   {
-    "title": "Birthday Gifts for Mom She'll Actually Use",
-    "description": "Weighted throws, sunrise clocks, spa baskets — birthday gifts for mom beyond flowers. Top 10 → altpik.com/articles/birthday-gifts-for-mom-amazon",
+    "title": "Thoughtful Birthday Gifts for Your Girlfriend",
+    "description": "Spotify photo frame, satin sleep set, KODAK Mini 2, TALES cards, Huski tumbler — gifts she'll keep → altpik.com/articles/birthday-gifts-for-girlfriend-amazon",
+    "url": "https://altpik.com/articles/birthday-gifts-for-girlfriend-amazon",
+    "board": "Gift Ideas Under $25",
+    "altText": "Birthday gift flat lay with photo frame tumbler and candles"
+  },
+  {
+    "title": "Thoughtful Birthday Gifts for Mom",
+    "description": "Weighted blanket, sunrise clock, bath bombs, Homedics foot spa — gifts she'll use after the cake → altpik.com/articles/birthday-gifts-for-mom-amazon",
     "url": "https://altpik.com/articles/birthday-gifts-for-mom-amazon",
     "board": "Gift Ideas Under $25",
     "altText": "Cozy birthday gift ideas for mom on a table"
+  },
+  {
+    "title": "Thoughtful Mother's Day Gifts on Amazon",
+    "description": "ZIMASILK silk pillowcase, Cosori kettle, heated eye mask, RENPHO pad, Burt's Bees tin — gifts she'll use after the flowers → altpik.com/articles/mothers-day-gift-ideas-amazon",
+    "url": "https://altpik.com/articles/mothers-day-gift-ideas-amazon",
+    "board": "Gift Ideas Under $25",
+    "altText": "Mother's Day gift flat lay with silk pillowcase and spa tools"
   },
   {
     "title": "Stocking Stuffers Under $25 (Shop Early)",

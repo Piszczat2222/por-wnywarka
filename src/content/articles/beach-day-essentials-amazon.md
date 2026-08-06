@@ -138,4 +138,4 @@ Skip fashion straw mini purses as your only bag — the Fammart mesh tote ($9.99
 
 The best beach day essentials on Amazon **solve sand, heat, and splash** — carry, dry, cool, shade, protect. Start with one pinned product for your biggest pain point, confirm today's live price, and stack tote + towel + bottle before you buy the umbrella.
 
-For vacation jewelry under $15, see [beach jewelry on Amazon](/articles/beach-jewelry-under-15-amazon). Packing scarves for the same trip: [summer hair scarves and bandanas](/articles/summer-hair-scarves-bandanas-amazon).
+For vacation jewelry under $20, see [beach jewelry on Amazon](/articles/beach-jewelry-under-15-amazon).
