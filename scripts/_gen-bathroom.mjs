@@ -1,0 +1,66 @@
+import { loadPicks, writeListicle, fmt } from './_write-listicle.mjs';
+const p = loadPicks('bathroom');
+const names = [
+  'YASONIC Never-Rust Shower Caddy',
+  'JOPOFI Adhesive Toilet Paper Holder',
+  'GFWARE Bamboo Toothbrush Holder',
+  'OLANLY Chenille Bath Rug (30×20)',
+  'Barossa Shower Curtain Liner',
+  'Cesun Soft-Close Bathroom Trash Can',
+  'Kitsure Over-Toilet Storage Rack',
+  'JASAI Glass Soap Dispenser (18 oz)',
+  'OXO Good Grips Toilet Brush Set',
+  'Vtopmart Clear Drawer Organizers (25pc)',
+];
+const blurbs = [
+  'Aluminum hanging shower caddy that will not rust into an orange crust — bottles stay off the tub floor.',
+  'Adhesive toilet-paper holder — install without drilling into rental walls.',
+  'Bamboo 5-slot toothbrush stand that ends the wet-brush pile by the sink.',
+  'Extra-soft absorbent chenille bath rug with non-slip backing — feet dry, floor safer.',
+  'Premium mildew-resistant shower liner that actually hangs straight.',
+  'Slim soft-close bathroom trash can with lid — hides tissues without the open-bin look.',
+  'Tall over-toilet rack that turns dead air into towel and basket storage.',
+  'Clear glass pump dispenser — refill soap without ugly branded plastic bottles.',
+  'Compact OXO toilet brush with holder — covered, sturdy, no-nonsense.',
+  '25-piece clear drawer organizer set for vanity chaos — makeup and meds find a home.',
+];
+const sum = (...idxs) => fmt(idxs.reduce((a, i) => a + p[i].price, 0));
+writeListicle({
+  slug: 'bathroom-organization-amazon',
+  title: 'Top 10 Amazon Bathroom Organization Essentials (2026)',
+  description: `Pinned Amazon bathroom gear: OLANLY bath rug (${fmt(p[3].price)}), shower liner, YASONIC caddy, Vtopmart organizers — wattroi-20 bestsellers.`,
+  category: 'home',
+  categoryLabel: 'Home & Bathroom',
+  cardTitle: 'Top 10 Amazon Bathroom Organization Essentials',
+  cardExcerpt: 'Shower caddy, bath rug, liner, over-toilet rack, drawer organizers — pinned bestsellers.',
+  seoTitle: 'Top 10 Amazon Bathroom Organization Essentials (2026)',
+  seoDescription: `Amazon bathroom organizers: OLANLY bath rug (${fmt(p[3].price)}), Barossa liner, YASONIC shower caddy, Kitsure over-toilet rack, Vtopmart drawer set.`,
+  keywords: ['bathroom organization amazon', 'shower caddy amazon', 'over toilet storage', 'bath mat amazon', 'bathroom drawer organizers'],
+  picks: p, names, blurbs,
+  badges: { 4: "Editor's Pick", 5: 'Best Value' },
+  intro: '## Small bathroom, big mess — organizers fix both\n\nBottles on the tub floor, floating toilet paper, and a vanity drawer that eats bobby pins. The ten picks above are **pinned amazon.com bestsellers** for rental-friendly bathroom order.',
+  problemHeader: 'Match the gear to the problem',
+  problems: ['Bottles crowding the tub ledge','Toilet paper rolls on the tank','Toothbrushes in a puddle','Soggy feet after showers','Liners that cling and mildew','Open trash looking gross','No shelf space above toilet','Ugly plastic soap bottles','Toilet brush with nowhere to hide','Vanity drawer chaos'],
+  kits: [
+    { name: 'Shower reset', combo: `Caddy (${fmt(p[0].price)}) + liner (${fmt(p[4].price)})`, total: sum(0, 4) },
+    { name: 'Sink zone', combo: `Toothbrush holder (${fmt(p[2].price)}) + soap dispenser (${fmt(p[7].price)})`, total: sum(2, 7) },
+    { name: 'Floor + paper', combo: `Bath rug (${fmt(p[3].price)}) + TP holder (${fmt(p[1].price)})`, total: sum(3, 1) },
+    { name: 'Storage up', combo: `Over-toilet rack (${fmt(p[6].price)}) + drawer set (${fmt(p[9].price)})`, total: sum(6, 9) },
+  ],
+  buyFirst: '**bath rug**, **shower liner**, and **shower caddy** — dry floors, clean curtain, bottles off the tub.',
+  budgets: [
+    { budget: 'Under $10', picks: `TP holder (${fmt(p[1].price)}), liner (${fmt(p[4].price)}), soap dispenser (${fmt(p[7].price)}), toothbrush holder (${fmt(p[2].price)})` },
+    { budget: '~$18–$25', picks: `Drawer organizers (${fmt(p[9].price)}), toilet brush (${fmt(p[8].price)}), caddy (${fmt(p[0].price)}), trash can (${fmt(p[5].price)}), bath rug (${fmt(p[3].price)})` },
+    { budget: '~$30', picks: `Over-toilet rack (${fmt(p[6].price)})` },
+  ],
+  tips: ['Clean walls before adhesive mounts — dust kills stick.','Hang the liner inside the curtain so water stays in the tub.','Group vanity items by morning vs night routines.','Measure toilet height before buying over-toilet shelves.'],
+  skips: ['drill into tile for a TP holder when adhesive works.','buy a fabric curtain without a liner.','stack open bottles on the tub floor "temporarily".'],
+  bottom: "The best **Amazon bathroom organizers** reclaim wet, tiny square footage. Start with a **bath rug**, **liner**, and **shower caddy**, confirm today's prices, then go vertical over the toilet.",
+  links: 'Whole-home order: [TikTok home organizers](/articles/tiktok-home-organizers-amazon). Small spaces: [small apartment gadgets](/articles/small-apartment-gadgets-amazon).',
+  faq: [
+    { q: 'How were these bathroom organizers chosen?', a: 'We searched amazon.com via Creators API and pinned high-sales-rank bathroom gear: shower caddy, TP holder, toothbrush stand, bath rug, shower liner, trash can, over-toilet rack, soap dispenser, OXO toilet brush, and Vtopmart drawer organizers. Links use wattroi-20.' },
+    { q: 'What does this bathroom list cost?', a: `Pinned prices run from ${fmt(p[1].price)} to ${fmt(p[6].price)}. A shower reset of caddy + liner is about ${sum(0, 4)}. Confirm live Amazon prices.` },
+    { q: 'Renter-friendly?', a: 'Yes — adhesive TP holder, freestanding over-toilet rack, and hanging caddy avoid most drilling. Always check adhesive residue rules.' },
+    { q: 'Who is this bathroom guide for?', a: 'Renters, first apartments, and anyone whose bathroom counter looks like a CVS shelf exploded.' },
+  ],
+});

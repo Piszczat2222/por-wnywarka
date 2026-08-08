@@ -1,0 +1,66 @@
+import { loadPicks, writeListicle, fmt } from './_write-listicle.mjs';
+const p = loadPicks('monitordesk');
+const names = [
+  'ErGear Single Monitor Arm',
+  'BESIGN Aluminum Laptop Stand',
+  'Anker 8-in-1 USB-C Hub / Dock',
+  'Quntis Monitor Light Bar with Backlight',
+  'YSAGi Leather Desk Pad Mat',
+  'Logitech C920S Pro HD Webcam (Renewed)',
+  'Alex Tech Cord Protector Cable Sleeve',
+  'MOSISO Keyboard & Mouse Wrist Rest Set',
+  'OPNICE 2-Tier Monitor Riser Organizer',
+  'Gaoye Blue Light Glasses (3-Pack)',
+];
+const blurbs = [
+  'Gas-spring monitor arm that frees desk space and lifts the screen to eye level.',
+  'Aluminum laptop stand that raises the keyboard angle and cools the chassis.',
+  'USB-C hub with HDMI so one cable handles display, ports, and charging.',
+  'Monitor light bar that lights the desk without glare on the screen.',
+  'Large leather desk mat that protects the surface and defines the work zone.',
+  '1080p Logitech webcam for calls that should not look like a potato.',
+  'Cable sleeve that turns under-desk spaghetti into one tidy bundle.',
+  'Wrist rest set for long typing days without grinding wrists into the desk.',
+  'Monitor riser with under-shelf storage for notebooks and a keyboard.',
+  'Blue-light glasses multipack for evening screen sessions.',
+];
+const sum = (...idxs) => fmt(idxs.reduce((a, i) => a + p[i].price, 0));
+writeListicle({
+  slug: 'monitor-desk-setup-amazon',
+  title: 'Top 10 Amazon Monitor Desk Setup Essentials (2026)',
+  description: `Pinned Amazon desk setup: ErGear monitor arm (${fmt(p[0].price)}), BESIGN laptop stand, Anker USB-C hub, Quntis light bar — wattroi-20 bestsellers.`,
+  category: 'home',
+  categoryLabel: 'Home & Kitchen',
+  cardTitle: 'Top 10 Amazon Monitor Desk Setup Essentials',
+  cardExcerpt: 'Monitor arm, laptop stand, USB-C hub, light bar, desk mat, webcam, cable sleeve, wrist rest, riser, blue-light glasses — pinned bestsellers.',
+  seoTitle: 'Top 10 Amazon Monitor Desk Setup Essentials (2026)',
+  seoDescription: `Amazon monitor desk setup: ErGear monitor arm (${fmt(p[0].price)}), laptop stand, Anker USB-C hub (${fmt(p[2].price)}), Quntis light bar, desk mat, Logitech webcam.`,
+  keywords: ['monitor arm amazon', 'desk setup essentials', 'USB C hub HDMI', 'monitor light bar', 'laptop stand desk'],
+  picks: p, names, blurbs,
+  badges: { 1: "Editor's Pick", 5: 'Best Value' },
+  intro: '## Desk fatigue is often a height-and-cable problem\n\nNeck strain, glare, and a cable nest under the desk. The ten picks above are **pinned amazon.com bestsellers** for a cleaner, taller, better-lit monitor setup.',
+  problemHeader: 'Match the gear to the problem',
+  problems: ['Monitor too low / desk cluttered','Laptop at wrong height','Need HDMI + ports from one USB-C','Screen glare and dark desk surface','Bare desk scuffs and sliding mouse','Calls look like a potato','Cable spaghetti under the desk','Wrist pain on long typing days','Need shelf space under the monitor','Evening screen eye strain'],
+  kits: [
+    { name: 'Ergo core', combo: `Monitor arm (${fmt(p[0].price)}) + laptop stand (${fmt(p[1].price)})`, total: sum(0, 1) },
+    { name: 'Ports + light', combo: `USB-C hub (${fmt(p[2].price)}) + light bar (${fmt(p[3].price)})`, total: sum(2, 3) },
+    { name: 'Surface comfort', combo: `Desk mat (${fmt(p[4].price)}) + wrist rest (${fmt(p[7].price)}) + glasses (${fmt(p[9].price)})`, total: sum(4, 7, 9) },
+    { name: 'Call-ready', combo: `Webcam (${fmt(p[5].price)}) + cable sleeve (${fmt(p[6].price)}) + riser (${fmt(p[8].price)})`, total: sum(5, 6, 8) },
+  ],
+  buyFirst: '**monitor arm** (or riser), **laptop stand**, and **USB-C hub** — height and ports.',
+  budgets: [
+    { budget: 'Under $13', picks: `Desk mat (${fmt(p[4].price)}), cable sleeve (${fmt(p[6].price)}), glasses (${fmt(p[9].price)}), wrist rest (${fmt(p[7].price)})` },
+    { budget: '~$17–$20', picks: `Laptop stand (${fmt(p[1].price)}), monitor arm (${fmt(p[0].price)}), riser (${fmt(p[8].price)})` },
+    { budget: '~$40–$46', picks: `USB-C hub (${fmt(p[2].price)}), light bar (${fmt(p[3].price)}), webcam (${fmt(p[5].price)})` },
+  ],
+  tips: ['Put the top of the screen at or just below eye level.','Clamp the monitor arm to a solid desk edge — hollow tops need a reinforcement plate.','Route cables through the arm and sleeve the same day you mount.','Use the light bar aimed at the desk, not into your eyes.'],
+  skips: ['stack books under a heavy monitor forever.','buy a hub that does not match your laptop\'s USB-C power needs.','ignore glare and keep cranking screen brightness.'],
+  bottom: "The best **Amazon monitor desk setup** fixes height, ports, and light. Start with a **monitor arm**, **laptop stand**, and **USB-C hub**, confirm today's prices, then add a light bar and desk mat.",
+  links: 'WFH gear: [work from home essentials](/articles/work-from-home-essentials-amazon). Dorm desks: [dorm room essentials](/articles/dorm-room-essentials-amazon).',
+  faq: [
+    { q: 'How were these desk essentials chosen?', a: 'We searched amazon.com via Creators API and pinned high-sales-rank monitor desk gear: ErGear monitor arm, BESIGN laptop stand, Anker USB-C hub, Quntis monitor light bar, leather desk mat, Logitech webcam, cable sleeve, wrist rest set, monitor riser, and blue-light glasses. Links use wattroi-20.' },
+    { q: 'What does a starter desk upgrade cost?', a: `Pinned prices run from ${fmt(p[9].price)} to ${fmt(p[5].price)}. Monitor arm + laptop stand + desk mat land near ${sum(0, 1, 4)}. Confirm live prices.` },
+    { q: 'Do I need both a monitor arm and a riser?', a: 'Usually pick one. Use the arm for a VESA monitor you want to float; use the riser for a non-VESA display or when you want under-shelf storage.' },
+    { q: 'Who is this desk guide for?', a: 'Remote workers, students, and anyone upgrading a basic laptop-on-desk setup into a proper monitor station.' },
+  ],
+});

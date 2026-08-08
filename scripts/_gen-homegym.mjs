@@ -1,0 +1,66 @@
+import { loadPicks, writeListicle, fmt } from './_write-listicle.mjs';
+const p = loadPicks('homegym');
+const names = [
+  'WHATAFIT Resistance Bands Set',
+  'Amazon Basics Extra-Thick Yoga Mat',
+  'Ragebby Adjustable Dumbbell Set (Pair)',
+  'Tangle-Free Speed Jump Rope',
+  'Vinsguir Ab Roller Wheel',
+  'HOTWAVE Foldable Push-Up Board',
+  'Amazon Basics Cast Iron Kettlebell (15 lb)',
+  'Amazon Basics High-Density Foam Roller',
+  'ALLY PEAKS Doorway Pull-Up Bar',
+  'ATERCEL Workout Gloves',
+];
+const blurbs = [
+  'Tube bands with handles and door anchor — full-body strength without a rack.',
+  '1/2″ thick Amazon Basics mat with carry strap — knees survive floor workouts.',
+  'Adjustable pair that replaces a stack of fixed weights in a small apartment.',
+  'Tangle-free speed rope for conditioning when the weather cancels your run.',
+  'Ab wheel with knee pad — core work that does not need a gym membership.',
+  'Foldable multi-position push-up board for chest, shoulders, and triceps at home.',
+  '15 lb cast-iron kettlebell for swings and goblet squats — simple and brutal.',
+  'High-density foam roller for post-workout recovery and tight IT bands.',
+  'No-screw doorway pull-up bar with multi-grip positions — install, hang, progress.',
+  'Padded fingerless gloves that stop bar calluses from ending the session early.',
+];
+const sum = (...idxs) => fmt(idxs.reduce((a, i) => a + p[i].price, 0));
+writeListicle({
+  slug: 'home-gym-essentials-under-50-amazon',
+  title: 'Top 10 Amazon Home Gym Essentials (2026)',
+  description: `Pinned Amazon home-gym gear: WHATAFIT bands (${fmt(p[0].price)}), Amazon Basics mat, adjustable dumbbells, pull-up bar — wattroi-20 bestsellers.`,
+  category: 'fitness',
+  categoryLabel: 'Fitness & Home Gym',
+  cardTitle: 'Top 10 Amazon Home Gym Essentials',
+  cardExcerpt: 'Resistance bands, yoga mat, adjustable dumbbells, jump rope, pull-up bar — pinned bestsellers.',
+  seoTitle: 'Top 10 Amazon Home Gym Essentials (2026)',
+  seoDescription: `Amazon home gym essentials: resistance bands (${fmt(p[0].price)}), thick yoga mat, adjustable dumbbells, kettlebell, doorway pull-up bar, foam roller.`,
+  keywords: ['home gym essentials amazon', 'resistance bands amazon', 'adjustable dumbbells amazon', 'doorway pull up bar', 'amazon basics yoga mat'],
+  picks: p, names, blurbs,
+  badges: { 1: "Editor's Pick", 2: 'Best Value' },
+  intro: '## A real home gym is a shortlist, not a warehouse\n\nYou do not need 20 machines. The ten picks above are **pinned amazon.com bestsellers** that cover strength, cardio, core, and recovery in a living-room footprint.',
+  problemHeader: 'Match the gear to the problem',
+  problems: ['No weights / cable machines','Hard floor kills knees','Want progressive overload at home','Need quick cardio','Core feels ignored','Push-ups bore / wrists hurt','Want swings & goblet work','Tight muscles after sessions','Nowhere to do pull-ups','Calluses ending sets early'],
+  kits: [
+    { name: 'Starter strength', combo: `Bands (${fmt(p[0].price)}) + mat (${fmt(p[1].price)})`, total: sum(0, 1) },
+    { name: 'Progressive load', combo: `Adjustable dumbbells (${fmt(p[2].price)}) + gloves (${fmt(p[9].price)})`, total: sum(2, 9) },
+    { name: 'Bodyweight room', combo: `Pull-up bar (${fmt(p[8].price)}) + push-up board (${fmt(p[5].price)}) + ab wheel (${fmt(p[4].price)})`, total: sum(8, 5, 4) },
+    { name: 'Condition + recover', combo: `Jump rope (${fmt(p[3].price)}) + foam roller (${fmt(p[7].price)}) + kettlebell (${fmt(p[6].price)})`, total: sum(3, 7, 6) },
+  ],
+  buyFirst: '**resistance bands**, **yoga mat**, and **jump rope** — strength, floor comfort, cardio under ~$55.',
+  budgets: [
+    { budget: 'Under $15', picks: `Jump rope (${fmt(p[3].price)}), foam roller (${fmt(p[7].price)}), gloves (${fmt(p[9].price)})` },
+    { budget: '~$20–$32', picks: `Kettlebell (${fmt(p[6].price)}), bands (${fmt(p[0].price)}), mat (${fmt(p[1].price)}), ab wheel (${fmt(p[4].price)}), pull-up bar (${fmt(p[8].price)}), push-up board (${fmt(p[5].price)})` },
+    { budget: '~$60', picks: `Adjustable dumbbells (${fmt(p[2].price)})` },
+  ],
+  tips: ['Anchor bands high and low for rows and presses.','Put the mat on a clear wall section so pull-ups have space.','Film one set weekly — form beats ego load.','Roll after sessions, not only when you are already wrecked.'],
+  skips: ['buy five gadgets before you train three times.','mount a pull-up bar on a hollow door without checking the manual.','skip the mat and destroy your knees on hardwood.'],
+  bottom: "The best **Amazon home gym essentials** cover push, pull, hinge, and conditioning without a lease. Start with **bands**, a **thick mat**, and a **jump rope**, confirm today's prices, then add dumbbells or a pull-up bar.",
+  links: 'Smaller add-ons: [gym accessories under $25](/articles/gym-accessories-under-25-amazon). Mobility: [yoga accessories](/articles/yoga-accessories-amazon).',
+  faq: [
+    { q: 'How were these home gym essentials chosen?', a: 'We searched amazon.com via Creators API and pinned high-sales-rank training gear: resistance bands, Amazon Basics mat, adjustable dumbbells, jump rope, ab wheel, push-up board, kettlebell, foam roller, doorway pull-up bar, and workout gloves. Links use wattroi-20.' },
+    { q: 'What does this home gym list cost?', a: `Most picks are under $35; adjustable dumbbells are the splurge at ${fmt(p[2].price)}. Bands + mat + rope land near ${sum(0, 1, 3)}. Confirm live prices.` },
+    { q: 'Apartment-friendly?', a: 'Yes — bands, mat, rope, and ab wheel are quiet. Use a mat under kettlebell work and check lease rules on doorway bars.' },
+    { q: 'Who is this home gym guide for?', a: 'Beginners building a living-room setup and intermediates who want progressive tools without a big-box membership.' },
+  ],
+});

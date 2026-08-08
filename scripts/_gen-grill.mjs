@@ -1,0 +1,66 @@
+import { loadPicks, writeListicle, fmt } from './_write-listicle.mjs';
+const p = loadPicks('grill');
+const names = [
+  'Bristle-Free Grill Brush & Scraper',
+  'Alpha Grillers Instant-Read Thermometer',
+  'Eddeas 17″ BBQ Tongs',
+  'Firsgrill Cast Iron Burger Press',
+  'RENOOK Grill Mats (6-Pack)',
+  'Kingsford Charcoal Chimney Starter',
+  '58″ Waterproof Grill Cover',
+  'HOTEC Silicone Basting Brushes',
+  'Rolling Vegetable Grill Basket',
+  'FITFIV Heat-Resistant BBQ Gloves',
+];
+const blurbs = [
+  'Bristle-free scraper that cleans grates without wire-brush fear — safer Sunday cookouts.',
+  'Instant-read digital thermometer for steaks and chicken — stop guessing doneness.',
+  'Extra-long locking tongs that keep hands off the fire — flip without flinching.',
+  'Heavy cast-iron press for smash burgers and bacon — even sear, less curl.',
+  'Six nonstick grill mats for fish and veggies that would fall through the grates.',
+  'Large Kingsford chimney starter — hot coals without lighter-fluid taste.',
+  '58″ waterproof cover that keeps the grill from becoming a rusty sculpture.',
+  'Heat-resistant silicone basting brushes for sauce without melting plastic.',
+  'Rolling grill basket for peppers, asparagus, and shrimp that refuse to stay put.',
+  'Heat-resistant gloves with silicone grip for grate moves and hot pans.',
+];
+const sum = (...idxs) => fmt(idxs.reduce((a, i) => a + p[i].price, 0));
+writeListicle({
+  slug: 'grill-bbq-accessories-amazon',
+  title: 'Top 10 Amazon Grill & BBQ Accessories (2026)',
+  description: `Pinned Amazon BBQ gear: Alpha Grillers thermometer (${fmt(p[1].price)}), Kingsford chimney, bristle-free brush, grill cover — wattroi-20 bestsellers.`,
+  category: 'home',
+  categoryLabel: 'Home & Outdoor Cooking',
+  cardTitle: 'Top 10 Amazon Grill & BBQ Accessories',
+  cardExcerpt: 'Thermometer, tongs, chimney starter, grill mats, cover, gloves — pinned bestsellers.',
+  seoTitle: 'Top 10 Amazon Grill & BBQ Accessories (2026)',
+  seoDescription: `Amazon grill accessories: Alpha Grillers thermometer (${fmt(p[1].price)}), Kingsford chimney (${fmt(p[5].price)}), bristle-free brush, Renook mats, 58-inch grill cover.`,
+  keywords: ['grill accessories amazon', 'alpha grillers thermometer', 'kingsford chimney starter', 'bbq tongs', 'grill cover amazon'],
+  picks: p, names, blurbs,
+  badges: { 2: "Editor's Pick", 6: 'Best Value' },
+  intro: '## Better cookouts are tool problems, not talent problems\n\nUndercooked chicken, wire-brush panic, and a grill that rusts between weekends — fixable. The ten picks above are **pinned amazon.com bestsellers** for safer heat, cleaner grates, and food that actually finishes right.',
+  problemHeader: 'Match the gear to the problem',
+  problems: ['Wire bristles freak you out','Guessing steak doneness','Hands too close to the fire','Burgers curling / uneven smash','Veggies falling through grates','Cold charcoal forever','Grill rusting outdoors','Sauce brush melts','Shrimp/veggies rolling away','Lifting hot grates bare-handed'],
+  kits: [
+    { name: 'Safety + doneness', combo: `Brush (${fmt(p[0].price)}) + thermometer (${fmt(p[1].price)})`, total: sum(0, 1) },
+    { name: 'Charcoal start', combo: `Chimney (${fmt(p[5].price)}) + tongs (${fmt(p[2].price)})`, total: sum(5, 2) },
+    { name: 'Veggie night', combo: `Mats (${fmt(p[4].price)}) + basket (${fmt(p[8].price)})`, total: sum(4, 8) },
+    { name: 'Protect the investment', combo: `Cover (${fmt(p[6].price)}) + gloves (${fmt(p[9].price)})`, total: sum(6, 9) },
+  ],
+  buyFirst: '**thermometer**, **tongs**, and **bristle-free brush** — doneness, control, clean grates.',
+  budgets: [
+    { budget: 'Under $10', picks: `Basting brushes (${fmt(p[7].price)}), gloves (${fmt(p[9].price)}), tongs (${fmt(p[2].price)})` },
+    { budget: '~$14–$16', picks: `Thermometer (${fmt(p[1].price)}), mats (${fmt(p[4].price)}), chimney (${fmt(p[5].price)}), cover (${fmt(p[6].price)})` },
+    { budget: '~$24–$28', picks: `Grill brush (${fmt(p[0].price)}), burger press (${fmt(p[3].price)}), basket (${fmt(p[8].price)})` },
+  ],
+  tips: ['Temp chicken and pork every time — color lies.','Start charcoal in the chimney before guests arrive.','Oil mats lightly so food releases clean.','Cover the grill once it cools — moisture is the enemy.'],
+  skips: ['use a wire brush that sheds bristles.','skip the thermometer \"because you know\".','leave the grill uncovered through a rainy week.'],
+  bottom: "The best **Amazon grill accessories** make heat predictable and cleanup faster. Start with the **Alpha Grillers thermometer**, **tongs**, and a **bristle-free brush**, confirm today's prices, then add chimney and cover.",
+  links: 'Picnic sides: [picnic essentials](/articles/picnic-essentials-amazon). Outdoor days: [beach day essentials](/articles/beach-day-essentials-amazon).',
+  faq: [
+    { q: 'How were these grill accessories chosen?', a: 'We searched amazon.com via Creators API and pinned high-sales-rank BBQ tools: bristle-free brush, Alpha Grillers thermometer, long tongs, burger press, Renook mats, Kingsford chimney, grill cover, basting brushes, veggie basket, and heat gloves. Links use our Associates tag (wattroi-20).' },
+    { q: 'What does this BBQ list cost?', a: `Pinned prices run from ${fmt(p[7].price)} to ${fmt(p[3].price)}. A core kit of thermometer + tongs + brush lands near ${sum(0, 1, 2)}. Confirm live Amazon prices.` },
+    { q: 'Gas or charcoal — does this list still work?', a: 'Yes. Thermometer, tongs, mats, cover, gloves, and brushes work on both. Chimney is charcoal-specific; skip it on pure gas setups.' },
+    { q: 'Who is this grill guide for?', a: 'Weekend grillers, new homeowners with a first BBQ, and anyone tired of undercooked chicken and rusty lids.' },
+  ],
+});

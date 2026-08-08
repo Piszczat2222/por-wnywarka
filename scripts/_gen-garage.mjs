@@ -1,0 +1,66 @@
+import { loadPicks, writeListicle, fmt } from './_write-listicle.mjs';
+const p = loadPicks('garage');
+const names = [
+  'GURADESIGN Heavy Duty Bike / Utility Hooks (8-Pack)',
+  'INCLY Pegboard Accessories Kit (278 pcs)',
+  'Vtopmart Clear Stackable Storage Bins (6-Pack)',
+  'SWANLAKE Magnetic Tool Holder Bars (4-Pack)',
+  'DEWENWILS Retractable Extension Cord Reel',
+  'VEVOR Rolling Garage / Shop Seat',
+  'Anti-Fatigue Standing Garage Mat',
+  'Nelko Bluetooth Label Maker',
+  'kelamayi Large Broom and Dustpan Set',
+  'Ruboliy Magnetic Rechargeable LED Work Lights (2-Pack)',
+];
+const blurbs = [
+  'Heavy-duty wall hooks for bikes, ladders, and seasonal gear off the floor.',
+  'Pegboard accessory kit that turns blank wallboard into tool storage.',
+  'Clear stackable bins with lids — see parts without opening every tote.',
+  'Magnetic bars that hold sockets and drivers within arm\'s reach.',
+  'Retractable extension cord reel so the garage floor is not a trip hazard.',
+  'Rolling shop seat for under-car and low-shelf projects.',
+  'Anti-fatigue mat for standing at the workbench without numb feet.',
+  'Bluetooth label maker so bins stay labeled after the first weekend.',
+  'Large broom and dustpan set for sawdust, leaves, and driveway grit.',
+  'Magnetic rechargeable work lights that stick where ceiling lights fail.',
+];
+const sum = (...idxs) => fmt(idxs.reduce((a, i) => a + p[i].price, 0));
+writeListicle({
+  slug: 'garage-organization-amazon',
+  title: 'Top 10 Amazon Garage Organization Essentials (2026)',
+  description: `Pinned Amazon garage organizers: Vtopmart bins (${fmt(p[2].price)}), pegboard kit, magnetic strips, cord reel, work lights — wattroi-20 bestsellers.`,
+  category: 'home',
+  categoryLabel: 'Home & Kitchen',
+  cardTitle: 'Top 10 Amazon Garage Organization Essentials',
+  cardExcerpt: 'Hooks, pegboard kit, clear bins, magnetic bars, cord reel, shop seat, labels, broom, work lights — pinned bestsellers.',
+  seoTitle: 'Top 10 Amazon Garage Organization Essentials (2026)',
+  seoDescription: `Amazon garage organization: clear stackable bins (${fmt(p[2].price)}), pegboard accessories, magnetic tool bars, retractable cord reel, shop seat, label maker.`,
+  keywords: ['garage organization amazon', 'garage storage bins', 'pegboard accessories', 'magnetic tool holder', 'extension cord reel garage'],
+  picks: p, names, blurbs,
+  badges: { 1: "Editor's Pick", 3: 'Best Value' },
+  intro: '## Garage chaos is a storage problem\n\nBikes on the floor, mystery totes, and a cord trip hazard every project. The ten picks above are **pinned amazon.com bestsellers** that reclaim floor space without a full remodel.',
+  problemHeader: 'Match the gear to the problem',
+  problems: ['Bikes and ladders eating floor space','Tools lost on a blank wall','Mystery totes you never open','Sockets rolling under the bench','Extension cord trip hazards','Kneeling for every under-car job','Standing workbench fatigue','Bins unlabeled by week two','Sawdust and grit everywhere','Dark corners while you work'],
+  kits: [
+    { name: 'Wall start', combo: `Hooks (${fmt(p[0].price)}) + pegboard kit (${fmt(p[1].price)}) + magnetic bars (${fmt(p[3].price)})`, total: sum(0, 1, 3) },
+    { name: 'Bin system', combo: `Clear bins (${fmt(p[2].price)}) + label maker (${fmt(p[7].price)})`, total: sum(2, 7) },
+    { name: 'Power + light', combo: `Cord reel (${fmt(p[4].price)}) + work lights (${fmt(p[9].price)})`, total: sum(4, 9) },
+    { name: 'Comfort clean', combo: `Shop seat (${fmt(p[5].price)}) + mat (${fmt(p[6].price)}) + broom (${fmt(p[8].price)})`, total: sum(5, 6, 8) },
+  ],
+  buyFirst: '**clear bins**, **wall hooks**, and a **label maker** — floor space and findability.',
+  budgets: [
+    { budget: 'Under $20', picks: `Hooks (${fmt(p[0].price)}), anti-fatigue mat (${fmt(p[6].price)}), magnetic bars (${fmt(p[3].price)}), label maker (${fmt(p[7].price)})` },
+    { budget: '~$25–$31', picks: `Pegboard kit (${fmt(p[1].price)}), shop seat (${fmt(p[5].price)}), broom (${fmt(p[8].price)}), clear bins (${fmt(p[2].price)})` },
+    { budget: '~$39–$40', picks: `Cord reel (${fmt(p[4].price)}), work lights (${fmt(p[9].price)})` },
+  ],
+  tips: ['Hang vertical first — floor space is the scarce resource.','Label bins on day one while motivation is high.','Keep the cord reel mounted near the workbench, not behind the car.','Magnetic lights beat a flashlight between your teeth.'],
+  skips: ['buy more mystery totes without labels.','leave bikes leaning where cars park.','ignore trip hazards from extension cords.'],
+  bottom: "The best **Amazon garage organization essentials** put tools on walls and parts in clear bins. Start with **hooks**, **bins**, and a **label maker**, confirm today's prices, then add a cord reel and work lights.",
+  links: 'Moving into a new space: [moving essentials](/articles/moving-essentials-amazon). Car care: [car detailing kit](/articles/car-detailing-kit-amazon).',
+  faq: [
+    { q: 'How were these garage organizers chosen?', a: 'We searched amazon.com via Creators API and pinned high-sales-rank garage storage: heavy-duty hooks, pegboard accessories, clear bins, magnetic tool bars, retractable cord reel, shop seat, anti-fatigue mat, label maker, broom/dustpan, and LED work lights. Links use wattroi-20.' },
+    { q: 'What does a garage organization starter kit cost?', a: `Pinned prices run from ${fmt(p[0].price)} to ${fmt(p[9].price)}. Hooks + bins + labels land near ${sum(0, 2, 7)}. Confirm live prices.` },
+    { q: 'Renters — will this damage walls?', a: 'Use studs for heavy hooks and bikes. Pegboard kits and magnetic bars need solid mounting — check lease rules before drilling.' },
+    { q: 'Who is this garage guide for?', a: 'Homeowners, DIY renters with parking space, and anyone tired of tripping over tools to get to the car.' },
+  ],
+});

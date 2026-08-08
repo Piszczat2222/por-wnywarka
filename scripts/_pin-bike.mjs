@@ -1,0 +1,14 @@
+import { pinSlots } from './_pin-lib.mjs';
+
+await pinSlots('bike', [
+  { rank: 1, label: 'Bike Lights', queries: ['USB rechargeable bike light set front rear', 'bicycle light set waterproof bright', 'LED bike headlight and taillight USB'], maxPrice: 40, must: [/bike.?light|bicycle.?light|headlight|taillight/i], prefer: [/USB|rechargeable|front|rear|set/i], exclude: [/car.?light|string.?light/i] },
+  { rank: 2, label: 'Bike Lock', queries: ['U lock bike heavy duty', 'Kryptonite bike U lock', 'folding bike lock heavy duty'], maxPrice: 55, must: [/bike.?lock|u.?lock|u-lock|folding.?lock/i], prefer: [/u.?lock|kryptonite|bike.?lock/i], exclude: [/cable.?lock.?flimsy.?only.?unless.?ranked|padlock.?only/i] },
+  { rank: 3, label: 'Bike Pump', queries: ['portable bike pump Presta Schrader', 'mini bike floor pump gauge', 'bicycle tire pump with gauge'], maxPrice: 35, must: [/pump/i], prefer: [/bike.?pump|bicycle.?pump|presta|schrader/i], exclude: [/ball.?pump.?only|air.?compressor.?car.?only/i] },
+  { rank: 4, label: 'Bike Phone Mount', queries: ['bike phone mount handlebar waterproof', 'motorcycle bicycle phone holder', 'handlebar phone mount bike'], maxPrice: 30, must: [/phone.?mount|phone.?holder/i], prefer: [/bike|handlebar|bicycle/i], exclude: [/car.?mount.?only/i] },
+  { rank: 5, label: 'Bike Bell', queries: ['bike bell loud classic', 'bicycle bell for handlebar', 'loud bike bell aluminum'], maxPrice: 15, must: [/bike.?bell|bicycle.?bell/i], prefer: [/bell/i], exclude: [/doorbell|wind.?chime/i] },
+  { rank: 6, label: 'Bike Mirror', queries: ['bike mirror handlebar rear view', 'bicycle mirror for helmet or bar', 'rear view bike mirror adjustable'], maxPrice: 25, must: [/bike.?mirror|bicycle.?mirror/i], prefer: [/mirror|rear.?view/i], exclude: [/car.?mirror/i] },
+  { rank: 7, label: 'Bike Fenders', queries: ['bike fenders set front rear', 'mudguards bicycle fender set', 'road bike fenders clip on'], maxPrice: 40, must: [/fender|mudguard/i], prefer: [/fender|mudguard|bike/i], exclude: [/car.?fender/i] },
+  { rank: 8, label: 'Bike Basket / Rack Bag', queries: ['bike basket front removable', 'bicycle handlebar bag waterproof', 'bike rack trunk bag'], maxPrice: 40, must: [/basket|bag|pannier/i], prefer: [/bike.?basket|handlebar.?bag|bike.?bag/i], exclude: [/picnic.?basket|laundry.?basket/i] },
+  { rank: 9, label: 'Bike Multi Tool', queries: ['bike multi tool hex allen set', 'bicycle multitool with chain breaker', 'portable bike tool kit multitool'], maxPrice: 30, must: [/multi.?tool|multitool|bike.?tool/i], prefer: [/bike.?tool|multi.?tool|hex|allen/i], exclude: [/leatherman.?generic.?unless.?bike/i] },
+  { rank: 10, label: 'Bike Water Bottle Cage', queries: ['bike water bottle cage aluminum', 'bicycle bottle holder mount', 'bike bottle cage side pull'], maxPrice: 20, must: [/bottle.?cage|bottle.?holder/i], prefer: [/bottle.?cage|bike/i], exclude: [/water.?bottle.?only/i] },
+]);

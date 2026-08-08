@@ -1,0 +1,66 @@
+import { loadPicks, writeListicle, fmt } from './_write-listicle.mjs';
+const p = loadPicks('bike');
+const names = [
+  'Ascher USB Rechargeable Bike Light Set',
+  'Sportneer Heavy-Duty Bike U-Lock',
+  'Floor Bike Pump with Gauge',
+  'Lamicall Bike Phone Mount',
+  'Accmor Classic Bike Bell',
+  'WITTKOP HD Bike Mirror',
+  'Ass Savers Win Wing Rear Mudguard',
+  'Retrospec Apollo Front Bike Basket',
+  'ROCKBROS 16-in-1 Bike Multi-Tool',
+  'ROCKBROS Bike Bottle Cage',
+];
+const blurbs = [
+  'Ultra-bright USB front + rear light set — be seen on dawn and dusk commutes.',
+  'Heavy-duty U-lock with cable for frame + wheel security at the office rack.',
+  'Floor pump with gauge for Presta/Schrader — correct PSI before every week of miles.',
+  'One-hand bike phone mount for navigation without juggling at red lights.',
+  'Loud classic aluminum bell — polite traffic language on shared paths.',
+  'Large HD mirror with 360° adjust — lane checks without the full head whip.',
+  'Clip-on rear mudguard that blocks the stripe of road grime up your back.',
+  'Detachable steel mesh front basket for groceries and gym clothes.',
+  '16-in-1 multi-tool with hex keys for roadside adjustments.',
+  'Ultralight bottle cage so water actually rides with you.',
+];
+const sum = (...idxs) => fmt(idxs.reduce((a, i) => a + p[i].price, 0));
+writeListicle({
+  slug: 'bike-commuting-accessories-amazon',
+  title: 'Top 10 Amazon Bike Commuting Accessories (2026)',
+  description: `Pinned Amazon bike commute gear: Ascher lights (${fmt(p[0].price)}), Sportneer U-lock, Lamicall mount, Ass Savers mudguard — wattroi-20 bestsellers.`,
+  category: 'fitness',
+  categoryLabel: 'Fitness & Cycling',
+  cardTitle: 'Top 10 Amazon Bike Commuting Accessories',
+  cardExcerpt: 'Lights, U-lock, pump, phone mount, bell, mirror, mudguard, basket — pinned bestsellers.',
+  seoTitle: 'Top 10 Amazon Bike Commuting Accessories (2026)',
+  seoDescription: `Amazon bike commute accessories: USB light set (${fmt(p[0].price)}), Sportneer U-lock, floor pump, Lamicall phone mount, Ass Savers mudguard, Retrospec basket.`,
+  keywords: ['bike commuting accessories amazon', 'bike lights usb', 'bike u lock', 'bike phone mount', 'ass savers', 'bike commute essentials'],
+  picks: p, names, blurbs,
+  badges: { 1: "Editor's Pick", 4: 'Best Value' },
+  intro: '## Commute miles need visibility and security, not just a bike\n\nDark mornings, sketchy racks, and a muddy back stripe after rain. The ten picks above are **pinned amazon.com bestsellers** for getting to work on two wheels without drama.',
+  problemHeader: 'Match the gear to the problem',
+  problems: ['Invisible at dusk','Bike stolen vibes at the rack','Soft tires every Monday','Need GPS on the bars','Path congestion / pedestrians','Blind spots in traffic','Wet stripe up your back','Nowhere for groceries','Saddle/bolt tweaks mid-week','Bottle rolling in the bag'],
+  kits: [
+    { name: 'Be seen + heard', combo: `Lights (${fmt(p[0].price)}) + bell (${fmt(p[4].price)})`, total: sum(0, 4) },
+    { name: 'Secure + inflate', combo: `U-lock (${fmt(p[1].price)}) + pump (${fmt(p[2].price)})`, total: sum(1, 2) },
+    { name: 'Nav + water', combo: `Phone mount (${fmt(p[3].price)}) + bottle cage (${fmt(p[9].price)})`, total: sum(3, 9) },
+    { name: 'Rain + cargo', combo: `Mudguard (${fmt(p[6].price)}) + basket (${fmt(p[7].price)})`, total: sum(6, 7) },
+  ],
+  buyFirst: '**lights**, **U-lock**, and **pump** — visibility, security, air.',
+  budgets: [
+    { budget: 'Under $10', picks: `Bell (${fmt(p[4].price)}), bottle cage (${fmt(p[9].price)}), pump (${fmt(p[2].price)})` },
+    { budget: '~$13–$15', picks: `Mirror (${fmt(p[5].price)}), phone mount (${fmt(p[3].price)}), multi-tool (${fmt(p[8].price)})` },
+    { budget: '~$27–$30', picks: `U-lock (${fmt(p[1].price)}), basket (${fmt(p[7].price)}), lights (${fmt(p[0].price)}), mudguard (${fmt(p[6].price)})` },
+  ],
+  tips: ['Charge lights Sunday night with your phone.','Lock frame + wheel through a solid rack point.','Check tire PSI weekly — soft tires feel like weak legs.','Angle the mirror before the first busy intersection.'],
+  skips: ['ride without a rear light after sunset.','use a cable-only lock in a theft-heavy city.','mount the phone where a face-plant eats it.'],
+  bottom: "The best **Amazon bike commuting accessories** keep you visible, locked, and rolling. Start with **lights**, a **U-lock**, and a **pump**, confirm today's prices, then add mudguard and basket for rain-and-errands days.",
+  links: 'Fitness add-ons: [gym accessories under $25](/articles/gym-accessories-under-25-amazon). Running days: [running accessories](/articles/running-accessories-amazon).',
+  faq: [
+    { q: 'How were these bike commute accessories chosen?', a: 'We searched amazon.com via Creators API and pinned high-sales-rank commute gear: USB light set, Sportneer U-lock, floor pump, Lamicall phone mount, bell, mirror, Ass Savers mudguard, Retrospec basket, ROCKBROS multi-tool, and bottle cage. Links use wattroi-20.' },
+    { q: 'What does this bike list cost?', a: `Pinned prices run from ${fmt(p[4].price)} to ${fmt(p[0].price)}. Lights + lock + pump land near ${sum(0, 1, 2)}. Confirm live Amazon prices.` },
+    { q: 'What should I buy first?', a: 'Lights, U-lock, and pump. Add phone mount if you navigate by GPS. Mudguard before the first rainy week.' },
+    { q: 'Who is this bike commute guide for?', a: 'Urban cyclists, campus riders, and anyone replacing car trips under 5 miles.' },
+  ],
+});

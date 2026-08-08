@@ -1,0 +1,66 @@
+import { loadPicks, writeListicle, fmt } from './_write-listicle.mjs';
+const p = loadPicks('poweroutage');
+const names = [
+  'MalloMe LED Camping Lantern Flashlights',
+  'INIU 45W 10000mAh Portable Charger',
+  'TrixHub Rechargeable Flashlights (2-Pack)',
+  'FosPower NOAA Emergency Weather Radio',
+  'Energizer AA Batteries (32-Count)',
+  'Homemory Flameless LED Candles (24-Pack)',
+  'CoreMuse Collapsible 2-Gallon Water Container',
+  'BIC Multi-Purpose Lighters (4-Count)',
+  'BAND-AID Brand All-Purpose First Aid Kit',
+  'Ultra Bright Green Glow Sticks (25-Pack)',
+];
+const blurbs = [
+  'Battery lanterns that light a room when the ceiling lights are dead.',
+  'Compact 45W power bank to keep phones alive through an outage.',
+  'Two rechargeable flashlights for hallways, basements, and checking breakers.',
+  'NOAA weather radio with backup power when cell towers get flaky.',
+  'AA multipack so lanterns and radios do not die on night one.',
+  'Flameless LED candles for soft light without open-flame risk indoors.',
+  'Collapsible water jug for drinking and cooking when taps feel unreliable.',
+  'Utility lighters for candles, camp stoves, and stubborn pilot lights.',
+  'Compact first-aid kit for cuts and scrapes while you wait for power.',
+  'Glow sticks for kids, hallways, and hands-free marking without batteries.',
+];
+const sum = (...idxs) => fmt(idxs.reduce((a, i) => a + p[i].price, 0));
+writeListicle({
+  slug: 'power-outage-emergency-kit-amazon',
+  title: 'Top 10 Amazon Power Outage Emergency Kit Essentials (2026)',
+  description: `Pinned Amazon outage kit: MalloMe lantern (${fmt(p[0].price)}), INIU power bank, NOAA radio, flashlights, batteries — wattroi-20 bestsellers.`,
+  category: 'home',
+  categoryLabel: 'Home & Kitchen',
+  cardTitle: 'Top 10 Amazon Power Outage Emergency Kit Essentials',
+  cardExcerpt: 'Lantern, power bank, flashlights, NOAA radio, batteries, LED candles, water jug, first aid, glow sticks — pinned bestsellers.',
+  seoTitle: 'Top 10 Amazon Power Outage Emergency Kit Essentials (2026)',
+  seoDescription: `Amazon power outage kit: LED lantern (${fmt(p[0].price)}), INIU power bank (${fmt(p[1].price)}), NOAA weather radio, rechargeable flashlights, batteries, water jug.`,
+  keywords: ['power outage kit amazon', 'emergency lantern amazon', 'NOAA weather radio', 'power bank emergency', 'home emergency kit'],
+  picks: p, names, blurbs,
+  badges: { 1: "Editor's Pick", 2: 'Best Value' },
+  intro: '## Outages are a light-and-phone problem first\n\nDark rooms, dead phones, and no news from the grid. The ten picks above are **pinned amazon.com bestsellers** for getting through the first night without panic shopping.',
+  problemHeader: 'Match the gear to the problem',
+  problems: ['Whole-room darkness','Phone dying mid-outage','Finding the breaker in the dark','No weather updates when cell data fails','Devices that eat batteries overnight','Open-flame candles indoors','Drinking water uncertainty','Need a flame for a camp stove','Minor cuts with no kit nearby','Kids scared of the dark'],
+  kits: [
+    { name: 'Light stack', combo: `Lantern (${fmt(p[0].price)}) + flashlights (${fmt(p[2].price)}) + glow sticks (${fmt(p[9].price)})`, total: sum(0, 2, 9) },
+    { name: 'Stay charged', combo: `Power bank (${fmt(p[1].price)}) + batteries (${fmt(p[4].price)})`, total: sum(1, 4) },
+    { name: 'Info + soft light', combo: `NOAA radio (${fmt(p[3].price)}) + LED candles (${fmt(p[5].price)})`, total: sum(3, 5) },
+    { name: 'Water + safety', combo: `Water jug (${fmt(p[6].price)}) + lighters (${fmt(p[7].price)}) + first aid (${fmt(p[8].price)})`, total: sum(6, 7, 8) },
+  ],
+  buyFirst: '**lantern**, **power bank**, and **flashlights** — light and communication.',
+  budgets: [
+    { budget: 'Under $16', picks: `Lantern (${fmt(p[0].price)}), LED candles (${fmt(p[5].price)}), water jug (${fmt(p[6].price)}), flashlights (${fmt(p[2].price)}), lighters (${fmt(p[7].price)}), glow sticks (${fmt(p[9].price)})` },
+    { budget: '~$18–$22', picks: `First aid (${fmt(p[8].price)}), batteries (${fmt(p[4].price)}), power bank (${fmt(p[1].price)})` },
+    { budget: '~$28', picks: `NOAA radio (${fmt(p[3].price)})` },
+  ],
+  tips: ['Charge the power bank weekly so it is not empty when the lights die.','Keep flashlights on each floor — not all in one drawer.','Store batteries with the lantern, not in a random junk drawer.','Fill water jugs before a known storm when possible.'],
+  skips: ['rely on phone flashlight as your only light.','burn open candles near curtains.','wait until the storm hits to order batteries.'],
+  bottom: "The best **Amazon power outage emergency kit** covers light, phone charge, and a weather update. Start with a **lantern**, **power bank**, and **flashlights**, confirm today's prices, then add a NOAA radio and batteries.",
+  links: 'Car emergencies: [car emergency kit](/articles/car-emergency-kit-amazon). Road trips: [road trip essentials](/articles/road-trip-essentials-amazon).',
+  faq: [
+    { q: 'How were these outage essentials chosen?', a: 'We searched amazon.com via Creators API and pinned high-sales-rank emergency gear: LED lantern, power bank, rechargeable flashlights, NOAA weather radio, AA batteries, flameless candles, collapsible water jug, utility lighters, first-aid kit, and glow sticks. Links use wattroi-20.' },
+    { q: 'What does a basic outage kit cost?', a: `Pinned prices run from ${fmt(p[0].price)} to ${fmt(p[3].price)}. Lantern + power bank + flashlights land near ${sum(0, 1, 2)}. Confirm live prices.` },
+    { q: 'Is this a full preparedness kit?', a: 'No — it is a first-night home outage kit focused on light, power, water, and minor first aid. Add shelf-stable food and prescriptions separately for longer outages.' },
+    { q: 'Who is this guide for?', a: 'Apartment and house dwellers who want a ready drawer before storm season — not off-grid living setups.' },
+  ],
+});

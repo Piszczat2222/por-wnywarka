@@ -1,7 +1,13 @@
 ---
+import { getCollection } from 'astro:content';
+
+const articles = await getCollection('articles');
+const listicleCount = articles.filter((a) => a.data.articleType === 'listicle').length;
+const totalCount = articles.length;
+
 const stats = [
-  { value: '50+', label: 'Reviews & guides' },
-  { value: '33', label: 'Top 10 lists' },
+  { value: String(totalCount), label: 'Reviews & guides' },
+  { value: String(listicleCount), label: 'Top 10 lists' },
   { value: '90%', label: 'Avg. savings vs premium' },
   { value: '100%', label: 'Honest disclosures' },
 ];

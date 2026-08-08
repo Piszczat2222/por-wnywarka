@@ -1,0 +1,66 @@
+import { loadPicks, writeListicle, fmt } from './_write-listicle.mjs';
+const p = loadPicks('picnic');
+const names = [
+  'Genovega Waterproof Picnic Blanket',
+  'HOTOR Insulated Cooler Lunch Bag',
+  '2-Person Picnic Backpack Set',
+  'Quatish Unbreakable Dinnerware (24pc)',
+  'CHILLOUT LIFE Insulated Wine Tumblers (2-Pack)',
+  'THETCHRY Flexible Cutting Boards (3-Pack)',
+  'Sawyer Picaridin Insect Repellent',
+  'Portable Waterproof Bluetooth Speaker (20W)',
+  'Glad Small Trash Bags',
+  'OFF! Citronella Outdoor Candle',
+];
+const blurbs = [
+  'Waterproof outdoor blanket that folds into a carry strap — dry seat on damp grass.',
+  'Leak-proof insulated cooler tote for drinks and snacks without a hard cooler.',
+  'Picnic backpack with place settings for two — grab-and-go date-night kit.',
+  'Unbreakable plates and bowls for six — park-proof dinnerware.',
+  'Insulated stemless wine tumblers with lids — fewer spills on the blanket.',
+  'Flexible cutting boards that pack flat for cheese and fruit boards.',
+  '20% picaridin pump spray — effective bug defense without the DEET smell.',
+  'IPX5 portable speaker loud enough for a blanket, not a stadium.',
+  'Small trash bags so you leave the park cleaner than you found it.',
+  'Citronella ambiance candle for dusk picnics on the patio or lawn.',
+];
+const sum = (...idxs) => fmt(idxs.reduce((a, i) => a + p[i].price, 0));
+writeListicle({
+  slug: 'picnic-essentials-amazon',
+  title: 'Top 10 Amazon Picnic Essentials (2026)',
+  description: `Pinned Amazon picnic gear: waterproof blanket (${fmt(p[0].price)}), cooler bag, Sawyer picaridin, wine tumblers — wattroi-20 bestsellers.`,
+  category: 'travel',
+  categoryLabel: 'Travel & Outdoors',
+  cardTitle: 'Top 10 Amazon Picnic Essentials',
+  cardExcerpt: 'Picnic blanket, cooler bag, backpack set, wine tumblers, Sawyer repellent — pinned bestsellers.',
+  seoTitle: 'Top 10 Amazon Picnic Essentials (2026)',
+  seoDescription: `Amazon picnic essentials: waterproof blanket (${fmt(p[0].price)}), insulated cooler bag, picnic backpack, unbreakable dinnerware, Sawyer picaridin, citronella candle.`,
+  keywords: ['picnic essentials amazon', 'picnic blanket waterproof', 'sawyer picaridin', 'picnic backpack', 'insulated wine tumbler'],
+  picks: p, names, blurbs,
+  badges: { 1: "Editor's Pick", 2: 'Best Value' },
+  intro: '## Great picnics are packed, not improvised\n\nWet grass, warm drinks, and mosquitoes — optional. The ten picks above are **pinned amazon.com bestsellers** for a park or beach meal that feels planned.',
+  problemHeader: 'Match the gear to the problem',
+  problems: ['Damp ground wrecks the vibe','Drinks warm up fast','Want a grab-and-go kit for two','Paper plates collapsing','Wine glasses tip over','Nowhere to cut fruit','Mosquitoes arrive at dusk','No music without phone speakers','Trash left behind','Patio bugs circling'],
+  kits: [
+    { name: 'Park starter', combo: `Blanket (${fmt(p[0].price)}) + cooler (${fmt(p[1].price)})`, total: sum(0, 1) },
+    { name: 'Date night', combo: `Picnic backpack (${fmt(p[2].price)}) + wine tumblers (${fmt(p[4].price)})`, total: sum(2, 4) },
+    { name: 'Bug defense', combo: `Sawyer (${fmt(p[6].price)}) + citronella (${fmt(p[9].price)})`, total: sum(6, 9) },
+    { name: 'Serve + clean', combo: `Dinnerware (${fmt(p[3].price)}) + cutting boards (${fmt(p[5].price)}) + trash bags (${fmt(p[8].price)})`, total: sum(3, 5, 8) },
+  ],
+  buyFirst: '**picnic blanket**, **cooler bag**, and **Sawyer repellent** — seat, cold food, bugs.',
+  budgets: [
+    { budget: 'Under $12', picks: `Cooler bag (${fmt(p[1].price)}), cutting boards (${fmt(p[5].price)}), trash bags (${fmt(p[8].price)}), citronella (${fmt(p[9].price)})` },
+    { budget: '~$15–$27', picks: `Sawyer (${fmt(p[6].price)}), wine tumblers (${fmt(p[4].price)}), dinnerware (${fmt(p[3].price)}), blanket (${fmt(p[0].price)}), speaker (${fmt(p[7].price)})` },
+    { budget: '~$53', picks: `Picnic backpack set (${fmt(p[2].price)})` },
+  ],
+  tips: ['Put the cooler in the shade under a corner of the blanket.','Spray ankles and cuffs before you sit down.','Pack a trash bag in the same pouch as utensils.','Use lids on tumblers — blankets are not tables.'],
+  skips: ['bring glass wine stems to a windy park.','forget bug spray because "it is daytime".','leave food scraps for raccoons and ants.'],
+  bottom: "The best **Amazon picnic essentials** keep you dry, cold, and bite-free. Start with a **waterproof blanket**, **cooler bag**, and **Sawyer picaridin**, confirm today's prices, then add tumblers and a speaker.",
+  links: 'Grill afterward: [grill BBQ accessories](/articles/grill-bbq-accessories-amazon). Beach days: [beach day essentials](/articles/beach-day-essentials-amazon).',
+  faq: [
+    { q: 'How were these picnic essentials chosen?', a: 'We searched amazon.com via Creators API and pinned high-sales-rank picnic gear: waterproof blanket, cooler bag, picnic backpack set, unbreakable dinnerware, insulated wine tumblers, cutting boards, Sawyer picaridin, Bluetooth speaker, trash bags, and citronella candle. Links use wattroi-20.' },
+    { q: 'What does this picnic list cost?', a: `Pinned prices run from ${fmt(p[1].price)} to ${fmt(p[2].price)}. Blanket + cooler + Sawyer land near ${sum(0, 1, 6)}. Confirm live prices.` },
+    { q: 'What should I buy first?', a: 'Blanket, cooler, and bug spray. Add dinnerware if you hate paper plates. Backpack set if you picnic often as a pair.' },
+    { q: 'Who is this picnic guide for?', a: 'Couples, families, and anyone upgrading from a beach towel and a grocery bag.' },
+  ],
+});

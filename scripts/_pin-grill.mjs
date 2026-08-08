@@ -1,0 +1,14 @@
+import { pinSlots } from './_pin-lib.mjs';
+
+await pinSlots('grill', [
+  { rank: 1, label: 'Grill Brush', queries: ['grill brush bristle free scraper', 'grill grate cleaner brush safe', 'bristle free grill brush'], maxPrice: 25, must: [/grill.?brush|grate.?cleaner|scraper/i], prefer: [/bristle.?free|grill.?brush/i], exclude: [/oven.?only|toilet/i] },
+  { rank: 2, label: 'Meat Thermometer', queries: ['instant read meat thermometer digital', 'ThermoPro meat thermometer', 'digital instant read food thermometer grill'], maxPrice: 30, must: [/thermometer/i], prefer: [/meat.?thermometer|instant.?read|thermopro/i], exclude: [/oven.?probe.?only.?wifi.?expensive|forehead|ear/i] },
+  { rank: 3, label: 'Grill Tongs', queries: ['grill tongs stainless steel long', 'BBQ tongs locking 16 inch', 'heavy duty grilling tongs'], maxPrice: 25, must: [/tong/i], prefer: [/grill.?tong|bbq.?tong|locking/i], exclude: [/salad.?tong.?only/i] },
+  { rank: 4, label: 'Cast Iron Press', queries: ['cast iron grill press bacon', 'burger press cast iron', 'steak weight cast iron grill'], maxPrice: 30, must: [/press|weight|smasher/i], prefer: [/cast.?iron|grill.?press|burger|bacon/i], exclude: [/tortilla.?press.?only/i] },
+  { rank: 5, label: 'Grill Mat', queries: ['grill mats nonstick reusable set', 'BBQ grill mat heavy duty', 'oven grill mat non stick'], maxPrice: 25, must: [/grill.?mat|bbq.?mat/i], prefer: [/grill.?mat|nonstick|reusable/i], exclude: [/yoga.?mat|mouse.?mat/i] },
+  { rank: 6, label: 'Chimney Starter', queries: ['charcoal chimney starter Weber', 'chimney charcoal starter large', 'charcoal lighter chimney'], maxPrice: 35, must: [/chimney/i], prefer: [/chimney.?starter|charcoal.?chimney/i], exclude: [/fireplace.?chimney.?sweep/i] },
+  { rank: 7, label: 'Grill Cover', queries: ['grill cover waterproof heavy duty', 'BBQ grill cover 58 inch', 'Weber grill cover compatible'], maxPrice: 45, must: [/grill.?cover|bbq.?cover/i], prefer: [/grill.?cover|waterproof/i], exclude: [/furniture.?cover.?only/i] },
+  { rank: 8, label: 'Basting Brush', queries: ['silicone basting brush set grill', 'BBQ sauce basting brush heat resistant', 'silicone pastry basting brush'], maxPrice: 15, must: [/basting.?brush|pastry.?brush|sauce.?brush/i], prefer: [/silicone|basting|bbq/i], exclude: [/paint.?brush|toothbrush/i] },
+  { rank: 9, label: 'Grill Basket', queries: ['vegetable grill basket stainless', 'BBQ grill basket for veggies', 'grilling basket for fish vegetables'], maxPrice: 35, must: [/grill.?basket|grilling.?basket/i], prefer: [/grill.?basket|vegetable|veggie/i], exclude: [/picnic.?basket|gift.?basket/i] },
+  { rank: 10, label: 'Heat Resistant Gloves', queries: ['grill gloves heat resistant 932', 'BBQ gloves heat proof silicone', 'oven grill gloves extreme heat'], maxPrice: 30, must: [/glove/i], prefer: [/grill.?glove|heat.?resistant|bbq.?glove/i], exclude: [/winter.?glove|work.?glove.?leather.?only/i] },
+]);

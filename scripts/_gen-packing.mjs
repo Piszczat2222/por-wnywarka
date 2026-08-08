@@ -1,0 +1,66 @@
+import { loadPicks, writeListicle, fmt } from './_write-listicle.mjs';
+const p = loadPicks('packing');
+const names = [
+  'BAGAIL Packing Cubes (8-Set)',
+  'BAGSMART Hanging Toiletry Bag',
+  'TSA Silicone Travel Bottles (18-Pack)',
+  'Gostwo Silicone Luggage Tags (8-Pack)',
+  'pack all Waterproof Shoe Bags',
+  'XL Travel Laundry Bags (2-Pack)',
+  'BoxLegend Shirt Folding Board',
+  'FYY Travel Tech / Cable Pouch',
+  'ALMING Compression Bags (12-Pack)',
+  'HERO RFID Neck Wallet Passport Holder',
+];
+const blurbs = [
+  'Eight packing cubes that turn suitcase chaos into by-category stacks.',
+  'Hanging toiletry bag with hook — hotel bathroom counter stays usable.',
+  'TSA-friendly silicone bottles so liquids stop exploding in your bag.',
+  'Bright silicone luggage tags so your black suitcase is not everyone else\'s.',
+  'Water-resistant shoe pouches that keep dirty soles off clean clothes.',
+  'XL dirty-clothes bags so laundry does not contaminate clean outfits.',
+  'Shirt folding board for flatter stacks and fewer wrinkles in transit.',
+  'Tech pouch for cables, chargers, and earbuds — no more pocket spaghetti.',
+  'Compression bags that reclaim suitcase volume without a vacuum pump.',
+  'RFID-blocking neck wallet for passport and cards in crowded terminals.',
+];
+const sum = (...idxs) => fmt(idxs.reduce((a, i) => a + p[i].price, 0));
+writeListicle({
+  slug: 'travel-packing-organizers-amazon',
+  title: 'Top 10 Amazon Travel Packing Organizers (2026)',
+  description: `Pinned Amazon packing gear: BAGAIL cubes (${fmt(p[0].price)}), BAGSMART toiletry bag, TSA bottles, HERO passport wallet — wattroi-20 bestsellers.`,
+  category: 'travel',
+  categoryLabel: 'Travel & Outdoors',
+  cardTitle: 'Top 10 Amazon Travel Packing Organizers',
+  cardExcerpt: 'Packing cubes, toiletry bag, TSA bottles, shoe bags, tech pouch, passport wallet — pinned bestsellers.',
+  seoTitle: 'Top 10 Amazon Travel Packing Organizers (2026)',
+  seoDescription: `Amazon packing organizers: BAGAIL packing cubes (${fmt(p[0].price)}), BAGSMART toiletry bag, TSA travel bottles, compression bags, RFID passport wallet.`,
+  keywords: ['packing cubes amazon', 'travel organizers amazon', 'toiletry bag hanging', 'tsa travel bottles', 'passport holder rfid'],
+  picks: p, names, blurbs,
+  badges: { 1: "Editor's Pick", 3: 'Best Value' },
+  intro: '## Suitcase stress is an organization problem\n\nExploded toiletries, mystery socks, and a passport hunt at security. The ten picks above are **pinned amazon.com bestsellers** for packing once and finding everything later.',
+  problemHeader: 'Match the gear to the problem',
+  problems: ['Clothes freestyle in the suitcase','Hotel sink counter covered in bottles','Liquids leaking mid-flight','Black suitcase lookalikes','Dirty shoes on clean shirts','Dirty laundry contaminating clean clothes','Wrinkled button-downs','Cables everywhere','Need more volume in the same bag','Passport buried in the backpack'],
+  kits: [
+    { name: 'Core pack', combo: `Cubes (${fmt(p[0].price)}) + compression bags (${fmt(p[8].price)})`, total: sum(0, 8) },
+    { name: 'Bathroom kit', combo: `Toiletry bag (${fmt(p[1].price)}) + TSA bottles (${fmt(p[2].price)})`, total: sum(1, 2) },
+    { name: 'Protect + ID', combo: `Shoe bags (${fmt(p[4].price)}) + luggage tags (${fmt(p[3].price)}) + passport wallet (${fmt(p[9].price)})`, total: sum(4, 3, 9) },
+    { name: 'Tech + laundry', combo: `Tech pouch (${fmt(p[7].price)}) + laundry bags (${fmt(p[5].price)})`, total: sum(7, 5) },
+  ],
+  buyFirst: '**packing cubes**, **toiletry bag**, and **TSA bottles** — clothes, bathroom, liquids.',
+  budgets: [
+    { budget: 'Under $10', picks: `Luggage tags (${fmt(p[3].price)}), laundry bags (${fmt(p[5].price)}), TSA bottles (${fmt(p[2].price)}), tech pouch (${fmt(p[7].price)})` },
+    { budget: '~$13–$17', picks: `Folding board (${fmt(p[6].price)}), shoe bags (${fmt(p[4].price)}), compression (${fmt(p[8].price)}), cubes (${fmt(p[0].price)}), toiletry bag (${fmt(p[1].price)})` },
+    { budget: '~$25', picks: `Passport wallet (${fmt(p[9].price)})` },
+  ],
+  tips: ['Pack by category, not by day — cubes make hotel drawers optional.','Hang the toiletry bag on day one so the counter stays clear.','Put the passport wallet in the same pocket every flight.','Compress bulky knits, not jackets you need mid-trip.'],
+  skips: ['free-bag liquids in leaky hotel bottles.','check a bag without a luggage tag.','bury charging cables under dirty socks.'],
+  bottom: "The best **Amazon travel packing organizers** make unpacking optional. Start with **packing cubes**, a **hanging toiletry bag**, and **TSA bottles**, confirm today's prices, then add shoe bags and a passport wallet.",
+  links: 'Day hikes: [day hike essentials](/articles/day-hike-essentials-amazon). Moving house: [moving essentials](/articles/moving-essentials-amazon).',
+  faq: [
+    { q: 'How were these packing organizers chosen?', a: 'We searched amazon.com via Creators API and pinned high-sales-rank travel organizers: BAGAIL packing cubes, BAGSMART toiletry bag, TSA bottles, luggage tags, shoe bags, laundry bags, shirt folder, tech pouch, compression bags, and HERO RFID passport wallet. Links use wattroi-20.' },
+    { q: 'What does this packing list cost?', a: `Pinned prices run from ${fmt(p[3].price)} to ${fmt(p[9].price)}. Cubes + toiletry bag + bottles land near ${sum(0, 1, 2)}. Confirm live prices.` },
+    { q: 'Carry-on only?', a: 'Yes — cubes, compression bags, and a tech pouch are built for one-bag trips. Keep liquids in TSA bottles in the toiletry bag.' },
+    { q: 'Who is this packing guide for?', a: 'Frequent flyers, weekend travelers, and anyone tired of living out of an exploded suitcase.' },
+  ],
+});

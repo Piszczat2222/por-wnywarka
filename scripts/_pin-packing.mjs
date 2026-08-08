@@ -1,0 +1,14 @@
+import { pinSlots } from './_pin-lib.mjs';
+
+await pinSlots('packing', [
+  { rank: 1, label: 'Packing Cubes', queries: ['packing cubes set 6 compression', 'BAGAIL packing cubes', 'compression packing cubes travel'], maxPrice: 35, must: [/packing.?cube/i], prefer: [/packing.?cube|compression|set/i], exclude: [/storage.?cube.?shelf/i] },
+  { rank: 2, label: 'Toiletry Bag', queries: ['hanging toiletry bag travel', 'toiletry bag for men women hanging hook', 'travel toiletry organizer bag'], maxPrice: 35, must: [/toiletry/i], prefer: [/toiletry.?bag|hanging/i], exclude: [/toiletry.?bottle.?only/i] },
+  { rank: 3, label: 'Travel Bottles', queries: ['travel bottles set TSA silicone', 'leak proof travel toiletry bottles', 'TSA approved travel bottles kit'], maxPrice: 20, must: [/travel.?bottle|toiletry.?bottle/i], prefer: [/TSA|silicone|leak.?proof|set/i], exclude: [/water.?bottle.?32oz/i] },
+  { rank: 4, label: 'Luggage Tags', queries: ['luggage tags leather 2 pack', 'bag tags for luggage set', 'luggage ID tags waterproof'], maxPrice: 15, must: [/luggage.?tag|bag.?tag/i], prefer: [/luggage.?tag|tag/i], exclude: [/apple.?airtag.?holder.?only/i] },
+  { rank: 5, label: 'Shoe Bags', queries: ['shoe bags for travel set of 4', 'waterproof shoe pouch travel', 'shoe storage bags for luggage'], maxPrice: 20, must: [/shoe.?bag|shoe.?pouch/i], prefer: [/shoe.?bag|travel/i], exclude: [/shoe.?rack/i] },
+  { rank: 6, label: 'Laundry Bag Travel', queries: ['travel laundry bag drawstring', 'dirty clothes bag for travel', 'foldable travel laundry bag'], maxPrice: 20, must: [/laundry.?bag|dirty.?clothes/i], prefer: [/travel|laundry.?bag|drawstring/i], exclude: [/mesh.?wash.?bag.?delicates.?only/i] },
+  { rank: 7, label: 'Packing Folders', queries: ['packing folder shirt folder travel', 'Eagle Creek packing folder', 'garment packing folder luggage'], maxPrice: 30, must: [/packing.?folder|shirt.?folder|garment.?folder/i], prefer: [/packing.?folder|folder/i], exclude: [/file.?folder/i] },
+  { rank: 8, label: 'Cable Organizer Pouch', queries: ['cable organizer pouch travel electronics', 'tech pouch for chargers cables', 'electronics organizer bag travel'], maxPrice: 30, must: [/pouch|organizer|tech.?bag/i], prefer: [/cable|tech.?pouch|electronics.?organizer/i], exclude: [/desk.?cable.?tray/i] },
+  { rank: 9, label: 'Compression Bags', queries: ['compression packing bags no vacuum travel', 'travel compression bags for clothes', 'space saver compression bags luggage'], maxPrice: 25, must: [/compression.?bag|space.?saver.?bag/i], prefer: [/compression|travel|luggage/i], exclude: [/vacuum.?pump.?required.?huge.?home.?kit/i] },
+  { rank: 10, label: 'Passport Holder', queries: ['passport holder wallet RFID', 'travel document organizer passport', 'passport wallet family'], maxPrice: 25, must: [/passport/i], prefer: [/passport.?holder|passport.?wallet|RFID/i], exclude: [/passport.?photo.?service/i] },
+]);

@@ -1,0 +1,14 @@
+import { pinSlots } from './_pin-lib.mjs';
+
+await pinSlots('homegym', [
+  { rank: 1, label: 'Resistance Bands Set', queries: ['resistance bands set with handles door anchor', 'workout bands set exercise tubes', 'resistance band set 5 levels handles'], maxPrice: 40, must: [/resistance.?band|exercise.?band|workout.?band/i], prefer: [/set|handles|door.?anchor/i], exclude: [/fabric.?booty.?band.?only.?unless.?set/i] },
+  { rank: 2, label: 'Yoga Mat', queries: ['yoga mat thick non slip 1/2 inch', 'exercise mat thick workout home', 'TPE yoga mat extra thick'], maxPrice: 40, must: [/yoga.?mat|exercise.?mat/i], prefer: [/thick|non.?slip|yoga.?mat/i], exclude: [/towel.?only|mat.?cleaner/i] },
+  { rank: 3, label: 'Adjustable Dumbbells', queries: ['adjustable dumbbells pair budget', 'adjustable dumbbell set 25 lb', 'Bowflex selecttech alternative adjustable dumbbell'], maxPrice: 120, must: [/dumbbell/i], prefer: [/adjustable.?dumbbell|dumbbell.?set/i], exclude: [/rack.?only|neoprene.?fixed.?1lb.?only/i] },
+  { rank: 4, label: 'Jump Rope', queries: ['speed jump rope adjustable adult', 'weighted jump rope workout', 'tangle free jump rope fitness'], maxPrice: 25, must: [/jump.?rope|skipping.?rope/i], prefer: [/speed|adjustable|tangle.?free/i], exclude: [/kids.?only/i] },
+  { rank: 5, label: 'Ab Wheel', queries: ['ab roller wheel with knee pad', 'ab wheel roller exercise', 'abdominal roller wheel set'], maxPrice: 25, must: [/ab.?wheel|ab.?roller|abdominal.?roller/i], prefer: [/ab.?wheel|roller|knee.?pad/i], exclude: [/steering.?wheel/i] },
+  { rank: 6, label: 'Push Up Boards', queries: ['push up board multi position', 'push up bars handles home gym', 'foldable push up board'], maxPrice: 35, must: [/push.?up/i], prefer: [/push.?up.?board|push.?up.?bar/i], exclude: [/push.?up.?bra/i] },
+  { rank: 7, label: 'Kettlebell', queries: ['neoprene kettlebell 15 lb', 'cast iron kettlebell 20 lb', 'kettlebell weight home gym'], maxPrice: 50, must: [/kettlebell/i], prefer: [/kettlebell/i], exclude: [/rack.?only|adjustable.?expensive/i] },
+  { rank: 8, label: 'Foam Roller', queries: ['foam roller medium density 18 inch', 'high density foam roller muscle', 'grid foam roller massage'], maxPrice: 35, must: [/foam.?roller/i], prefer: [/foam.?roller|high.?density/i], exclude: [/lint.?roller|paint.?roller/i] },
+  { rank: 9, label: 'Door Pull Up Bar', queries: ['doorway pull up bar no screws', 'pull up bar doorway home gym', 'multi grip pull up bar door'], maxPrice: 45, must: [/pull.?up.?bar|chin.?up.?bar/i], prefer: [/doorway|pull.?up|door/i], exclude: [/wall.?mount.?only.?heavy/i] },
+  { rank: 10, label: 'Workout Gloves', queries: ['gym weightlifting gloves men women', 'workout gloves padded grip', 'fingerless gym gloves'], maxPrice: 25, must: [/glove/i], prefer: [/gym.?glove|workout.?glove|weightlifting.?glove/i], exclude: [/winter|latex|medical|grill/i] },
+]);

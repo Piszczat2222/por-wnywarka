@@ -26,13 +26,13 @@ export const FTC_DISCLOSURE =
   'This site contains affiliate links. We may earn a commission at no extra cost to you when you purchase through our links.';
 
 export const POPULAR_ARTICLES = [
+  { href: '/articles/monitor-desk-setup-amazon', label: 'Monitor Desk Setup' },
+  { href: '/articles/laundry-essentials-amazon', label: 'Laundry Essentials' },
+  { href: '/articles/travel-packing-organizers-amazon', label: 'Travel Packing Organizers' },
+  { href: '/articles/power-outage-emergency-kit-amazon', label: 'Power Outage Kit' },
+  { href: '/articles/home-gym-essentials-under-50-amazon', label: 'Home Gym Essentials' },
+  { href: '/articles/grill-bbq-accessories-amazon', label: 'Grill & BBQ Accessories' },
   { href: '/articles/phone-accessories-amazon', label: 'Phone Accessories Best Sellers' },
-  { href: '/articles/ninja-creami-alternative', label: 'Ninja Creami Dupe' },
-  { href: '/articles/dyson-vacuum-alternative', label: 'Dyson V15 Knockoff' },
-  { href: '/articles/robot-vacuum-alternative', label: 'Roomba Alternative' },
   { href: '/articles/gaming-desk-accessories-amazon', label: 'Gaming Desk Accessories' },
-  { href: '/articles/air-fryer-accessories-amazon', label: 'Air Fryer Accessories' },
-  { href: '/articles/car-detailing-gadgets-amazon', label: 'Car Detailing Gadgets' },
-  { href: '/articles/content-creator-gadgets-amazon', label: 'Content Creator Gadgets' },
-  { href: '/articles/sleep-gadgets-amazon', label: 'Sleep Gadgets' },
+  { href: '/articles/meal-prep-lunch-essentials-amazon', label: 'Meal Prep Essentials' },
 ] as const;

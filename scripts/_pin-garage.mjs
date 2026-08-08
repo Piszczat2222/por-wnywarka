@@ -1,0 +1,14 @@
+import { pinSlots } from './_pin-lib.mjs';
+
+await pinSlots('garage', [
+  { rank: 1, label: 'Wall Hooks', queries: ['garage wall hooks heavy duty screw in', 'utility hooks garage wall mount', 'heavy duty garage storage hooks'], maxPrice: 30, must: [/hook/i], prefer: [/garage|utility.?hook|heavy.?duty/i], exclude: [/command.?adhesive.?only|picture.?hook/i] },
+  { rank: 2, label: 'Pegboard', queries: ['pegboard garage wall organizer kit', 'wall control pegboard kit', 'metal pegboard tool organizer'], maxPrice: 55, must: [/pegboard|peg.?board/i], prefer: [/pegboard|tool.?organizer/i], exclude: [/craft.?pegboard.?tiny/i] },
+  { rank: 3, label: 'Storage Bins', queries: ['clear storage bins with lids stackable', 'garage storage bins heavy duty', 'IRIS stackable storage containers'], maxPrice: 45, must: [/bin|tote|container/i], prefer: [/storage.?bin|stackable|lid|clear/i], exclude: [/trash.?bin|kitchen.?canister/i] },
+  { rank: 4, label: 'Magnetic Tool Strip', queries: ['magnetic tool holder bar garage', 'magnetic knife strip tool bar 18 inch', 'magnetic tool rack wall mount'], maxPrice: 30, must: [/magnetic/i], prefer: [/magnetic.?tool|tool.?bar|tool.?holder/i], exclude: [/fridge.?magnet.?set/i] },
+  { rank: 5, label: 'Extension Cord Reel', queries: ['extension cord reel retractable', 'garden extension cord reel wall mount', 'retractable extension cord 30 ft'], maxPrice: 50, must: [/extension.?cord|cord.?reel/i], prefer: [/reel|retractable|extension/i], exclude: [/usb.?cable.?only/i] },
+  { rank: 6, label: 'Shop Stool', queries: ['garage stool adjustable rolling', 'mechanic stool with wheels', 'shop stool padded adjustable'], maxPrice: 55, must: [/stool/i], prefer: [/shop.?stool|mechanic.?stool|garage.?stool|rolling/i], exclude: [/bar.?stool.?kitchen/i] },
+  { rank: 7, label: 'Floor Mat / Mat', queries: ['garage floor mat interlocking tiles', 'anti fatigue garage floor mat', 'garage floor protector mat'], maxPrice: 50, must: [/mat|tile|floor/i], prefer: [/garage.?floor|anti.?fatigue|interlocking/i], exclude: [/yoga.?mat|bath.?mat/i] },
+  { rank: 8, label: 'Label Maker', queries: ['label maker Brother P-touch', 'label maker for garage bins', 'portable label maker handheld'], maxPrice: 40, must: [/label.?maker|p-?touch/i], prefer: [/label.?maker|brother/i], exclude: [/label.?tape.?only/i] },
+  { rank: 9, label: 'Broom / Dustpan', queries: ['lobby broom and dustpan set garage', 'commercial angle broom dustpan', 'garage broom heavy duty outdoor'], maxPrice: 35, must: [/broom|dustpan/i], prefer: [/broom|dustpan|lobby/i], exclude: [/witch.?broom.?decor/i] },
+  { rank: 10, label: 'Work Light', queries: ['LED work light rechargeable magnetic garage', 'portable LED shop light', 'cordless work light magnetic base'], maxPrice: 40, must: [/work.?light|shop.?light/i], prefer: [/LED|magnetic|rechargeable|work.?light/i], exclude: [/string.?light|fairy/i] },
+]);
