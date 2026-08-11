@@ -4,7 +4,11 @@ import { join } from 'node:path';
 const articlesDir = join(process.cwd(), 'src', 'content', 'articles');
 const sitemapPath = join(process.cwd(), 'dist', 'sitemap-0.xml');
 
+const STATIC_PATHS = ['/', '/reviews', '/about', '/contact', '/privacy', '/terms'];
+
 const lastmodByPath = {};
+const latestByCategory = {};
+let siteLatestMs = 0;
 
 for (const file of readdirSync(articlesDir)) {
   if (!file.endsWith('.md')) continue;
@@ -13,10 +17,36 @@ for (const file of readdirSync(articlesDir)) {
   const slug = file.replace(/\.md$/, '');
   const updatedMatch = content.match(/^updatedAt:\s*(\S+)/m);
   const publishedMatch = content.match(/^publishedAt:\s*(\S+)/m);
+  const categoryMatch = content.match(/^category:\s*(\S+)/m);
   const rawDate = updatedMatch?.[1] ?? publishedMatch?.[1];
+  const category = categoryMatch?.[1];
 
-  if (rawDate) {
-    lastmodByPath[`/articles/${slug}/`] = new Date(rawDate).toISOString();
+  if (!rawDate) continue;
+
+  const iso = new Date(rawDate).toISOString();
+  const ms = Date.parse(iso);
+  lastmodByPath[`/articles/${slug}`] = iso;
+
+  if (Number.isFinite(ms) && ms > siteLatestMs) {
+    siteLatestMs = ms;
+  }
+
+  if (category) {
+    const prev = latestByCategory[category];
+    if (!prev || ms > Date.parse(prev)) {
+      latestByCategory[category] = iso;
+    }
+  }
+}
+
+for (const [category, iso] of Object.entries(latestByCategory)) {
+  lastmodByPath[`/categories/${category}`] = iso;
+}
+
+if (siteLatestMs > 0) {
+  const siteIso = new Date(siteLatestMs).toISOString();
+  for (const path of STATIC_PATHS) {
+    lastmodByPath[path] = siteIso;
   }
 }
 
@@ -28,12 +58,16 @@ try {
   process.exit(0);
 }
 
-xml = xml.replace(/<url><loc>(https:\/\/altpik\.com\/articles\/[^<]+)<\/loc><\/url>/g, (match, loc) => {
+let patched = 0;
+xml = xml.replace(/<url><loc>(https:\/\/altpik\.com[^<]*)<\/loc><\/url>/g, (match, loc) => {
   const path = new URL(loc).pathname;
   const lastmod = lastmodByPath[path];
   if (!lastmod) return match;
+  patched += 1;
   return `<url><loc>${loc}</loc><lastmod>${lastmod}</lastmod></url>`;
 });
 
 writeFileSync(sitemapPath, xml);
-console.log(`Sitemap patch: added lastmod to ${Object.keys(lastmodByPath).length} article URL(s)`);
+console.log(
+  `Sitemap patch: added lastmod to ${patched} URL(s) (${Object.keys(lastmodByPath).length} mapped)`,
+);

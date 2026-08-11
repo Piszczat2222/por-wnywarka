@@ -1,0 +1,45 @@
+# AltPik Pinterest — Promoted Pins checklist
+
+Do NOT run ads in week 1. Use this after 10–14 days of organic posting.
+
+## When to start
+
+- [ ] At least 10–14 days of organic pins in one cluster
+- [ ] Analytics reviewed (saves + outbound clicks)
+- [ ] 1–2 pins clearly outperform the rest (relative, even if numbers are small)
+- [ ] Landing article loads fast; Amazon CTAs work
+- [ ] Profile avatar + bio + website set
+
+## First test setup
+
+- [ ] Campaign objective: Traffic (outbound to AltPik article — NOT direct Amazon)
+- [ ] Creative: only the top 1–2 winning pins (same or near-identical graphic)
+- [ ] Budget: $5–10/day for 7 days on ONE pin first
+- [ ] Audience: Beauty / Skincare / Self-care interests (or Home if home cluster won)
+- [ ] Destination: https://altpik.com/articles/<winning-slug> (no trailing slash)
+
+## After 7 days
+
+- [ ] Kill losers (high spend, weak CTR / outbound)
+- [ ] Keep or raise budget on the winner only
+- [ ] Do not launch a second cluster’s ads until the first test finishes
+
+## What not to promote
+
+- Fresh pins with no organic signal
+- Tech comparison articles with no Pinterest saves
+- 5+ creatives at once “to see what sticks”
+
+## Weekly review (every Sunday)
+
+1. Open Pinterest Analytics
+2. Note top 3 pins by saves and outbound clicks
+3. Add winners to “ads candidates” below
+
+### Ads candidates (fill as you go)
+
+| Date | Pin title | Saves | Outbound clicks | Promote? |
+|---|---|---|---|---|
+|  |  |  |  |  |
+|  |  |  |  |  |
+|  |  |  |  |  |

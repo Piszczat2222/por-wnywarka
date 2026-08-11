@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "astro dev",
-    "build": "node scripts/cache-product-images.mjs && node scripts/fetch-listicle-thumbnails.mjs && node scripts/generate-og.mjs && astro build && node scripts/patch-sitemap-lastmod.mjs",
+    "build": "node scripts/cache-product-images.mjs && node scripts/fetch-listicle-thumbnails.mjs && node scripts/generate-og.mjs && astro build && node scripts/patch-sitemap-lastmod.mjs && node scripts/verify-sitemap.mjs",
     "thumbnails": "node scripts/fetch-listicle-thumbnails.mjs",
     "indexnow": "node scripts/indexnow.mjs",
     "preview": "astro preview",
