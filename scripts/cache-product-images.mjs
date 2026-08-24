@@ -12,7 +12,7 @@ const asins = new Set();
 for (const file of readdirSync(articlesDir)) {
   if (!file.endsWith('.md')) continue;
   const content = readFileSync(join(articlesDir, file), 'utf8');
-  for (const match of content.matchAll(/(?:imageAsin|asin): "(B0[A-Z0-9]{8})"/g)) {
+  for (const match of content.matchAll(/(?:imageAsin|asin|amazonAsin|premiumAsin): "(B0[A-Z0-9]{8})"/g)) {
     asins.add(match[1]);
   }
 }

@@ -1,101 +1,325 @@
-# AltPik Pinterest batch (10 pins)
+# AltPik Pinterest — 4-week schedule (31 pins)
 
-Post 1–2 per day. Vertical images: use generated PNGs in /public/pinterest/ or Canva 1000×1500.
-Destination URL = article URL (no trailing slash). Soft CTA in description — no spammy keyword stuffing.
+Post **1–2 pins/day** in order (week → day). Canva: **1000×1500**, one headline + one sub + optional “Save this list”.
+Destination URL = article URL (no trailing slash). Soft CTA — no keyword stuffing.
 
-## 1. Amazon Gifts Under $20 That Don't Look Cheap
-- Board: Gift Ideas Under $25
-- Link: https://altpik.com/articles/amazon-gifts-under-20
-- Alt: Flat lay of small Amazon gifts under twenty dollars
+## Boards to create (once)
+
+- Skincare Tools & Self-Care
+- Gift Ideas Under $25
+- Home Comfort Finds
+- Kitchen Amazon Finds
+- Fitness & Yoga Essentials
+
+## Profile (once)
+
+- Avatar: export `public/favicon.svg` to PNG ~400×400 (green check)
+- Bio: Amazon picks that earn a spot — beauty, home, gifts. Honest lists on altpik.com
+- Website: https://altpik.com
+
+## Cadence
+
+| Week | Cluster | Pins |
+|---|---|---|
+| 1 | Beauty / skincare | days 1–7 → skincare-tools-amazon |
+| 2 | Beauty extend | days 8–13 → grooming, Airwrap alt, jewelry |
+| 3 | Home / organize | days 15–25 → organizers, bathroom, sleep |
+| 4 | Gifts + kitchen | days 26–32 → gifts under $20, housewarming, kitchen under $30 |
+
+Ads: see `public/pinterest/ads-checklist.txt` after days 10–14 of organic data.
+
+---
+
+
+# Week 1 — beauty-skincare
+
+## Day 1. 8 Amazon Skincare Tools Worth Buying (2026)
+- Board: Skincare Tools & Self-Care
+- Link: https://altpik.com/articles/skincare-tools-amazon
+- Alt: Amazon skincare tools flat lay with gua sha jade roller ice roller and LED face mask
+- Canva hook: 8 Skincare Tools / Worth Buying in 2026
 - Description:
 
-Thoughtful Amazon gifts under $20 — phone stands, candles, tumblers, and desk fixes. Save this for Secret Santa and last-minute birthdays. Full list → altpik.com/articles/amazon-gifts-under-20
+Amazon skincare tools that earn a spot in the routine — gua sha, jade roller set, ice roller, silicone cleansing brush, NanoSteamer, pore vacuum, and an LED face mask. Start under $10, then build. Full pinned list → altpik.com/articles/skincare-tools-amazon
 
-## 2. Housewarming Gifts New Homeowners Actually Use
-- Board: New Home Gift Ideas
-- Link: https://altpik.com/articles/housewarming-gifts-amazon
-- Alt: Housewarming gift basket with candle and throw blanket
+## Day 2. Under-$10 Amazon Skincare Tools That Actually Work
+- Board: Skincare Tools & Self-Care
+- Link: https://altpik.com/articles/skincare-tools-amazon
+- Alt: Budget Amazon gua sha jade roller ice roller and silicone mask covers under ten dollars
+- Canva hook: Under $10 Skin Tools / Gua Sha • Roller • Ice Roller
 - Description:
 
-Skip the wine charms. Candle sets, throws, tool kits, and cheese boards for move-in week. Amazon housewarming ideas → altpik.com/articles/housewarming-gifts-amazon
+Gua sha from $4.99, BAIMEI roller + gua sha set ~$7.49, ice roller ~$8, silicone mask covers ~$7. Budget face toolkit without the drawer junk. Roundup → altpik.com/articles/skincare-tools-amazon
 
-## 3. Summer Beach Bags & Straw Totes on Amazon
-- Board: Summer Beach Style
-- Link: https://altpik.com/articles/summer-beach-bags-straw-amazon
-- Alt: Straw beach tote and sun hat on sand
+## Day 3. Morning Puffiness Fix: Ice Roller + Gua Sha
+- Board: Skincare Tools & Self-Care
+- Link: https://altpik.com/articles/skincare-tools-amazon
+- Alt: Ice roller and jade gua sha for morning face puffiness
+- Canva hook: Depuff in 60 Seconds / Ice Roller + Gua Sha
 - Description:
 
-Rattan fish bags, oversized totes, and packable sun hats for real beach days — not just flat lays. Packing list → altpik.com/articles/summer-beach-bags-straw-amazon
+Wake-up depuff without a spa appointment — Fronnor ice roller or Rena Chris gua sha for lymphatic drainage and jawline. See the full Amazon tool stack → altpik.com/articles/skincare-tools-amazon
 
-## 4. Vacation Jewelry Stacks Under $20
-- Board: Summer Beach Style
-- Link: https://altpik.com/articles/beach-jewelry-under-15-amazon
-- Alt: Gold bracelet stack and vacation jewelry flat lay
+## Day 4. Congestion Night: Steam Then Gentle Pore Vacuum
+- Board: Skincare Tools & Self-Care
+- Link: https://altpik.com/articles/skincare-tools-amazon
+- Alt: Facial steamer and gentle pore vacuum for blackhead night routine
+- Canva hook: Steam → Low Suction / At-Home Congestion Night
 - Description:
 
-Gold bracelet stacks, flat-back earrings, and bead necklaces under $20 for vacation outfits → altpik.com/articles/beach-jewelry-under-15-amazon
+Steam first, then low suction — NanoSteamer + FLYMOOO pore vacuum for blackhead nights (never dry skin, never high suction on cheeks). How we stack it → altpik.com/articles/skincare-tools-amazon
 
-## 5. Men's Grooming Gadgets Worth Buying
-- Board: Gift Ideas Under $25
+## Day 5. At-Home Spa Drawer: Amazon Beauty Tools to Keep
+- Board: Skincare Tools & Self-Care
+- Link: https://altpik.com/articles/skincare-tools-amazon
+- Alt: At-home spa drawer with Amazon skincare tools and cleansing brush
+- Canva hook: Spa Drawer Starter / Amazon Beauty Tools
+- Description:
+
+Build a real spa drawer: cleansing brush, jade set, silicone mask covers, steamer, ice roller — plus the LED mask if you're investing. 8 pinned picks → altpik.com/articles/skincare-tools-amazon
+
+## Day 6. LED Face Mask vs Budget Gua Sha (Which First?)
+- Board: Skincare Tools & Self-Care
+- Link: https://altpik.com/articles/skincare-tools-amazon
+- Alt: LED face mask next to budget jade gua sha roller set
+- Canva hook: Budget First, Then LED / Don't Skip the $7 Set
+- Description:
+
+Don't buy a $399 LED mask before a $7 roller set. Start under $10, then graduate. Pinned Amazon order → altpik.com/articles/skincare-tools-amazon
+
+## Day 7. Best Value: Jade Roller + Gua Sha Set Under $8
+- Board: Skincare Tools & Self-Care
+- Link: https://altpik.com/articles/skincare-tools-amazon
+- Alt: BAIMEI jade roller and gua sha gift set on bathroom counter
+- Canva hook: Best Value Duo / Often Under $8
+- Description:
+
+BAIMEI jade roller + gua sha often under $8 — fridge chill for morning de-puff. Best value duo on our list → altpik.com/articles/skincare-tools-amazon
+
+
+# Week 2 — beauty-skincare
+
+## Day 8. Men's Grooming Gadgets Worth Buying
+- Board: Skincare Tools & Self-Care
 - Link: https://altpik.com/articles/mens-grooming-gadgets-amazon
 - Alt: Men's grooming kit with trimmer oil and toiletry bag
+- Canva hook: Men's Grooming Kit / Daily Tools, Not Drawer Junk
 - Description:
 
 Ufree trimmer, MANSCAPED body groomer, Honest Amish oil, Mbzoey foil shaver — daily tools, not drawer junk → altpik.com/articles/mens-grooming-gadgets-amazon
 
-## 6. Thoughtful Birthday Gifts for Your Girlfriend
-- Board: Gift Ideas Under $25
-- Link: https://altpik.com/articles/birthday-gifts-for-girlfriend-amazon
-- Alt: Birthday gift flat lay with photo frame tumbler and candles
+## Day 9. Build a Home Grooming Kit Under $100
+- Board: Skincare Tools & Self-Care
+- Link: https://altpik.com/articles/mens-grooming-gadgets-amazon
+- Alt: Beard trimmer oil brush and dopp kit laid out for men's grooming
+- Canva hook: Home Grooming Kit / Trimmer + Oil + Dopp
 - Description:
 
-Spotify photo frame, satin sleep set, KODAK Mini 2, TALES cards, Huski tumbler — gifts she'll keep → altpik.com/articles/birthday-gifts-for-girlfriend-amazon
+Start with Ufree ($29.59) + Honest Amish oil ($12.22) + BAGSMART Dopp — then add MANSCAPED or foil shaver if you need them. Full kit map → altpik.com/articles/mens-grooming-gadgets-amazon
 
-## 7. Thoughtful Birthday Gifts for Mom
-- Board: Gift Ideas Under $25
-- Link: https://altpik.com/articles/birthday-gifts-for-mom-amazon
-- Alt: Cozy birthday gift ideas for mom on a table
+## Day 10. Dyson Airwrap Look for Less: Shark FlexStyle
+- Board: Skincare Tools & Self-Care
+- Link: https://altpik.com/articles/dyson-airwrap-alternative
+- Alt: Shark FlexStyle multi-styler as Dyson Airwrap alternative
+- Canva hook: Airwrap Look, Less Bill / Shark FlexStyle ~$230
 - Description:
 
-Weighted blanket, sunrise clock, bath bombs, Homedics foot spa — gifts she'll use after the cake → altpik.com/articles/birthday-gifts-for-mom-amazon
+Dyson Airwrap Co-anda2x at $749.99 vs Shark FlexStyle HD431BR at $229.99 — Coanda curls and blowouts without the Airwrap bill. Honest compare → altpik.com/articles/dyson-airwrap-alternative
 
-## 8. Thoughtful Mother's Day Gifts on Amazon
-- Board: Gift Ideas Under $25
-- Link: https://altpik.com/articles/mothers-day-gift-ideas-amazon
-- Alt: Mother's Day gift flat lay with silk pillowcase and spa tools
+## Day 11. Skip the $750 Airwrap? Read This First
+- Board: Skincare Tools & Self-Care
+- Link: https://altpik.com/articles/dyson-airwrap-alternative
+- Alt: Hair multi-styler comparison Airwrap alternative on vanity
+- Canva hook: $230 vs $750 / When Shark Is Enough
 - Description:
 
-ZIMASILK silk pillowcase, Cosori kettle, heated eye mask, RENPHO pad, Burt's Bees tin — gifts she'll use after the flowers → altpik.com/articles/mothers-day-gift-ideas-amazon
+Want curls and blowouts without Hyperdymium money? Shark FlexStyle covers dry, curl, volumize, and smooth for most daily styling. Full breakdown → altpik.com/articles/dyson-airwrap-alternative
 
-## 9. Stocking Stuffers Under $25 (Shop Early)
-- Board: Gift Ideas Under $25
-- Link: https://altpik.com/articles/amazon-stocking-stuffers-under-25
-- Alt: Christmas stocking stuffed with small Amazon gifts
+## Day 12. Vacation Jewelry Stacks Under $20
+- Board: Skincare Tools & Self-Care
+- Link: https://altpik.com/articles/beach-jewelry-under-15-amazon
+- Alt: Gold bracelet stack and vacation jewelry flat lay
+- Canva hook: Vacation Jewelry Under $20 / Stacks That Travel
 - Description:
 
-Secret Santa and stocking winners under $25 — mini waffle makers, hand warmers, and more. List → altpik.com/articles/amazon-stocking-stuffers-under-25
+Gold bracelet stacks, flat-back earrings, and bead necklaces under $20 for vacation outfits → altpik.com/articles/beach-jewelry-under-15-amazon
 
-## 10. Cool Amazon Gifts for Teens (No Gift Cards)
-- Board: Gift Ideas Under $25
-- Link: https://altpik.com/articles/cool-amazon-gifts-for-teens
-- Alt: Teen bedroom with LED lights and gadgets
+## Day 13. Beach Jewelry That Doesn't Look Cheap
+- Board: Skincare Tools & Self-Care
+- Link: https://altpik.com/articles/beach-jewelry-under-15-amazon
+- Alt: Gold shell and starfish beach jewelry stack
+- Canva hook: Beach Jewelry Stacks / Under $20 Amazon Finds
 - Description:
 
-LED strips, galaxy projectors, mini printers — teen gifts that feel current without AirPods money. Guide → altpik.com/articles/cool-amazon-gifts-for-teens
+Shell and starfish stacks, waterproof-friendly pieces, and flat-backs for travel days. Save this for packing → altpik.com/articles/beach-jewelry-under-15-amazon
 
-## 11. Amazon Sleep Gadgets Worth Buying
+
+# Week 3 — home-organize
+
+## Day 15. TikTok Home Organizers That Actually Work
+- Board: Home Comfort Finds
+- Link: https://altpik.com/articles/tiktok-home-organizers-amazon
+- Alt: Organized pantry with clear acrylic bins
+- Canva hook: TikTok Organizers / That Survive Real Kitchens
+- Description:
+
+Clear bins, lazy Susans, over-door racks — viral organizers that reduce daily friction. Roundup → altpik.com/articles/tiktok-home-organizers-amazon
+
+## Day 16. Over-Door Pantry Rack: Instant Extra Shelf Space
+- Board: Home Comfort Finds
+- Link: https://altpik.com/articles/tiktok-home-organizers-amazon
+- Alt: Over-the-door pantry organizer filled with spices and snacks
+- Canva hook: Over-Door Pantry Rack / No Drill • ~$25
+- Description:
+
+Delamu 6-tier over-door pantry rack (~$24.98) uses wasted door space for spices and snacks. See the full TikTok organizer stack → altpik.com/articles/tiktok-home-organizers-amazon
+
+## Day 17. Under-Sink Chaos? 2-Tier Pull-Out Fix
+- Board: Home Comfort Finds
+- Link: https://altpik.com/articles/tiktok-home-organizers-amazon
+- Alt: Two-tier under sink pull-out organizers in kitchen cabinet
+- Canva hook: Under-Sink Pull-Outs / Around the Plumbing
+- Description:
+
+PXRACK under-sink organizers (~$39.94) double cabinet space without fighting pipes. Full Amazon organizer list → altpik.com/articles/tiktok-home-organizers-amazon
+
+## Day 18. Clear Bins + Labels = Restock Aesthetic That Lasts
+- Board: Home Comfort Finds
+- Link: https://altpik.com/articles/tiktok-home-organizers-amazon
+- Alt: Clear stackable pantry bins with printed labels
+- Canva hook: Clear Bins + Labels / Pantry Restock Starter
+- Description:
+
+Stackable clear bins, lazy Susans, and a Bluetooth label maker — the Restock look without buying junk you'll return. Guide → altpik.com/articles/tiktok-home-organizers-amazon
+
+## Day 19. Viral Organizers Worth Keeping (Not Returning)
+- Board: Home Comfort Finds
+- Link: https://altpik.com/articles/tiktok-home-organizers-amazon
+- Alt: Home organization products including lazy Susan and storage bins
+- Canva hook: Keep These Organizers / Skip the Drawer Junk
+- Description:
+
+We filtered TikTok clutter for tools with a clear job: door racks, under-sink pull-outs, lazy Susans, glass containers. Pinned list → altpik.com/articles/tiktok-home-organizers-amazon
+
+## Day 20. Bathroom Organization Essentials on Amazon
+- Board: Home Comfort Finds
+- Link: https://altpik.com/articles/bathroom-organization-amazon
+- Alt: Organized bathroom with shower caddy bath rug and drawer bins
+- Canva hook: Bathroom Reset / Caddy • Rug • Organizers
+- Description:
+
+Never-rust shower caddy, chenille bath rug, over-toilet storage, and drawer organizers — bathroom resets that stick. List → altpik.com/articles/bathroom-organization-amazon
+
+## Day 21. Rental-Friendly Bathroom Upgrades Under $30
+- Board: Home Comfort Finds
+- Link: https://altpik.com/articles/bathroom-organization-amazon
+- Alt: Rental-friendly bathroom accessories adhesive holder and bamboo stand
+- Canva hook: No-Drill Bathroom Fixes / Under $30 Amazon
+- Description:
+
+Adhesive toilet-paper holder, bamboo toothbrush stand, shower caddy — renter-safe upgrades without holes. Full essentials → altpik.com/articles/bathroom-organization-amazon
+
+## Day 22. Shower Caddy That Won't Rust Orange
+- Board: Home Comfort Finds
+- Link: https://altpik.com/articles/bathroom-organization-amazon
+- Alt: Aluminum hanging shower caddy with bottles in shower
+- Canva hook: Never-Rust Shower Caddy / Bottles Off the Tub Floor
+- Description:
+
+YASONIC aluminum shower caddy (~$21.70) keeps bottles off the tub floor without the orange crust. More bathroom picks → altpik.com/articles/bathroom-organization-amazon
+
+## Day 23. Amazon Sleep Gadgets Worth Buying
 - Board: Home Comfort Finds
 - Link: https://altpik.com/articles/sleep-gadgets-amazon
 - Alt: Bedside white noise machine and sleep mask
+- Canva hook: Sleep Gadgets / That Beat Drawer Junk
 - Description:
 
 White noise, blackout masks, sunrise alarms — sleep fixes that beat drawer junk. Starter kit ideas → altpik.com/articles/sleep-gadgets-amazon
 
-## 12. TikTok Home Organizers That Actually Work
+## Day 24. Better Sleep Starter Kit (No Fancy Mattress)
 - Board: Home Comfort Finds
-- Link: https://altpik.com/articles/tiktok-home-organizers-amazon
-- Alt: Organized pantry with clear acrylic bins
+- Link: https://altpik.com/articles/sleep-gadgets-amazon
+- Alt: Sleep mask sunrise alarm and white noise machine on nightstand
+- Canva hook: Sleep Starter Kit / Noise • Dark • Light
 - Description:
 
-Clear bins, lazy Susans, over-door racks — viral organizers that reduce daily friction. Roundup → altpik.com/articles/tiktok-home-organizers-amazon
+Block light, mask noise, wake gently — three jobs, three gadgets. Save this before another useless sleep gimmick. Guide → altpik.com/articles/sleep-gadgets-amazon
+
+## Day 25. White Noise + Blackout: The Cheap Sleep Stack
+- Board: Home Comfort Finds
+- Link: https://altpik.com/articles/sleep-gadgets-amazon
+- Alt: Blackout sleep mask beside compact white noise machine
+- Canva hook: Cheap Sleep Stack / Sound + Darkness
+- Description:
+
+Most people need quieter rooms and darker mornings — not another supplement. Amazon sleep gadget roundup → altpik.com/articles/sleep-gadgets-amazon
+
+
+# Week 4 — gifts-kitchen
+
+## Day 26. Amazon Gifts Under $20 That Don't Look Cheap
+- Board: Gift Ideas Under $25
+- Link: https://altpik.com/articles/amazon-gifts-under-20
+- Alt: Flat lay of small Amazon gifts under twenty dollars
+- Canva hook: Gifts Under $20 / That Don't Look Cheap
+- Existing image: /pinterest/pin-gifts-under-20.png
+- Description:
+
+Thoughtful Amazon gifts under $20 — phone stands, candles, tumblers, and desk fixes. Save this for Secret Santa and last-minute birthdays. Full list → altpik.com/articles/amazon-gifts-under-20
+
+## Day 27. Last-Minute Gifts Under $20 (Still Thoughtful)
+- Board: Gift Ideas Under $25
+- Link: https://altpik.com/articles/amazon-gifts-under-20
+- Alt: Small thoughtful Amazon gifts arranged for last-minute wrapping
+- Canva hook: Last-Minute Under $20 / Prime-Ready Ideas
+- Description:
+
+Skip the gift card guilt — desk fixes, candles, and small upgrades that feel intentional. Roundup → altpik.com/articles/amazon-gifts-under-20
+
+## Day 28. Housewarming Gifts New Homeowners Actually Use
+- Board: Gift Ideas Under $25
+- Link: https://altpik.com/articles/housewarming-gifts-amazon
+- Alt: Housewarming gift basket with candle and throw blanket
+- Canva hook: Housewarming Gifts / They'll Actually Use
+- Existing image: /pinterest/pin-housewarming.png
+- Description:
+
+Skip the wine charms. Candle sets, throws, tool kits, and cheese boards for move-in week. Amazon housewarming ideas → altpik.com/articles/housewarming-gifts-amazon
+
+## Day 29. Move-In Week Gifts (Not Another Candle Alone)
+- Board: Gift Ideas Under $25
+- Link: https://altpik.com/articles/housewarming-gifts-amazon
+- Alt: Practical housewarming gifts including throw blanket and tool kit
+- Canva hook: Move-In Week Gifts / Tools • Throws • Boards
+- Description:
+
+New homeowners need useful gear for week one — not novelty clutter. Practical Amazon housewarming list → altpik.com/articles/housewarming-gifts-amazon
+
+## Day 30. 10 Best Amazon Kitchen Gadgets Under $30
+- Board: Kitchen Amazon Finds
+- Link: https://altpik.com/articles/top-10-kitchen-gadgets-under-30-amazon
+- Alt: Amazon kitchen gadgets under thirty dollars on a countertop
+- Canva hook: Kitchen Gadgets Under $30 / Worth Drawer Space
+- Description:
+
+Zulay garlic press, OXO avocado slicer, TrendPlain oil sprayer, Hamilton Beach sandwich maker — budget tools people keep. List → altpik.com/articles/top-10-kitchen-gadgets-under-30-amazon
+
+## Day 31. Under-$10 Kitchen Tools You'll Use Weekly
+- Board: Kitchen Amazon Finds
+- Link: https://altpik.com/articles/top-10-kitchen-gadgets-under-30-amazon
+- Alt: Garlic press jar opener and small kitchen tools under ten dollars
+- Canva hook: Under $10 Kitchen Wins / Garlic Press • Jar Opener
+- Description:
+
+Zulay garlic press (~$9.99), Otstar jar opener (~$5.99), egg separator — tiny tools with daily payoff. Full under-$30 list → altpik.com/articles/top-10-kitchen-gadgets-under-30-amazon
+
+## Day 32. Budget Kitchen Drawer: Gadgets Under $30
+- Board: Kitchen Amazon Finds
+- Link: https://altpik.com/articles/top-10-kitchen-gadgets-under-30-amazon
+- Alt: Oil sprayer avocado slicer and breakfast sandwich maker on kitchen counter
+- Canva hook: Budget Kitchen Drawer / No More Unused Gimmicks
+- Description:
+
+Oil sprayer, avocado slicer, sandwich maker — picks filtered for real use, not one-time TikTok. Roundup → altpik.com/articles/top-10-kitchen-gadgets-under-30-amazon
 
