@@ -70,8 +70,8 @@ categoryLabel: ${JSON.stringify(categoryLabel)}
 cardTitle: ${JSON.stringify(cardTitle)}
 cardExcerpt: ${JSON.stringify(cardExcerpt)}
 featured: false
-publishedAt: 2026-08-08
-updatedAt: 2026-08-08
+publishedAt: 2026-08-24
+updatedAt: 2026-08-24
 seoTitle: ${JSON.stringify(seoTitle)}
 seoDescription: ${JSON.stringify(seoDescription)}
 keywords: ${JSON.stringify(keywords)}
