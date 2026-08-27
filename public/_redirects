@@ -1,0 +1,7 @@
+# Canonical host + HTTPS (Cloudflare Pages)
+https://www.altpik.com/* https://altpik.com/:splat 301
+http://altpik.com/* https://altpik.com/:splat 301
+
+# Avoid /index duplicate of homepage
+/index / 301
+/index.html / 301

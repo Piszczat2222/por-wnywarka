@@ -18,6 +18,7 @@ export function withoutTrailingSlash(path: string): string {
   const withoutHash = hashIndex >= 0 ? path.slice(0, hashIndex) : path;
   const [rawPathname, query] = withoutHash.split('?');
   let pathname = rawPathname.replace(/\.html$/i, '');
+  if (pathname === '/index') pathname = '/';
   if (!pathname) pathname = '/';
   if (pathname !== '/' && /\.[a-z0-9]+$/i.test(pathname)) {
     return `${pathname}${query ? `?${query}` : ''}${hash}`;

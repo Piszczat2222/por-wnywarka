@@ -26,6 +26,17 @@ export const PRIORITY_URLS = [
   'https://altpik.com/articles/air-fryer-accessories-amazon',
   'https://altpik.com/articles/stanley-tumbler-alternative',
   'https://altpik.com/articles/tiktok-home-organizers-amazon',
+  // New API-pinned listicles (Aug 2026)
+  'https://altpik.com/articles/closet-organization-amazon',
+  'https://altpik.com/articles/under-sink-kitchen-organizers-amazon',
+  'https://altpik.com/articles/pet-travel-car-amazon',
+  'https://altpik.com/articles/streaming-setup-amazon',
+  'https://altpik.com/articles/winter-driving-essentials-amazon',
+  'https://altpik.com/articles/entryway-organizers-amazon',
+  'https://altpik.com/articles/home-tool-kit-essentials-amazon',
+  'https://altpik.com/articles/kids-art-supplies-amazon',
+  'https://altpik.com/articles/kitchen-drawer-organizers-amazon',
+  'https://altpik.com/articles/medicine-cabinet-organizers-amazon',
 ];
 
 const checklistPath = join(process.cwd(), 'scripts', 'gsc-bing-index-checklist.txt');
