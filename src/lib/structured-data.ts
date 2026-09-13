@@ -1,4 +1,3 @@
-import { listItemAmazonUrl } from './amazon';
 import { absoluteUrl, toIsoDate } from './seo';
 import { SITE } from './site';
 import type { ListItem } from '../content.config';
@@ -14,7 +13,7 @@ export function organizationSchema() {
     '@type': 'Organization',
     name: SITE.name,
     url: SITE.url,
-    logo: absoluteUrl('/favicon.svg'),
+    logo: absoluteUrl('/logo.png'),
     email: SITE.email,
   };
 }
@@ -66,6 +65,7 @@ export function articleSchema(options: {
     author: {
       '@type': 'Person',
       name: SITE.author,
+      url: absoluteUrl('/about'),
     },
     publisher: {
       '@type': 'Organization',
@@ -73,7 +73,7 @@ export function articleSchema(options: {
       url: SITE.url,
       logo: {
         '@type': 'ImageObject',
-        url: absoluteUrl('/favicon.svg'),
+        url: absoluteUrl('/logo.png'),
       },
     },
     mainEntityOfPage: {
@@ -94,7 +94,7 @@ export function itemListSchema(items: ListItem[], pageUrl: string) {
       '@type': 'ListItem',
       position: item.rank ?? index + 1,
       name: item.name,
-      url: listItemAmazonUrl(item),
+      url: `${pageUrl}#pick-${item.rank ?? index + 1}`,
     })),
   };
 }

@@ -5,3 +5,11 @@ http://altpik.com/* https://altpik.com/:splat 301
 # Avoid /index duplicate of homepage
 /index / 301
 /index.html / 301
+
+# Consolidate retired article URLs into the closest useful guide
+/articles/summer-beach-bags-straw-amazon /articles/beach-day-essentials-amazon 301
+/articles/summer-hair-scarves-bandanas-amazon /articles/beach-day-essentials-amazon 301
+/articles/owala-freesip-alternative /articles/stanley-tumbler-alternative 301
+/articles/hydro-flask-alternative /articles/stanley-tumbler-alternative 301
+/articles/yeti-rambler-alternative /articles/stanley-tumbler-alternative 301
+/articles/nespresso-machine-alternative /articles/coffee-lover-gadgets-amazon 301

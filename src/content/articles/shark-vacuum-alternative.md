@@ -4,7 +4,7 @@ description: "Shark Stratos IZ862H at $349.99 (HyperVelocity Plus, 309W, Clean S
 category: home
 categoryLabel: "Home Aesthetic"
 cardTitle: "Shark Stratos IZ862H vs. JELLYPIG X100"
-cardExcerpt: "Pinned: Shark Stratos IZ862H $349.99 vs JELLYPIG X100 $139.99 — motor, runtime, bin, filtration, weight."
+cardExcerpt: "Compared: Shark Stratos IZ862H $349.99 vs JELLYPIG X100 $139.99 — motor, runtime, bin, filtration, weight."
 premiumProduct: "Shark Stratos Cordless IZ862H"
 premiumPrice: "$349.99"
 pickProduct: "JELLYPIG X100 Cordless Stick"
@@ -15,7 +15,7 @@ featured: false
 publishedAt: 2026-07-07
 updatedAt: 2026-08-05
 seoTitle: "Shark Stratos Alternative on Amazon (2026): JELLYPIG X100"
-seoDescription: "Shark Stratos IZ862H ($349.99, 309W HyperVelocity Plus) vs JELLYPIG X100 ($139.99, 650W / 55KPA): Clean Sense IQ, PowerFins, runtime, bin, and weight compared."
+seoDescription: "Shark Stratos IZ862H ($349.99, 309W HyperVelocity Plus) vs JELLYPIG X100 ($139.99, 650W / 55KPA): Clean Sense IQ, PowerFins, runtime, bin, and weight..."
 keywords: ["shark vacuum alternative amazon", "shark stratos dupe", "shark cordless vacuum amazon", "jellypig x100", "shark stratos iz862h alternative", "budget shark alternative 2026"]
 ogImage: "/og-lamp.png"
 comparisonTable:
@@ -55,7 +55,7 @@ comparisonTable:
     premium: "5-yr limited; ~3.9★ · ~1.3k ratings"
     pick: "24 months protection; ~4.6★ · ~6.7k ratings"
     highlight: none
-  - feature: "Price (pinned)"
+  - feature: "Price (checked)"
     premium: "$349.99"
     pick: "$139.99"
     highlight: pick
@@ -70,7 +70,7 @@ whoShouldSkip:
   - "You want Shark's 5-year warranty and sealed anti-allergen stack"
 
 pros:
-  - "Pinned at $139.99 — about $210 less than Stratos IZ862H"
+  - "checked at $139.99 — about $210 less than Stratos IZ862H"
   - "650W / 55KPA seller claim; 1.8 L bin (vs Shark 0.72 qt)"
   - "6.3 lb self-standing stick + LED touch screen"
   - "Up to 70 min low-mode claim; anti-tangle brush"
@@ -120,7 +120,7 @@ Comparison criteria:
 - **Bin / filter**: **0.72 qt** sealed HEPA vs **1.8 L** 8-layer HEPA
 - **Weight**: **8.9 lb** vs **6.3 lb** (X100 self-stands)
 - **Noise**: ~**80 dB** vs ~**58–62 dB** claim
-- **Price**: pinned **$349.99** vs **$139.99** — confirm live before checkout
+- **Price**: checked at **$349.99** vs **$139.99** — confirm today's price before checkout
 
 ## Why JELLYPIG X100 Is Our Budget Pick
 

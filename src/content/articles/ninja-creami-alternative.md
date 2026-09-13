@@ -4,7 +4,7 @@ description: "Ninja CREAMi NC301 at $179.99 (7-in-1 Creamify, 2×16-oz pints, 80
 category: kitchen
 categoryLabel: "Kitchen & Appliances"
 cardTitle: "Ninja CREAMi NC301 vs. Cuisinart ICE-21RP1"
-cardExcerpt: "Pinned: CREAMi NC301 $179.99 vs Cuisinart ICE-21RP1 $69.95 — Creamify pints vs classic churn."
+cardExcerpt: "Compared: CREAMi NC301 $179.99 vs Cuisinart ICE-21RP1 $69.95 — Creamify pints vs classic churn."
 premiumProduct: "Ninja CREAMi NC301 (7-in-1)"
 premiumPrice: "$179.99"
 pickProduct: "Cuisinart ICE-21RP1 Ice Cream Maker (Red)"
@@ -15,7 +15,7 @@ featured: false
 publishedAt: 2026-07-05
 updatedAt: 2026-08-05
 seoTitle: "Ninja Creami Alternative on Amazon (2026): Cuisinart ICE-21RP1"
-seoDescription: "Ninja CREAMi NC301 ($179.99, 7 programs, Creamify, 2×16-oz pints) vs Cuisinart ICE-21RP1 ($69.95, 1.5-qt bowl, 20-min churn): method, texture, and value compared."
+seoDescription: "Ninja CREAMi NC301 ($179.99, 7 programs, Creamify, 2×16-oz pints) vs Cuisinart ICE-21RP1 ($69.95, 1.5-qt bowl, 20-min churn): method, texture, and..."
 keywords: ["ninja creami dupe amazon", "ninja creami alternative", "cuisinart ice-21rp1", "ninja creami nc301", "budget ninja creami", "ice cream maker amazon 2026"]
 ogImage: "/og-default.png"
 comparisonTable:
@@ -39,7 +39,7 @@ comparisonTable:
     premium: "~4.5★ (Amazon); limited warranty (check listing)"
     pick: "Limited 3-year Cuisinart warranty; ~4.4★"
     highlight: pick
-  - feature: "Price (pinned)"
+  - feature: "Price (checked)"
     premium: "$179.99 (list $229.99)"
     pick: "$69.95"
     highlight: pick
@@ -54,7 +54,7 @@ whoShouldSkip:
   - "You need ultra-smooth texture on rock-hard frozen protein pints every time"
 
 pros:
-  - "Pinned at $69.95 — about $110 less than CREAMi NC301"
+  - "checked at $69.95 — about $110 less than CREAMi NC301"
   - "1.5-quart double-insulated bowl; treats ready in ~20 minutes after pre-freeze"
   - "Limited 3-year Cuisinart warranty"
   - "Proven classic churn for ice cream, sorbet, and frozen yogurt"
@@ -98,7 +98,7 @@ Comparison criteria:
 - **Capacity**: dual **16-oz** pints vs **1.5-quart** bowl
 - **Jobs**: seven Creamify programs + Mix-In vs ice cream / sorbet / frozen yogurt churn
 - **Warranty**: listing-limited Ninja vs Cuisinart **3-year** limited
-- **Price**: pinned **$179.99** vs **$69.95** — confirm live before checkout
+- **Price**: checked at **$179.99** vs **$69.95** — confirm today's price before checkout
 
 ## Why Cuisinart ICE-21RP1 Is Our Pick
 

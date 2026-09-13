@@ -4,7 +4,9 @@ import { join } from 'node:path';
 const articlesDir = join(process.cwd(), 'src', 'content', 'articles');
 const sitemapPath = join(process.cwd(), 'dist', 'sitemap-0.xml');
 
-const STATIC_PATHS = ['/', '/reviews', '/about', '/contact', '/privacy', '/terms'];
+// Only aggregate pages change whenever the article collection changes.
+// Legal and information pages should not receive a synthetic freshness date.
+const AGGREGATE_PATHS = ['/', '/reviews'];
 
 const lastmodByPath = {};
 const latestByCategory = {};
@@ -45,7 +47,7 @@ for (const [category, iso] of Object.entries(latestByCategory)) {
 
 if (siteLatestMs > 0) {
   const siteIso = new Date(siteLatestMs).toISOString();
-  for (const path of STATIC_PATHS) {
+  for (const path of AGGREGATE_PATHS) {
     lastmodByPath[path] = siteIso;
   }
 }

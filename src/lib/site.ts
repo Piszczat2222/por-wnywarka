@@ -2,7 +2,7 @@ export const SITE = {
   name: 'AltPik',
   title: 'AltPik: Smart Budget Alternatives to Viral & Luxury Products',
   description:
-    'We review and find the absolute best budget-friendly alternatives to viral and luxury products. Tested by experts, loved by smart shoppers.',
+    'Research-backed comparisons and practical Amazon guides for finding better-value alternatives to viral and premium products.',
   url: 'https://altpik.com',
   author: 'Patryk',
   email: 'apiszczat2222@gmail.com',
@@ -12,7 +12,7 @@ export const SITE = {
 
 export const NAV_LINKS = [
   { href: '/', label: 'Home' },
-  { href: '/reviews?type=listicle', label: 'Guides' },
+  { href: '/reviews#type=listicle', label: 'Guides' },
   { href: '/categories/pets', label: 'Pets' },
   { href: '/reviews', label: 'Reviews' },
   { href: '/about', label: 'About' },

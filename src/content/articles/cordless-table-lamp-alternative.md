@@ -4,7 +4,7 @@ description: "Pottery Barn Teen Zafferano Poldina Pro ($159–$169) vs Kakanuo r
 category: home
 categoryLabel: "Home Aesthetic"
 cardTitle: "Poldina Pro vs. $23.99 Kakanuo 2-Pack"
-cardExcerpt: "Pinned: PB Teen Zafferano Poldina Pro $159–$169 vs Kakanuo cordless 2-pack $23.99 — battery, CCT, dimming."
+cardExcerpt: "Compared: PB Teen Zafferano Poldina Pro $159–$169 vs Kakanuo cordless 2-pack $23.99 — battery, CCT, dimming."
 premiumProduct: "Zafferano Poldina Pro (PB Teen)"
 premiumPrice: "$159–$169"
 pickProduct: "Kakanuo Cordless Table Lamp 2-Pack"
@@ -15,7 +15,7 @@ premiumUrl: "https://www.pbteen.com/products/zafferano-poldina-pro-cordless-ligh
 featured: false
 publishedAt: 2026-07-01
 updatedAt: 2026-08-05
-seoTitle: "Cordless Table Lamp Alternative on Amazon (2026): Kakanuo vs Poldina Pro"
+seoTitle: "Cordless Table Lamp Alternative: Kakanuo vs Poldina Pro"
 seoDescription: "Zafferano Poldina Pro on Pottery Barn Teen ($159–$169) vs Kakanuo cordless lamp 2-pack ($23.99): battery, color temps, IP65, and value compared."
 keywords: ["cordless table lamp amazon", "kakanuo table lamp", "poldina pro dupe", "zafferano poldina alternative", "rechargeable desk lamp amazon", "pinterest lamp dupe", "pottery barn lamp alternative 2026"]
 ogImage: "/og-lamp.png"
@@ -44,7 +44,7 @@ comparisonTable:
     premium: "Designer provenance (Zafferano); typically 2-yr lamp / 1-yr battery"
     pick: "~4.5★; UL key components; 6-mo free replacement (seller)"
     highlight: none
-  - feature: "Price (pinned)"
+  - feature: "Price (checked)"
     premium: "$159–$169 (PB Teen)"
     pick: "$23.99 (2-pack)"
     highlight: pick
@@ -59,7 +59,7 @@ whoShouldSkip:
   - "You prefer hardwired, permanent fixtures"
 
 pros:
-  - "Pinned at $23.99 for two — about $12/lamp vs $159–$169 each"
+  - "checked at $23.99 for two — about $12/lamp vs $159–$169 each"
   - "5000mAh + USB-C; 8–40 hr runtime by brightness"
   - "Touch control with 3000K / 4000K / 5000K stepless dimming"
   - "Cordless for desk, kitchen counter, patio, and bedside"
@@ -101,7 +101,7 @@ Comparison criteria:
 - **Light**: 2200/2700/3000K continuous dim vs 3000/4000/5000K stepless touch
 - **Battery**: ~12 hr replaceable pack + induction base vs **5000mAh** USB-C (**8–40 hr** by brightness)
 - **Pack**: 1 designer lamp vs **2-pack** Amazon set
-- **Price**: pinned **$159–$169** (PB Teen) vs **$23.99** — confirm live before checkout
+- **Price**: checked at **$159–$169** (PB Teen) vs **$23.99** — confirm today's price before checkout
 
 ## Why Kakanuo Is Our Amazon Pick
 

@@ -8,6 +8,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   title="Page Not Found | AltPik"
   description="That page is not on AltPik. Browse our Amazon guides and product comparisons."
   noindex={true}
+  omitCanonical={true}
 >
   <div class="mx-auto max-w-xl px-4 py-24 text-center sm:px-6">
     <p class="text-sm font-semibold uppercase tracking-wide text-brand-600">404</p>
@@ -23,7 +24,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         Home
       </a>
       <a
-        href="/reviews?type=listicle"
+        href="/reviews#type=listicle"
         class="rounded-xl border border-gray-300 px-5 py-2.5 text-sm font-bold text-gray-700 hover:bg-gray-50"
       >
         Top 10 Guides

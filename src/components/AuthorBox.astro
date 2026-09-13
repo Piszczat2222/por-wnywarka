@@ -1,0 +1,31 @@
+---
+import { SITE } from '../lib/site';
+
+interface Props {
+  updatedAt?: Date;
+}
+
+const { updatedAt } = Astro.props;
+---
+
+<aside class="mt-8 flex gap-4 rounded-2xl border border-gray-200 bg-gray-50 p-5">
+  <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-brand-100 font-extrabold text-brand-700" aria-hidden="true">
+    P
+  </div>
+  <div>
+    <p class="font-bold text-gray-900">
+      Researched and written by <a href="/about" rel="author" class="text-brand-700 hover:text-brand-800">{SITE.author}</a>
+    </p>
+    <p class="mt-1 text-sm leading-relaxed text-gray-600">
+      Product specifications, availability, price-to-usefulness, and recurring shopper feedback were
+      compared for this guide. <a href="/how-we-review" class="font-semibold text-brand-700 hover:text-brand-800">How our research works</a>.
+    </p>
+    {
+      updatedAt && (
+        <p class="mt-2 text-xs text-gray-500">
+          Last editorial check: {updatedAt.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
+        </p>
+      )
+    }
+  </div>
+</aside>

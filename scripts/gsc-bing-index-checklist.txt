@@ -7,19 +7,36 @@ Generated for traffic growth sprint. Do NOT flip trailingSlash in astro.config.
 3. Re-submit sitemap in GSC and Bing Webmaster Tools
 
 ## URL Inspection / Bing Submit (request indexing)
-1. https://altpik.com/articles/phone-accessories-amazon
-2. https://altpik.com/articles/amazon-supplements-best-sellers
-3. https://altpik.com/articles/ninja-creami-alternative
-4. https://altpik.com/articles/robot-vacuum-alternative
-5. https://altpik.com/articles/college-dorm-essentials-amazon
-6. https://altpik.com/articles/amazon-kitchen-best-sellers
-7. https://altpik.com/articles/amazon-gifts-under-20
-8. https://altpik.com/articles/housewarming-gifts-amazon
-9. https://altpik.com/articles/baby-brezza-alternative
-10. https://altpik.com/articles/car-emergency-kit-amazon
-11. https://altpik.com/articles/teacher-classroom-gadgets-amazon
-12. https://altpik.com/articles/air-fryer-accessories-amazon
-13. https://altpik.com/articles/sleep-gadgets-amazon
+1. https://altpik.com/
+2. https://altpik.com/how-we-review
+3. https://altpik.com/categories/home
+4. https://altpik.com/categories/tech
+5. https://altpik.com/categories/pets
+6. https://altpik.com/categories/kitchen
+7. https://altpik.com/articles/phone-accessories-amazon
+8. https://altpik.com/articles/amazon-supplements-best-sellers
+9. https://altpik.com/articles/ninja-creami-alternative
+10. https://altpik.com/articles/robot-vacuum-alternative
+11. https://altpik.com/articles/college-dorm-essentials-amazon
+12. https://altpik.com/articles/amazon-kitchen-best-sellers
+13. https://altpik.com/articles/amazon-gifts-under-20
+14. https://altpik.com/articles/housewarming-gifts-amazon
+15. https://altpik.com/articles/baby-brezza-alternative
+16. https://altpik.com/articles/car-emergency-kit-amazon
+17. https://altpik.com/articles/teacher-classroom-gadgets-amazon
+18. https://altpik.com/articles/air-fryer-accessories-amazon
+19. https://altpik.com/articles/stanley-tumbler-alternative
+20. https://altpik.com/articles/tiktok-home-organizers-amazon
+21. https://altpik.com/articles/closet-organization-amazon
+22. https://altpik.com/articles/under-sink-kitchen-organizers-amazon
+23. https://altpik.com/articles/pet-travel-car-amazon
+24. https://altpik.com/articles/streaming-setup-amazon
+25. https://altpik.com/articles/winter-driving-essentials-amazon
+26. https://altpik.com/articles/entryway-organizers-amazon
+27. https://altpik.com/articles/home-tool-kit-essentials-amazon
+28. https://altpik.com/articles/kids-art-supplies-amazon
+29. https://altpik.com/articles/kitchen-drawer-organizers-amazon
+30. https://altpik.com/articles/medicine-cabinet-organizers-amazon
 
 ## After submit
 - Wait 7–14 days — no URL format changes
