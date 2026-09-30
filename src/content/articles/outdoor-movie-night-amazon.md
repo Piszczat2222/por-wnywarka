@@ -9,7 +9,7 @@ cardExcerpt: "Projector screen, mini projector, string lights, popcorn machine, 
 featured: false
 publishedAt: 2026-08-19
 seoTitle: "Best Outdoor Movie Night Essentials Under $50 on Amazon (2026)"
-seoDescription: "Best Amazon outdoor movie night gear 2026: WEWATCH projector screen, Vamvo mini projector, string lights, Great Northern popcorn machine, JBL Clip 4, outdoor blanket, cooler, power bank, Bug Bite Thing, LED lanterns."
+seoDescription: "Best Amazon outdoor movie night essentials 2026: projector screen, mini projector, string lights, popcorn machine, Bluetooth speaker, blanket, cooler, lanterns."
 keywords: ["outdoor movie night amazon", "projector screen amazon", "mini projector amazon", "backyard movie night", "outdoor projector setup", "string lights outdoor amazon", "popcorn machine amazon", "outdoor blanket amazon", "portable speaker amazon", "movie night essentials"]
 ogImage: "/og-default.png"
 listItems:

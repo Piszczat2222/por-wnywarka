@@ -9,7 +9,7 @@ cardExcerpt: "Loop earplugs, Pomodoro timer, desk lamp, Rocketbook, dotted journ
 featured: false
 publishedAt: 2026-08-19
 seoTitle: "Best Study & Productivity Gadgets Under $30 on Amazon (2026)"
-seoDescription: "Best Amazon study gadgets 2026: Loop Quiet earplugs, Pomodoro timer, BenQ ScreenBar Halo, Rocketbook Fusion, PAPERAGE journal, Anker USB-C hub, mDesign organizer, Post-it dry erase, Uni-ball pens, Logitech Pebble Mouse."
+seoDescription: "Best Amazon study & productivity gadgets under $30 (2026): earplugs, Pomodoro timer, Rocketbook, journal, USB-C hub, desk organizer, dry erase, mouse."
 keywords: ["study gadgets amazon", "productivity gadgets amazon", "pomodoro timer amazon", "earplugs for studying amazon", "desk lamp amazon", "rocketbook amazon", "study essentials college", "desk organizer amazon", "best pens for studying", "focus gadgets amazon"]
 ogImage: "/og-default.png"
 listItems:

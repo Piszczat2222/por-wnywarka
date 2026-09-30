@@ -9,7 +9,7 @@ cardExcerpt: "Bath bombs, sheet masks, shower steamers, satin pillowcase, jade r
 featured: false
 publishedAt: 2026-08-19
 seoTitle: "Best Self-Care Gift Sets Under $35 on Amazon (2026)"
-seoDescription: "Best Amazon self-care gifts 2026: LifeAround2Angels bath bombs, Burt's Bees kit, DERMAL sheet masks, Chesapeake Bay candle, LiBa steamers, MZOO sleep mask, journal, Kitsch pillowcase, PMD Clean mini, jade roller & Gua Sha."
+seoDescription: "Best Amazon self-care gifts under $35 (2026): bath bombs, sheet masks, candle, shower steamers, sleep mask, satin pillowcase, jade roller & Gua Sha."
 keywords: ["self care gift set amazon", "bath bombs amazon", "sheet masks amazon", "shower steamers amazon", "self care gifts for women", "spa gift set amazon", "satin pillowcase amazon", "jade roller amazon", "sleep mask amazon", "self care essentials"]
 ogImage: "/og-default.png"
 listItems:
