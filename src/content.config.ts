@@ -26,6 +26,8 @@ const listItemSchema = z.object({
   priceApprox: z.string(),
   badge: z.string().optional(),
   blurb: z.string(),
+  bestFor: z.string().optional(),
+  tradeoff: z.string().optional(),
 });
 
 const categoryEnum = z.enum([

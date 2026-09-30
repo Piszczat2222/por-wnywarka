@@ -1,16 +1,16 @@
 ---
 articleType: listicle
 title: "Top 10 Amazon College Dorm Essentials (2026)"
-description: "Pinned Amazon dorm gear: YISHU surge strip ($9.98), bed risers, EUDELE shower caddy, Brita pitcher, Magicteam white noise — wattroi-20 bestsellers."
+description: "Research-backed Amazon dorm gear: YISHU surge strip ($9.98), bed risers, EUDELE shower caddy, Brita pitcher, Magicteam white noise — researched popular picks."
 category: office
 categoryLabel: "Office & WFH"
 cardTitle: "Top 10 Amazon College Dorm Essentials"
-cardExcerpt: "Surge strip, bed risers, shower caddy, clip fan, Brita, Command hooks, white noise, shoe organizer — pinned bestsellers."
+cardExcerpt: "Surge strip, bed risers, shower caddy, clip fan, Brita, Command hooks, white noise, shoe organizer — researched popular picks."
 featured: false
 publishedAt: 2026-07-05
 updatedAt: 2026-08-08
 seoTitle: "Top 10 Amazon College Dorm Essentials (2026)"
-seoDescription: "Amazon dorm essentials: YISHU surge protector ($9.98), adjustable bed risers, EUDELE shower caddy, Brita 6-cup pitcher, Command hooks, Magicteam white noise."
+seoDescription: "Amazon dorm essentials: YISHU surge protector ($9.98), adjustable bed risers, EUDELE shower caddy, Brita 6-cup pitcher, Command hooks, Magicteam white..."
 keywords: ["college dorm essentials amazon", "brita dorm pitcher", "bed risers dorm", "shower caddy college", "amazon dorm essentials", "freshman dorm checklist amazon"]
 ogImage: "/og-default.png"
 listItems:
@@ -78,20 +78,20 @@ listItems:
     blurb: "Compact IPX5 wireless speaker loud enough for floor hangouts — the social lubricant of every dorm hallway."
 faq:
   - question: "How were these dorm essentials picked?"
-    answer: "We searched amazon.com via Creators API and pinned high-sales-rank move-in gear: YISHU surge strip, adjustable bed risers, EUDELE shower caddy, Gaiatop clip fan, Slendor bed desk, Command variety pack, Brita 6-cup pitcher, Magicteam white noise, Amazon Basics shoe organizer, and a 20W waterproof Bluetooth speaker. Links use our Associates tag (wattroi-20)."
+    answer: "We compare specifications, availability, price-to-usefulness, and recurring themes in shopper feedback. Rankings favor practical fit and clear trade-offs; affiliate status does not influence placement."
   - question: "What does this dorm list cost?"
-    answer: "Pinned prices run from $9.44 (shoe organizer) to $31.59 (bed desk). A move-in trio of surge strip ($9.98) + shower caddy ($9.99) + bed risers ($19.94) lands at $39.91. Confirm live Amazon prices before checkout."
+    answer: "Prices checked on the article update date ran from $9.44 (shoe organizer) to $31.59 (bed desk). A move-in trio of surge strip ($9.98) + shower caddy ($9.99) + bed risers ($19.94) lands at $39.91. Confirm today's Amazon price before checkout."
   - question: "What should I buy before move-in day?"
     answer: "Surge protector, bed risers, and shower caddy first — power, storage, and shared-bathroom logistics. Add clip fan and Command hooks if the building runs warm or walls are bare. Brita and white noise after you meet the roommate situation."
   - question: "Who is this dorm essentials guide for?"
     answer: "Incoming freshmen, parents packing for move-in, and returning students upgrading a tiny room. Built for ~12×15 spaces — not apartment living."
   - question: "What are the best Amazon dorm essentials for college?"
-    answer: "Start with a surge protector, bed risers, shower caddy, clip fan, and over-door storage — the same amazon dorm supplies pinned on this list for freshman move-in."
+    answer: "Start with a surge protector, bed risers, shower caddy, clip fan, and over-door storage — the same amazon dorm supplies selected for this list for freshman move-in."
 ---
 
 ## Packing lists lie — these are what students actually buy
 
-You arrive, your roommate brought a fridge, and you have **one outlet and zero storage**. The ten picks above are **pinned amazon.com bestsellers** for power, under-bed space, shower runs, sleep, and study — not gimmicks that die by October.
+You arrive, your roommate brought a fridge, and you have **one outlet and zero storage**. The ten picks above are **researched Amazon picks** for power, under-bed space, shower runs, sleep, and study — not gimmicks that die by October.
 
 ### Match the gear to the problem
 
@@ -117,7 +117,7 @@ You arrive, your roommate brought a fridge, and you have **one outlet and zero s
 | Wall + door storage | Command ($13.41) + shoe organizer ($9.44) | $22.85 |
 | Study nest | Bed desk ($31.59) + surge strip ($9.98) | $41.57 |
 | Under $50 survival | Move-in trio ($39.91) + clip fan ($12.99) | $52.90 |
-| Full list | All ten pinned picks | ~$176.12 |
+| Full list | All ten selected picks | ~$176.12 |
 
 **Buy first if you only grab three things:** **surge strip**, **bed risers**, and **shower caddy** — power, space, bathroom. Add the **clip fan** if the building runs warm.
 

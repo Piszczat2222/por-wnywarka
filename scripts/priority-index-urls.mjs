@@ -9,8 +9,14 @@ import { join } from 'node:path';
 const key = process.env.INDEXNOW_KEY ?? '748a39219ac649ab8452996fe1d35420';
 const host = 'altpik.com';
 
-/** 5 SEO-refreshed top GSC pages + 4 new articles from content SEO sprint */
+/** Canonical pages refreshed in the SEO quality and indexing sprint. */
 export const PRIORITY_URLS = [
+  'https://altpik.com/',
+  'https://altpik.com/how-we-review',
+  'https://altpik.com/categories/home',
+  'https://altpik.com/categories/tech',
+  'https://altpik.com/categories/pets',
+  'https://altpik.com/categories/kitchen',
   'https://altpik.com/articles/phone-accessories-amazon',
   'https://altpik.com/articles/amazon-supplements-best-sellers',
   'https://altpik.com/articles/ninja-creami-alternative',
@@ -26,9 +32,21 @@ export const PRIORITY_URLS = [
   'https://altpik.com/articles/air-fryer-accessories-amazon',
   'https://altpik.com/articles/stanley-tumbler-alternative',
   'https://altpik.com/articles/tiktok-home-organizers-amazon',
+  // New API-pinned listicles (Aug 2026)
+  'https://altpik.com/articles/closet-organization-amazon',
+  'https://altpik.com/articles/under-sink-kitchen-organizers-amazon',
+  'https://altpik.com/articles/pet-travel-car-amazon',
+  'https://altpik.com/articles/streaming-setup-amazon',
+  'https://altpik.com/articles/winter-driving-essentials-amazon',
+  'https://altpik.com/articles/entryway-organizers-amazon',
+  'https://altpik.com/articles/home-tool-kit-essentials-amazon',
+  'https://altpik.com/articles/kids-art-supplies-amazon',
+  'https://altpik.com/articles/kitchen-drawer-organizers-amazon',
+  'https://altpik.com/articles/medicine-cabinet-organizers-amazon',
 ];
 
 const checklistPath = join(process.cwd(), 'scripts', 'gsc-bing-index-checklist.txt');
+const checklistOnly = process.argv.includes('--checklist-only');
 
 const checklist = `# AltPik — GSC + Bing index checklist (no trailing slash)
 Generated for traffic growth sprint. Do NOT flip trailingSlash in astro.config.
@@ -52,6 +70,11 @@ node scripts/priority-index-urls.mjs
 
 writeFileSync(checklistPath, checklist, 'utf8');
 console.log(`Wrote ${checklistPath}`);
+
+if (checklistOnly) {
+  console.log('Checklist-only mode: skipped IndexNow submission');
+  process.exit(0);
+}
 
 const body = {
   host,

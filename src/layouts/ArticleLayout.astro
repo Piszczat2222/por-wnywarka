@@ -12,6 +12,7 @@ import ProsConsGrid from '../components/ProsConsGrid.astro';
 import ArticleSection from '../components/ArticleSection.astro';
 import VerdictBox from '../components/VerdictBox.astro';
 import FaqSection from '../components/FaqSection.astro';
+import AuthorBox from '../components/AuthorBox.astro';
 import { getCollection, render, type CollectionEntry } from 'astro:content';
 import { CATEGORIES, type CategoryKey } from '../lib/categories';
 import { buildPageTitle, absoluteUrl } from '../lib/seo';
@@ -40,6 +41,10 @@ const pageTitle = buildPageTitle(data.seoTitle ?? data.title);
 const pageDescription = data.seoDescription ?? data.description;
 const articleUrl = absoluteUrl(`/articles/${article.id}`);
 const modifiedAt = data.updatedAt ?? data.publishedAt;
+const articleOgImage =
+  data.ogImage && data.ogImage !== '/og-default.png'
+    ? data.ogImage
+    : `/og/articles/${article.id}.png`;
 
 const allArticles = await getCollection('articles');
 const categoryMeta = CATEGORIES[data.category as CategoryKey];
@@ -62,7 +67,7 @@ const articleJsonLd = articleSchema({
   url: articleUrl,
   publishedAt: data.publishedAt,
   modifiedAt,
-  image: data.ogImage ?? '/og-default.png',
+  image: articleOgImage,
 });
 
 const listJsonLd =
@@ -83,7 +88,8 @@ const jsonLd = mergeJsonLd(
 <BaseLayout
   title={pageTitle}
   description={pageDescription}
-  ogImage={data.ogImage ?? '/og-default.png'}
+  ogImage={articleOgImage}
+  ogImageAlt={`${data.title} — AltPik guide`}
   ogType="article"
   publishedAt={data.publishedAt}
   modifiedAt={modifiedAt}
@@ -128,6 +134,7 @@ const jsonLd = mergeJsonLd(
         }
         {!isListicle && ' · Prices are typical ranges — confirm on Amazon'}
       </p>
+      <AuthorBox updatedAt={modifiedAt} />
     </header>
 
     {

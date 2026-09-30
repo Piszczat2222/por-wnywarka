@@ -1,0 +1,14 @@
+import { pinSlots } from './_pin-lib.mjs';
+
+await pinSlots('undersink', [
+  { rank: 1, label: 'Under Sink Organizer', queries: ['under sink organizer 2 tier adjustable', 'under sink cabinet organizer pull out', 'under sink storage organizer shelf'], maxPrice: 45, must: [/under.?sink|sink.?cabinet/i], prefer: [/under.?sink|sink.?organizer/i], exclude: [/plumbing.?pipe.?only/i] },
+  { rank: 2, label: 'Pull Out Drawer', queries: ['under sink pull out drawer organizer', 'cabinet pull out organizer slide', 'under cabinet sliding shelf'], maxPrice: 50, must: [/pull.?out|slide|drawer/i], prefer: [/pull.?out|sliding|slide.?out/i], exclude: [/tool.?box/i] },
+  { rank: 3, label: 'Tension Rod', queries: ['under sink tension rod organizer', 'cabinet tension rod storage', 'adjustable tension rod under sink'], maxPrice: 20, must: [/tension.?rod|tension.?bar/i], prefer: [/tension.?rod|under.?sink/i], exclude: [/shower.?curtain.?rod.?only/i] },
+  { rank: 4, label: 'Cleaning Caddy', queries: ['under sink cleaning caddy organizer', 'portable cleaning supply caddy handle', 'cleaning caddy with handle plastic'], maxPrice: 25, must: [/caddy/i], prefer: [/cleaning.?caddy|caddy/i], exclude: [/tool.?caddy.?mechanic/i] },
+  { rank: 5, label: 'Sponge Holder', queries: ['sink sponge holder with drain', 'kitchen sponge holder caddy suction', 'sponge holder for sink organizer'], maxPrice: 15, must: [/sponge/i], prefer: [/sponge.?holder|sponge.?caddy/i], exclude: [/sponge.?refill.?only/i] },
+  { rank: 6, label: 'Trash Bag Dispenser', queries: ['under sink trash bag dispenser holder', 'garbage bag dispenser under cabinet', 'trash bag roll holder under sink'], maxPrice: 20, must: [/trash.?bag|garbage.?bag/i], prefer: [/bag.?dispenser|trash.?bag.?holder/i], exclude: [/trash.?can.?only/i] },
+  { rank: 7, label: 'Expandable Shelf', queries: ['expandable under sink shelf organizer', 'adjustable cabinet shelf organizer', 'under cabinet expandable shelf rack'], maxPrice: 35, must: [/shelf|expand/i], prefer: [/expandable|adjustable.?shelf/i], exclude: [/floating.?shelf.?decor/i] },
+  { rank: 8, label: 'Lazy Susan', queries: ['under sink lazy susan turntable', 'cabinet lazy susan organizer 2 tier', 'kitchen cabinet turntable organizer'], maxPrice: 35, must: [/lazy.?susan|turntable/i], prefer: [/lazy.?susan|turntable/i], exclude: [/dining.?table/i] },
+  { rank: 9, label: 'Door Mount Rack', queries: ['cabinet door mount organizer rack', 'inside cabinet door organizer hooks', 'over cabinet door organizer kitchen'], maxPrice: 25, must: [/door|mount/i], prefer: [/cabinet.?door|door.?mount|inside.?cabinet/i], exclude: [/over.?the.?door.?bedroom/i] },
+  { rank: 10, label: 'Leak Tray', queries: ['under sink mat waterproof leak tray', 'under sink cabinet liner waterproof', 'under sink drip tray protector'], maxPrice: 25, must: [/mat|liner|tray|waterproof/i], prefer: [/under.?sink|leak|waterproof|cabinet.?liner/i], exclude: [/yoga.?mat|pet.?mat/i] },
+]);

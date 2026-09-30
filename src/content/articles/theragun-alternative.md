@@ -4,7 +4,7 @@ description: "Theragun Pro 5th Gen at $529.99 (QuietForce, OLED routines, Blueto
 category: fitness
 categoryLabel: "Fitness & Gym"
 cardTitle: "Theragun Pro vs. Bob and Brad Q2 Mini"
-cardExcerpt: "Pinned: Theragun Pro 5th Gen $529.99 vs Bob and Brad Q2 Mini $62.99 — amplitude, noise, attachments, size."
+cardExcerpt: "Compared: Theragun Pro 5th Gen $529.99 vs Bob and Brad Q2 Mini $62.99 — amplitude, noise, attachments, size."
 premiumProduct: "Theragun Pro (5th Gen, Black)"
 premiumPrice: "$529.99"
 pickProduct: "Bob and Brad Q2 Mini Massage Gun"
@@ -43,7 +43,7 @@ comparisonTable:
     premium: "~4.4★ · ~250 ratings"
     pick: "~4.7★ · high-volume Q2 Mini reviews"
     highlight: pick
-  - feature: "Price (pinned)"
+  - feature: "Price (checked)"
     premium: "$529.99"
     pick: "$62.99"
     highlight: pick
@@ -58,7 +58,7 @@ whoShouldSkip:
   - "Chronic pain requiring medical-grade guidance"
 
 pros:
-  - "Pinned at $62.99 — about $467 less than Theragun Pro"
+  - "checked at $62.99 — about $467 less than Theragun Pro"
   - "Only 0.95 lb; pocket size with carry case"
   - "Up to ~35 lb stall force / ~3,000 RPM seller claim; <45 dB"
   - "USB-C charging; FSA/HSA eligible (listing)"
@@ -100,7 +100,7 @@ Comparison criteria:
 - **Size**: full-size Pro vs **0.95 lb** pocket mini (**5.75″ × 1.81″ × 3.39″**)
 - **Smarts**: OLED + app vs speed dials only
 - **Heads**: 6 specialized Theragun foams vs multi-head mini kit + case
-- **Price**: pinned **$529.99** vs **$62.99** — confirm live before checkout
+- **Price**: checked at **$529.99** vs **$62.99** — confirm today's price before checkout
 
 ## Why Bob and Brad Q2 Mini Is Our Pick
 

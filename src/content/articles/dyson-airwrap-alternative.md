@@ -4,7 +4,7 @@ description: "Dyson Airwrap Co-anda2x at $749.99 (Ceramic Pink, Straight+Wavy) v
 category: beauty
 categoryLabel: "Beauty & Hair"
 cardTitle: "Dyson Airwrap Co-anda2x vs. Shark FlexStyle"
-cardExcerpt: "Pinned: Dyson Airwrap Co-anda2x $749.99 vs Shark FlexStyle HD431BR $229.99 — motor, attachments, heat control."
+cardExcerpt: "Compared: Dyson Airwrap Co-anda2x $749.99 vs Shark FlexStyle HD431BR $229.99 — motor, attachments, heat control."
 premiumProduct: "Dyson Airwrap Co-anda2x (Ceramic Pink)"
 premiumPrice: "$749.99"
 pickProduct: "Shark FlexStyle HD431BR (Mocha Silver)"
@@ -14,7 +14,7 @@ premiumAsin: "B0F9679PP3"
 featured: false
 publishedAt: 2026-06-22
 updatedAt: 2026-08-05
-seoTitle: "Dyson Airwrap Alternative on Amazon (2026): Shark FlexStyle HD431BR"
+seoTitle: "Dyson Airwrap Alternative (2026): Shark FlexStyle"
 seoDescription: "Dyson Airwrap Co-anda2x ($749.99, 1700W, Hyperdymium 2) vs Shark FlexStyle HD431BR ($229.99, 1600W): Coanda curls, attachments, and value compared."
 keywords: ["dyson airwrap alternative amazon", "comparable to dyson airwrap", "shark flexstyle hd431br", "dyson airwrap dupe", "shark flexstyle vs airwrap", "hair tool dupe amazon"]
 ogImage: "/og-lamp.png"
@@ -43,7 +43,7 @@ comparisonTable:
     premium: "~4.0★ · ~160+ ratings (new Co-anda2x listing)"
     pick: "~4.4★ · growing FlexStyle HD431BR reviews"
     highlight: none
-  - feature: "Price (pinned)"
+  - feature: "Price (checked)"
     premium: "$749.99"
     pick: "$229.99"
     highlight: pick
@@ -58,7 +58,7 @@ whoShouldSkip:
   - "You already own an Airwrap and love it"
 
 pros:
-  - "Pinned at $229.99 — about $520 less than Co-anda2x"
+  - "checked at $229.99 — about $520 less than Co-anda2x"
   - "1,600W dryer that twists into a multi-styler; ~1.5 lb"
   - "2× 1.25\" Coanda Auto-Wrap curlers + oval brush + concentrator"
   - "Temp regulation ~1,000×/sec; Cool Shot; 2-yr Shark warranty"
@@ -100,7 +100,7 @@ Comparison criteria:
 - **Curl tech**: Co-anda2x + i.d. sequence vs 1.25″ Auto-Wrap Coanda curlers
 - **Kit**: Dyson Complete Long stack vs Shark dryer + 2 curlers + oval brush + concentrator
 - **Heat**: intelligent adaptive attachments vs ~1,000×/sec regulation + Cool Shot
-- **Price**: pinned **$749.99** vs **$229.99** — confirm live before checkout
+- **Price**: checked at **$749.99** vs **$229.99** — confirm today's price before checkout
 
 ## Why Shark FlexStyle HD431BR Is Our Pick
 

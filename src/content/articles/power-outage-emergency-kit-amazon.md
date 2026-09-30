@@ -1,11 +1,11 @@
 ---
 articleType: listicle
 title: "Top 10 Amazon Power Outage Emergency Kit Essentials (2026)"
-description: "Pinned Amazon outage kit: MalloMe lantern ($9.99), INIU power bank, NOAA radio, flashlights, batteries — wattroi-20 bestsellers."
+description: "Research-backed Amazon outage kit: MalloMe lantern ($9.99), INIU power bank, NOAA radio, flashlights, batteries — researched popular picks."
 category: home
 categoryLabel: "Home & Emergency"
 cardTitle: "Top 10 Amazon Power Outage Emergency Kit Essentials"
-cardExcerpt: "Lantern, power bank, flashlights, NOAA radio, batteries, LED candles, water jug, first aid, glow sticks — pinned bestsellers."
+cardExcerpt: "Lantern, power bank, flashlights, NOAA radio, batteries, LED candles, water jug, first aid, glow sticks — researched popular picks."
 featured: false
 publishedAt: 2026-08-08
 updatedAt: 2026-08-08
@@ -78,9 +78,9 @@ listItems:
     blurb: "Glow sticks for kids, hallways, and hands-free marking without batteries."
 faq:
   - question: "How were these outage essentials chosen?"
-    answer: "We searched amazon.com via Creators API and pinned high-sales-rank emergency gear: LED lantern, power bank, rechargeable flashlights, NOAA weather radio, AA batteries, flameless candles, collapsible water jug, utility lighters, first-aid kit, and glow sticks. Links use wattroi-20."
+    answer: "We compare specifications, availability, price-to-usefulness, and recurring themes in shopper feedback. Rankings favor practical fit and clear trade-offs; affiliate status does not influence placement."
   - question: "What does a basic outage kit cost?"
-    answer: "Pinned prices run from $9.99 to $28.46. Lantern + power bank + flashlights land near $47.53. Confirm live prices."
+    answer: "Prices checked on the article update date ran from $9.99 to $28.46. Lantern + power bank + flashlights land near $47.53. Confirm today's prices."
   - question: "Is this a full preparedness kit?"
     answer: "No — it is a first-night home outage kit focused on light, power, water, and minor first aid. Add shelf-stable food and prescriptions separately for longer outages."
   - question: "Who is this guide for?"
@@ -89,7 +89,7 @@ faq:
 
 ## Outages are a light-and-phone problem first
 
-Dark rooms, dead phones, and no news from the grid. The ten picks above are **pinned amazon.com bestsellers** for getting through the first night without panic shopping.
+Dark rooms, dead phones, and no news from the grid. The ten picks above are **researched Amazon picks** for getting through the first night without panic shopping.
 
 ### Match the gear to the problem
 

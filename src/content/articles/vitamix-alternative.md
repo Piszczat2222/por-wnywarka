@@ -4,7 +4,7 @@ description: "Vitamix 5200 at $499.95 (2 HP, 64-oz classic jar, 7-year warranty)
 category: kitchen
 categoryLabel: "Kitchen & Appliances"
 cardTitle: "Vitamix 5200 vs. Ninja BL770"
-cardExcerpt: "Pinned: Vitamix 5200 $499.95 vs Ninja Mega Kitchen System BL770 $179.99 — motor, jars, warranty."
+cardExcerpt: "Compared: Vitamix 5200 $499.95 vs Ninja Mega Kitchen System BL770 $179.99 — motor, jars, warranty."
 premiumProduct: "Vitamix 5200 (White)"
 premiumPrice: "$499.95"
 pickProduct: "Ninja Mega Kitchen System BL770"
@@ -39,7 +39,7 @@ comparisonTable:
     premium: "7-year limited Vitamix warranty"
     pick: "Limited warranty (check listing); ~4.7★ · ~42.8k ratings"
     highlight: premium
-  - feature: "Price (pinned)"
+  - feature: "Price (checked)"
     premium: "$499.95"
     pick: "$179.99 (list $219.99)"
     highlight: pick
@@ -54,7 +54,7 @@ whoShouldSkip:
   - "Commercial kitchen or café volume"
 
 pros:
-  - "Pinned at $179.99 — about $320 less than Vitamix 5200"
+  - "checked at $179.99 — about $320 less than Vitamix 5200"
   - "1500W Total Crushing pitcher + 8-cup processor + dough blade"
   - "(2) 16-oz Nutri Ninja cups with to-go lids"
   - "~4.7★ across tens of thousands of Amazon ratings"
@@ -98,7 +98,7 @@ Comparison criteria:
 - **Capacity**: 64-oz classic jar vs **72-oz** pitcher (64-oz max liquid) + **8-cup** processor + dual **16-oz** cups
 - **Jobs**: friction soup + silky purée vs Blend/Mix/Crush/Single-Serve + chop/dough
 - **Warranty**: **7-year** Vitamix vs Ninja limited (check listing)
-- **Price**: pinned **$499.95** vs **$179.99** — confirm live before checkout
+- **Price**: checked at **$499.95** vs **$179.99** — confirm today's price before checkout
 
 ## Why Ninja BL770 Is Our Pick
 

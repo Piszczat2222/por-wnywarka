@@ -1,0 +1,14 @@
+import { pinSlots } from './_pin-lib.mjs';
+
+await pinSlots('closet', [
+  { rank: 1, label: 'Velvet Hangers', queries: ['velvet hangers 50 pack non slip', 'Amazon Basics velvet hangers 50', 'slim velvet hangers space saving'], maxPrice: 35, must: [/hanger/i], prefer: [/velvet|slim|non.?slip/i], exclude: [/wood.?hanger.?only.?5.?pack/i] },
+  { rank: 2, label: 'Closet Shelf Divider', queries: ['closet shelf divider stackable', 'shelf dividers for closet sweaters', 'closet organizer shelf divider'], maxPrice: 30, must: [/divider|shelf/i], prefer: [/shelf.?divider|closet.?divider/i], exclude: [/room.?divider|curtain/i] },
+  { rank: 3, label: 'Hanging Organizer', queries: ['6 shelf hanging closet organizer', 'hanging closet shelves fabric', 'closet hanging organizer with pockets'], maxPrice: 25, must: [/hanging|closet/i], prefer: [/hanging.?closet|hanging.?organizer|shelf.?hanging/i], exclude: [/shoe.?only/i] },
+  { rank: 4, label: 'Shoe Rack', queries: ['shoe rack closet stackable 10 tier', 'shoe organizer rack stackable', 'narrow shoe rack for closet'], maxPrice: 40, must: [/shoe/i], prefer: [/shoe.?rack|shoe.?organizer|stackable/i], exclude: [/boot.?jack.?only/i] },
+  { rank: 5, label: 'Storage Bins', queries: ['fabric storage bins with handles closet', 'collapsible storage bins for shelves', 'closet storage bins with lids'], maxPrice: 35, must: [/bin|basket|storage/i], prefer: [/storage.?bin|fabric.?bin|collapsible/i], exclude: [/trash.?can/i] },
+  { rank: 6, label: 'Pants Hangers', queries: ['pants hangers with clips 10 pack', 'trouser hangers non slip clips', 'skirt pants hanger space saving'], maxPrice: 25, must: [/pants|trouser|clip/i], prefer: [/pants.?hanger|trouser|clip/i], exclude: [/baby.?hanger/i] },
+  { rank: 7, label: 'Drawer Dividers', queries: ['adjustable drawer dividers clothes', 'drawer organizer dividers expandable', 'dresser drawer dividers set'], maxPrice: 25, must: [/drawer/i], prefer: [/drawer.?divider|drawer.?organizer/i], exclude: [/kitchen.?drawer.?only.?utensil/i] },
+  { rank: 8, label: 'Over Door Hook', queries: ['over the door hook organizer heavy duty', 'over door hanger hook rack 5 hook', 'over door coat hook organizer'], maxPrice: 25, must: [/over.?the.?door|over.?door/i], prefer: [/over.?door|door.?hook/i], exclude: [/mirror.?only/i] },
+  { rank: 9, label: 'Vacuum Bags', queries: ['vacuum storage bags for clothes jumbo', 'space saver vacuum seal bags clothing', 'vacuum seal bags for comforters'], maxPrice: 30, must: [/vacuum|space.?saver/i], prefer: [/vacuum.?storage|space.?saver|vacuum.?bag/i], exclude: [/food.?vacuum|chamber.?vacuum/i] },
+  { rank: 10, label: 'Scarf / Belt Hanger', queries: ['scarf hanger organizer closet', 'belt tie hanger rack rotating', 'tie scarf organizer hanger'], maxPrice: 20, must: [/scarf|belt|tie/i], prefer: [/scarf|belt|tie.?hanger|organizer/i], exclude: [/tie.?clip.?fashion/i] },
+]);

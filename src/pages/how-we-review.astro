@@ -1,0 +1,72 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { buildPageTitle } from '../lib/seo';
+---
+
+<BaseLayout
+  title={buildPageTitle('How We Research and Compare Products')}
+  description="How AltPik selects products, compares trade-offs, checks prices, uses shopper feedback, and keeps affiliate recommendations independent."
+>
+  <article class="mx-auto max-w-3xl px-4 py-16 sm:px-6">
+    <header>
+      <p class="text-sm font-bold uppercase tracking-wide text-brand-700">Editorial standards</p>
+      <h1 class="mt-3 text-4xl font-extrabold text-gray-900">How we research products</h1>
+      <p class="mt-5 text-lg leading-relaxed text-gray-600">
+        AltPik publishes research-based shopping guides. Our goal is to explain which option fits a
+        real use case, what it costs, and what you give up—not to call every popular product “the best.”
+      </p>
+    </header>
+
+    <div class="article-prose mt-12">
+      <h2>What we compare</h2>
+      <p>
+        We start with the decision a shopper is trying to make. Depending on the category, we compare
+        dimensions, materials, compatibility, capacity, included accessories, warranty information,
+        recurring owner complaints, availability, and price-to-usefulness.
+      </p>
+
+      <h2>Where information comes from</h2>
+      <p>
+        Research uses manufacturer specifications, product manuals where available, retailer
+        listings, and patterns in verified-purchase feedback. A high rating or bestseller label is
+        never enough on its own. We look for repeated strengths and repeated failure points.
+      </p>
+
+      <h2>Hands-on testing and evidence</h2>
+      <p>
+        Most guides on AltPik are desk research, not hands-on or laboratory testing. We state direct
+        experience only when it occurred and can be described. Product photos supplied by retailers
+        illustrate the exact item; they are not presented as original test photography.
+      </p>
+
+      <h2>How picks are ranked</h2>
+      <p>
+        Rankings weigh fit for the article's use case, practical trade-offs, value, availability, and
+        the consistency of owner feedback. “Editor's Pick” means the strongest overall fit for that
+        guide. “Best Value” means a lower-cost option that preserves the functions most buyers need.
+      </p>
+
+      <h2>Prices and updates</h2>
+      <p>
+        Prices shown are snapshots and can change at any time. The updated date records a meaningful
+        editorial or product check—not an automatic date refresh. Always confirm price, seller,
+        shipping, compatibility, and return terms on the retailer's page.
+      </p>
+
+      <h2>Affiliate independence</h2>
+      <p>
+        AltPik participates in the Amazon Associates program and may earn from qualifying purchases.
+        Affiliate status does not buy placement or change a product's rank. Sponsored placements are
+        not mixed into editorial rankings. Affiliate links are clearly disclosed and marked for
+        search engines.
+      </p>
+
+      <h2>Corrections</h2>
+      <p>
+        Product details change. If you notice an incorrect specification, unavailable item, or broken
+        link, email <a href="mailto:apiszczat2222@gmail.com">apiszczat2222@gmail.com</a>. We review
+        concrete corrections and update the article when warranted.
+      </p>
+    </div>
+  </article>
+</BaseLayout>

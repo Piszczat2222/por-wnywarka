@@ -1,7 +1,7 @@
 ---
 articleType: listicle
 title: "10 Thoughtful Amazon Birthday Gifts for Mom"
-description: "Build a birthday gift she'll actually use: Yescool 20 lb weighted blanket ($35.19), JALL sunrise clock, Secura wine opener, bath bombs, Homedics foot spa — pinned Amazon prices."
+description: "Build a birthday gift she'll actually use: Yescool 20 lb weighted blanket ($35.19), JALL sunrise clock, Secura wine opener, bath bombs, Homedics foot spa — researched Amazon prices."
 category: beauty
 categoryLabel: "Beauty & Self-Care"
 cardTitle: "Thoughtful Birthday Gifts for Mom"
@@ -10,7 +10,7 @@ featured: true
 publishedAt: 2026-07-05
 updatedAt: 2026-08-06
 seoTitle: "Best Birthday Gifts for Mom on Amazon (2026) — Top 10"
-seoDescription: "Amazon birthday gifts for mom: Yescool weighted blanket ($35.19), JALL sunrise clock ($32.88), Secura wine opener ($23.47), bath bombs ($35.99), Homedics foot spa ($34.99)."
+seoDescription: "Amazon birthday gifts for mom: Yescool weighted blanket ($35.19), JALL sunrise clock ($32.88), Secura wine opener ($23.47), bath bombs ($35.99)..."
 keywords: ["birthday gifts for mom amazon", "mom birthday gift ideas 2026", "weighted blanket gift mom", "homedics foot spa", "jall sunrise alarm", "songmics jewelry box", "thoughtful gifts for mom"]
 ogImage: "/og-default.png"
 listItems:
@@ -79,9 +79,9 @@ listItems:
     blurb: "Toe-touch controlled foot bath with invigorating bubbles, raised massage nodes, and a removable pumice stone. Real pampering after long days on her feet."
 faq:
   - question: "How were these mom birthday gifts chosen?"
-    answer: "We pinned ten Amazon gifts moms use repeatedly: Yescool weighted blanket, JALL sunrise clock, Secura wine opener, USA-made bath bombs, scrapbook album, SWCANDY shower steamers, BAGSMART crossbody, ENITYA reading pillow, SONGMICS jewelry box, and Homedics foot spa. Comfort and ritual first — not one-time display items."
+    answer: "We compared ten Amazon gifts moms use repeatedly: Yescool weighted blanket, JALL sunrise clock, Secura wine opener, USA-made bath bombs, scrapbook album, SWCANDY shower steamers, BAGSMART crossbody, ENITYA reading pillow, SONGMICS jewelry box, and Homedics foot spa. Comfort and ritual first — not one-time display items."
   - question: "What's a good budget for mom's birthday?"
-    answer: "Pinned prices run from $5.99 (scrapbook) to $43.34 (ENITYA pillow). Strong singles sit around $23–$36. A spa duo of SWCANDY ($9.99) + bath bombs ($35.99) lands at $45.98. A night-out lite duo is Secura ($23.47) + BAGSMART ($13.99) for $37.46. Confirm live Amazon prices before checkout."
+    answer: "Prices checked on the article update date ran from $5.99 (scrapbook) to $43.34 (ENITYA pillow). Strong singles sit around $23–$36. A spa duo of SWCANDY ($9.99) + bath bombs ($35.99) lands at $45.98. A night-out lite duo is Secura ($23.47) + BAGSMART ($13.99) for $37.46. Confirm today's Amazon price before checkout."
   - question: "Will the weighted blanket fit her?"
     answer: "This Yescool pin is 20 lb / 60″ × 80″ and marketed for roughly 190–210 lb adults. If she's much lighter or wants a throw for the couch only, check Amazon for a lower weight in the same style before checkout."
   - question: "Are these different from Mother's Day gifts?"
@@ -90,7 +90,7 @@ faq:
 
 ## Build a birthday gift mom will actually use
 
-Flowers last a week. A generic candle gets shelved. The ten picks above are **pinned Amazon products** — comfort, ritual, and small luxuries she'll keep using after the cake is gone.
+Flowers last a week. A generic candle gets shelved. The ten picks above are **researched Amazon products** — comfort, ritual, and small luxuries she'll keep using after the cake is gone.
 
 Pick **one hero** that matches her vibe, then add an under-$15 finisher and a handwritten note.
 

@@ -4,7 +4,7 @@ description: "Stanley Quencher H2.0 FlowState 40oz at $45 (Black 2.0) vs Simple 
 category: travel
 categoryLabel: "Travel & Lifestyle"
 cardTitle: "Stanley Quencher vs. Simple Modern Trek 40oz"
-cardExcerpt: "Pinned: Stanley Quencher H2.0 40oz $45 vs Simple Modern Trek 40oz $24.99 — lid, insulation, warranty."
+cardExcerpt: "Compared: Stanley Quencher H2.0 40oz $45 vs Simple Modern Trek 40oz $24.99 — lid, insulation, warranty."
 premiumProduct: "Stanley Quencher H2.0 40oz (Black 2.0)"
 premiumPrice: "$45.00"
 pickProduct: "Simple Modern Trek Tumbler 40oz"
@@ -43,7 +43,7 @@ comparisonTable:
     premium: "~4.7★ · ~5.7k ratings"
     pick: "~4.8★ · ~7.6k ratings"
     highlight: pick
-  - feature: "Price (pinned)"
+  - feature: "Price (checked)"
     premium: "$45.00"
     pick: "$24.99 (list $43.99)"
     highlight: pick
@@ -58,7 +58,7 @@ whoShouldSkip:
   - "Narrow car cup holders (always check base diameter)"
 
 pros:
-  - "Pinned at $24.99 — about $20 less than Quencher H2.0"
+  - "checked at $24.99 — about $20 less than Quencher H2.0"
   - "Same 40oz capacity; handle + straw lid; cup-holder friendly"
   - "Two straws included; dishwasher-safe claim"
   - "Limited Lifetime Warranty from Simple Modern"
@@ -100,7 +100,7 @@ Comparison criteria:
 - **Lid**: FlowState 3-position vs Trek leak-resistant lid + dual straws
 - **Insulation**: Stanley’s published hours vs Simple Modern’s “hours hot/cold” claim
 - **Warranty**: Built for Life vs Simple Modern Limited Lifetime
-- **Price**: pinned **$45.00** vs **$24.99** — confirm live before checkout
+- **Price**: checked at **$45.00** vs **$24.99** — confirm today's price before checkout
 
 ## Why Simple Modern Trek Is Our Pick
 

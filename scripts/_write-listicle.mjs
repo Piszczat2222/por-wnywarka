@@ -20,6 +20,8 @@ export function writeListicle({
   picks,
   names,
   blurbs,
+  bestFor = [],
+  tradeoffs = [],
   badges = {},
   intro,
   problemHeader,
@@ -32,17 +34,46 @@ export function writeListicle({
   bottom,
   links,
   faq,
+  sectionHeadings,
 }) {
+  const headingVariants = [
+    {
+      kits: 'Build a practical bundle',
+      budgets: 'Choose by budget',
+      tips: 'Details that change the decision',
+      skips: 'Common buying mistakes',
+      bottom: 'Our decision rule',
+    },
+    {
+      kits: 'Three useful ways to combine these picks',
+      budgets: 'Where each budget goes furthest',
+      tips: 'Before you order',
+      skips: 'What is not worth adding',
+      bottom: 'Where to start',
+    },
+    {
+      kits: 'Match a bundle to the job',
+      budgets: 'Spend in the right order',
+      tips: 'What matters in daily use',
+      skips: 'Trade-offs to avoid',
+      bottom: 'The short version',
+    },
+  ];
+  const variantIndex = [...slug].reduce((sum, char) => sum + char.charCodeAt(0), 0) % headingVariants.length;
+  const headings = { ...headingVariants[variantIndex], ...sectionHeadings };
+
   const items = picks
     .map((p, i) => {
       const rank = p.rank;
       const badge = badges[rank] ? `\n    badge: "${badges[rank]}"` : '';
+      const bestForLine = bestFor[i] ? `\n    bestFor: ${JSON.stringify(bestFor[i])}` : '';
+      const tradeoffLine = tradeoffs[i] ? `\n    tradeoff: ${JSON.stringify(tradeoffs[i])}` : '';
       return `  - rank: ${rank}
     name: ${JSON.stringify(names[i])}
     asin: "${p.asin}"
     image: "${p.imagePath}"
     priceApprox: "${fmt(p.price)}"${badge}
-    blurb: ${JSON.stringify(blurbs[i])}`;
+    blurb: ${JSON.stringify(blurbs[i])}${bestForLine}${tradeoffLine}`;
     })
     .join('\n');
 
@@ -70,8 +101,8 @@ categoryLabel: ${JSON.stringify(categoryLabel)}
 cardTitle: ${JSON.stringify(cardTitle)}
 cardExcerpt: ${JSON.stringify(cardExcerpt)}
 featured: false
-publishedAt: 2026-08-08
-updatedAt: 2026-08-08
+publishedAt: 2026-08-24
+updatedAt: 2026-08-24
 seoTitle: ${JSON.stringify(seoTitle)}
 seoDescription: ${JSON.stringify(seoDescription)}
 keywords: ${JSON.stringify(keywords)}
@@ -84,13 +115,13 @@ ${faqYaml}
 
 ${intro}
 
-### ${problemHeader}
+## ${problemHeader}
 
 | If your problem is… | Start with | Price |
 |---|---|---|
 ${problemRows}
 
-### Ready-made kits
+## ${headings.kits}
 
 | Kit | Combo | Total |
 |---|---|---|
@@ -98,21 +129,21 @@ ${kitRows}
 
 **Buy first if you only grab three things:** ${buyFirst}
 
-### Shop by budget
+## ${headings.budgets}
 
 | Budget | Best picks |
 |---|---|
 ${budgetRows}
 
-### Tips that actually matter
+## ${headings.tips}
 
 ${tipList}
 
-### What to skip
+## ${headings.skips}
 
 ${skipList}
 
-### The bottom line
+## ${headings.bottom}
 
 ${bottom}
 

@@ -34,7 +34,7 @@ function shortLabel(label: string, max = 28) {
                 premiumImage && (
                   <img
                     src={premiumImage}
-                    alt=""
+                    alt={shortLabel(premiumLabel)}
                     width="40"
                     height="40"
                     class="h-10 w-10 rounded-lg bg-white object-contain p-0.5 ring-1 ring-gray-200"
@@ -51,7 +51,7 @@ function shortLabel(label: string, max = 28) {
                 pickImage && (
                   <img
                     src={pickImage}
-                    alt=""
+                    alt={shortLabel(pickLabel)}
                     width="40"
                     height="40"
                     class="h-10 w-10 rounded-lg bg-white object-contain p-0.5 ring-2 ring-brand-200"
@@ -82,6 +82,6 @@ function shortLabel(label: string, max = 28) {
     </table>
   </div>
   <p class="border-t border-gray-100 bg-gray-50 px-4 py-2 text-xs text-gray-500 sm:px-6">
-    Prices shown are pinned Amazon amounts and may change — always confirm live.
+    Prices are snapshots from the article's editorial check and may change—confirm today's listing.
   </p>
 </div>

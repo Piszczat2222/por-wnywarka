@@ -22,6 +22,9 @@ if (!meta) {
 const articles = (await getCollection('articles'))
   .filter((a) => a.data.category === category)
   .sort((a, b) => b.data.publishedAt.valueOf() - a.data.publishedAt.valueOf());
+const startHere = meta.featuredSlugs
+  .map((slug) => articles.find((article) => article.id === slug))
+  .filter((article) => article !== undefined);
 
 const pageUrl = absoluteUrl(`/categories/${category}`);
 const jsonLd = mergeJsonLd(
@@ -52,6 +55,39 @@ const jsonLd = mergeJsonLd(
   </div>
 
   <div class="mx-auto max-w-6xl px-4 py-12 sm:px-6">
+    <nav class="mb-8 text-sm text-gray-500" aria-label="Breadcrumb">
+      <a href="/" class="hover:text-brand-700">Home</a>
+      <span class="mx-2">/</span>
+      <span class="text-gray-700">{meta.label}</span>
+    </nav>
+
+    <section class="mb-14 max-w-3xl">
+      <h2 class="text-2xl font-bold text-gray-900">How to use this section</h2>
+      <p class="mt-4 text-lg leading-relaxed text-gray-600">{meta.editorial}</p>
+    </section>
+
+    {
+      startHere.length > 0 && (
+        <section class="mb-16">
+          <h2 class="text-2xl font-bold text-gray-900">Start here</h2>
+          <p class="mt-2 text-gray-600">Three focused guides that cover the main decisions in this category.</p>
+          <div class="mt-6 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            {startHere.map((article) => (
+              <ArticleCard
+                title={article.data.cardTitle}
+                excerpt={article.data.cardExcerpt}
+                href={`/articles/${article.id}`}
+                category={article.data.categoryLabel}
+                categoryColor={meta.color}
+                articleType={article.data.articleType}
+              />
+            ))}
+          </div>
+        </section>
+      )
+    }
+
+    <h2 class="mb-6 text-2xl font-bold text-gray-900">All {meta.label} guides</h2>
     {
       articles.length === 0 ? (
         <p class="text-gray-600">No reviews in this category yet. Check back soon!</p>

@@ -4,7 +4,7 @@ description: "Lululemon Align High-Rise 28\" at $98 (Nulu) vs CRZ Yoga Naked Fee
 category: fitness
 categoryLabel: "Fitness & Activewear"
 cardTitle: "Lululemon Align vs. CRZ Yoga $26 Leggings"
-cardExcerpt: "Pinned: Lululemon Align 28\" $98 vs CRZ Yoga Naked Feeling 25\" $26 — fabric, rise, inseam, value."
+cardExcerpt: "Compared: Lululemon Align 28\" $98 vs CRZ Yoga Naked Feeling 25\" $26 — fabric, rise, inseam, value."
 premiumProduct: "Lululemon Align High-Rise 28\""
 premiumPrice: "$98.00"
 pickProduct: "CRZ Yoga Naked Feeling Leggings 25\""
@@ -28,7 +28,7 @@ comparisonTable:
     pick: "High-rise; seamless waistband; hidden waistband pocket for keys/cards"
     highlight: none
   - feature: "Inseam / length"
-    premium: "28\" full-length Align HR (pinned Black)"
+    premium: "28\" full-length Align HR (checked in Black)"
     pick: "25\" length (cropper / ankle depending on height)"
     highlight: none
   - feature: "Care / brand"
@@ -39,7 +39,7 @@ comparisonTable:
     premium: "~4.5–4.6★ · ~960 ratings"
     pick: "~4.4★ · high-volume CRZ Yoga reviews"
     highlight: none
-  - feature: "Price (pinned)"
+  - feature: "Price (checked)"
     premium: "$98.00"
     pick: "$26.00"
     highlight: pick
@@ -54,7 +54,7 @@ whoShouldSkip:
   - "Ultra-high intensity training where thicker fabric matters more"
 
 pros:
-  - "Pinned at $26.00 — about $72 less than Align"
+  - "checked at $26.00 — about $72 less than Align"
   - "Naked-feeling stretch (71/29 polyamide/spandex)"
   - "High-rise with hidden waistband pocket"
   - "25\" length for yoga, errands, and lounge"
@@ -95,7 +95,7 @@ Comparison criteria:
 - **Fabric**: Nulu vs CRZ **71% polyamide / 29% spandex** naked-feeling blend
 - **Fit**: Align sculpted high-rise vs CRZ high-rise + **hidden waistband pocket**
 - **Length**: **28″** Align vs **25″** CRZ
-- **Price**: pinned **$98.00** vs **$26.00** — confirm live size/color before checkout
+- **Price**: checked at **$98.00** vs **$26.00** — confirm live size/color before checkout
 
 ## Why CRZ Yoga Naked Feeling Is Our Pick
 

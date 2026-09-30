@@ -4,7 +4,7 @@ description: "iRobot Roomba j7+ at $794.95 (PrecisionVision + Clean Base) vs euf
 category: home
 categoryLabel: "Home Aesthetic"
 cardTitle: "Roomba j7+ vs. eufy 11S MAX"
-cardExcerpt: "Pinned: Roomba j7+ $794.95 vs eufy 11S MAX $169.99 — navigation, suction, height, self-empty."
+cardExcerpt: "Compared: Roomba j7+ $794.95 vs eufy 11S MAX $169.99 — navigation, suction, height, self-empty."
 premiumProduct: "iRobot Roomba j7+ (7550)"
 premiumPrice: "$794.95"
 pickProduct: "eufy 11S MAX Robot Vacuum"
@@ -47,7 +47,7 @@ comparisonTable:
     premium: "~3.8★ · ~1.6k ratings"
     pick: "~4.3★ · ~59k ratings"
     highlight: pick
-  - feature: "Price (pinned)"
+  - feature: "Price (checked)"
     premium: "$794.95"
     pick: "$169.99 (list $279.99)"
     highlight: pick
@@ -62,7 +62,7 @@ whoShouldSkip:
   - "You need Wi‑Fi app control, no-go zones, or mopping"
 
 pros:
-  - "Pinned at $169.99 — about $625 less than j7+"
+  - "checked at $169.99 — about $625 less than j7+"
   - "Up to 2,000 Pa + BoostIQ; hard floors to medium-pile carpet"
   - "Super-thin 2.85\" body; ~55 dB quiet claim"
   - "Self-charging; ~59k Amazon ratings"
@@ -105,7 +105,7 @@ Comparison criteria:
 - **Emptying**: Clean Base ~60-day bags vs manual washable-filter bin
 - **Runtime**: up to **120 min** (j7+ listing) vs up to **100 min** hardwood (11S MAX)
 - **Fit**: **3.4″** tall vs **2.85″** slim; eufy claims ~**55 dB**
-- **Price**: pinned **$794.95** vs **$169.99** — confirm live before checkout
+- **Price**: checked at **$794.95** vs **$169.99** — confirm today's price before checkout
 
 ## Why eufy 11S MAX Is Our Budget Pick
 

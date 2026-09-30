@@ -4,7 +4,7 @@ description: "KitchenAid Artisan 5-Qt at $495 (325W, 10 speeds, Contour Silver) 
 category: kitchen
 categoryLabel: "Kitchen & Appliances"
 cardTitle: "KitchenAid Artisan vs. Hamilton Beach 4-Qt"
-cardExcerpt: "Pinned: KitchenAid Artisan $495 vs Hamilton Beach 4-Qt $139.99 — bowl, watts, speeds."
+cardExcerpt: "Compared: KitchenAid Artisan $495 vs Hamilton Beach 4-Qt $139.99 — bowl, watts, speeds."
 premiumProduct: "KitchenAid Artisan 5-Qt KSM150PS (Contour Silver)"
 premiumPrice: "$495.00"
 pickProduct: "Hamilton Beach 4-Qt Stand Mixer (Black)"
@@ -14,7 +14,7 @@ premiumAsin: "B004GUVD6K"
 featured: false
 publishedAt: 2026-06-15
 updatedAt: 2026-08-05
-seoTitle: "KitchenAid Mixer Alternative on Amazon (2026): Hamilton Beach 4-Qt"
+seoTitle: "KitchenAid Mixer Alternative (2026): Hamilton Beach 4-Qt"
 seoDescription: "KitchenAid Artisan KSM150PS ($495, 5-Qt, 325W, 10 speeds) vs Hamilton Beach ($139.99, 4-Qt, 300W, 7 speeds): capacity, power, and value compared."
 keywords: ["kitchenaid mixer alternative amazon", "hamilton beach stand mixer", "budget stand mixer amazon", "kitchenaid artisan dupe", "ksm150ps alternative", "stand mixer amazon 2026"]
 ogImage: "/og-default.png"
@@ -39,7 +39,7 @@ comparisonTable:
     premium: "~4.7★ · ~23k ratings; KitchenAid limited warranty (check listing)"
     pick: "~4.4★; Hamilton Beach limited warranty (check listing)"
     highlight: premium
-  - feature: "Price (pinned)"
+  - feature: "Price (checked)"
     premium: "$495.00"
     pick: "$139.99 (list $169.99)"
     highlight: pick
@@ -54,7 +54,7 @@ whoShouldSkip:
   - "You want decades of Artisan color / resale / ecosystem lock-in"
 
 pros:
-  - "Pinned at $139.99 — about $355 less than KitchenAid Artisan"
+  - "checked at $139.99 — about $355 less than KitchenAid Artisan"
   - "300W planetary mixing in a 4-Qt stainless bowl"
   - "7 speeds, splash guard, dough hook, whisk, flat beater"
   - "Carry handle for lift / store; dishwasher-safe bowl and tools"
@@ -98,7 +98,7 @@ Comparison criteria:
 - **Power**: **325W** / 10 speeds vs **300W** / 7 speeds
 - **Tools**: pouring shield + Artisan beater set vs splash guard + dough hook / whisk / flat beater
 - **Ecosystem**: KitchenAid hub attachments vs included tools only
-- **Price**: pinned **$495** vs **$139.99** — confirm live before checkout
+- **Price**: checked at **$495** vs **$139.99** — confirm today's price before checkout
 
 ## Why Hamilton Beach 4-Qt Is Our Pick
 

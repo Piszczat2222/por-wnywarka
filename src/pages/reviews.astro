@@ -44,7 +44,7 @@ const catInactive = 'bg-gray-100 text-gray-700 hover:bg-gray-200';
         All ({articles.length})
       </a>
       <a
-        href="/reviews?type=comparison"
+        href="/reviews#type=comparison"
         data-reviews-type="comparison"
         data-reviews-cat=""
         class:list={['reviews-type-pill rounded-full px-4 py-2 text-sm font-semibold transition-colors', typeInactive]}
@@ -52,7 +52,7 @@ const catInactive = 'bg-gray-100 text-gray-700 hover:bg-gray-200';
         Comparisons ({comparisonCount})
       </a>
       <a
-        href="/reviews?type=listicle"
+        href="/reviews#type=listicle"
         data-reviews-type="listicle"
         data-reviews-cat=""
         class:list={['reviews-type-pill rounded-full px-4 py-2 text-sm font-semibold transition-colors', typeInactive]}
@@ -68,7 +68,7 @@ const catInactive = 'bg-gray-100 text-gray-700 hover:bg-gray-200';
           if (count === 0) return null;
           return (
             <a
-              href={`/reviews?cat=${key}`}
+              href={`/reviews#cat=${key}`}
               data-reviews-cat={key}
               class:list={['reviews-cat-pill rounded-full px-4 py-2 text-sm font-semibold transition-colors', catInactive]}
             >
@@ -111,7 +111,10 @@ const catInactive = 'bg-gray-100 text-gray-700 hover:bg-gray-200';
   type Filters = { type: string | null; cat: string | null };
 
   function readFilters(): Filters {
-    const params = new URLSearchParams(window.location.search);
+    // Hash-based filters keep UI state out of the crawlable URL space.
+    // Continue accepting old query links while their canonical consolidates to /reviews.
+    const source = window.location.hash.slice(1) || window.location.search.slice(1);
+    const params = new URLSearchParams(source);
     const type = params.get('type');
     const cat = params.get('cat');
     return {
@@ -125,7 +128,7 @@ const catInactive = 'bg-gray-100 text-gray-700 hover:bg-gray-200';
     if (type) params.set('type', type);
     if (cat) params.set('cat', cat);
     const query = params.toString();
-    return query ? `/reviews?${query}` : '/reviews';
+    return query ? `/reviews#${query}` : '/reviews';
   }
 
   function setPillActive(pill: HTMLElement, active: boolean, kind: 'type' | 'cat') {

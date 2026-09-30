@@ -1,16 +1,16 @@
 ---
 articleType: listicle
 title: "10 Thoughtful Amazon Birthday Gifts for Your Girlfriend"
-description: "Build a birthday gift she'll actually keep: LUCKOR Spotify photo frame ($9.99), satin sleep set, KODAK Mini 2, TALES cards, FUNTOUCH mirror, Huski tumbler — pinned Amazon prices."
+description: "Build a birthday gift she'll actually keep: LUCKOR Spotify photo frame ($9.99), satin sleep set, KODAK Mini 2, TALES cards, FUNTOUCH mirror, Huski tumbler — researched Amazon prices."
 category: beauty
 categoryLabel: "Beauty & Gifts"
 cardTitle: "Thoughtful Birthday Gifts for Girlfriend"
-cardExcerpt: "Spotify photo frame, satin sleep set, KODAK Mini 2, TALES cards, Huski tumbler — pinned Amazon prices."
+cardExcerpt: "Spotify photo frame, satin sleep set, KODAK Mini 2, TALES cards, Huski tumbler — researched Amazon prices."
 featured: true
 publishedAt: 2026-07-05
 updatedAt: 2026-08-06
 seoTitle: "Best Birthday Gifts for Girlfriend on Amazon (2026) — Top 10"
-seoDescription: "Amazon birthday gifts for girlfriend: LUCKOR Spotify frame ($9.99), satin sleep set ($15.99), KODAK Mini 2 ($79.99), TALES cards ($39), Huski tumbler ($29.99)."
+seoDescription: "Amazon birthday gifts for girlfriend: LUCKOR Spotify frame ($9.99), satin sleep set ($15.99), KODAK Mini 2 ($79.99), TALES cards ($39), Huski tumbler..."
 keywords: ["birthday gifts for girlfriend amazon", "girlfriend birthday gift ideas 2026", "spotify picture frame gift", "kodak mini 2 gift", "tales conversation cards", "huski wine tumbler", "thoughtful gifts for her"]
 ogImage: "/og-default.png"
 listItems:
@@ -78,9 +78,9 @@ listItems:
     blurb: "12 oz triple-insulated stainless tumbler with detachable stem and lid — keeps wine cold or coffee hot. Powder pink birthday-dinner energy without fragile glassware."
 faq:
   - question: "How were these girlfriend birthday gifts chosen?"
-    answer: "We pinned ten Amazon gifts that feel personal without guessing perfume: LUCKOR Spotify photo frame, satin sleep set, KODAK Mini 2, TALES conversation cards, FUNTOUCH LED mirror, woodsy candle 4-pack, SWOMOG matching PJs, monogram jewelry tray, MUSICOZY sleep headband, and Huski wine tumbler. Sentiment plus daily use — not drawer clutter."
+    answer: "We compared ten Amazon gifts that feel personal without guessing perfume: LUCKOR Spotify photo frame, satin sleep set, KODAK Mini 2, TALES conversation cards, FUNTOUCH LED mirror, woodsy candle 4-pack, SWOMOG matching PJs, monogram jewelry tray, MUSICOZY sleep headband, and Huski wine tumbler. Sentiment plus daily use — not drawer clutter."
   - question: "What's a good budget for a girlfriend's birthday?"
-    answer: "Pinned prices run from $9.99 (Spotify frame) to $79.99 (KODAK Mini 2). Most strong singles sit $15–$40. A thoughtful under-$30 duo is the Spotify frame ($9.99) + satin sleep set ($15.99) for $25.98. Confirm live Amazon prices before checkout."
+    answer: "Prices checked on the article update date ran from $9.99 (Spotify frame) to $79.99 (KODAK Mini 2). Most strong singles sit $15–$40. A thoughtful under-$30 duo is the Spotify frame ($9.99) + satin sleep set ($15.99) for $25.98. Confirm today's Amazon price before checkout."
   - question: "What if we haven't been together long?"
     answer: "Lead with lower-commitment picks: TALES cards, candle set, satin sleep set, jewelry tray, FUNTOUCH mirror, or Huski tumbler. Save matching PJs and the KODAK printer until you know size, style, and how she feels about highly personal photo gifts. The Spotify frame works early if you keep the photo light and sweet."
   - question: "Who is this gift guide for?"
@@ -89,7 +89,7 @@ faq:
 
 ## Build a birthday gift she'll actually keep
 
-Generic jewelry is a gamble. Perfume is personal. The ten picks above are **pinned Amazon products** — shared-song frames, cozy sleep gear, and daily tools that land on her nightstand instead of the re-gift pile.
+Generic jewelry is a gamble. Perfume is personal. The ten picks above are **researched Amazon products** — shared-song frames, cozy sleep gear, and daily tools that land on her nightstand instead of the re-gift pile.
 
 Pick **one hero** that matches your vibe, then add a small finisher under $20 and a handwritten note.
 

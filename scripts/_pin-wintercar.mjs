@@ -1,0 +1,14 @@
+import { pinSlots } from './_pin-lib.mjs';
+
+await pinSlots('wintercar', [
+  { rank: 1, label: 'Ice Scraper', queries: ['ice scraper snow brush car extendable', 'snow brush ice scraper combo', 'winter car ice scraper mitt'], maxPrice: 25, must: [/ice.?scraper|snow.?brush/i], prefer: [/ice.?scraper|snow.?brush|winter/i], exclude: [/windshield.?fluid.?only/i] },
+  { rank: 2, label: 'Jumper Cables', queries: ['jumper cables 12 ft heavy duty', 'booster cables 4 gauge car', 'emergency jumper cables set'], maxPrice: 45, must: [/jumper.?cable|booster.?cable/i], prefer: [/jumper|booster|heavy.?duty/i], exclude: [/jump.?starter.?battery.?pack/i] },
+  { rank: 3, label: 'Traction Mats', queries: ['car traction mats snow sand', 'traction aid tire grip mats', 'emergency tire traction boards car'], maxPrice: 40, must: [/traction|grip/i], prefer: [/traction|tire.?grip|snow|sand/i], exclude: [/floor.?mat.?interior/i] },
+  { rank: 4, label: 'Windshield Cover', queries: ['windshield cover frost snow winter', 'car windshield snow cover magnetic', 'winter windshield frost cover'], maxPrice: 30, must: [/windshield|cover/i], prefer: [/windshield|frost|snow.?cover|winter/i], exclude: [/sun.?shade.?summer.?only/i] },
+  { rank: 5, label: 'Hand Warmers', queries: ['hand warmers bulk pack disposable', 'HotHands hand warmers 40 count', 'air activated hand warmers emergency'], maxPrice: 25, must: [/hand.?warmer|HotHands/i], prefer: [/hand.?warmer|HotHands|warm/i], exclude: [/foot.?warmer.?only/i] },
+  { rank: 6, label: 'Emergency Blanket', queries: ['emergency mylar blanket pack car', 'thermal emergency blanket survival 4 pack', 'space blanket emergency kit car'], maxPrice: 20, must: [/blanket|mylar|thermal/i], prefer: [/emergency|mylar|thermal|space.?blanket/i], exclude: [/weighted.?blanket|throw.?blanket/i] },
+  { rank: 7, label: 'Tire Pressure Gauge', queries: ['digital tire pressure gauge car', 'tire pressure gauge accurate digital', 'pencil tire gauge automotive'], maxPrice: 20, must: [/tire.?pressure|pressure.?gauge/i], prefer: [/tire.?pressure|gauge/i], exclude: [/blood.?pressure/i] },
+  { rank: 8, label: 'Collapsible Shovel', queries: ['collapsible snow shovel car emergency', 'portable car shovel trunk', 'emergency shovel compact car'], maxPrice: 30, must: [/shovel/i], prefer: [/snow.?shovel|collapsible|emergency|portable/i], exclude: [/garden.?shovel.?full.?size/i] },
+  { rank: 9, label: 'De-Icer Spray', queries: ['windshield de icer spray car', 'lock de icer spray automotive', 'car deicer spray winter'], maxPrice: 20, must: [/de.?icer|deicer/i], prefer: [/de.?icer|windshield|lock/i], exclude: [/ice.?maker.?machine/i] },
+  { rank: 10, label: 'Road Flares / LED', queries: ['LED road flares emergency car 3 pack', 'roadside emergency flares rechargeable', 'LED safety flares car breakdown'], maxPrice: 35, must: [/flare|beacon|roadside/i], prefer: [/LED|flare|emergency|roadside/i], exclude: [/party.?flare/i] },
+]);

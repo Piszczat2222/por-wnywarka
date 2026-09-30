@@ -28,8 +28,8 @@ const premiumImage = premiumImageSrc || productImageForAsin(premiumAsin);
 const premiumFromAmazon = Boolean(premiumAsin);
 const premiumLinkLabel = premiumFromAmazon ? 'View on Amazon →' : 'View product →';
 const premiumPriceNote = premiumFromAmazon
-  ? 'Pinned Amazon price — confirm live'
-  : 'Pinned price — confirm live';
+  ? "Price snapshot — confirm today's Amazon listing"
+  : "Price snapshot — confirm today's product listing";
 const premiumRel = premiumFromAmazon
   ? 'noopener noreferrer sponsored'
   : 'noopener noreferrer';
@@ -68,7 +68,7 @@ const saveAmount =
             <a
               href={premiumHref}
               target="_blank"
-              rel="noopener noreferrer sponsored"
+              rel={premiumRel}
               class="mt-5 flex h-44 w-full max-w-[220px] items-center justify-center rounded-2xl bg-white p-4 shadow-sm ring-1 ring-gray-100 transition hover:ring-gray-300 sm:h-52"
               aria-label={premiumAria}
             >
@@ -184,7 +184,7 @@ const saveAmount =
           </p>
         )
       }
-      <p class="mt-1 text-xs text-brand-600/80">Pinned Amazon price — confirm live</p>
+      <p class="mt-1 text-xs text-brand-600/80">Price snapshot — confirm today's Amazon listing</p>
       {
         pickHref && (
           <a

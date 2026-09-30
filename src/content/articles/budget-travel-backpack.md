@@ -4,7 +4,7 @@ description: "Away The Carry-On at $275 (100% polycarbonate, CompressMore, TSA l
 category: travel
 categoryLabel: "Travel & Lifestyle"
 cardTitle: "Away Carry-On vs. Amazon Basics $62.83 Spinner"
-cardExcerpt: "Pinned: Away The Carry-On Navy $275 vs Amazon Basics 21\" expandable hardside $62.83."
+cardExcerpt: "Compared: Away The Carry-On Navy $275 vs Amazon Basics 21\" expandable hardside $62.83."
 premiumProduct: "Away The Carry-On (22\" / Navy)"
 premiumPrice: "$275.00"
 pickProduct: "Amazon Basics 21\" Hardside Carry-On"
@@ -17,7 +17,7 @@ featured: false
 publishedAt: 2026-07-01
 updatedAt: 2026-08-05
 seoTitle: "Away Carry-On Alternative on Amazon (2026): Amazon Basics Spinner"
-seoDescription: "Away The Carry-On ($275, polycarbonate, CompressMore, TSA lock) vs Amazon Basics 21\" expandable hardside ($62.83): size, wheels, weight, and value compared."
+seoDescription: "Away The Carry-On ($275, polycarbonate, CompressMore, TSA lock) vs Amazon Basics 21\" expandable hardside ($62.83): size, wheels, weight, and value..."
 keywords: ["away carry on alternative amazon", "amazon basics luggage", "carry on luggage amazon", "away suitcase dupe", "budget carry on spinner 2026"]
 ogImage: "/og-backpack.png"
 comparisonTable:
@@ -45,7 +45,7 @@ comparisonTable:
     premium: "~4.6★ · ~400+ ratings (Navy Carry-On listing)"
     pick: "High-volume Amazon Basics carry-on bestseller"
     highlight: none
-  - feature: "Price (pinned)"
+  - feature: "Price (checked)"
     premium: "$275.00"
     pick: "$62.83 (list $219.99)"
     highlight: pick
@@ -60,7 +60,7 @@ whoShouldSkip:
   - "You want a built-in TSA lock and CompressMore packing system"
 
 pros:
-  - "Pinned at $62.83 — about $212 less than Away"
+  - "checked at $62.83 — about $212 less than Away"
   - "Expandable up to 25% more packing space"
   - "Scratch-resistant hardside + 4 spinner wheels"
   - "Airline-friendly ~21\" carry-on sizing for 1–5 day trips"
@@ -90,7 +90,7 @@ We pin **Away The Carry-On** Navy ([Amazon listing](https://amzn.to/4hQxIqf), AS
 
 ## Why Away The Carry-On Still Commands the Price
 
-**Away The Carry-On** is built as a 3–5 day workhorse: lightweight **100% polycarbonate** shell, **WhisperGlide 360°** spinners, quick-release **3-position** trolley, and the patented **CompressMore** dual-buckle panel with **3 mesh pockets**, laundry bag, and integrated **TSA-approved** combo lock. Exterior **14.4″L × 9″W × 21.7″H** (interior **20.1″ × 13.9″ × 7.5″**), about **7.5 lb**, capacity feel around **2,812 cu in**. Coverage: **Away LifetimeCare** for functional / manufacturing / unexpected rough-travel repair support. Color pinned: **Navy Blue**.
+**Away The Carry-On** is built as a 3–5 day workhorse: lightweight **100% polycarbonate** shell, **WhisperGlide 360°** spinners, quick-release **3-position** trolley, and the patented **CompressMore** dual-buckle panel with **3 mesh pockets**, laundry bag, and integrated **TSA-approved** combo lock. Exterior **14.4″L × 9″W × 21.7″H** (interior **20.1″ × 13.9″ × 7.5″**), about **7.5 lb**, capacity feel around **2,812 cu in**. Coverage: **Away LifetimeCare** for functional / manufacturing / unexpected rough-travel repair support. Color compared: **Navy Blue**.
 
 ## How We Compared These Two
 
@@ -102,7 +102,7 @@ Comparison criteria:
 - **Packing**: CompressMore + laundry bag vs expandable zipper (+25%) + divider / pockets
 - **Roll**: WhisperGlide 360° vs multi-directional Basics spinners
 - **Security**: built-in TSA combo lock vs no lock on Basics
-- **Price**: pinned **$275.00** vs **$62.83** — confirm live before checkout
+- **Price**: checked at **$275.00** vs **$62.83** — confirm today's price before checkout
 
 ## Why Amazon Basics 21\" Hardside Is Our Pick
 

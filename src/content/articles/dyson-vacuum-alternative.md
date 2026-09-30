@@ -4,7 +4,7 @@ description: "Dyson V15 Detect Origin at $839.99 (240 Air Watts) vs JELLYPIG X10
 category: home
 categoryLabel: "Home Aesthetic"
 cardTitle: "Dyson V15 Detect vs. JELLYPIG X100"
-cardExcerpt: "Pinned: Dyson V15 Detect Origin $839.99 (240 AW) vs JELLYPIG X100 $139.99 (55KPA / 650W)."
+cardExcerpt: "Compared: Dyson V15 Detect Origin $839.99 (240 AW) vs JELLYPIG X100 $139.99 (55KPA / 650W)."
 premiumProduct: "Dyson V15 Detect Origin"
 premiumPrice: "$839.99"
 pickProduct: "JELLYPIG X100 Cordless Stick"
@@ -43,7 +43,7 @@ comparisonTable:
     premium: "6.8 lb"
     pick: "6.3 lb; self-standing"
     highlight: pick
-  - feature: "Price (pinned)"
+  - feature: "Price (checked)"
     premium: "$839.99"
     pick: "$139.99"
     highlight: pick
@@ -58,7 +58,7 @@ whoShouldSkip:
   - "Brand prestige and long Dyson warranty peace of mind"
 
 pros:
-  - "Pinned at $139.99 — about $700 less than V15 Detect Origin"
+  - "checked at $139.99 — about $700 less than V15 Detect Origin"
   - "55KPA / 650W brushless claim; 1.8 L bin"
   - "Self-standing stick + LED touch screen"
   - "Up to 70 min low-mode claim; anti-tangle brush"
@@ -106,7 +106,7 @@ Comparison criteria:
 - **Runtime**: up to **60 min** (Dyson, mode-dependent) vs up to **70 min** low / no-load claim (X100)
 - **Bin / filter**: ~0.2 gal + sealed cartridge filtration vs **1.8 L** + 8-layer HEPA
 - **Weight**: **6.8 lb** vs **6.3 lb** (X100 self-stands)
-- **Price**: pinned **$839.99** vs **$139.99** — confirm live before checkout
+- **Price**: checked at **$839.99** vs **$139.99** — confirm today's price before checkout
 
 ## Why JELLYPIG X100 Is Our Budget Pick
 
