@@ -7,6 +7,7 @@ export const SITE = {
   author: 'Patryk',
   email: 'apiszczat2222@gmail.com',
   gaMeasurementId: 'G-JRB461EJXP',
+  googleAdsId: 'AW-16999094280',
   indexNowKey: '748a39219ac649ab8452996fe1d35420',
 } as const;
 

@@ -36,6 +36,7 @@ const canonicalURL = new URL(withoutTrailingSlash(Astro.url.pathname), SITE.url)
 const ogImageURL = new URL(ogImage, SITE.url);
 const robotsContent = noindex ? 'noindex, nofollow' : 'index, follow';
 const gaMeasurementId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID ?? SITE.gaMeasurementId;
+const googleAdsId = import.meta.env.PUBLIC_GOOGLE_ADS_ID ?? SITE.googleAdsId;
 
 const globalJsonLd = mergeJsonLd(
   organizationSchema(),
@@ -91,13 +92,14 @@ const globalJsonLd = mergeJsonLd(
     </main>
     <Footer />
     {
-      gaMeasurementId && (
-        <script is:inline define:vars={{ gaMeasurementId }}>
+      (gaMeasurementId || googleAdsId) && (
+        <script is:inline define:vars={{ gaMeasurementId, googleAdsId }}>
           function loadGA() {
             if (window.__gaLoaded) return;
             window.__gaLoaded = true;
+            const primaryId = gaMeasurementId || googleAdsId;
             const s = document.createElement('script');
-            s.src = `https://www.googletagmanager.com/gtag/js?id=${gaMeasurementId}`;
+            s.src = `https://www.googletagmanager.com/gtag/js?id=${primaryId}`;
             s.async = true;
             s.onload = () => {
               window.dataLayer = window.dataLayer || [];
@@ -106,7 +108,8 @@ const globalJsonLd = mergeJsonLd(
               }
               window.gtag = gtag;
               gtag('js', new Date());
-              gtag('config', gaMeasurementId);
+              if (gaMeasurementId) gtag('config', gaMeasurementId);
+              if (googleAdsId) gtag('config', googleAdsId);
             };
             document.head.appendChild(s);
           }
