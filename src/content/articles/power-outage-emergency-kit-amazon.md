@@ -140,4 +140,4 @@ Don't rely on phone flashlight as your only light. Don't burn open candles near 
 
 The best **Amazon power outage emergency kit** covers light, phone charge, and a weather update. Start with a **lantern**, **power bank**, and **flashlights**, confirm today's prices, then add a NOAA radio and batteries.
 
-Car emergencies: [car emergency kit](/articles/car-emergency-kit-amazon). Road trips: [road trip essentials](/articles/road-trip-essentials-amazon).
+Car emergencies: [car emergency kit](/articles/car-emergency-kit-amazon). Road trips: [road trip gadgets](/articles/road-trip-gadgets-amazon).

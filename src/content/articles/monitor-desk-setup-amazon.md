@@ -140,4 +140,4 @@ Don't stack books under a heavy monitor forever. Don't buy a hub that does not m
 
 The best **Amazon monitor desk setup** fixes height, ports, and light. Start with a **monitor arm**, **laptop stand**, and **USB-C hub**, confirm today's prices, then add a light bar and desk mat.
 
-WFH gear: [work from home essentials](/articles/work-from-home-essentials-amazon). Dorm desks: [dorm room essentials](/articles/dorm-room-essentials-amazon).
+WFH gear: [WFH desk gadgets](/articles/top-10-wfh-desk-gadgets-amazon). Dorm desks: [college dorm essentials](/articles/college-dorm-essentials-amazon).

@@ -4,7 +4,9 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "astro dev",
-    "build": "node scripts/cache-product-images.mjs && node scripts/fetch-listicle-thumbnails.mjs && node scripts/generate-og.mjs && astro build && node scripts/patch-sitemap-lastmod.mjs && node scripts/verify-sitemap.mjs && node scripts/seo-audit.mjs",
+    "build": "node scripts/cache-product-images.mjs && node scripts/fetch-listicle-thumbnails.mjs && node scripts/generate-og.mjs && astro build && node scripts/patch-sitemap-lastmod.mjs && node scripts/verify-sitemap.mjs && node scripts/verify-internal-links.mjs && node scripts/seo-audit.mjs",
+    "links:verify": "node scripts/verify-internal-links.mjs",
+    "links:live": "node scripts/check-live-links.mjs",
     "thumbnails": "node scripts/fetch-listicle-thumbnails.mjs",
     "indexnow": "node scripts/indexnow.mjs",
     "preview": "astro preview",
