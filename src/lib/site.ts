@@ -8,6 +8,8 @@ export const SITE = {
   email: 'apiszczat2222@gmail.com',
   gaMeasurementId: 'G-JRB461EJXP',
   googleAdsId: 'AW-16999094280',
+  /** Google Ads “Kliknięcie wychodzące” conversion send_to */
+  googleAdsOutboundConversionId: 'AW-16999094280/2O2UCMTGt4sdEIiw5qk_',
   indexNowKey: '748a39219ac649ab8452996fe1d35420',
 } as const;
 

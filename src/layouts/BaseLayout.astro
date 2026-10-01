@@ -41,6 +41,8 @@ const ogImageURL = new URL(ogImage, SITE.url);
 const robotsContent = noindex ? 'noindex, nofollow' : 'index, follow';
 const gaMeasurementId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID ?? SITE.gaMeasurementId;
 const googleAdsId = import.meta.env.PUBLIC_GOOGLE_ADS_ID ?? SITE.googleAdsId;
+const googleAdsOutboundConversionId =
+  import.meta.env.PUBLIC_GOOGLE_ADS_OUTBOUND_CONVERSION_ID ?? SITE.googleAdsOutboundConversionId;
 
 const globalJsonLd = mergeJsonLd(
   organizationSchema(),
@@ -99,7 +101,26 @@ const globalJsonLd = mergeJsonLd(
     <Footer />
     {
       (gaMeasurementId || googleAdsId) && (
-        <script is:inline define:vars={{ gaMeasurementId, googleAdsId }}>
+        <script
+          is:inline
+          define:vars={{ gaMeasurementId, googleAdsId, googleAdsOutboundConversionId }}
+        >
+          const AFFILIATE_HOSTS = new Set([
+            'amazon.com',
+            'www.amazon.com',
+            'amzn.to',
+            'www.amzn.to',
+          ]);
+
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          window.gtag = gtag;
+          gtag('js', new Date());
+          if (gaMeasurementId) gtag('config', gaMeasurementId);
+          if (googleAdsId) gtag('config', googleAdsId);
+
           function loadGA() {
             if (window.__gaLoaded) return;
             window.__gaLoaded = true;
@@ -107,18 +128,29 @@ const globalJsonLd = mergeJsonLd(
             const s = document.createElement('script');
             s.src = `https://www.googletagmanager.com/gtag/js?id=${primaryId}`;
             s.async = true;
-            s.onload = () => {
-              window.dataLayer = window.dataLayer || [];
-              function gtag() {
-                dataLayer.push(arguments);
-              }
-              window.gtag = gtag;
-              gtag('js', new Date());
-              if (gaMeasurementId) gtag('config', gaMeasurementId);
-              if (googleAdsId) gtag('config', googleAdsId);
-            };
             document.head.appendChild(s);
           }
+
+          function isAffiliateUrl(href) {
+            try {
+              return AFFILIATE_HOSTS.has(new URL(href, window.location.origin).hostname.toLowerCase());
+            } catch {
+              return false;
+            }
+          }
+
+          document.addEventListener(
+            'click',
+            (event) => {
+              if (!(event.target instanceof Element)) return;
+              const anchor = event.target.closest('a[href]');
+              if (!anchor || !isAffiliateUrl(anchor.href) || !googleAdsOutboundConversionId) return;
+              // Amazon CTAs open in a new tab — fire conversion without blocking navigation.
+              gtag('event', 'conversion', { send_to: googleAdsOutboundConversionId });
+            },
+            true,
+          );
+
           if ('requestIdleCallback' in window) {
             requestIdleCallback(loadGA, { timeout: 3000 });
           } else {
