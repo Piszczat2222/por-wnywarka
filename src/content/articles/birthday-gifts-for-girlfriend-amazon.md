@@ -154,3 +154,7 @@ Don't buy clothes without her size. Don't force the KODAK printer if she hates d
 The best **Amazon birthday gifts for your girlfriend** show you pay attention — to her routines, your shared songs, and how she spends evenings. Start with the **Spotify frame** or **satin sleep set**, confirm today's prices, and write one specific note.
 
 Shopping for him too? See [birthday gifts for boyfriend](/articles/birthday-gifts-for-boyfriend-amazon). Under-$20 add-ons: [Amazon gifts under $20](/articles/amazon-gifts-under-20).
+
+### Ordering last-minute?
+
+Birthday deadlines are real. If you want free fast shipping on the picks above (and fewer “still in transit” surprises), [try Amazon Prime](https://amzn.to/3U1Tii3) — then confirm today’s price and delivery date on each product before you check out.
